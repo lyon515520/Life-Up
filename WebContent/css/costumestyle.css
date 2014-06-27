@@ -3,12 +3,67 @@ body{
 	background-color: rgb(235,235,233);	
 }
 
-.test {
-	background:url(../image/test-1900px.png);
-	min-width:830px;
-	background-repeat:no-repeat;
+.page-landing{
+	position:relative;
 }
-    
+
+.head-landing-image{
+	background-image:url(../image/test-1900px.png);
+	background-repeat: no-repeat no-repeat;
+	background-position:center 0;
+	background-attachment: scroll;
+	width:100%;
+	height:611px;
+	min-width:960px;
+	position: relative;
+	
+}
+
+.head-landing-brown{
+	width:100%;
+	height:63px;
+	min-width:960px;
+	background-color:rgb(50,40,38);
+	position:absolute;
+}
+
+.logo-image-landing{
+	float:left;
+	margin-left:6px;
+	margin-top:10px;
+	width:66.6px;
+	height:43px;
+}
+
+.landing-head-email{
+	float: left;
+	margin-left:330px;
+}
+
+.landing-head-mdp{
+	float:left;
+	margin-left:6px;
+}
+
+.landing-head-button{
+	float: left;
+	margin-left: 30px;
+}
+
+.landing-text1{
+	width: 100%;
+	float: left;
+	text-align: center;
+	margin-top: 80px;
+}
+
+.landing-p1{
+	font-size:35px;
+	color: white;
+	font-weight: bold;
+}
+
+
 /*
 border-style:none;
 		border-width:0;
@@ -1644,6 +1699,46 @@ fieldset[disabled] .btn-plus-min.active {
 	float:left;
 }
 
+#landing-email-text{
+	color:white;
+	margin:1px 0;
+	font-size:10px;
+}
+
+#landing-email{
+	width:170px;
+	height:22px;
+	font-size:10px;
+}
+
+#landing-email-cb{
+	margin:1px 0;
+	padding-left: 0;
+}
+
+#landing-email-cb-text{
+	color:white;
+	font-size:10px;
+}
+
+#landing-email-check{
+	margin: 2px 0 0 0;
+}
+
+#landing-head-connection{
+	width: 80px;
+	height: 22px;
+	font-size: 10px;
+	padding: 1.2px;
+	margin-top: 18px;
+	margin-left:6px;
+}
+
+#landing-button1{
+	font-weight: bold;
+}
+
+/*--------------------------------------------------------------------------------above is the ID of landing page elements*/
 #email_inscrit{
 	width:323px;
 	height:22px;
@@ -1902,3 +1997,145 @@ fieldset[disabled] .btn-plus-min.active {
 	font-size:17px;
 }
 
+/*----------------------------------------------------------*/
+
+.landing-white1{
+	margin: 0 0 70px 0;
+}
+
+.hr5{
+	width: 401px;
+	size: 2px;
+	border: 0;
+	border-top: 5px solid rgb(50,40,38);
+	font-weight: bold;
+	margin: 50px 6px 6px 0;
+}
+
+.container3{
+	margin-left:auto;
+	margin-right:auto;
+	width:960px;
+	text-align: center;
+}
+
+.line_block2{
+	display: inline-flex;
+}
+
+.landing-p2{
+	font-size:35px;
+}
+
+.landing-brown1{
+	width:100%;
+	height: 344px;
+	background-color: rgb(50,40,38);
+}
+
+.landing-p3{
+	font-size:35px;
+	margin: 10px 0;
+}
+
+.landing-p4{
+	font-size:25px;
+	margin: 10px 0;
+}
+
+.landing-p5{
+	font-size:17.45px;
+	margin: 10px 0 100px 0;
+}
+
+.landing-brown2{
+	width:100%;
+	height: 287px;
+	background-color: rgb(50,40,38);
+}
+
+.landing-brown2-image{
+	float: left;
+}
+
+.landing-brown2-text{
+	float: left;
+	border-left: solid;
+	margin-left: 6px;
+	padding-left: 6px;
+	border-color: white;
+	border-width: thin;
+}
+
+.landing-brown2-right{
+	padding:10px 0;
+	overflow: hidden;
+}
+
+.landing-brown2-rightdiv{
+	padding-left: 15px;
+	overflow: hidden;
+}
+
+.landing-brown2-text-1{
+	font-size: 20px;
+	color: white;
+	text-align: left;
+}
+
+.landing-brown2-text-2{
+	font-size: 12px;
+	color: rgb(235,101,49);
+	text-align: left;
+}
+
+.landing-p2-1{
+	color: rgb(50,40,38);
+}
+
+.landing-p2-2{
+	color: rgb(235,101,49);
+}
+
+#landing-image1{
+	height:101.6px;
+	width:110.5px;
+}
+
+
+#landing-image2{
+	height: 309px;
+	width: 965px;
+	margin-top: 15px;
+}
+
+#landing-button2{
+	width:209px;
+	font-weight: normal;
+	margin-bottom: 70px;
+	
+}
+
+#landing-image3{
+	height:92px;
+	width:114px;
+}
+
+#landing-image4{
+	height:356px;
+	width:568px;
+	margin-top: -35px;
+	float: left;
+}
+
+#landing-button3{
+	width:209px;
+	font-weight: normal;
+	margin-bottom: 70px;
+	
+}
+
+#landing-image7{
+	height:101.6px;
+	width:110.5px;
+}
