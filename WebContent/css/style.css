@@ -31,7 +31,7 @@
 }
 .icon-valider:before {
 	content: "\e62d";
-	color:rgb(200,200,200);
+	color:rgb(235,101,49);
 	font-size:13px;
 }
 .icon-activite:before {
@@ -72,12 +72,16 @@
 }
 .icon-elargir:before {
 	content: "\e60c";
+	color: rgb(204,204,204);
+	font-size: 12px;
 }
 .icon-envoyer-mail:before {
 	content: "\e60d";
 }
 .icon-evenement:before {
 	content: "\e60e";
+	font-size: 12px;
+	color: rgb(134,134,134);
 }
 .icon-gaming:before {
 	content: "\e60f";
@@ -127,12 +131,16 @@
 }
 .icon-pratique:before {
 	content: "\e61e";
+	font-size: 12px;
+	color: rgb(134,134,134);
 }
 .icon-precedent:before {
 	content: "\e61f";
 }
 .icon-prive:before {
 	content: "\e620";
+	font-size: 12px;
+	color: rgb(134,134,134);
 }
 .icon-professionnel:before {
 	content: "\e621";
@@ -140,6 +148,8 @@
 }
 .icon-publique:before {
 	content: "\e622";
+	color: rgb(134,134,134);
+	font-size: 12px;
 }
 .icon-recherche:before {
 	content: "\e623";
@@ -157,7 +167,6 @@
 }
 .icon-star-note:before {
 	content: "\e627";
-	font-size:16px;
 }
 .icon-suivant:before {
 	content: "\e628";
@@ -173,4 +182,10 @@
 }
 .icon-voyage:before {
 	content: "\e62c";
+}
+.icon-valider-contact:before {
+	content: "\e133";
+}
+.icon-refuser-contact:before {
+	content: "\e134";
 }

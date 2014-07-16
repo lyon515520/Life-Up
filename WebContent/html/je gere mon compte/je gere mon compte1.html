@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.css" />
+<link rel="stylesheet" type="text/css" href="../../css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="../../css/costumestyle.css" />
+<link rel="stylesheet" type="text/css" href="../../css/style_gerer_compte.css" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css" />
+<link rel="stylesheet" type="text/css" href="../../css/style-google-font.css" />
+<meta charset="UTF-8">
+<title>c'est la 1 partie de "gerer mon compte"</title>
+</head>
+<body class="body-test">
+	<div class="leftpanel">
+		<div class="lp-inside">
+			<!-- this is the info-profil part -->
+			<p class="mon-compte-title">Informations du profil</p>
+			<p class="mon-compte-subtitle1">Mes photos:</p>
+			<div>
+				<!-- this is the div of mes photos -->
+			</div>
+			<p class="mon-compte-subtitle2">Je suis:</p>
+			<div class="mon-compte-select">
+				<button type="button" class="mon-compte-btn-select" id="btn-femme" >une femme</button>
+				<button type="button" class="mon-compte-btn-select" id="btn-homme" >un homme</button>
+			</div>
+			<p class="mon-compte-subtitle2">Je m'appelle:</p>
+			<div class="mon-compte-input1">
+				<input type="text" class="form-control input_mod" placeholder="Prénom">
+				<input type="text" class="form-control input_mod" placeholder="Nom">
+			</div>
+			<p class="mon-compte-subtitle2">Je suis né le:</p>
+			<div>
+				<input type="date" class="form-control select_mod">
+			</div>
+			<p class="mon-compte-subtitle2">Où je suis actuellement:</p>
+			<div>
+				<div class="margin1">
+					<select class="form-control select_mod">
+						<option>Pays</option>
+						<option>France</option>
+						<option>Chine</option>
+					</select>
+				</div>
+				<div class="margin1">
+					<select class="form-control select_mod">
+						<option>Ville</option>
+						<option>Paris</option>
+						<option>Lille</option>
+						<option>Nice</option>
+					</select>
+				</div>
+				<div class="margin1">
+					<select class="form-control select_mod">
+						<option>Code postal</option>
+						<option>75001</option>
+						<option>75002</option>
+						<option>75015</option>
+					</select>
+				</div>
+			</div>
+			<div class="mon-compte-btn">
+				<a href="#" class="btn btn-primary mon-compte-btn-valide" role="button">Valider</a>
+			</div>
+		</div>
+		<div class="lp-inside">
+			<!-- this is the info-optionnal part -->
+			<p class="mon-compte-title">Informations optionnelles</p>
+			<p class="mon-compte-subtitle2">Je suis :</p>
+			<div class="mon-compte-select">
+				<button type="button" class="mon-compte-btn-select" id="btn-couple" >En couple</button>
+				<button type="button" class="mon-compte-btn-select" id="btn-celibataire" >C&eacute;ilbataire</button>
+				<button type="button" class="mon-compte-btn-select" id="btn-non-renseigne" >Non renseign&eacute;</button>
+			</div>
+			<div class="mon-compte-btn">
+				<a href="#" class="btn btn-primary mon-compte-btn-valide" role="button">Valider</a>
+			</div>
+		</div>
+		<div class="lp-inside">
+			<!-- this is the info-compte part -->
+			<p class="mon-compte-title">Informations du compte</p>
+			<div class="mon-compte-info-inline">
+				<p class="mon-compte-subtitle3">Date d’inscription :</p>
+				<p class="mon-compte-info-output text-size2">XX/XX/XXXX</p>
+			</div>
+			<div class="mon-compte-info-inline">
+				<p class="mon-compte-subtitle3">E-mail :</p>
+				<p class="mon-compte-info-output text-size2">XXXXX@XXX.XXX</p>
+			</div>
+			<div class="mon-compte-info-inline margin1" id="mon-compte-block-mdp">
+				<p class="mon-compte-subtitle3">Mot de passe :</p>
+				<div id="info-compte-link">
+					<a class="mon-compte-link text-size2" id="mon-compte-change-mdp" onclick="change_mdp()">Clique pour changer de mot de passe</a>
+				</div>
+			</div>
+			<div class="mon-compte-new-mdp" id="mon-compte-block-new-mdp">
+				<div class="mon-compte-input2">
+					<input type="text" class="form-control" id="email_inscrit1"placeholder="nouveau mot de passe">
+					<span aria-hidden="true" data-icon="&#xe62d" class="icon-valider " id="icon-new-mdp"></span>
+				</div>
+				<div class="mon-compte-input2">
+					<input type="text" class="form-control" id="email_inscrit1"placeholder="Confirmation du mot de passe">
+					<span aria-hidden="true" data-icon="&#xe62d" class="icon-valider" id="icon-new-confirmation-mdp"></span>
+				</div>
+				<div class="mon-compte-btn2">
+					<a href="#" class="btn btn-primary mon-compte-btn-valide" role="button">Valider</a>
+				</div>
+			</div>
+			
+			<div>
+				<p class="mon-compte-subtitle2 text-size1">Quitter la communauté ?
+				<span class="mon-compte-delete-compte">
+					<a class="mon-compte-link text-size1">Supprimer mon compte</a>
+				</span>
+				</p>
+			</div>
+		</div>
+	</div>
+
+
+<script src="../../js/costumejs.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

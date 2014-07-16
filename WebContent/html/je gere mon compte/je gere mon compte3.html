@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.css" />
+<link rel="stylesheet" type="text/css" href="../../css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="../../css/costumestyle.css" />
+<link rel="stylesheet" type="text/css" href="../../css/style_gerer_compte.css" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css" />
+<link rel="stylesheet" type="text/css" href="../../css/style-google-font.css" />
+<link rel="stylesheet" type="text/css" href="../../css/style-level-star.css" />
+<link rel="stylesheet" type="text/css" href="../../css/checkbox-icon.css" />
+<meta charset="UTF-8">
+<title>c'est la 3 partie de "gerer mon compte"</title>
+</head>
+<body class="body-test">
+	<div class="leftpanel">
+		<div class="lp-inside">
+			<!-- this is the info-profil part -->
+			<p class="mon-compte-title">Je cherche des passionnés de :</p>
+			<p class="mon-compte-subtitle1">SPORT</p>
+			<div class="mon-compte-theme" id="mon-compte-sport">
+				<!-- to add the activities here -->
+			</div>
+			<p class="mon-compte-subtitle1">GASTRONOMIE</p>
+			<p class="mon-compte-subtitle1">MUSIQUE</p>
+			<p class="mon-compte-subtitle1">MODE</p>
+			<p class="mon-compte-subtitle1">VOYAGE</p>
+			<p class="mon-compte-subtitle1">JEU VID&Eacute;O</p>
+			<p class="mon-compte-subtitle1">CULTURE</p>
+			<p class="mon-compte-subtitle1">JEU DE TABLE</p>
+			<div>
+				<div class="mon-compte-btn">
+					<a href="#" class="btn btn-primary mon-compte-btn-valide" role="button" onclick="show_ajoute_activite()">
+						<span class="glyphicon glyphicon-plus-sign" id="mon-compte-icon-add"></span>
+						<span>Ajouter une activité</span>
+					</a>
+				</div>
+				<div id="ajoute-activite">
+					<p class="mon-compte-subtitle1 text-size4">Universe</p>
+					<div class="margin1">
+						<select class="form-control select_mod">
+							<option>Sport</option>
+							<option>Gastronomie</option>
+							<option>Musique</option>
+							<option>Mode</option>
+							<option>Voyage</option>
+							<option>Jeu vid&eacute;o</option>
+							<option>Culture</option>
+							<option>Jeu de table</option>
+						</select>
+					</div>
+					<p class="mon-compte-subtitle1 text-size4">Genre de l’activit&eacute;</p>
+					<div class="margin1">
+						<select class="form-control select_mod">
+							<option>Raquette</option>
+							<option>A</option>
+							<option>B</option>
+							<option>C</option>
+							<option>D</option>
+						</select>
+					</div>
+					<p class="mon-compte-subtitle1 text-size4">Activit&eacute;</p>
+					<div class="margin1">
+						<select class="form-control select_mod">
+							<option>Tennis</option>
+							<option>blabla</option>
+							<option>clacla</option>
+							<option>dladla</option>
+							<option>olaola</option>
+						</select>
+					</div>
+					<p class="mon-compte-subtitle1 text-size4">Niveau (optionnel) :</p>
+					<div class="margin1">
+						<div id="rateMe">  
+						    <a onclick="rateIt(1,this)" id="1_1" name="Débutant" onmouseover="rating(1,this)" onmouseout="off(1,this)"></a>  
+						    <a onclick="rateIt(1,this)" id="1_2" name="Amateur" onmouseover="rating(1,this)" onmouseout="off(1,this)"></a>  
+						    <a onclick="rateIt(1,this)" id="1_3" name="Confirme" onmouseover="rating(1,this)" onmouseout="off(1,this)"></a>  
+						    <a onclick="rateIt(1,this)" id="1_4" name="Expert" onmouseover="rating(1,this)" onmouseout="off(1,this)"></a>  
+						</div>
+						<p id="rateStatus">Découverir</p>  
+						<p id="ratingSaved">resultat</p> 
+					</div>
+					<p class="mon-compte-subtitle1 text-size4">Ton activit&eacute; n’est pas list&eacute;e :</p>
+					<div class="marign1">
+						<input type="text" class="form-control input_mod input-center" placeholder="Autre...">
+					</div>
+					<p class="mon-compte-subtitle1 text-size4">Je cherche un partenaire pour :</p>
+					<div class="mon-compte-partenaire">
+						<p class="text-size2 color_grey2">
+							<input id="partenaire-pratiquer" type="checkbox">
+							<label for="partenaire-pratiquer">&nbsp;Pratiquer</label>
+						</p>
+						<p class="text-size2 color_grey2">
+							<input id="partenaire-assist" type="checkbox">
+							<label for="partenaire-assist">&nbsp;Assister &agrave; des &eacute;v&eacute;nements</label>
+						</p>
+					</div>
+					<p class="mon-compte-subtitle1 text-size4">Disponibilit&eacute;s (optionnel) :</p>
+					<div class="mon-compte-select">
+						<a href="#" class="mon-compte-btn-select" role="button">Lun.</a>
+						<a href="#" class="mon-compte-btn-select" role="button">Mar.</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+<script src="../../js/level-star.js"></script>
+<script src="../../js/costumejs.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

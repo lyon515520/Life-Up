@@ -1,0 +1,373 @@
+@CHARSET "UTF-8";
+
+.rightpanel{
+	background-color: rgb(235,235,233);
+	width:269px;;
+	height:100%;
+}
+.rp-profil{
+	background-color: rgb(255,255,255);
+	width:260px;
+	height:89px;
+	margin:0px 6px 6px 3px;
+	border: transparent;
+	border-radius: 2px;
+}
+.rp-activity{
+	background-color: rgb(255,255,255);
+	width:260px;
+	margin:0px 6px 6px 3px;
+	border: transparent;
+	border-radius: 2px;
+}
+.rp-participer{
+	background-color: rgb(255,255,255);
+	width:260px;
+	margin:0px 6px 6px 3px;
+	border: transparent;
+	border-radius: 2px;
+}
+.profil-img{
+	float:left;
+	overflow: hidden;
+}
+.profil-info{
+	overflow: hidden;
+	float:left;
+	margin-top:24px;
+}
+.profil-image{
+	border: transparent;
+	width: 54px;
+	height: 54px;
+	border-radius: 54px;
+	margin: 17.5px 10px 17.5px 10px;
+}
+.profil-name{
+	color: rgb(111,111,111);
+	font-size:14.4px;
+}
+.profil-link{
+	color: rgb(20,192,221);
+	font-size:14.4px;
+	margin-top:-10px;
+}
+.profil-link:hover,
+.profil-link:active{
+	color: rgb(21,160,242);
+}
+.profil-cross{
+	float: left;
+	overflow: hidden;
+	margin-top:3px;
+	margin-left:30px;
+	color: rgb(235,235,233);
+}
+.profil-cross:hover,
+.profil-cross:active{
+	color: rgb(111,111,111);
+}
+
+/*----------------------------------------------*/
+.Calendar {
+    font-size:13.8px;
+    background-color: rgb(255,255,255);
+    text-align:center;
+    width:260px;
+    height:280.5px;
+    padding:10px;
+    line-height:1.5em;
+    border-radius:2px;
+    margin: 0 6px 6px 3px;
+}
+.Calendar a{
+    color: rgb(255,255,255);
+    display: block;
+}
+
+.Calendar table{
+	width:100%;
+	border:0;
+	border-collapse: separate;
+	border-spacing: 3px;
+	color: rgb(255,255,255);
+}
+
+.Calendar table thead{
+	color:rgb(134,134,134);
+}
+
+.Calendar table td {
+    width: 31px;
+    border-radius: 2px;
+}
+.onEvent{
+    font-weight:bold;
+    background-color: rgb(235,101,49);
+    border: transparent;
+	border-radius: 2px;
+}
+.onEvent:hover{
+	background-color: rgb(227,83,27);
+}
+#idCalendarPre{
+    cursor:pointer;
+    float:left;
+    padding-left:5px;
+}
+#idCalendar{
+	background-color: rgb(179,179,179);
+}
+#idCalendarNext{
+    cursor:pointer;
+    float:right;
+    padding-right:5px;
+}
+#idCalendarAgenda{
+	font-size: 18px;
+	color: rgb(134,134,134);
+	margin: 18px 0px;
+	text-align: center;
+}
+#idCalendarHead{
+	color: rgb(255,255,255);
+	background-color: rgb(235,101,49);
+	padding: 10px 0px;
+	border: transparent;
+	border-radius: 2px;
+}
+#idCalendar td.onToday {
+    font-weight:bold;
+    background-color: rgb(20,192,221);
+}
+#idCalendar td.onToday:hover{
+	background-color: rgb(21,160,242);
+}
+#idCalendar td.onSelect {
+    font-weight:bold;
+    background-color: rgb(235,101,49);
+}
+.calendarEventBlock{
+	background-color: rgb(255,255,255);
+	width:260px;
+    height:100%;
+    margin:0 6px 6px 3px;
+    border-radius: 2px;
+    display: none;
+}
+.calendarEvent{
+	margin:10px auto 10px -30px;
+}
+.calendarEventLink{
+	color: rgb(134,134,134);
+	cursor: pointer;
+}
+.calendarEventLink:hover{
+	color: rgb(111,111,111);
+}
+
+/*-------------------------------------------------*/
+.item-avtivity1{
+	margin: 18px 10px 18px 10px;
+	display: inline-block;
+	width: 100%;
+	cursor: pointer;
+}
+.item-avtivity2{
+	margin: 0px 10px 18px 10px;
+	display: none;
+}
+.activity-img{
+	float:left;
+	overflow: hidden;
+}
+.activity-image{
+	border: transparent;
+	width: 32px;
+	height: 32px;
+	border-radius: 32px;
+}
+.activity-info{
+	float: left;
+	overflow: hidden;
+	margin-left: 10px;
+}
+.activity-name{
+	font-size: 14.4px;
+	color: rgb(134,134,134);
+	margin: -6px 0 auto 0;
+}
+.activity-time{
+	font-size: 12px;
+	color: rgb(179,179,179);
+	margin-left: 1px;
+}
+.activity-divide{
+}
+.activity-hr{
+	width: 240px;
+	size: 2px;
+	border: 0;
+	border-top: 1px solid rgb(204,204,204);
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.activity-arrow{
+	text-align: center;
+	margin-top: -14px;
+	padding-bottom: 6px;
+}
+.activity-arrow-link{
+	cursor:pointer;
+	display: block;
+}
+.activity-detail-name{
+	color: rgb(134,134,134);
+	margin: -6px 0 auto 0;
+}
+.orange::before{
+	font-size: 12px;
+	color: rgb(235,101,49);
+}
+.grey134::before{
+	font-size: 12px;
+	color: rgb(134,134,134);
+}
+.grey179::before{
+	font-size: 12px;
+	color: rgb(179,179,179);
+}
+.activity-detail1{
+	float: left;
+	overflow: hidden;
+	margin-left: 10px;
+}
+.activity-detail-note{
+	color: rgb(134,134,134);
+}
+.activity-detail-item{
+	display: block;
+	color: rgb(134,134,134);
+	margin-top: 14px;
+}
+.activity-item-name{
+}
+.activity-detail-item-title{
+	font-size:12px;
+	margin-bottom:6px;
+}
+.color-grey134{
+	color: rgb(134,134,134);
+}
+.activity-detail-maps{
+	margin-top: 10px;
+    width:230px;
+    height:130px;
+}
+#google-maps {
+    border:transparent;
+    border-radius: 2px;
+}
+#activity-button-orange{
+	background-color: rgb(235,101,49);
+	border: transparent;
+	text-shadow: none;
+	color: rgb(255,255,255);
+	margin-right: 20px;
+	margin-left: 10px;
+}
+#activity-button-orange:hover{
+	background-color: rgb(227,83,27);
+}
+#activity-button-orange:focus{
+	outline:0;
+}
+#activity-button-grey{
+	background-color: rgb(153,153,153);
+	border: transparent;
+	text-shadow: none;
+	color: rgb(255,255,255);
+}
+#activity-button-grey:hover{
+	background-color: rgb(109,101,98);
+}
+#activity-button-grey:focus{
+	outline:0;
+}
+.activity-more-detail{
+	text-align: center;
+}
+#activity-more-detail-link{
+	color: rgb(21,160,242);
+}
+.activity-detail-top{
+	overflow: hidden;
+	padding-top: 18px;
+}
+
+/*-------------------------------------------------*/
+.item-participer{
+	margin: 18px 10px 18px 10px;
+	display: inline-block;
+	width: 100%;
+}
+.participer-img{
+	float:left;
+	overflow: hidden;
+}
+.participer-image{
+	border: transparent;
+	width: 32px;
+	height: 32px;
+	border-radius: 32px;
+}
+.participer-info{
+	float: left;
+	overflow: hidden;
+	margin-left: 10px;
+	margin-top: -3px;
+}
+.participer-name{
+	font-size: 14.4px;
+	color: rgb(134,134,134);
+}
+.participer-age-ville{
+	font-size: 12px;
+	color: rgb(179,179,179);
+	margin-left: 1px;
+}
+.participer-choice{
+	float: right;
+	overflow: hidden;
+	margin-right: 30px;
+	margin-top: -8px;
+}
+.participant-accept::before{
+	display:none;
+	color: rgb(222,222,222);
+}
+.participant-refuse::before{
+	display:none;
+	color: rgb(222,222,222);
+}
+.item-participer:hover .participant-accept::before{
+	display: block;
+}
+.item-participer:hover .participant-refuse::before{
+	display: block;
+}
+.participant-accept:hover::before{
+	color: rgb(227,83,27);
+}
+.participant-refuse:hover::before{
+	color: rgb(109,101,98);
+}
+.participer-choice-icon{
+	cursor: pointer;
+}
+.rp-title{
+	padding: 18px 10px 0px 10px;
+	width: 100%;
+	color: rgb(134,134,134);
+	font-size: 14.4px;
+}

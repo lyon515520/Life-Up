@@ -1,6 +1,9 @@
 @CHARSET "UTF-8";
+.body-test{
+	background-color: rgb(0,0,0);
+}
 body{
-	background-color: rgb(235,235,233);	
+	background-color: rgb(255,255,255);	
 }
 
 .page-landing{
@@ -8,12 +11,12 @@ body{
 }
 
 .head-landing-image{
-	background-image:url(../image/test-1900px.png);
+	background-image:url(../image/landing-page-image-preinscription.jpg);
 	background-repeat: no-repeat no-repeat;
 	background-position:center 0;
 	background-attachment: scroll;
 	width:100%;
-	height:611px;
+	height:540px;
 	min-width:960px;
 	position: relative;
 	
@@ -38,16 +41,18 @@ body{
 .landing-head-email{
 	float: left;
 	margin-left:330px;
+	margin-top:18px;
 }
 
 .landing-head-mdp{
-	float:left;
-	margin-left:6px;
+	float: left;
+	margin-left: 6px;
+	margin-top: 18px;
 }
 
 .landing-head-button{
 	float: left;
-	margin-left: 30px;
+	margin-left: 6px;
 }
 
 .landing-text1{
@@ -61,6 +66,7 @@ body{
 	font-size:35px;
 	color: white;
 	font-weight: bold;
+	text-shadow: 0px 10px 8px rgba(134,134,134,1);
 }
 
 
@@ -92,7 +98,9 @@ border-style:none;
 	color: rgb(134,134,134);
 }
 
-
+.color_grey2{
+	color: rgb(111,111,111);
+}
 
 .page{
 	min-height: 100%;
@@ -146,7 +154,9 @@ border-style:none;
 	vertical-align: initial;
 	white-space: nowrap;
 }
-
+a{
+	cursor: pointer;
+}
 a:hover{
 	text-decoration: none;
 	color: rgb(255,255,255);
@@ -462,6 +472,7 @@ ul{
 	width:184px;
 	padding:1px 12px;
 	height: 24px;
+	color: rgb(134,134,134);
 }
 
 .center_component{
@@ -1708,7 +1719,13 @@ fieldset[disabled] .btn-plus-min.active {
 #landing-email{
 	width:170px;
 	height:22px;
-	font-size:10px;
+	padding:0 12px;
+}
+
+#landing-password{
+	width:170px;
+	height:22px;
+	padding:0 12px;
 }
 
 #landing-email-cb{
@@ -1731,7 +1748,15 @@ fieldset[disabled] .btn-plus-min.active {
 	font-size: 10px;
 	padding: 1.2px;
 	margin-top: 18px;
-	margin-left:6px;
+}
+
+#landing-head-inscription{
+	width: 80px;
+	height: 22px;
+	font-size: 10px;
+	padding: 1.2px;
+	margin-top: 18px;
+	margin-left:30px;
 }
 
 #landing-button1{
@@ -2048,6 +2073,13 @@ fieldset[disabled] .btn-plus-min.active {
 	margin: 10px 0 100px 0;
 }
 
+.landing-p6{
+	font-size:17.45px;
+	margin: 170px 0 100px 40px;
+	float:left;
+	color: rgb(235,101,49);
+}
+
 .landing-brown2{
 	width:100%;
 	height: 287px;
@@ -2097,6 +2129,12 @@ fieldset[disabled] .btn-plus-min.active {
 	color: rgb(235,101,49);
 }
 
+.landing-white2-bottom{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	overflow: hidden;
+}
+
 #landing-image1{
 	height:101.6px;
 	width:110.5px;
@@ -2135,7 +2173,21 @@ fieldset[disabled] .btn-plus-min.active {
 	
 }
 
+#landing-button4{
+	width:279px;
+	font-weight: normal;
+	margin-top: 40px;
+	margin-bottom: 70px;
+	
+}
+
 #landing-image7{
 	height:101.6px;
 	width:110.5px;
+}
+
+#landing-image8{
+	height:437px;
+	width:406px;
+	float:left;
 }

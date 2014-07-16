@@ -1,0 +1,230 @@
+@CHARSET "UTF-8";
+.leftpanel{
+	width: 691px;
+	display: inline-block;
+	background-color: rgb(235,235,233);
+}
+.lp-inside{
+	width: 682px;
+	margin: 0px 3px 6px 6px;
+	display: inline-block;
+	background-color: rgb(255,255,255);
+	border: transparent;
+	border-radius: 2px;
+}
+.mon-compte-title{
+	font-size: 14.4px;
+	color: rgb(50,40,38);
+	text-align: center;
+	margin: 18px auto;
+}
+.mon-compte-hr{
+	width: 97%;
+	size: 2px;
+	border: 0;
+	border-top: 1px solid rgb(50,40,38);
+	margin-top: 0;
+	margin-bottom: 0;
+	text-align: center;
+}
+.mon-compte-subtitle1{
+	color: rgb(134,134,134);
+	font-size: 14.4px;
+	margin: 18px 20px;
+	width: 200px;
+}
+.mon-compte-subtitle2{
+	color: rgb(134,134,134);
+	font-size: 14.4px;
+	margin: 18px 20px 14px 20px;
+}
+.mon-compte-subtitle3{
+	color: rgb(134,134,134);
+	font-size: 14.4px;
+	margin: 18px 20px 0px;
+	width: 200px;
+}
+.mon-compte-input1{
+	margin-left: 136px;
+	display: -webkit-inline-box;
+}
+.mon-compte-input2{
+	display: -webkit-inline-box;
+	margin: 10px 190px;
+	width: 100%;
+}
+.margin2{
+	margin-top: 18px;
+}
+.mon-compte-btn{
+	text-align: center;
+	margin: 24px auto 18px auto;
+}
+.mon-compte-btn2{
+	text-align: center;
+	margin: 14px auto 18px auto;
+}
+.mon-compte-btn-valide{
+	display: inline;
+	font-size: 14.4px;
+	padding: 3px 12px;
+}
+.mon-compte-info-inline{
+	display: -webkit-inline-box;
+	width: 600px;
+}
+.mon-compte-info-output{
+	margin: 20px auto 0px;
+}
+.mon-compte-link{
+	color: rgb(20,192,221);
+}
+.mon-compte-link:hover{
+	color: rgb(21,160,242);
+}
+#info-compte-link{
+	padding-top: 20px;
+	margin: auto;
+}
+.mon-compte-new-mdp{
+	margin:10px auto;
+	display: none;
+}
+#icon-new-mdp{
+	display: none;
+}
+#icon-new-confirmation-mdp{
+	display: none;
+}
+.mon-compte-delete-compte{
+	margin-left: 310px;
+}
+.mon-compte-btn-select{
+	display: inline-block;
+	font-weight: normal;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	background-image: none;
+	border: 1px solid transparent;
+	white-space: nowrap;
+	font-size: 14.4px;
+	line-height: 1.4;
+	border-radius: 2px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	color: rgb(134,134,134);
+	border-color: #cccccc;
+	height: 25px;
+	width: 120px;
+	margin: 0px 3px;
+	background-color: rgb(255,255,255);
+}
+.mon-compte-select{
+	text-align: center;
+}
+#btn-femme:focus{
+	color: rgb(255,255,255);
+	border-color: rgb(134,134,134);
+	background-color: rgb(134,134,134);
+	outline: 0;
+	
+}
+#btn-homme:focus{
+	color: rgb(255,255,255);
+	border-color: rgb(134,134,134);
+	background-color: rgb(134,134,134);
+	outline: 0;
+}
+#btn-couple:{
+	width:120px;
+}
+#btn-couple:focus{
+	color: rgb(255,255,255);
+	border-color: rgb(134,134,134);
+	background-color: rgb(134,134,134);
+	outline: 0;
+}#btn-celibataire:focus{
+	color: rgb(255,255,255);
+	border-color: rgb(134,134,134);
+	background-color: rgb(134,134,134);
+	outline: 0;
+}#btn-non-renseigne:focus{
+	color: rgb(255,255,255);
+	border-color: rgb(134,134,134);
+	background-color: rgb(134,134,134);
+	outline: 0;
+}
+
+/*------------------------------------------------------*/
+.mon-compte-context{
+	width: 94%;
+	margin: 18px auto;
+	color: rgb(134,134,134);
+}
+.mon-compte-context2{
+	width: 94%;
+	margin: 10px auto;
+	color: rgb(235,101,49);
+}
+.mon-compte-explique{
+	width: 94%;
+	height: 124px;
+	margin:18px auto;
+}
+.mon-compte-btn-delete-block{
+	text-align: center;
+	margin: 18px auto;
+}
+.mon-compte-btn-delete{
+	width: 164px;
+	height: 23px;
+	font-size: 14.4px;
+	padding: 1px 2px;
+}
+#btn-delete-no{
+	background-color: rgb(134,134,134);
+	border-color: rgb(134,134,134);
+}
+#btn-delete-no:hover{
+	background-color: rgb(111,111,111);
+	border-color: rgb(111,111,111);
+}
+.mon-compte-btn-activity{
+	width: 60px;
+	height: 23px;
+	font-size: 14.4px;
+	padding: 1px 2px;
+}
+#mon-compte-icon-add{
+	top:2.5px;
+	padding-right: 2px;
+}
+.icon-star-level::before{
+	color: rgba(235,101,49,0.5);
+}
+.level-star{
+	text-align: center;
+	cursor: pointer;
+}
+.input-center{
+	margin: 0 auto;
+}
+.mon-compte-partenaire{
+	margin-left: 270px;
+}
+#ajoute-activite{
+	display: none;
+}
+#mon-compte-notification{
+	float: left;
+}
+.mon-compte-notification-block{
+	margin: 18px auto;
+	float: left;
+}
+.mon-compte-notification1{
+	margin: 0 20px;
+}

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.css" />
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="../css/costumestyle.css" />
+<link rel="stylesheet" type="text/css" href="../css/style-rightpanel.css" />
+<link rel="stylesheet" type="text/css" href="../css/style.css" />
+<link rel="stylesheet" type="text/css" href="../css/style-google-font.css" />
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+<script type="text/javascript" src="../js/google-maps.js"></script>
+<script type="text/javascript" src="../js/calendar/calendar1.js"></script>
+<script src="../js/costumejs.js"></script>
+<title>c'est la partie de rightpanel</title>
+</head>
+
+<body class="body-test">
+	<div class="rightpanel">
+		<div class="rp-profil">
+			<!-- this is the first module -->
+			<div class="profil-img">
+				<img class="profil-image" src="../image/avatar.JPG"  alt="#" />
+			</div>
+			<div class="profil-info">
+				<p class="profil-name">
+					<span>Fabien</span>
+					<span>&nbsp;D.</span>
+				</p>
+				<a class="profil-link" href="#">Je compl&egrave;te mon profil</a>
+			</div>
+			<div class="profil-cross">
+				<p class="glyphicon glyphicon-remove" onclick="hide('.rp-profil')"></p>
+			</div>
+		</div>
+		<div class="Calendar">
+			<!-- this is the second module -->
+		  <div id="idCalendarAgenda"><p>Mon agenda</p></div>
+		  <div id="idCalendarHead">
+		  <div id="idCalendarPre"><span class="glyphicon glyphicon-backward"></span></div>
+		  <div id="idCalendarNext"><span class="glyphicon glyphicon-forward"></span></div>
+		  <span id="idCalendarMonth">juil</span>&nbsp;mois&nbsp;<span id="idCalendarYear">2014</span> 
+		  </div>
+		  <table>
+		    <thead>
+		      <tr>
+		        <td>dim.</td>
+		        <td>lun.</td>
+		        <td>mar.</td>
+		        <td>mer.</td>
+		        <td>jeu.</td>
+		        <td>ven.</td>
+		        <td>sam.</td>
+		      </tr>
+		    </thead>
+		    <tbody id="idCalendar">
+		    </tbody>
+		  </table>
+		</div>
+		<div class="calendarEventBlock" id="test1">
+			<ul>
+				<li class="calendarEvent">
+					<a class="calendarEventLink"><span class="glyphicon glyphicon-asterisk"></span>&nbsp;&nbsp;this is the event1</a>
+				</li>
+				<li class="calendarEvent">
+					<a class="calendarEventLink"><span class="glyphicon glyphicon-asterisk"></span>&nbsp;&nbsp;this is the event2</a>
+				</li>
+				<li class="calendarEvent">
+					<a class="calendarEventLink"><span class="glyphicon glyphicon-asterisk"></span>&nbsp;&nbsp;this is the event3</a>
+				</li>
+			</ul>
+		</div>
+		<div class="rp-activity">
+			<!-- this is the third module -->
+			<div class="rp-title">
+				<p>Participer &agrave; ces activit&eacute;s ?</p>
+			</div>
+			<div  onmouseover="show_detail('#activity1')" onmouseout="hide_detail('#activity1')">
+				<div class="item-avtivity1" id="activity1zip">
+					<div class="activity-img">
+						<img class="activity-image" src="../image/activity-img1.JPG"  alt="#" />
+					</div>
+					<div class="activity-info">
+						<p class="activity-name">
+							<span aria-hidden="true" data-icon="&#xe622" class="icon-publique" ></span>
+							<span aria-hidden="true" data-icon="&#xe60e" class="icon-evenement" ></span>
+							<span>Badminton</span>
+						</p>
+						<p class="activity-time">
+							Sam. 14 juin 22h00 
+						</p>
+					</div>
+				</div>
+				<div class="item-avtivity2" id="activity1">
+					<div class="activity-detail-top">
+						<div class="activity-img">
+							<img class="activity-image" src="../image/activity-img1.JPG"  alt="#" />
+						</div>
+						<div class="activity-detail1">
+							<p class="activity-detail-name">
+								<span class="text-size2">Pauline</span>
+								<span class="text-size4">22</span>
+								<span class="text-size4">,</span>
+								<span class="text-size4">Lille</span>
+							</p>
+							<p class="activity-detail-note">
+								<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note orange" ></span>
+								<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note orange" ></span>
+								<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note orange" ></span>
+								<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note grey134" ></span>
+								<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note grey134" ></span>
+								<span class="text-size2">12 notes</span>
+							</p>
+						</div>
+					</div>
+					<div>				
+						<div class="activity-detail-item">
+							<p class="activity-item-name">
+								<span aria-hidden="true" data-icon="&#xe622" class="icon-publique" ></span>
+								<span aria-hidden="true" data-icon="&#xe60e" class="icon-evenement" ></span>
+								<span>Badminton</span>
+								<span aria-hidden="true" data-icon="&#xe626" class="icon-star-level grey134" ></span>
+								<span aria-hidden="true" data-icon="&#xe626" class="icon-star-level grey134" ></span>
+								<span aria-hidden="true" data-icon="&#xe626" class="icon-star-level grey134" ></span>
+								<span aria-hidden="true" data-icon="&#xe626" class="icon-star-level grey179" ></span>
+							</p>
+						</div>
+						<div class="activity-detail-item">
+							<div class="activity-detail-item-title">
+								<p class="color-orange">Date</p>
+							</div>
+							<div class="text-size4">
+								<p>Sam. 14 juin  2014</p>
+							</div>
+						</div>
+						<div class="activity-detail-item">
+							<div class="activity-detail-item-title">
+								<p class="color-orange">Lieu</p>
+							</div>
+							<div class="text-size4">
+								<p>Arbonnoise, 06 allée des capucines, 59650</p>
+								<p>Villeneuve d’Ascq</p>
+							</div>
+							<div class="activity-detail-maps" id="google-maps"></div>
+						</div>
+						<div class="activity-detail-item">
+							<div class="activity-detail-item-title">
+								<p>
+									<span class="color-orange text-size4">Participants :</span>
+									<span class="color-grey134 text-size4">3/4</span>
+								</p>
+							</div>
+						</div>
+						<div class="activity-detail-item">
+							<div class="activity-detail-item-title">
+								<input type="submit" class="btn btn-default text-size4" id="activity-button-orange" value="Je participe !" >
+								<input type="submit" class="btn btn-default text-size4" id="activity-button-grey" value="Pas cette fois" >
+							</div>
+						</div>
+						<div class="activity-detail-item">
+							<div class="activity-more-detail">
+								<a class="profil-link" href="#">Plus de détails</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="activity-divide">
+				<hr class="activity-hr"/>
+			</div>
+			<div class="item-avtivity1">
+				<div class="activity-img">
+					<img class="activity-image" src="../image/activity-img2.JPG"  alt="#" />
+				</div>
+				<div class="activity-info">
+					<p class="activity-name">
+						<span aria-hidden="true" data-icon="&#xe620" class="icon-prive" ></span>
+						<span aria-hidden="true" data-icon="&#xe61e" class="icon-pratique" ></span>
+						<span>Rugby</span>
+					</p>
+					<p class="activity-time">
+						lun. 16 juin 19h00 
+					</p>
+				</div>
+			</div>
+			<div class="activity-divide">
+				<hr class="activity-hr"/>
+			</div>
+			<div class="item-avtivity1">
+				<div class="activity-img">
+					<img class="activity-image" src="../image/activity-img3.JPG"  alt="#" />
+				</div>
+				<div class="activity-info">
+					<p class="activity-name">
+						<span aria-hidden="true" data-icon="&#xe620" class="icon-prive" ></span>
+						<span aria-hidden="true" data-icon="&#xe60e" class="icon-evenement" ></span>
+						<span>Musculation</span>
+					</p>
+					<p class="activity-time">
+						jeu. 19 juin 12h30 
+					</p>
+				</div>
+			</div>
+			<div class="activity-arrow">
+				<a class="activity-arrow-link" href="#">
+					<span aria-hidden="true" data-icon="&#xe60c" class="icon-elargir" ></span>
+				</a>
+			</div>				
+		</div>
+		<div class="rp-participer">
+			<!-- this is the forth module -->
+				<div class="rp-title">
+					<p>Accepter ces passionn&eacute;s ?</p>
+				</div>
+				<div class="item-participer">
+					<div class="participer-img">
+						<img class="participer-image" src="../image/participer-img1.JPG"  alt="#" />
+					</div>
+					<div class="participer-info">
+						<p class="participer-name">
+							<span>David</span>
+						</p>
+						<p class="participer-age-ville">
+							<span>23</span>
+							<span>Lille</span>
+						</p>
+					</div>
+					<div class="participer-choice">
+						<p class="participer-choice-icon"><span aria-hidden="true" data-icon="&#xe133" class="icon-valider-contact participant-accept"></span></p>
+						<p class="participer-choice-icon"><span aria-hidden="true" data-icon="&#xe134" class="icon-refuser-contact participant-refuse"></span></p>
+					</div>
+				</div>
+				<div class="activity-divide">
+					<hr class="activity-hr"/>
+				</div>
+				<div class="item-participer">
+					<div class="participer-img">
+						<img class="participer-image" src="../image/participer-img2.JPG"  alt="#" />
+					</div>
+					<div class="participer-info">
+						<p class="participer-name">
+							<span>Pierre</span>
+						</p>
+						<p class="participer-age-ville">
+							<span>35</span>
+							<span>Nice</span>
+						</p>
+					</div>
+					<div class="participer-choice">
+						<p class="participer-choice-icon"><span aria-hidden="true" data-icon="&#xe133" class="icon-valider-contact participant-accept"></span></p>
+						<p class="participer-choice-icon"><span aria-hidden="true" data-icon="&#xe134" class="icon-refuser-contact participant-refuse"></span></p>
+					</div>
+				</div>
+				<div class="activity-divide">
+					<hr class="activity-hr"/>
+				</div>
+								<div class="item-participer">
+					<div class="participer-img">
+						<img class="participer-image" src="../image/participer-img3.JPG"  alt="#" />
+					</div>
+					<div class="participer-info">
+						<p class="participer-name">
+							<span>Yve</span>
+						</p>
+						<p class="participer-age-ville">
+							<span>27</span>
+							<span>Paris</span>
+						</p>
+					</div>
+					<div class="participer-choice">
+						<p class="participer-choice-icon"><span aria-hidden="true" data-icon="&#xe133" class="icon-valider-contact participant-accept"></span></p>
+						<p class="participer-choice-icon"><span aria-hidden="true" data-icon="&#xe134" class="icon-refuser-contact participant-refuse"></span></p>
+					</div>
+				</div>
+				<div class="activity-arrow">
+					<a class="activity-arrow-link" href="#">
+						<span aria-hidden="true" data-icon="&#xe60c" class="icon-elargir" ></span>
+					</a>
+				</div>								
+		</div>
+	</div>    
+	
+<script type="text/javascript" src="../js/calendar/calendar2.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
