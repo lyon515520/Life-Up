@@ -12,11 +12,7 @@
 
 </head>
   <body>
-  	<div style="margin-left: 650px;margin-top: 300px;">
-	  	<input id="a1" type="checkbox"><label for="a1">&nbsp;&nbsp;Pratiquer</label>
-	  	<br>
-	  	<input id="a2" type="checkbox">Assister à des événements
-	</div>
+	<input type="text" class="form-control input_mod" maxlength="10" onkeyup="value=value.replace(/[\W]/g,'') "onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" placeholder="code test">
   </body>
 <script type="text/javascript" src="../js/test.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

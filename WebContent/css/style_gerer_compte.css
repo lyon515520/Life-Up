@@ -53,6 +53,10 @@
 	margin: 10px 190px;
 	width: 100%;
 }
+.mon-compte-input3{
+	display: -webkit-inline-box;
+	width: 100%;
+}
 .margin2{
 	margin-top: 18px;
 }
@@ -221,10 +225,64 @@
 #mon-compte-notification{
 	float: left;
 }
-.mon-compte-notification-block{
+.mon-compte-notification-block1{
 	margin: 18px auto;
 	float: left;
 }
 .mon-compte-notification1{
 	margin: 0 20px;
+}
+.mon-compte-notification-block2{
+	width: 100%;
+	float: left;
+	margin: 2px 20px;
+}
+.mon-compte-notification2{
+	margin: 18px 0;
+}
+#notification-valide{
+	float: left;
+	width: 100%;
+}
+.mon-compte-panel{
+	border: transparent;
+	margin: 14px 20px;
+}
+.mon-compte-panel-heading{
+	border: transparent;
+	background-image: none;
+	background-color: white;
+	color: rgb(235,101,49);
+}
+.mon-compte-panel-title{
+	
+}
+.mon-compte-question:hover{
+	color: rgb(223,87,27);
+}
+.mon-compte-panel-bady{
+	border: transparent;
+	margin: 8px 0 0 0;
+}
+.mon-compte-faq-contact{
+	margin: 14px 20px;
+}
+#mon-compte-code-parrain{
+	width: 197px;
+	height: 24px;
+	margin: 0px auto;
+}
+.mon-compte-invite-ami-block{
+	width: 100%;
+}
+.mon-compte-invite-img{
+	width: 23px;
+	height: 23px;
+}
+.mon-compte-invite-link{
+	width: 100px;
+	margin: 0 auto 14px auto;
+}
+.mon-compte-invite-text{
+	text-align: center;
 }

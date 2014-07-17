@@ -8,6 +8,7 @@
 <link rel="stylesheet" type="text/css" href="../../css/style_gerer_compte.css" />
 <link rel="stylesheet" type="text/css" href="../../css/style.css" />
 <link rel="stylesheet" type="text/css" href="../../css/style-google-font.css" />
+<link rel="stylesheet" type="text/css" href="../../css/checkbox-icon.css" />
 <title>c'est la 4 partie de "gerer mon compte"</title>
 </head>
 <body class="body-test">
@@ -16,14 +17,14 @@
 			<!-- this is the info-profil part -->
 			<p class="mon-compte-title">Je choisis d’&ecirc;tre alert&eacute; pour :</p>
 			<p class="mon-compte-subtitle1" id="mon-compte-notification">Notifications :</p>
-			<div class="mon-compte-notification-block">
+			<div class="mon-compte-notification-block1">
 				<p class="text-size2 color_grey2">
 					<span class="mon-compte-notification1">
 						<input id="notification-email" type="checkbox">
 						<label for="notification-email">&nbsp;e-mail</label>
 					</span>
 					<span class="mon-compte-notification1">
-						<input id="nofitication-mobile" type="checkbox">
+						<input id="notification-mobile" type="checkbox">
 						<label for="notification-mobile">&nbsp;mobile</label>
 					</span>
 					<span class="mon-compte-notification1">	
@@ -32,11 +33,44 @@
 					</span>
 				</p>
 			</div>
+			<div class="mon-compte-notification-block2">
+				<p class="mon-compte-notification2 text-size2 color_grey2">
+						<input id="notification1" type="checkbox">
+						<label for="notification1">&nbsp;Propositions d’activit&eacute;s d’ami</label>
+				</p>
+				<p class="mon-compte-notification2 text-size2 color_grey2">
+						<input id="notification2" type="checkbox">
+						<label for="notification2">&nbsp;Propositions d’activit&eacute;s non ami</label>
+				</p>
+				<p class="mon-compte-notification2 text-size2 color_grey2">
+						<input id="notification3" type="checkbox">
+						<label for="notification3">&nbsp;Quelqu’un a accept&eacute; ma proposition d’activit&eacute;</label>
+				</p>
+				<p class="mon-compte-notification2 text-size2 color_grey2">
+						<input id="notification4" type="checkbox">
+						<label for="notification4">&nbsp;Nouveau message d’un utilisateur ami</label>
+				</p>
+				<p class="mon-compte-notification2 text-size2 color_grey2">
+						<input id="notification5" type="checkbox">
+						<label for="notification5">&nbsp;Nouveau message d’un utilisateur non ami</label>
+				</p>
+				<p class="mon-compte-notification2 text-size2 color_grey2">
+						<input id="notification6" type="checkbox">
+						<label for="notification6">&nbsp;Quelqu’un m’a not&eacute;</label>
+				</p>
+				<p class="mon-compte-notification2 text-size2 color_grey2">
+						<input id="notification7" type="checkbox">
+						<label for="notification7">&nbsp;Nouvel inscrit partageant une passion recherchée</label>
+				</p>
+			</div>
+			<div class="mon-compte-btn" id="notification-valide">
+				<a href="#" class="btn btn-primary mon-compte-btn-valide" role="button">Valider</a>
+			</div>
+			
 		</div>
 	</div>
 	
 	
-<script src="../../js/costumejs.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 </body>
