@@ -286,3 +286,141 @@
 .mon-compte-invite-text{
 	text-align: center;
 }
+/*-----------------------------------------------------------------------------------*/
+.motive-list-head{
+	width:100%;
+	overflow: hidden;
+}
+.ml-head-img-block{
+	margin: 18px;
+	float: left;
+}
+.ml-head-img{
+	width: 120px;
+	height: 120px;
+	border-radius:60px;
+	border: transparent;
+}
+.ml-head-info-block{
+	margin-top: 18px;
+	float: left;
+}
+.ml-head-star-note2::before{
+	color: rgb(134,134,134);
+	font-size: 12px;
+}
+.ml-head-star-note1::before{
+	color: rgb(235,101,49);
+	font-size: 12px;
+}
+.ml-head-name{
+	color: rgb(50,40,38);
+	font-size: 24px;
+}
+.ml-head-link{
+	margin-right: 20px;
+}
+.ml-head-link-icon::before{
+	color: rgb(134,134,134);
+	font-size: 14.4px;
+	
+}
+.ml-head-link-text{
+	color: rgb(134,134,134);
+	font-size: 12px;
+}
+.ml-head-link:hover .ml-head-link-icon::before,
+.ml-head-link:hover .ml-head-link-text{
+	color: rgb(235,101,49);
+}
+.ml-tab{
+	width:33.33333%;
+	text-align: center;
+}
+.ml-tab-a{
+	background-color: rgb(179,179,179);
+	color: rgb(255,255,255);
+	font-size: 14.4px;
+}
+.ml-body-item{
+	overflow: hidden;
+}
+.ml-body-motive{
+	padding: 10px;
+	background-color: rgb(245,245,245);
+}
+.ml-body-img{
+	width: 60px;
+	height: 60px;
+	border: transparent;
+	border-radius: 30px;
+}
+.ml-body-img-block{
+	margin: 8px;
+	float: left;
+}
+.ml-body-info-block{
+	margin: 8px;
+	float: left;
+	width: 210px;
+}
+.ml-body-info-link{
+	color: rgb(134,134,134);
+	font-size: 10px;
+}
+.ml-body-info-link:hover{
+	color: rgb(235,101,49);
+}
+.ml-body-declaration-block{
+	float: left;
+	width: 230px;
+	height: 76px;
+	display: table;
+}
+.ml-body-button-block{
+	float: left;
+	margin: 8px auto 8px 30px;
+}
+.ml-body-button{
+	text-shadow: none;
+	font-size: 12px;
+	border: transparent;
+	background-color: rgb(179,179,179);
+	color: rgb(255,255,255);
+	width: 68px;
+	height: 17px;
+	padding: 0.7px 12px;
+	margin-top: -10px;
+	display: inline;
+}
+.ml-body-button:hover{
+	background-color: rgb(235,101,49);
+	color: rgb(255,255,255);
+}
+.ml-body-button-div1,
+.ml-body-button-div2{
+	height: 17px;
+    margin-bottom: 4.5px;
+}
+.ml-body-button-div3{ 
+	height: 17px;
+}
+.ml-body-declaration{
+	text-align: center;
+	vertical-align: middle;
+	display: table-cell;
+}
+.ml-body-button-icon::before{
+	color: rgb(255,255,255);
+	font-size: 10px;
+}
+.ml-body-button-icon{
+	top:2.5px;
+	padding-right: 2px;
+}
+.ml-body-button-ajoute{
+	padding: 0.7px 14px;
+}
+.ml-body-button-activite{
+	padding: 0.7px 14.25px;
+}

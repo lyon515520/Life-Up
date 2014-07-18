@@ -189,3 +189,48 @@
 .icon-refuser-contact:before {
 	content: "\e134";
 }
+.icon-d-lettre:before {
+	content: "\e60e";
+}
+.icon-s-lettre:before {
+	content: "\e61e";
+}
+.icon-v-lettre:before {
+	content: "\e633";
+}
+.icon-j-lettre:before {
+	content: "\e634";
+}
+.icon-m-lettre:before {
+	content: "\e635";
+}
+.icon-l-lettre:before {
+	content: "\e636";
+}
+.icon-a-lettre:before {
+	content: "\e637";
+}
+.icon-p-lettre:before {
+	content: "\e638";
+}
+.icon-apn:before {
+	content: "\e639";
+}
+.icon-geolocalisation:before {
+	content: "\e63a";
+}
+.icon-web:before {
+	content: "\e63b";
+}
+.icon-pionnier:before {
+	content: "\e63c";
+}
+.icon-female:before {
+	content: "\e63d";
+}
+.icon-male:before {
+	content: "\e63e";
+}
+.icon-disussion-mono:before {
+	content: "\e632";
+}

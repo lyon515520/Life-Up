@@ -93,7 +93,9 @@ border-style:none;
 .text-size4{
 	font-size:12px;
 }
-
+.color-orange{
+	color: rgb(235,101,49);
+}
 .color_grey1{
 	color: rgb(134,134,134);
 }
@@ -504,11 +506,6 @@ ul{
 
 .margin1{
 	margin-bottom: 8px;
-}
-
-
-.color-orange{
-	color: rgb(235,101,49);
 }
 
 .head-ul2{
