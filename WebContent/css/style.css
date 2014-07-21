@@ -51,6 +51,8 @@
 }
 .icon-contacts-menu:before {
 	content: "\e605";
+	color: rgb(134,134,134);
+	font-size: 12px;
 }
 .icon-creer-activite:before {
 	content: "\e606";
@@ -209,9 +211,13 @@
 }
 .icon-a-lettre:before {
 	content: "\e637";
+	color: rgb(134,134,134);
+	font-size: 12px;
 }
 .icon-p-lettre:before {
 	content: "\e638";
+	color: rgb(134,134,134);
+	font-size: 12px;
 }
 .icon-apn:before {
 	content: "\e639";

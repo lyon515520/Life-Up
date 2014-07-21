@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.css" />
 <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
@@ -9,6 +10,9 @@
 <link rel="stylesheet" type="text/css" href="../css/style.css" />
 <link rel="stylesheet" type="text/css" href="../css/style-google-font.css" />
 <link rel="stylesheet" type="text/css" href="../css/checkbox-icon.css" />
+<link rel="stylesheet" type="text/css" href="../css/style-rightpanel.css" />
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+<script type="text/javascript" src="../js/google-maps.js"></script>
 <title>c'est la partie de "motive liste"</title>
 </head>
 <body class="body-test">
@@ -62,13 +66,13 @@
 			<div class="motive-list-body">
 				<!-- this is the body of the body of motive list -->
 				<ul class="nav nav-tabs" role="tablist" id="myTab">
-				  <li class="ml-tab active"><a class="ml-tab-a" href="#home" role="tab" data-toggle="tab">Motiv&eacute;s</a></li>
-				  <li class="ml-tab"><a class="ml-tab-a" href="#profile" role="tab" data-toggle="tab">Groupe de motiv&eacute;s</a></li>
-				  <li class="ml-tab"><a class="ml-tab-a" href="#messages" role="tab" data-toggle="tab">Activit&eacute;s</a></li>
+				  <li class="ml-tab active"><a class="ml-tab-a" href="#motive" role="tab" data-toggle="tab">Motiv&eacute;s</a></li>
+				  <li class="ml-tab"><a class="ml-tab-a" href="#groupe" role="tab" data-toggle="tab">Groupe de motiv&eacute;s</a></li>
+				  <li class="ml-tab"><a class="ml-tab-a" href="#activity" role="tab" data-toggle="tab">Activit&eacute;s</a></li>
 				</ul>
 				
 				<div class="tab-content">
-				  <div class="tab-pane active" id="home">
+				  <div class="tab-pane" id="motive">
 				  	<div class="ml-body-motive">
 				  		<div class="ml-body-item">
 				  			<div class="ml-body-img-block">
@@ -81,11 +85,11 @@
 				  					<span class="text-size4 color_grey1">36 ans,Paris</span>
 				  				</p>
 				  				<p style="margin-top: -5px;">
-									<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-head-star-note1" ></span>
-									<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-head-star-note1" ></span>
-									<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-head-star-note1" ></span>
-									<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-head-star-note2" ></span>
-									<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-head-star-note2" ></span>
+									<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note1" ></span>
+									<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note1" ></span>
+									<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note1" ></span>
+									<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note2" ></span>
+									<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note2" ></span>
 									<span class="text-size1 color_grey1">64 notes</span>
 								</p>
 								<p style="margin-top: -5px;">
@@ -118,10 +122,591 @@
 				  				</div>
 				  			</div>
 				  		</div>
+				  		<div class="ml-body-item">
+				  			<div class="ml-body-img-block">
+				  				<img class="ml-body-img" src="../image/participer-img1.JPG"  alt="#" />
+				  			</div>
+				  			<div class="ml-body-info-block">
+				  				<!-- info of person -->
+				  				<p>
+				  					<span class="text-size3 color-orange">Ang L.</span>
+				  					<span class="text-size4 color_grey1">24 ans,Wuhan</span>
+				  				</p>
+				  				<p style="margin-top: -5px;">
+									<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note1" ></span>
+									<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note2" ></span>
+									<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note2" ></span>
+									<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note2" ></span>
+									<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note2" ></span>
+									<span class="text-size1 color_grey1">15 notes</span>
+								</p>
+								<p style="margin-top: -5px;">
+									<a class="ml-body-info-link">Les autres activités de <span>Ang</span></a>
+								</p>
+				  			</div>
+				  			<div class="ml-body-declaration-block">
+				  				<!-- introduction of person-->
+				  				<p class="text-size4 color_grey1 ml-body-declaration">asd hiao oihj oihiasd h asd das dasdefgr dessus gardum</p>
+				  			</div>
+				  			<div class="ml-body-button-block">
+				  				<!-- button -->
+				  				<div class="ml-body-button-div1">
+				  					<a href="#" class="btn btn-default text-size4 ml-body-button ml-body-button-discussion" role="button">
+				  						<span aria-hidden="true" data-icon="&#xe632" class="icon-disussion-mono ml-body-button-icon" ></span>
+				  						<span>Discuter</span>
+				  					</a>
+				  				</div>
+				  				<div class="ml-body-button-div2">
+					  				<a href="#" class="btn btn-default text-size4 ml-body-button ml-body-button-ajoute" role="button">
+						  				<span aria-hidden="true" data-icon="&#xe602" class="icon-ajouter-ami ml-body-button-icon" ></span>
+						  				<span>Ajouter</span>
+					  				</a>
+				  				</div>
+				  				<div class="ml-body-button-div3">
+				  					<a href="#" class="btn btn-default text-size4 ml-body-button ml-body-button-activite" role="button">
+				  						<span aria-hidden="true" data-icon="&#xe606" class="icon-creer-activite ml-body-button-icon" ></span>
+					  					<span>Activit&eacute;</span>
+					  				</a>
+				  				</div>
+				  			</div>
+				  		</div>
+				  		<div class="ml-body-item">
+				  			<div class="ml-body-img-block">
+				  				<img class="ml-body-img" src="../image/icon-pro.png"  alt="#" />
+				  			</div>
+				  			<div class="ml-body-info-block">
+				  				<!-- info of person -->
+				  				<p>
+				  					<span class="text-size3 color-orange">Somebody X.</span>
+				  					<span class="text-size4 color_grey1">33 ans,Somewhere</span>
+				  				</p>
+				  				<p style="margin-top: -5px;">
+									<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note2" ></span>
+									<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note2" ></span>
+									<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note2" ></span>
+									<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note2" ></span>
+									<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note2" ></span>
+									<span class="text-size1 color_grey1">0 notes</span>
+								</p>
+								<p style="margin-top: -5px; display: none;">
+									<a class="ml-body-info-link">Les autres activités de <span>Somebody</span></a>
+								</p>
+				  			</div>
+				  			<div class="ml-body-declaration-block">
+				  				<!-- introduction of person-->
+				  				<p class="text-size4 color_grey1 ml-body-declaration" style="display:none;">asd hiao oihj oihiasd h asd das dasdefgr dessus gardum</p>
+				  				<a class="ml-body-encourage-profil">Encourager le à remplir son profil</a>
+				  			</div>
+				  			<div class="ml-body-button-block">
+				  				<!-- button -->
+				  				<div class="ml-body-button-div1">
+				  					<a href="#" class="btn btn-default text-size4 ml-body-button ml-body-button-discussion" role="button">
+				  						<span aria-hidden="true" data-icon="&#xe632" class="icon-disussion-mono ml-body-button-icon" ></span>
+				  						<span>Discuter</span>
+				  					</a>
+				  				</div>
+				  				<div class="ml-body-button-div2">
+					  				<a href="#" class="btn btn-default text-size4 ml-body-button ml-body-button-ajoute" role="button">
+						  				<span aria-hidden="true" data-icon="&#xe602" class="icon-ajouter-ami ml-body-button-icon" ></span>
+						  				<span>Ajouter</span>
+					  				</a>
+				  				</div>
+				  				<div class="ml-body-button-div3">
+				  					<a href="#" class="btn btn-default text-size4 ml-body-button ml-body-button-activite" role="button">
+				  						<span aria-hidden="true" data-icon="&#xe606" class="icon-creer-activite ml-body-button-icon" ></span>
+					  					<span>Activit&eacute;</span>
+					  				</a>
+				  				</div>
+				  			</div>
+				  		</div>
+				  		<div class="ml-body-item">
+				  			<div class="ml-body-img-block">
+				  				<img class="ml-body-img" src="../image/icon-pro.png"  alt="#" />
+				  			</div>
+				  			<div class="ml-body-info-block">
+				  				<!-- info of person -->
+				  				<p>
+				  					<span class="text-size3 color-orange">Nobody Y.</span>
+				  					<span class="text-size4 color_grey1">18 ans,Somewhere else</span>
+				  				</p>
+				  				<p style="margin-top: -5px;">
+									<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note2" ></span>
+									<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note2" ></span>
+									<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note2" ></span>
+									<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note2" ></span>
+									<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note2" ></span>
+									<span class="text-size1 color_grey1">0 notes</span>
+								</p>
+								<p style="margin-top: -5px; display: none;">
+									<a class="ml-body-info-link">Les autres activités de <span>Nobody</span></a>
+								</p>
+				  			</div>
+				  			<div class="ml-body-declaration-block">
+				  				<!-- introduction of person-->
+				  				<p class="text-size4 color_grey1 ml-body-declaration" style="display:none;">asd hiao oihj oihiasd h asd das dasdefgr dessus gardum</p>
+				  				<a class="ml-body-encourage-profil">Encourager le à remplir son profil</a>
+				  			</div>
+				  			<div class="ml-body-button-block">
+				  				<!-- button -->
+				  				<div class="ml-body-button-div1">
+				  					<a href="#" class="btn btn-default text-size4 ml-body-button ml-body-button-discussion" role="button">
+				  						<span aria-hidden="true" data-icon="&#xe632" class="icon-disussion-mono ml-body-button-icon" ></span>
+				  						<span>Discuter</span>
+				  					</a>
+				  				</div>
+				  				<div class="ml-body-button-div2">
+					  				<a href="#" class="btn btn-default text-size4 ml-body-button ml-body-button-ajoute" role="button">
+						  				<span aria-hidden="true" data-icon="&#xe602" class="icon-ajouter-ami ml-body-button-icon" ></span>
+						  				<span>Ajouter</span>
+					  				</a>
+				  				</div>
+				  				<div class="ml-body-button-div3">
+				  					<a href="#" class="btn btn-default text-size4 ml-body-button ml-body-button-activite" role="button">
+				  						<span aria-hidden="true" data-icon="&#xe606" class="icon-creer-activite ml-body-button-icon" ></span>
+					  					<span>Activit&eacute;</span>
+					  				</a>
+				  				</div>
+				  			</div>
+				  		</div>
+				  		<div class="ml-body-arrow">
+							<a class="ml-body-link" href="#">
+								<span aria-hidden="true" data-icon="&#xe60c" class="icon-elargir" ></span>
+							</a>
+						</div>	
 				  	</div>
 				  </div>
-				  <div class="tab-pane" id="profile">profil</div>
-				  <div class="tab-pane" id="messages">message</div>
+				  <div class="tab-pane" id="groupe">
+				  	<div class="ml-body-groupe">
+				  		<div class="ml-body-item">
+				  			<div class="ml-body-img-block">
+				  				<img class="ml-body-img" src="../image/activity-img1.JPG"  alt="#" />
+				  			</div>
+				  			<div class="ml-body-info-block">
+				  				<!-- info of person -->
+				  				<p class="text-size3 color-orange">
+				  					Step by step !
+				  				</p>
+				  				<p class="text-size4 color_grey1">
+				  					<span>12 membres</span>
+				  					<span>Lille</span>
+				  				</p>
+								<p style="margin-top: -5px;">
+									<a class="ml-body-info-link">Nos activités, nos membres...</a>
+								</p>
+				  			</div>
+				  			<div class="ml-body-declaration-block">
+				  				<!-- introduction of person-->
+				  				<p class="text-size4 color_grey1 ml-body-declaration">Du step tous les matins ! Tous les jours nos membres vont faire du step, organisez-vous avec eux !</p>
+				  			</div>
+				  			<div class="ml-body-button-block">
+				  				<!-- button -->
+				  				<div class="ml-body-button-div1">
+				  					<a href="#" class="btn btn-default text-size4 ml-body-button ml-body-button-contacter" role="button">
+				  						<span aria-hidden="true" data-icon="&#xe632" class="icon-disussion-mono ml-body-button-icon" ></span>
+				  						<span>Contacter</span>
+				  					</a>
+				  				</div>
+				  				<div class="ml-body-button-div2">
+					  				<a href="#" class="btn btn-default text-size4 ml-body-button ml-body-button-rejoindre" role="button">
+						  				<span aria-hidden="true" data-icon="&#xe602" class="icon-ajouter-ami ml-body-button-icon" ></span>
+						  				<span>Rejoindre</span>
+					  				</a>
+				  				</div>
+				  				<div class="ml-body-button-div3">
+				  					<a href="#" class="btn btn-default text-size4 ml-body-button ml-body-button-activite" role="button">
+				  						<span aria-hidden="true" data-icon="&#xe606" class="icon-creer-activite ml-body-button-icon" ></span>
+					  					<span>Activit&eacute;</span>
+					  				</a>
+				  				</div>
+				  			</div>
+				  		</div>
+				  		<div class="ml-body-item">
+				  			<div class="ml-body-img-block">
+				  				<img class="ml-body-img" src="../image/activity-img3.JPG"  alt="#" />
+				  			</div>
+				  			<div class="ml-body-info-block">
+				  				<!-- info of person -->
+				  				<p class="text-size3 color-orange">
+				  					Zuuuuumba !
+				  				</p>
+				  				<p class="text-size4 color_grey1">
+				  					<span>10 membres</span>
+				  					<span>Paris</span>
+				  				</p>
+								<p style="margin-top: -5px;">
+									<a class="ml-body-info-link">Nos activités, nos membres...</a>
+								</p>
+				  			</div>
+				  			<div class="ml-body-declaration-block">
+				  				<!-- introduction of person-->
+				  				<p class="text-size4 color_grey1 ml-body-declaration">Du step tous les matins ! Tous les jours nos membres vont faire du step, organisez-vous avec eux !</p>
+				  			</div>
+				  			<div class="ml-body-button-block">
+				  				<!-- button -->
+				  				<div class="ml-body-button-div1">
+				  					<a href="#" class="btn btn-default text-size4 ml-body-button ml-body-button-contacter" role="button">
+				  						<span aria-hidden="true" data-icon="&#xe632" class="icon-disussion-mono ml-body-button-icon" ></span>
+				  						<span>Contacter</span>
+				  					</a>
+				  				</div>
+				  				<div class="ml-body-button-div2">
+					  				<a href="#" class="btn btn-default text-size4 ml-body-button ml-body-button-rejoindre" role="button">
+						  				<span aria-hidden="true" data-icon="&#xe602" class="icon-ajouter-ami ml-body-button-icon" ></span>
+						  				<span>Rejoindre</span>
+					  				</a>
+				  				</div>
+				  				<div class="ml-body-button-div3">
+				  					<a href="#" class="btn btn-default text-size4 ml-body-button ml-body-button-activite" role="button">
+				  						<span aria-hidden="true" data-icon="&#xe606" class="icon-creer-activite ml-body-button-icon" ></span>
+					  					<span>Activit&eacute;</span>
+					  				</a>
+				  				</div>
+				  			</div>
+				  		</div>
+				  		<div class="ml-body-arrow">
+							<a class="ml-body-link" href="#">
+								<span aria-hidden="true" data-icon="&#xe60c" class="icon-elargir" ></span>
+							</a>
+						</div>	
+				  	</div>
+				  </div>
+				  <div class="tab-pane active" id="activity">
+					  <div class="ml-body-activite">
+					  	<div class="ml-body-btn-propose-block">
+							<a href="#" class="btn btn-primary mon-compte-btn-propose" role="button">
+								<span aria-hidden="true" data-icon="&#xe606" class="icon-creer-activite" ></span>
+								<span class="head-text-mid">Proposer une activité</span>
+							</a>
+						</div>
+						<div class="ml-body-item">
+							<div class="ml-activity-brief">
+								<div class="ml-body-img-block">
+						  			<img class="ml-body-img2" src="../image/activity-img1.JPG"  alt="#" />
+						  		</div>
+						  		<div class="ml-body-info-block">
+						  			<!-- info of person -->
+						  			<p class="ml-body-info-block-line1">
+						  				<span class="text-size2 color-orange">Fabien D.</span>
+						  				<span class="text-size4 color_grey1">36 ans,Paris</span>
+						  			</p>
+						  			<p style="margin-top: -5px;">
+										<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note1" ></span>
+										<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note1" ></span>
+										<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note1" ></span>
+										<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note2" ></span>
+										<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note2" ></span>
+										<span class="text-size1 color_grey1">64 notes</span>
+									</p>
+						  		</div>
+						  		<div class="ml-body-event-block">
+							  		<p class="activity-name">
+										<span aria-hidden="true" data-icon="&#xe620" class="icon-prive" ></span>
+										<span aria-hidden="true" data-icon="&#xe638" class="icon-p-lettre"  ></span>
+										<span>Musculation</span>
+									</p>
+								</div>
+								<div class="ml-body-temps-block">
+									<p class="color_grey1 text-size2">Sam. 14 déc. 2014</p>
+								</div>
+								<div class="ml-body-participants-block">
+									<p class="activity-name">
+										<span aria-hidden="true" data-icon="&#xe605" class="icon-contacts-menu" ></span>
+										<span>3/4</span>
+									</p>
+								</div>
+								<div class="my-body-arrow-block">
+									<span aria-hidden="true" data-icon="&#xe60c" class="icon-elargir" style="display: block;"></span>
+									<span aria-hidden="true" data-icon="&#xe624" class="icon-retrecir" style="display: none;"></span>
+								</div>
+							</div>
+							<div><!-- this is the detail of the activities -->
+								<a class="ml-activity-modif">
+									<span aria-hidden="true" data-icon="&#xe619" class="icon-parametre ml-activity-link-icon" ></span>
+									<span class="ml-activity-link-text">Modifier l’activité</span>
+								</a>
+							</div>
+							<div class="ml-activity-context">
+								<p class="color_grey1 text-size4">
+									Salut à tous,
+									Samedi 14 nous pourrons enfin assister à Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec urna elit. Vestibulum placerat id velit eget accumsan. Nullam sagittis mauris non ullamcorper malesuada. Nunc at dolor adipiscing, euismod elit a, laoreet neque. Aliquam interdum eget ante vel dapibus.
+								</p>
+							</div>
+							<p class="mon-compte-subtitle4">Lieu:</p>
+							<div class="ml-activity-maps-block">
+								<div class="ml-activity-maps" id="google-maps"></div>
+								<div class="ml-activity-adresse">
+									<p class="color_grey1 text-size4 ml-activity-adresse-text">
+										<span>1 avenue des Olympiades</span>
+										<br>
+										<span>59700 Marcq-en-Baroeul</span>
+									</p>
+								</div>
+							</div>
+							<p class="mon-compte-subtitle4">Participants (15)</p>
+							<div class="ml-activity-window">
+								<div class="ml-activity-participants">
+									<div class="ml-body-img-block">
+						  				<img class="ml-body-img2" src="../image/activity-img1.JPG"  alt="#" />
+						  			</div>
+						  			<div class="ml-activity-participants-info-left">
+							  			<div class="ml-activity-participants-info1">
+							  				<p class="color-orange text-size3 ml-activity-participants-text">François F.</p> 
+							  			</div>
+							  			<div class="ml-activity-participants-info2">
+							  				<p class="color_grey1 text-size4 ml-activity-participants-text">24 ans, Tourcoing</p> 
+							  			</div>
+						  			</div>
+						  			<div class="ml-activity-participants-info3">
+							  			<a class="ml-body-info-link">Les autres activités de <span>Francois</span></a>
+							  		</div>
+							  		<div class="ml-activity-participants-note">
+								  		<p>
+								  		<span class="text-size1 color_grey1">64 notes</span>
+										<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note1" ></span>
+										<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note1" ></span>
+										<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note1" ></span>
+										<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note2" ></span>
+										<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note2" ></span>
+										</p>
+							  		</div>
+								</div>
+								<div class="ml-activity-participants">
+									<div class="ml-body-img-block">
+						  				<img class="ml-body-img2" src="../image/activity-img2.JPG"  alt="#" />
+						  			</div>
+						  			<div class="ml-activity-participants-info-left">
+							  			<div class="ml-activity-participants-info1">
+							  				<p class="color-orange text-size3 ml-activity-participants-text">Fabien D.</p> 
+							  			</div>
+							  			<div class="ml-activity-participants-info2">
+							  				<p class="color_grey1 text-size4 ml-activity-participants-text">28 ans, Lille</p> 
+							  			</div>
+						  			</div>
+						  			<div class="ml-activity-participants-info3">
+							  			<a class="ml-body-info-link">Les autres activités de <span>Fabien</span></a>
+							  		</div>
+							  		<div class="ml-activity-participants-note">
+								  		<p>
+								  		<span class="text-size1 color_grey1">78 notes</span>
+										<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note1" ></span>
+										<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note1" ></span>
+										<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note1" ></span>
+										<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note2" ></span>
+										<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note2" ></span>
+										</p>
+							  		</div>
+								</div>
+								<div class="ml-activity-participants">
+									<div class="ml-body-img-block">
+						  				<img class="ml-body-img2" src="../image/activity-img3.JPG"  alt="#" />
+						  			</div>
+						  			<div class="ml-activity-participants-info-left">
+							  			<div class="ml-activity-participants-info1">
+							  				<p class="color-orange text-size3 ml-activity-participants-text">Ang L.</p> 
+							  			</div>
+							  			<div class="ml-activity-participants-info2">
+							  				<p class="color_grey1 text-size4 ml-activity-participants-text">24 ans, Paris</p> 
+							  			</div>
+						  			</div>
+						  			<div class="ml-activity-participants-info3">
+							  			<a class="ml-body-info-link">Les autres activités de <span>Ang</span></a>
+							  		</div>
+							  		<div class="ml-activity-participants-note">
+								  		<p>
+								  		<span class="text-size1 color_grey1">15 notes</span>
+										<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note1" ></span>
+										<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note1" ></span>
+										<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note1" ></span>
+										<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note2" ></span>
+										<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note2" ></span>
+										</p>
+							  		</div>
+								</div>
+								<div class="ml-activity-participants">
+									<div class="ml-body-img-block">
+						  				<img class="ml-body-img2" src="../image/activity-img1.JPG"  alt="#" />
+						  			</div>
+						  			<div class="ml-activity-participants-info-left">
+							  			<div class="ml-activity-participants-info1">
+							  				<p class="color-orange text-size3 ml-activity-participants-text">François F.</p> 
+							  			</div>
+							  			<div class="ml-activity-participants-info2">
+							  				<p class="color_grey1 text-size4 ml-activity-participants-text">24 ans, Tourcoing</p> 
+							  			</div>
+						  			</div>
+						  			<div class="ml-activity-participants-info3">
+							  			<a class="ml-body-info-link">Les autres activités de <span>Fabien</span></a>
+							  		</div>
+							  		<div class="ml-activity-participants-note">
+								  		<p>
+								  		<span class="text-size1 color_grey1">64 notes</span>
+										<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note1" ></span>
+										<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note1" ></span>
+										<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note1" ></span>
+										<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note2" ></span>
+										<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note2" ></span>
+										</p>
+							  		</div>
+								</div>
+								<div class="ml-activity-participants">
+									<div class="ml-body-img-block">
+						  				<img class="ml-body-img2" src="../image/activity-img1.JPG"  alt="#" />
+						  			</div>
+						  			<div class="ml-activity-participants-info-left">
+							  			<div class="ml-activity-participants-info1">
+							  				<p class="color-orange text-size3 ml-activity-participants-text">François F.</p> 
+							  			</div>
+							  			<div class="ml-activity-participants-info2">
+							  				<p class="color_grey1 text-size4 ml-activity-participants-text">24 ans, Tourcoing</p> 
+							  			</div>
+						  			</div>
+						  			<div class="ml-activity-participants-info3">
+							  			<a class="ml-body-info-link">Les autres activités de <span>Fabien</span></a>
+							  		</div>
+							  		<div class="ml-activity-participants-note">
+								  		<p>
+								  		<span class="text-size1 color_grey1">64 notes</span>
+										<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note1" ></span>
+										<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note1" ></span>
+										<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note1" ></span>
+										<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note2" ></span>
+										<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note2" ></span>
+										</p>
+							  		</div>
+								</div>
+								<div class="ml-activity-participants">
+									<div class="ml-body-img-block">
+						  				<img class="ml-body-img2" src="../image/activity-img1.JPG"  alt="#" />
+						  			</div>
+						  			<div class="ml-activity-participants-info-left">
+							  			<div class="ml-activity-participants-info1">
+							  				<p class="color-orange text-size3 ml-activity-participants-text">François F.</p> 
+							  			</div>
+							  			<div class="ml-activity-participants-info2">
+							  				<p class="color_grey1 text-size4 ml-activity-participants-text">24 ans, Tourcoing</p> 
+							  			</div>
+						  			</div>
+						  			<div class="ml-activity-participants-info3">
+							  			<a class="ml-body-info-link">Les autres activités de <span>Fabien</span></a>
+							  		</div>
+							  		<div class="ml-activity-participants-note">
+								  		<p>
+								  		<span class="text-size1 color_grey1">64 notes</span>
+										<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note1" ></span>
+										<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note1" ></span>
+										<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note1" ></span>
+										<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note2" ></span>
+										<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note2" ></span>
+										</p>
+							  		</div>
+								</div>
+							</div>
+							<div class="ml-activity-detail-btn">
+								<input type="submit" class="btn btn-default text-size4" id="activity-button-orange" value="Je participe !" >
+								<input type="submit" class="btn btn-default text-size4" id="activity-button-grey" value="Pas cette fois" >
+							</div>
+							<p class="mon-compte-subtitle4">Commentaires (60)</p>
+							<div class="ml-activity-window">
+								<div class="ml-activity-comments">
+									<div class="ml-activity-comments-user">
+										<div class="ml-body-img-block">
+								  			<img class="ml-body-img2" src="../image/activity-img1.JPG"  alt="#" />
+								  		</div>
+								  		<div class="ml-body-info-block">
+								  			<!-- info of person -->
+								  			<p class="ml-body-info-block-line1">
+								  				<span class="text-size2 color-orange">Fabien D.</span>
+								  				<span class="text-size4 color_grey1">36 ans,Paris</span>
+								  			</p>
+								  			<p style="margin-top: -5px;">
+												<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note1" ></span>
+												<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note1" ></span>
+												<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note1" ></span>
+												<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note2" ></span>
+												<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note2" ></span>
+												<span class="text-size1 color_grey1">64 notes</span>
+											</p>
+								  		</div>
+								  		<div class="ml-body-comments-date text-size4 color_grey1">
+								  			<p>15 mai 2014</p>
+								  			<p>20h15</p>
+								  		</div>
+							  		</div>
+							  		<div class="ml-activity-comments-context">
+							  			<p class="color_grey1 text-size4">
+							  				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu arcu ultricies risus molestie tincidunt eget ac orci. Morbi velit urna, bibendum a pulvinar ac, ultricies nec dolor. Duis at sapien et risus condimentum vestibulum sit amet nec ipsum. Phasellus ligula felis, suscipit auctor sem nec, tincidunt consectetur lacus.
+							  			</p>
+							  		</div>
+								</div>
+								<div class="ml-activity-comments">
+									<div class="ml-activity-comments-user">
+										<div class="ml-body-img-block">
+								  			<img class="ml-body-img2" src="../image/activity-img2.JPG"  alt="#" />
+								  		</div>
+								  		<div class="ml-body-info-block">
+								  			<!-- info of person -->
+								  			<p class="ml-body-info-block-line1">
+								  				<span class="text-size2 color-orange">Fabien D.</span>
+								  				<span class="text-size4 color_grey1">36 ans,Paris</span>
+								  			</p>
+								  			<p style="margin-top: -5px;">
+												<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note1" ></span>
+												<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note1" ></span>
+												<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note1" ></span>
+												<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note2" ></span>
+												<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note2" ></span>
+												<span class="text-size1 color_grey1">64 notes</span>
+											</p>
+								  		</div>
+								  		<div class="ml-body-comments-date text-size4 color_grey1">
+								  			<p>15 mai 2014</p>
+								  			<p>20h15</p>
+								  		</div>
+							  		</div>
+							  		<div class="ml-activity-comments-context">
+							  			<p class="color_grey1 text-size4">
+							  				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu arcu ultricies risus molestie tincidunt eget ac orci. Morbi velit urna, bibendum a pulvinar ac, ultricies nec dolor. Duis at sapien et risus condimentum vestibulum sit amet nec ipsum. Phasellus ligula felis, suscipit auctor sem nec, tincidunt consectetur lacus.
+							  			</p>
+							  		</div>
+								</div>
+								<div class="ml-activity-comments">
+									<div class="ml-activity-comments-user">
+										<div class="ml-body-img-block">
+								  			<img class="ml-body-img2" src="../image/activity-img3.JPG"  alt="#" />
+								  		</div>
+								  		<div class="ml-body-info-block">
+								  			<!-- info of person -->
+								  			<p class="ml-body-info-block-line1">
+								  				<span class="text-size2 color-orange">Fabien D.</span>
+								  				<span class="text-size4 color_grey1">36 ans,Paris</span>
+								  			</p>
+								  			<p style="margin-top: -5px;">
+												<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note1" ></span>
+												<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note1" ></span>
+												<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note1" ></span>
+												<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note2" ></span>
+												<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note2" ></span>
+												<span class="text-size1 color_grey1">64 notes</span>
+											</p>
+								  		</div>
+								  		<div class="ml-body-comments-date text-size4 color_grey1">
+								  			<p>15 mai 2014</p>
+								  			<p>20h15</p>
+								  		</div>
+							  		</div>
+							  		<div class="ml-activity-comments-context">
+							  			<p class="color_grey1 text-size4">
+							  				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu arcu ultricies risus molestie tincidunt eget ac orci. Morbi velit urna, bibendum a pulvinar ac, ultricies nec dolor. Duis at sapien et risus condimentum vestibulum sit amet nec ipsum. Phasellus ligula felis, suscipit auctor sem nec, tincidunt consectetur lacus.
+							  			</p>
+							  		</div>
+								</div>
+							</div>
+						</div>
+					  	<div>
+					  		<textarea class="form-control mon-compte-comment" placeholder="Ecrire un commentaire..."></textarea>
+					  	</div>
+					  </div>		
+				  </div>
 				</div>
 			</div>
 		</div>

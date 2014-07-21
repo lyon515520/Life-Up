@@ -44,6 +44,11 @@
 	margin: 18px 20px 0px;
 	width: 200px;
 }
+.mon-compte-subtitle4{
+	color: rgb(235,101,49);
+	font-size: 14.4px;
+	margin: 14px 8px;
+}
 .mon-compte-input1{
 	margin-left: 136px;
 	display: -webkit-inline-box;
@@ -313,6 +318,15 @@
 	color: rgb(235,101,49);
 	font-size: 12px;
 }
+.ml-body-star-note2::before{
+	color: rgba(235,101,49,0.5);
+	font-size: 12px;
+}
+.ml-body-star-note1::before{
+	color: rgb(235,101,49);
+	font-size: 12px;
+}
+
 .ml-head-name{
 	color: rgb(50,40,38);
 	font-size: 24px;
@@ -344,8 +358,15 @@
 }
 .ml-body-item{
 	overflow: hidden;
+	border-bottom: solid;
+	border-color: rgb(255,255,255);
 }
-.ml-body-motive{
+.ml-body-item:hover .ml-body-button-block{
+	display: block;
+}
+.ml-body-motive,
+.ml-body-groupe,
+.ml-body-activite{
 	padding: 10px;
 	background-color: rgb(245,245,245);
 }
@@ -379,7 +400,8 @@
 }
 .ml-body-button-block{
 	float: left;
-	margin: 8px auto 8px 30px;
+	margin: 2px auto 8px 30px;
+	display: none;
 }
 .ml-body-button{
 	text-shadow: none;
@@ -423,4 +445,162 @@
 }
 .ml-body-button-activite{
 	padding: 0.7px 14.25px;
+}
+.ml-body-encourage-profil{
+	float: left;
+	font-size: 14.4px;
+	padding: 30px 0 0;
+	color: rgb(13,204,232);
+}
+.ml-body-encourage-profil:hover{
+	color: rgb(20,192,221);	
+}
+.ml-body-arrow{
+	text-align: center;
+}
+.ml-body-link{
+	cursor: pointer;
+	display: block;
+}
+.ml-body-button-contacter{
+	padding: 0.7px 8px;
+}
+.ml-body-button-rejoindre{
+	padding: 0.7px 8px;
+}
+.mon-compte-btn-propose{
+	display: block;
+	font-size: 14.4px;
+	padding: 3px 10px;
+}
+.ml-body-btn-propose-block{
+	margin: 8px 8px 10px 8px;
+}
+.ml-body-img2{
+	width: 32px;
+	height: 32px;
+	border: transparent;
+	border-radius: 16px;
+}
+.ml-body-info-block-line1{
+	margin-top: -5px;
+}
+.ml-body-event-block{
+	float: left;
+	font-size: 14.4px;
+	color: rgb(134,134,134);
+	margin: 12px 15px;
+}
+.ml-body-temps-block{
+	float: left;
+	margin: 15.5px 15px;
+}
+.ml-body-participants-block{
+	font-size: 14.4px;
+	color: rgb(134,134,134);
+	float: left;
+	margin: 12px 15px;
+}
+.my-body-arrow-block{
+	margin: 12px auto auto 30px;
+	float: left;
+	cursor: pointer;
+}
+.ml-activity-brief{
+	overflow: hidden;
+}
+.ml-activity-modif{
+	margin: 14px auto 14px 20px;
+}
+.ml-activity-link-icon::before{
+	color: rgb(13,204,232);
+	font-size: 12px;
+}
+.ml-activity-link-text{
+	font-size: 12px;
+	color: rgb(13,204,232); 
+}
+.ml-activity-context{
+	margin: 14px 8px;
+}
+.ml-activity-maps{
+    width:250px;
+    height:150px;
+    float: left;
+}
+.ml-activity-maps-block{
+	margin: 10px auto 14px 80px;
+	overflow: hidden;
+}
+.ml-activity-adresse{
+	float: left;
+	margin-left: 50px;
+	width: 50x;
+	height: 150px;
+	display: table;
+}
+.ml-activity-adresse-text{
+	text-align: center;
+	vertical-align: middle;
+	display: table-cell;
+}
+.ml-activity-window{
+	border-bottom:1px solid rgb(179,179,179);
+	border-top:1px solid rgb(179,179,179);
+	height:250px;
+	overflow:auto;
+	padding-top:2px;
+}
+.ml-activity-participants,
+.ml-activity-comments{
+	overflow: hidden;
+	border-bottom: solid 1px;
+	border-color: rgb(179,179,179);
+}
+.ml-activity-participants-info1{
+	float: left;
+	margin-left: 2px;
+	margin-top: 11px;
+}
+.ml-activity-participants-info2{
+	float: left;
+	margin-left: 2px;
+	margin-top: 16px;
+}
+.ml-activity-participants-info3{
+	float: left;
+	margin-left: 2px;
+	margin-top: 12px;
+	width:150px;
+}
+.ml-activity-participants-info-left{
+	width: 300px;
+	overflow: hidden;
+	float: left;
+}
+.ml-activity-participants-note{
+	float: left;
+	margin: 10px auto auto 20px;
+}
+.ml-activity-detail-btn{
+	text-align: center;
+	margin: 14px;
+}
+.ml-body-comments-date{
+	float: right;
+	margin: 8px 18px;
+}
+.ml-activity-comments-context{
+	margin: 0px 18px 8px 8px;
+	float: left;
+}
+.ml-activity-comments-user{
+	overflow: hidden;
+}
+..mon-compte-comment{
+	width: 100%;
+	height: 40px;
+	margin:5px auto 18px;
+}
+.ml-activity-participants-text{
 }
