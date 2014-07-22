@@ -160,6 +160,8 @@
 }
 .icon-retrecir:before {
 	content: "\e624";
+	color: rgb(204,204,204);
+	font-size: 12px;
 }
 .icon-sport:before {
 	content: "\e625";

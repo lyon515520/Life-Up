@@ -96,12 +96,18 @@ border-style:none;
 .color-orange{
 	color: rgb(235,101,49);
 }
+.color-brown{
+	color: rgb(50,40,38);
+}
 .color_grey1{
 	color: rgb(134,134,134);
 }
 
 .color_grey2{
 	color: rgb(111,111,111);
+}
+.color_grey3{
+	color: rgb(179,179,179);
 }
 .color_blue{
 	color: rgb(13,204,232);

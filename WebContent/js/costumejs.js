@@ -33,3 +33,12 @@ function show_ajoute_activite(){
 	$("#ajoute-activite").fadeIn(500);
 }
 //---------------------------------------------------------------------------------------------
+
+function ml_show_hide_detail(keyword){
+	var keywordzip = keyword + 'zip';
+	var e = document.getElementById(keywordzip);
+	if(e.style.display != "none"){
+		$(keywordzip).fadeOut(500).css("display","none");
+	}
+
+}
