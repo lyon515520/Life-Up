@@ -343,6 +343,8 @@
 	color: rgb(134,134,134);
 	font-size: 12px;
 }
+.fg-head-link:hover .ml-head-link-icon::before,
+.fg-head-link:hover .ml-head-link-text,
 .ml-head-link:hover .ml-head-link-icon::before,
 .ml-head-link:hover .ml-head-link-text{
 	color: rgb(235,101,49);
@@ -635,6 +637,7 @@
 }
 .mon-activity-subhead-ul{
 	text-align: center;
+	margin-left: -40px;
 }
 .mon-activity-subhead-li{
 	display: inline-block;
@@ -676,7 +679,9 @@
 	color: rgb(134,134,134);
 	margin: 2px auto 14px;
 }
-#ma-button-orange{
+#ma-button-orange1,
+#ma-button-orange2,
+#ma-button-orange3{
 	background-color: rgb(235,101,49);
 	border: transparent;
 	text-shadow: none;
@@ -684,9 +689,223 @@
 	margin-right: 20px;
 	margin-left: 10px;
 }
-#ma-button-grey{
+#ma-button-grey1,
+#ma-button-grey2,
+#ma-button-grey3{
 	background-color: rgb(153,153,153);
 	border: transparent;
 	text-shadow: none;
 	color: rgb(255,255,255);
+}
+#proposition{
+	float: left;
+	width: 60%;
+}
+#proposition-optionnelle{
+	float: left;
+	color: rgb(134,134,134);
+}
+.ma-proposition-title-block{
+	overflow: hidden;
+}
+.ma-proposition-block{
+	overflow: hidden;
+	font-size: 14.4px;
+	margin: -8px 20px 14px;
+	color: rgb(134,134,134);
+}
+.ma-icon-supprimer::before{
+	color: rgb(134,134,134);
+	font-size: 15px;
+}
+.ma-proposition-text{
+	float: left;
+	width: 33%;
+}
+#ma-proposition1_1,
+#ma-proposition2_1{
+	float: left;
+	width: 33%;
+}
+#ma-proposition1_2,
+#ma-proposition2_2{
+	float: left;
+	width: 20%;
+	margin: auto 20px auto 10px;
+}
+.ma-maps-search-block{
+	overflow: hidden;
+	margin: 5px 20px 8px;
+}
+#ma-btn-comment{
+	width: 15%;
+	height: 24px;
+	float: left;
+	background-color: rgb(134,134,134);
+	color: rgb(255,255,255);
+	padding: 0px;
+}
+#ma-comment{
+	height: 24px;
+}
+.ma-maps{
+	width:250px;
+    height:150px;
+    margin-left: auto;
+	margin-right: auto;
+}
+.ma-num-participants{
+	margin: 0px 40px 14px;
+	overflow: hidden;
+}
+.ma-num-participant-radio{
+	float: left;
+	margin-right: 5px;
+}
+.ma-num-participant-select{
+	float: left;
+	width: 10%;
+	margin: auto 10px;
+}
+.ma-num-participant-select2{
+	width: 10%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.ma-num-participant-text{
+	float: left;
+	margin: auto auto auto 20px;
+	margin-right: 5px;
+}
+.ma-margin{
+	margin: 0 20px;
+}
+.ma-icon-contact::before{
+	color: rgb(204,204,204);
+	font-size: 20px;
+}
+.ma-icon-contact:hover::before{
+	color: rgb(134,134,134);
+}
+.ma-icon-contact:active::before{
+	color: rgb(235,101,49);
+}
+.ma-liste-proposition{
+	float: left;
+	margin-top: 15px;
+	margin-left: 230px;
+}
+.ma-proposition{
+	overflow: hidden;
+	border-bottom: solid 1px;
+	border-color: rgb(179,179,179);
+	margin: 0 10px;
+}
+#proposition-ajoute{
+	float: left;
+	width: 45%;
+}
+#ma-proposition-ajoute{
+	height: 24px;
+	float: left;
+}
+.ma-proposition-ajoute-block{
+	margin: 18px 20px 14px 20px;
+	float: left;
+	overflow: hidden;
+	width: 40%;
+}
+#ma-btn-proposition-ajoute{
+	height: 24px;
+	float: left;
+	background-color: rgb(134,134,134);
+	color: rgb(255,255,255);
+	padding: 0px 1px;;
+	text-shadow: none;
+}
+#ma-groupe-select{
+	width: 40%;
+	margin-left: 20px;
+}
+.ma-email-input{
+	width: 40%;
+	height: 24px;
+	margin: 8px auto 0px 20px;
+	float: left;
+}
+.ma-email-icon-block{
+	float: left;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+.ma-icon-valider::before{
+	color: rgb(235,101,49);
+	font-size: 20px;
+}
+.ma-email-block{
+	overflow: hidden;
+}
+#ma-link{
+	color: rgb(13,204,232);
+	font-size: 13px;
+}
+#ma-link:hover{
+	color: rgb(20,192,221);
+}
+#ma-btn-copy-link{
+	background-color: rgb(235,101,49);
+	color: rgb(255,255,255);
+	margin-left: 20px;
+	text-shadow: none;
+}
+.ma-link-block{
+	margin: auto auto 10px 20px;
+}
+.ma-notification{
+	margin: 0 0 0 40px;
+}
+/*----------------------------------------------------------------------------------*/
+.fg-head-name{
+	color: 	rgb(235,101,49);
+	font-size: 24px;
+}
+.fg-icon-female::before,
+.fg-icon-male::before{
+	color: rgb(134,134,134);
+	font-size: 14px;
+}
+.fg-head-link{
+	margin-right: 12px;
+}
+.fg-icon-star-on::before{
+	color: rgb(235,101,49);
+	font-size: 12px;
+}
+.fg-icon-star-off::before{
+	color: rgba(235,101,49,0.5);
+	font-size: 12px;
+}
+.fg-head-button-block{
+	float: left;
+	margin-top: 18px;
+}
+.fg-body-button{
+	text-shadow: none;
+	font-size: 12px;
+	border: transparent;
+	background-color: rgb(179,179,179);
+	color: rgb(255,255,255);
+	padding: 6px 12px;
+	display: inline;
+}
+.fg-body-button:hover{
+	background-color: rgb(235,101,49);
+	color: rgb(255,255,255);
+}
+.fg-head-button{
+	margin-bottom: 15px;
+}
+.fg-tab{
+	width: 19.5%;
+	text-align: center;
 }
