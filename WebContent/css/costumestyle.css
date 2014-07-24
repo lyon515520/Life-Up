@@ -115,6 +115,9 @@ border-style:none;
 .color_blue:hover{
 	color: rgb(20,192,221);
 }
+.color-red{
+	color: rgb(207,29,5);
+}
 .page{
 	min-height: 100%;
     height: auto !important;

@@ -601,12 +601,12 @@
 }
 .mon-compte-comment{
 	width: 85%;
-	height: 40px;
+	height: 35px;
 	float: left;
 }
 #ml-btn-comment{
 	width: 15%;
-	height: 40px;
+	height: 35px;
 	float: left;
 	background-color: rgb(134,134,134);
 	color: rgb(255,255,255);
@@ -906,6 +906,230 @@
 	margin-bottom: 15px;
 }
 .fg-tab{
-	width: 19.5%;
+	width: 20%;
 	text-align: center;
+}
+.fg-item-date{
+	float: left;
+	margin: 16px 20px auto 50px;
+}
+.fg-item-number{
+	float: left;
+	margin: 16px 15px auto 0;
+}
+.fg-item-arrow{
+	margin: 12px auto auto 35px;
+	float: left;
+	cursor: pointer;
+}
+.fg-page{
+	color: rgb(134,134,134);
+}
+.fg-page:hover{
+	color: rgb(235,101,49);
+}
+.fg-activity-page-block{
+	overflow: hidden;
+	margin: 10px 15px;
+}
+.fg-page-count{
+	float: left;
+	margin-right: 15px;
+}
+.fg-page-chose{
+	float: left;
+	margin-right: 360px;
+}
+.fg-page-change{
+	float: left;
+}
+.fg-comment-window{
+	height: 76px;
+	overflow: auto;
+	padding: 5px 10px;
+	border: transparent;
+	border-radius: 2px;
+	background-color: rgb(255,255,255);
+}
+.fg-write-comment-block{
+	overflow: hidden;
+	margin: 5px auto 30px;
+}
+.fg-comment-head{
+	overflow: hidden;
+}
+.fg-comment-head-image{
+	float: left;
+}
+.fg-comment-head-info{
+	float: left;
+	margin-left: 10px;
+}
+.fg-comment-head-pp{
+	float: left;
+	margin-left: 450px;
+	padding-top: 8px;
+}
+.fg-comment-head-img{
+	width: 32px;
+	height: 32px;
+	border: transparent;
+	border-radius: 16px;
+}
+.fg-comment-block{
+	margin-bottom: 10px;
+}
+.fg-comment-other{
+	overflow: hidden;
+	margin-top: 5px;
+	margin-bottom: 30px;
+}
+.fg-chat-head-info{
+	float: left;
+	margin-left: 10px;
+	padding-top: 8px;
+}
+.fg-chat-head-date{
+	float: left;
+	margin-left: 430px;
+	padding-top: 8px;
+}
+.fg-chat-context{
+	margin: 5px 0;
+}
+.fg-presentation-description{
+	margin: auto 20px 18px;
+}
+.fg-musique-star-on::before{
+	color: rgb(207,29,5);
+	font-size: 14px;
+}
+.fg-musique-star-off::before{
+	color: rgba(207,29,5,0.5);
+	font-size: 14px;
+}
+.fg-musique-level-block{
+	border: solid rgb(207,29,5);
+	border-radius: 2px;
+	padding: 1px 2px;
+	float: left;
+	border-width: thin;
+}
+.fg-presentation-info-block{
+	margin: auto 20px; 
+	overflow: hidden;
+}
+.date-on{
+	font-size: 14.4px;
+	color: rgb(235,101,49);
+}
+.date-off{
+	font-size: 14.4px;
+	color: rgb(134,134,134);
+}
+.fg-info-date{
+	float: left;
+	margin: 3px;
+}
+.fg-presentation-context{
+	margin: 14px 20px 18px;
+}
+.fg-body-item{
+	overflow: hidden;
+	border-bottom: solid;
+	border-color: rgb(255,255,255);
+	margin-top: 14px;
+}
+.fg-musique-title{
+	font-size: 17.72px;
+	color: rgb(207,29,5);
+}
+.fg-sport-title{
+	font-size: 17.72px;
+	color: rgb(13,204,232);
+}
+.fg-sport-level-block{
+	border: solid rgb(13,204,232);
+	border-radius: 2px;
+	padding: 1px 2px;
+	float: left;
+	border-width: thin;
+}
+.fg-sport-star-on::before{
+	color: rgb(13,204,232);
+	font-size: 14px;
+}
+.fg-sport-star-off::before{
+	color: rgba(13,204,232,0.5);
+	font-size: 14px;
+}
+.mp-icon-couple::before{
+	color: rgb(179,179,179);
+	font-size: 12px;
+}
+.mp-icon-male::before{
+	color: rgb(179,179,179);
+	font-size: 12px;
+}
+.mp-title{
+	overflow: hidden;
+	margin-bottom: 5px;
+	margin-top: 10px;
+}
+.mp-title-left{
+	float: left;
+	margin-left: 20px;
+}
+.mp-title-right{
+	float: left;
+	margin-left: 400px;
+}
+.mp-context{
+	width: 100%;
+	display: inline-block;
+	background-color: rgb(245,245,245);
+}
+.mp-title-right2{
+	float: left;
+	margin-left: 350px;
+}
+.mp-icon-pratique::before{
+	color: rgb(134,134,134);
+	font-size: 14px;
+}
+.mp-passion-left-icon{
+	float: left;
+	margin: 10px 10px 10px 0;
+}
+.mp-musique-level-block{
+	border: solid rgb(207,29,5);
+	border-radius: 2px;
+	padding: 1px 2px;
+	float: left;
+	border-width: thin;
+	margin: 10px auto;
+}
+.mp-sport-level-block{
+	border: solid rgb(13,204,232);
+	border-radius: 2px;
+	padding: 1px 2px;
+	float: left;
+	border-width: thin;
+	margin: 10px auto;
+}
+.mp-info-date{
+	float: left;
+	margin: 13px 3px;
+}
+.mp-passion-context{
+	margin-left: 40px;
+}
+.mp-passion-info-left{
+	float: left;
+	overflow: hidden;
+}
+.mp-passion-arrow{
+	margin: 25px auto auto 158px;
+	float: left;
+	cursor: pointer;
 }
