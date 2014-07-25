@@ -471,9 +471,9 @@
 	padding: 0.7px 8px;
 }
 .mon-compte-btn-propose{
-	display: block;
+	display: inline-block;
 	font-size: 14.4px;
-	padding: 3px 10px;
+	padding: 5px 10px 1px 10px;
 }
 .ml-body-btn-propose-block{
 	margin: 8px 8px 10px 8px;
@@ -491,20 +491,23 @@
 	float: left;
 	font-size: 14.4px;
 	color: rgb(134,134,134);
-	margin: 12px 15px;
+	margin: 15px 10px auto 10px;
+	width: 120px;
 }
 .ml-body-temps-block{
 	float: left;
-	margin: 9px 15px;
+	margin: 13px 10px auto 10px;
+	width: 110px;
 }
 .ml-body-participants-block{
 	font-size: 14.4px;
 	color: rgb(134,134,134);
 	float: left;
-	margin: 12px 15px;
+	margin: 15px 10px auto 10px;
+	width: 65px;
 }
 .ml-body-arrow-block{
-	margin: 8px auto auto 30px;
+	margin: 10px auto auto 10px;
 	float: left;
 	cursor: pointer;
 }
@@ -573,10 +576,10 @@
 	float: left;
 	margin-left: 2px;
 	margin-top: 12px;
-	width:150px;
+	width: 180px;
 }
 .ml-activity-participants-info-left{
-	width: 300px;
+	width: 250px;
 	overflow: hidden;
 	float: left;
 }
@@ -610,6 +613,7 @@
 	float: left;
 	background-color: rgb(134,134,134);
 	color: rgb(255,255,255);
+	text-shadow: none;
 }
 .ml-comment-block{
 	overflow: hidden;
@@ -744,6 +748,7 @@
 	background-color: rgb(134,134,134);
 	color: rgb(255,255,255);
 	padding: 0px;
+	text-shadow: none;
 }
 #ma-comment{
 	height: 24px;
@@ -848,6 +853,7 @@
 #ma-link{
 	color: rgb(13,204,232);
 	font-size: 13px;
+	text-decoration: underline;
 }
 #ma-link:hover{
 	color: rgb(20,192,221);
@@ -911,14 +917,16 @@
 }
 .fg-item-date{
 	float: left;
-	margin: 16px 20px auto 50px;
+	margin: 16px 20px auto 40px;
+	width: 110px;
 }
 .fg-item-number{
 	float: left;
-	margin: 16px 15px auto 0;
+	margin: 16px 5px auto 0;
+	width: 110px;
 }
 .fg-item-arrow{
-	margin: 12px auto auto 35px;
+	margin: 12px auto auto 25px;
 	float: left;
 	cursor: pointer;
 }
@@ -935,10 +943,12 @@
 .fg-page-count{
 	float: left;
 	margin-right: 15px;
+	width: 80px;
 }
 .fg-page-chose{
 	float: left;
-	margin-right: 360px;
+	margin-right: 230px;
+	width: 200px;
 }
 .fg-page-change{
 	float: left;
@@ -964,10 +974,11 @@
 .fg-comment-head-info{
 	float: left;
 	margin-left: 10px;
+	width: 120px;
 }
 .fg-comment-head-pp{
 	float: left;
-	margin-left: 450px;
+	margin-left: 400px;
 	padding-top: 8px;
 }
 .fg-comment-head-img{
@@ -988,14 +999,16 @@
 	float: left;
 	margin-left: 10px;
 	padding-top: 8px;
+	width: 100px;
 }
 .fg-chat-head-date{
 	float: left;
-	margin-left: 430px;
+	margin-left: 380px;
 	padding-top: 8px;
 }
 .fg-chat-context{
 	margin: 5px 0;
+	width: 450px;
 }
 .fg-presentation-description{
 	margin: auto 20px 18px;
@@ -1081,17 +1094,13 @@
 	margin-left: 20px;
 }
 .mp-title-right{
-	float: left;
-	margin-left: 400px;
+	float: right;
+	margin-right: 20px;
 }
 .mp-context{
 	width: 100%;
 	display: inline-block;
 	background-color: rgb(245,245,245);
-}
-.mp-title-right2{
-	float: left;
-	margin-left: 350px;
 }
 .mp-icon-pratique::before{
 	color: rgb(134,134,134);
@@ -1127,9 +1136,40 @@
 .mp-passion-info-left{
 	float: left;
 	overflow: hidden;
+	width: 500px;
 }
 .mp-passion-arrow{
-	margin: 25px auto auto 158px;
+	margin: 25px auto auto 139px;
 	float: left;
 	cursor: pointer;
+}
+.mp-lg-img-block{
+	margin: 13px;
+	float: left;
+}
+.mp-lg-img{
+	width: 40px;
+	height: 40px;
+	border: transparent;
+	border-radius: 20px;
+}
+.mp-lg-icon::before{
+	color: rgb(134,134,134);
+	font-size: 12px;
+}
+.mp-lg-info-block{
+	margin: 15px 8px 8px;
+	float: left;
+	width: 400px;
+}
+.mp-lg-button{
+	margin: 19px auto auto 80px;
+	float: left;
+}
+.fg-body-event-block{
+	float: left;
+	font-size: 14.4px;
+	color: rgb(134,134,134);
+	margin: 15px 10px auto 10px;
+	width: 190px;
 }

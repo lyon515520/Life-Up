@@ -1,27 +1,24 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>无标题文档</title>
-<style type="text/css">
-#A{
-	border-bottom:1px solid #E6E6E6;
-	color:#999999;
-	height:113px;
-	overflow:auto;
-	padding-top:2px;
-}
-</style>
-</head>
-
+<!DOCTYPE html>
+<html>
 <body>
 
-<div id="A">
-	<div id="B">
-oooooooooooo<br />oooooooooooo<br />oooooooooooo<br />oooooooooooo<br />oooooooooooo<br />oooooooooooo<br />oooooooooooo<br />oooooooooooo<br />oooooooooooo<br />oooooooooooo<br />oooooooooooo<br />oooooooooooo<br />oooooooooooo<br />
-    </div>
-</div>
+<p id="myP1">This is some text.</p>
+<p id="myP2">This is some text.</p>
 
+<input type="button" onclick="demoDisplay()" value="Hide text with display property">
+<input type="button" onclick="demoVisibility()" value="Hide text with visibility property">
+
+<script>
+function demoDisplay()
+{
+document.getElementById("myP1").style.display="none";
+}
+
+function demoVisibility()
+{
+document.getElementById("myP2").style.visibility="hidden";
+}
+</script>
 
 </body>
 </html>
