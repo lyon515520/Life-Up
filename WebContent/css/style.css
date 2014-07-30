@@ -155,8 +155,9 @@
 }
 .icon-recherche:before {
 	content: "\e623";
-	color: rgb(50,40,38);
+	color: rgb(255,255,255);
 	font-size: 16px;
+	line-height: 0.7;
 }
 .icon-retrecir:before {
 	content: "\e624";
@@ -244,4 +245,14 @@
 }
 .icon-couple:before {
 	content: "\e630"
+}
+.icon-elargir2:before {
+	content: "\e63f";
+	color: rgb(235,101,49);
+	font-size: 12px;
+}
+.icon-retrecir2:before {
+	content: "\e640";
+	color: rgb(235,101,49);
+	font-size: 12px;
 }

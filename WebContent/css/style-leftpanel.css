@@ -291,6 +291,26 @@
 .mon-compte-invite-text{
 	text-align: center;
 }
+.icon-mon-compte-week-off::before{
+	color: rgb(111,111,111);
+	font-size: 20px;
+	margin: 8px 8px;
+}
+.icon-mon-compte-week-on::before{
+	color: rgb(235,101,49);
+	font-size: 20px;
+	margin: 8px 8px;
+}
+.mon-compte-week{
+	float: left;
+	cursor: pointer;
+}
+.mon-compte-select-week{
+	overflow: hidden;
+	margin-left: 215px;
+	margin-right: auto;
+	margin-bottom: 18px;
+}
 /*-----------------------------------------------------------------------------------*/
 .motive-list-head{
 	width:100%;
@@ -337,7 +357,10 @@
 .ml-head-link-icon::before{
 	color: rgb(134,134,134);
 	font-size: 14.4px;
-	
+}
+.ml-head-link-icon-click::before{
+	color: rgb(235,101,49);
+	font-size: 14.4px;
 }
 .ml-head-link-text{
 	color: rgb(134,134,134);
@@ -362,9 +385,7 @@
 	overflow: hidden;
 	border-bottom: solid;
 	border-color: rgb(255,255,255);
-}
-.ml-body-item:hover .ml-body-button-block{
-	display: block;
+	border-width: 1px;
 }
 .ml-body-motive,
 .ml-body-groupe,
@@ -396,14 +417,13 @@
 }
 .ml-body-declaration-block{
 	float: left;
-	width: 230px;
+	width: 350px;
 	height: 76px;
 	display: table;
 }
 .ml-body-button-block{
 	float: left;
 	margin: 2px auto 8px 30px;
-	display: none;
 }
 .ml-body-button{
 	text-shadow: none;
@@ -417,7 +437,12 @@
 	margin-top: -10px;
 	display: inline;
 }
-.ml-body-button:hover{
+.ml-body-button:hover,
+.ml-body-button:active{
+	background-color: rgb(235,101,49);
+	color: rgb(255,255,255);
+}
+.ml-body-button:focus{
 	background-color: rgb(235,101,49);
 	color: rgb(255,255,255);
 }
@@ -430,7 +455,6 @@
 	height: 17px;
 }
 .ml-body-declaration{
-	text-align: center;
 	vertical-align: middle;
 	display: table-cell;
 }
@@ -459,6 +483,18 @@
 }
 .ml-body-arrow{
 	text-align: center;
+}
+.ml-body-arrow-down{
+	text-align: center;
+	display: block;
+}
+.ml-body-arrow-up{
+	text-align: center;
+	-moz-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	margin-bottom: -5px;
+	margin-top: 5px;
 }
 .ml-body-link{
 	cursor: pointer;
@@ -496,7 +532,7 @@
 }
 .ml-body-temps-block{
 	float: left;
-	margin: 13px 10px auto 10px;
+	margin: 5px 10px auto 10px;
 	width: 110px;
 }
 .ml-body-participants-block{
@@ -507,9 +543,17 @@
 	width: 65px;
 }
 .ml-body-arrow-block{
-	margin: 10px auto auto 10px;
 	float: left;
 	cursor: pointer;
+}
+.float-arrow-down{
+	margin: 10px;
+}
+.float-arrow-up{
+	margin: 15px 10px 10px 10px;
+	-moz-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
 }
 .ml-activity-brief{
 	overflow: hidden;
@@ -531,23 +575,18 @@
 .ml-activity-maps{
     width:250px;
     height:150px;
-    float: left;
+    margin-left: auto;
+	margin-right: auto;
 }
 .ml-activity-maps-block{
-	margin: 10px auto 14px 80px;
 	overflow: hidden;
 }
 .ml-activity-adresse{
-	float: left;
-	margin-left: 50px;
-	width: 50x;
-	height: 150px;
-	display: table;
+	text-align: center;
+	margin-top: 14px;
 }
 .ml-activity-adresse-text{
 	text-align: center;
-	vertical-align: middle;
-	display: table-cell;
 }
 .ml-activity-window{
 	border-bottom:1px solid rgb(179,179,179);
@@ -560,7 +599,7 @@
 .ml-activity-comments{
 	overflow: hidden;
 	border-bottom: solid 1px;
-	border-color: rgb(179,179,179);
+	border-color: rgb(230,230,230);
 }
 .ml-activity-participants-info1{
 	float: left;
@@ -594,6 +633,7 @@
 .ml-body-comments-date{
 	float: right;
 	margin: 8px 18px;
+	text-align: right;
 }
 .ml-activity-comments-context{
 	margin: 0px 18px 8px 8px;
@@ -803,7 +843,7 @@
 .ma-proposition{
 	overflow: hidden;
 	border-bottom: solid 1px;
-	border-color: rgb(179,179,179);
+	border-color: rgb(204,204,204);
 	margin: 0 10px;
 }
 #proposition-ajoute{
@@ -813,12 +853,14 @@
 #ma-proposition-ajoute{
 	height: 24px;
 	float: left;
+	border-radius: 2px 0 0 2px;
 }
 .ma-proposition-ajoute-block{
 	margin: 18px 20px 14px 20px;
 	float: left;
 	overflow: hidden;
 	width: 40%;
+	display: table-cell;
 }
 #ma-btn-proposition-ajoute{
 	height: 24px;
@@ -904,12 +946,31 @@
 	padding: 6px 12px;
 	display: inline;
 }
+.fg-body-button2{
+	text-shadow: none;
+	font-size: 12px;
+	border: transparent;
+	background-color: rgb(179,179,179);
+	color: rgb(255,255,255);
+	padding: 6px 12px;
+	display: inline;
+	padding-top: 7px;
+}
 .fg-body-button:hover{
+	background-color: rgb(235,101,49);
+	color: rgb(255,255,255);
+}
+.fg-body-button2:hover,
+.fg-body-button2:active,
+.fg-body-button2:focus{
 	background-color: rgb(235,101,49);
 	color: rgb(255,255,255);
 }
 .fg-head-button{
 	margin-bottom: 15px;
+}
+.fg-head-button2{
+	margin-bottom: 11px;
 }
 .fg-tab{
 	width: 20%;
@@ -1172,4 +1233,67 @@
 	color: rgb(134,134,134);
 	margin: 15px 10px auto 10px;
 	width: 190px;
+}
+.ml-btn-right{
+	float: right;
+	margin: 10px 0 18px 0;
+}
+.left-head-text-mid{
+	display: inline-block;
+	max-width: 175px;
+	overflow: hidden;
+	padding-right: 8px;
+	text-overflow: ellipsis;
+	vertical-align: initial;
+	white-space: nowrap;
+	line-height: 1;
+}
+.left-head-text-mid2{
+	display: inline-block;
+	max-width: 175px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	vertical-align: initial;
+	white-space: nowrap;
+	line-height: 1;
+}
+#ml-head-link-carte{
+	margin-left: -4px;
+}
+#ml-head-link-carte-text{
+	margin-left: -4px;
+}
+.fg-presentation-lieux{
+	overflow: hidden;
+}
+.fg-lieux-item{
+	overflow: hidden;
+	margin-left: 10px;
+}
+.fh-presentation-img{
+	width: 40px;
+	height: 40px;
+	border: transparent;
+	border-radius: 20px;
+}
+.fg-prensentation-lieux-info-block{
+	margin: 10px 8px;
+	float: left;
+}
+.fg-prensentation-lieux-info{
+	overflow: hidden;
+	display: inline-block;
+}
+.fg-prensentation-lieux-icon{
+	float: left;
+}
+.fg-prensentation-lieux-text{
+	float: left;
+	margin-top: -3px;
+	display: block;
+}
+.btn-group2{
+	position: absolute;
+	display: inline-block;
+	vertical-align: middle;
 }

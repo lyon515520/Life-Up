@@ -172,6 +172,7 @@ border-style:none;
 }
 a{
 	cursor: pointer;
+	outline: none;
 }
 a:hover{
 	text-decoration: none;
@@ -1910,6 +1911,9 @@ fieldset[disabled] .btn-plus-min.active {
 	background-color: rgb(204,204,204);
 	border-color: rgb(204,204,204);
 	border-radius: 0px 2px 2px 0px;
+	display: table;
+	text-shadow: none;
+	outline: none;
 }
 #btn-perso{
 	margin-top: 8px;
