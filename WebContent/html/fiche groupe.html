@@ -12,6 +12,166 @@
 <title>c'est la partie de "fiche groupe"</title>
 </head>
 <body class="body-test">
+	<div class="modal fade modal-invite" id="fg-subwindow-invite" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-lg">
+	    <div class="modal-content">
+		    <div class="fg-subwindow-head">
+		    	<p class="fg-subwindow-head-title">Ajouter des personnes au groupe</p>
+		    	<div class="gl-subwindow-head-remove">
+					<p class="glyphicon glyphicon-remove glyphicon-gl-remove"  data-dismiss="modal"></p>
+		    	</div>
+		    </div>
+		    <div class="fg-subwindow-body">
+		    	<div class="fg-subwindow-item1">
+					<input type="text" class="form-control" placeholder="Qui veux-tu ajouter au groupe ?">
+				</div>
+		    </div>
+		    <div class="fg-subwindow-foot">
+		    	<div class="fg-subwindow-btn-right">
+					<a href="#" class="btn btn-default text-size4 fg-subwindow-btn-grey" data-dismiss="modal" role="button">&nbsp;Annuler&nbsp;&nbsp;</a>
+					<a href="#" class="btn btn-default text-size4 fg-subwindow-btn-orange" data-dismiss="modal" role="button">Continuer</a>
+				</div>
+		    </div>
+	    </div>
+	  </div>
+	</div>
+	<div class="modal fade modal-send-message" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-lg">
+	    <div class="modal-content">
+	    	<div class="fg-subwindow-head">
+	        	<p class="fg-subwindow-head-title">this is the subwindow after clicking Envoyer un message</p>
+	    	</div>
+	    </div>
+	  </div>
+	</div>
+	<div class="modal fade modal-create-group" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-lg">
+	    <div class="modal-content">
+	        <div class="fg-subwindow-head">
+		    	<p class="fg-subwindow-head-title">Cr&eacute;er un groupe</p>
+		    	<div class="gl-subwindow-head-remove">
+					<p class="glyphicon glyphicon-remove glyphicon-gl-remove"  data-dismiss="modal"></p>
+		    	</div>
+		    </div>
+		    <div class="fg-subwindow-body">
+		    	<div class="fg-subwindow-item1">
+		    		<div class="fg-subwindow-input-block">
+		    			<p class="fg-subwindow-input-text">Nom de groupe</p>
+						<input type="text" class="form-control" id="fg-group-name" placeholder="Donne un nom &agrave; ton groupe">
+					</div>
+				</div>
+				<div class="fg-subwindow-item1" id="fg-subwindow-create-group">
+		    		<div class="fg-subwindow-input-block" id="subwindow-input-member">
+		    			<p class="fg-subwindow-input-text">Membres</p>
+						<input type="text" class="form-control" id="fg-group-name" placeholder="Qui veux-tu ajouter au groupe ?">
+					</div>
+				</div>
+				<div class="fg-subwindow-item1">
+					<div class="fg-subwindow-text-left">
+						<p class="text-size2 color_grey1">Confidentialit&eacute;</p>
+					</div>
+					<div class="fg-subwindow-text-right">
+						<div class="fg-subwindow-confidential-block" id="confidential-public">
+							<div class="fg-subwindow-confidential-head">
+								<input type="radio" name="confidential" value="public" class="fg-confidential-radio"/>
+								<p class="fg-confidential-title">
+									<span aria-hidden="true" data-icon="&#xe63d" class="icon-female fg-icon-female" ></span>
+									<span class="left-head-text-mid">Public</span>
+								</p>
+							</div>
+							<div class="fg-subwindow-confidential-body">
+								<p class="text-size2 color_grey1">Lorem ipsum doloris van der marchet fil des darte dela quoisse tous var denne argata julia</p>
+							</div>
+						</div>
+						<div class="fg-subwindow-confidential-block" id="confidential-privee-visible">
+							<div class="fg-subwindow-confidential-head">
+								<input type="radio" name="confidential" value="privee-visible" class="fg-confidential-radio"/>
+								<p class="fg-confidential-title">
+									<span aria-hidden="true" data-icon="&#xe63d" class="icon-female fg-icon-female" ></span>
+									<span class="left-head-text-mid">Priv&eacute;e visible</span>
+								</p>
+							</div>
+							<div class="fg-subwindow-confidential-body">
+								<p class="text-size2 color_grey1">Lorem ipsum doloris van der marchet fil des darte dela quoisse tous var denne argata julia</p>
+							</div>
+						</div>
+						<div class="fg-subwindow-confidential-block" id="confidential-privee-non-visible">
+							<div class="fg-subwindow-confidential-head">
+								<input type="radio" name="confidential" value="privee-non-visible" class="fg-confidential-radio"/>
+								<p class="fg-confidential-title">
+									<span aria-hidden="true" data-icon="&#xe63d" class="icon-female fg-icon-female" ></span>
+									<span class="left-head-text-mid">Priv&eacute;e non visible</span>
+								</p>
+							</div>
+							<div class="fg-subwindow-confidential-body">
+								<p class="text-size2 color_grey1">Lorem ipsum doloris van der marchet fil des darte dela quoisse tous var denne argata julia</p>
+							</div>
+						</div>
+						<div class="fg-subwindow-confidential-block" id="confidential-privee-non-visible">
+							<a class="text-size2 color-orange" id="subwindow-confidential-link" >this is the subwindow after clicking really whatever the word is asdasd asd Signaler le groupe</a>
+						</div>
+					</div>
+				</div>
+		    </div>
+		    <div class="fg-subwindow-foot">
+		    	<div class="fg-subwindow-btn-right">
+					<a href="#" class="btn btn-default text-size4 fg-subwindow-btn-grey" data-dismiss="modal" role="button">&nbsp;Annuler&nbsp;&nbsp;</a>
+					<a href="#" class="btn btn-default text-size4 fg-subwindow-btn-orange" data-dismiss="modal" role="button">Continuer</a>
+				</div>
+		    </div>
+	    </div>
+	  </div>
+	</div>
+	<div class="modal fade modal-report-group" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-lg">
+	    <div class="modal-content">
+	        <div class="fg-subwindow-head">
+		    	<p class="fg-subwindow-head-title">Indiquer la raison du signalement</p>
+		    	<div class="gl-subwindow-head-remove">
+					<p class="glyphicon glyphicon-remove glyphicon-gl-remove"  data-dismiss="modal"></p>
+		    	</div>
+		    </div>
+		    <div class="fg-subwindow-body">
+		    	<div class="fg-subwindow-item1">
+					<p class="text-size2 color-orange">Ce groupe concerne un(e) ami(e) ou moi-même :</p>
+					<div class="fg-signaler-radio">
+						<input type="radio" name="signalement1" value="signaler1-1"/>
+						Il s’agit d’harcèlement envers un(e) ami(e)
+					</div>
+					<div class="fg-signaler-radio">
+						<input type="radio" name="signalement1" value="signaler1-2"/>
+						Il s’agit d’harcèlement envers moi
+					</div>
+				</div>
+				<div class="fg-subwindow-item1">
+					<p class="text-size2 color-orange">Ce groupe a un contenu douteux :</p>
+					<div class="fg-signaler-radio">
+						<input type="radio" name="signalement2" value="signaler2-1"/>
+						Contenu pronographique
+					</div>
+					<div class="fg-signaler-radio">
+						<input type="radio" name="signalement2" value="signaler2-1"/>
+						Arnaque ou spam
+					</div>
+					<div class="fg-signaler-radio">
+						<input type="radio" name="signalement2" value="signaler2-1"/>
+						Comportement violent et dangereux
+					</div>
+					<div class="fg-signaler-radio">
+						<input type="radio" name="signalement2" value="signaler2-1"/>
+						Propos à caractères racistes
+					</div>
+				</div>
+		    </div>
+		    <div class="fg-subwindow-foot">
+		    	<div class="fg-subwindow-btn-right">
+					<a href="#" class="btn btn-default text-size4 fg-subwindow-btn-grey" data-dismiss="modal" role="button">&nbsp;Annuler&nbsp;&nbsp;</a>
+					<a href="#" class="btn btn-default text-size4 fg-subwindow-btn-orange" data-dismiss="modal" role="button">Continuer</a>
+				</div>
+		    </div>
+	    </div>
+	  </div>
+	</div>
 	<div class="leftpanel">
 		<div class="lp-inside">
 			<div class="motive-list-head">
@@ -77,43 +237,12 @@
 					 	</a>
 					 	<ul class="dropdown-menu pull-right" role="menu">
 						  	<li>
-							    <a class="head-text" href="#" data-toggle="modal" data-target=".bs-example-modal-lg">
+							    <a class="head-text" href="#" data-toggle="modal" data-target=".modal-invite">
 						  			<span class="head-text-mid color_grey1">&nbsp;Inviter une personne</span>
 					  			</a>
-					  			<div class="modal fade bs-example-modal-lg" tabindex="" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-								  <div class="modal-dialog modal-lg">
-								    <div class="modal-content">
-								      <p>this is a test</p>
-								      <p>this is a test</p>
-								      <p>this is a test</p>
-								      <p>this is a test</p>
-								      <p>this is a test</p>
-								      <p>this is a test</p>
-								      <p>this is a test</p>
-								      <p>this is a test</p>
-								      <p>this is a test</p>
-								      <p>this is a test</p>
-								      <p>this is a test</p>
-								      <p>this is a test</p>
-								      <p>this is a test</p>
-								      <p>this is a test</p>
-								      
-								      <p>this is a test</p>
-								      <p>this is a test</p><p>this is a test</p>
-								      <p>this is a test</p>
-								      <p>this is a test</p>
-								      <p>this is a test</p>
-								      <p>this is a test</p>
-								      <p>this is a test</p>
-								      
-								      v<p>this is a test</p>
-								      <p>this is a test</p>
-								    </div>
-								  </div>
-								</div>
 				  			</li>
 						    <li>
-							    <a class="head-text" href="#">
+							    <a class="head-text" href="#" data-toggle="modal" data-target=".modal-send-message">
 						  			<span class="head-text-mid color_grey1">&nbsp;Envoyer un message</span>
 					  			</a>
 				  			</li>
@@ -123,7 +252,7 @@
 					  			</a>
 				  			</li>
 				  			<li>
-							    <a class="head-text" href="#">
+							    <a class="head-text" href="#" data-toggle="modal" data-target=".modal-create-group">
 						  			<span class="head-text-mid color_grey1">&nbsp;Créer une groupe</span>
 					  			</a>
 				  			</li>
@@ -140,7 +269,7 @@
 					  			</a>
 				  			</li>
 				  			<li>
-							    <a class="head-text" href="#">
+							    <a class="head-text" href="#" data-toggle="modal" data-target=".modal-report-group">
 						  			<span class="head-text-mid color_grey1">&nbsp;Signaler le groupe</span>
 					  			</a>
 				  			</li>

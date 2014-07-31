@@ -1297,3 +1297,129 @@
 	display: inline-block;
 	vertical-align: middle;
 }
+.fg-subwindow-head{
+	background-color: rgb(50,40,38);
+	overflow: hidden;
+}
+.fg-subwindow-head-title{
+	color: rgb(255,255,255);
+	padding: 6px 12px;
+	float: left;
+}
+.gl-subwindow-head-remove{
+	cursor: pointer;
+	padding: 6px 12px;
+	float: right;
+}
+.glyphicon-gl-remove::before{
+	color: rgb(255,255,255);
+	font-size: 14.4px;
+}
+.fg-subwindow-item1{
+	overflow: hidden;
+	border-bottom: solid;
+	border-color: rgb(255,255,255);
+	border-width: 1px;
+	margin: 18px;
+}
+.fg-subwindow-foot{
+	overflow: hidden;
+	margin: auto 10px;
+	border-top: solid rgb(245,245,245);
+	border-width: 1px;
+}
+.fg-subwindow-btn-right{
+	float: right;
+	margin: 10px 0 10px 0;
+}
+.fg-subwindow-btn-orange,
+.fg-subwindow-btn-orange:hover{
+	background-color: rgb(235,101,49);
+	border: transparent;
+	text-shadow: none;
+	color: rgb(255,255,255);
+	margin-right: 20px;
+	margin-left: 6px;
+}
+.fg-subwindow-btn-grey,
+.fg-subwindow-btn-grey:hover{
+	background-color: rgb(179,179,179);
+	border: transparent;
+	text-shadow: none;
+	color: rgb(255,255,255);
+}
+.fg-subwindow-btn-grey:active{
+	background-color: rgb(179,179,179);
+	border: transparent;
+	text-shadow: none;
+	color: rgb(255,255,255);
+}
+.fg-subwindow-input-block{
+	overflow: hidden;
+}
+.fg-subwindow-input-text{
+	font-size: 14.4px;
+	color: rgb(134,134,134);
+	float: left;
+	padding: 6px;
+}
+#fg-group-name{
+	width: 250px;
+	float: left;
+	margin-left: 10px;
+}
+#subwindow-input-member{
+	margin-left: 38px;
+}
+#fg-subwindow-create-group{
+	margin: 18px 10px 0 10px;
+	padding: 0px 8px 18px 8px;
+	border-bottom: solid rgb(245,245,245);
+	border-width: 1px;
+}
+.fg-subwindow-text-left{
+	float: left;
+	padding-left: 7px;
+	padding-right: 20px;
+}
+.fg-subwindow-text-right{
+	float: left;
+	width: 75%;
+}
+.fg-subwindow-confidential-block{
+	text-align: left;
+	font-size: 14.4px;
+	color: rgb(134,134,134);
+	padding-right: 10px;
+}
+.fg-confidential-radio{
+	float: left;
+	margin: 5px 5px 0 0;
+}
+.fg-confidential-title{
+	float: left;
+	margin-left: 5px;
+	font-weight: bold;
+}
+.fg-subwindow-confidential-head{
+	overflow: hidden;
+}
+.fg-subwindow-confidential-body{
+	padding-left: 20px;
+	padding-bottom: 5px;
+}
+#confidential-public,
+#confidential-privee-visible{
+	border-bottom: solid rgb(245,245,245);
+	border-width: 1px;
+}
+#subwindow-confidential-link:hover,
+#subwindow-confidential-link:active{
+	color: rgb(227,83,27);
+	text-decoration: underline;
+}
+.fg-signaler-radio{
+	font-size: 14.4px;
+	color: rgb(134,134,134);
+	margin: 8px 80px;
+}

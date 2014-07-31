@@ -25,12 +25,6 @@ function choose_day(keyword){
 		$(keyword).removeClass('icon-mon-compte-week-on').addClass('icon-mon-compte-week-off');
 	}
 }
-function style_test(){
-	var change = document.getElementById('ml-body-motive-show').style; 
-	if(change.display=="block"){
-		change.backgroundColor = "red";
-	}
-}
 
 function showout(){
 	var test = document.getElementById("test1");
@@ -71,6 +65,15 @@ function ml_show_hide_detail(keyword){
 		$(keywordzip).fadeOut(500).css("display","none");
 	}
 
+}
+
+function fg_remove_subwindow(keyword){
+	//$(document.body).removeClass('modal-open');
+	//$(keyword).removeClass('in');
+	//$(keyword).setAttribute("aria-hidden", "true");
+	//$(keyword).style.display="none";
+	//$(document.body).removeChild('<div class="modal-backdrop ' + animate + '" />');
+	callback();
 }
 
 //Ajouter &agrave; mes lieux
