@@ -3515,7 +3515,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
   color: rgb(134,134,134);
-  background-color: rgb(245,245,245);
+  background-color: rgb(255,255,255);
   border: 1px solid #dddddd;
   border-bottom-color: transparent;
   cursor: default;
@@ -3638,7 +3638,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .tab-content > .active {
   display: block;
-  background-color: rgb(245,245,245);
+  background-color: rgb(255,255,255);
 }
 .nav-tabs .dropdown-menu {
   margin-top: -1px;

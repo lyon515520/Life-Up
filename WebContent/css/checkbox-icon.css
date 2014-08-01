@@ -1,11 +1,11 @@
 @CHARSET "UTF-8";
 @font-face {
 	font-family: 'icomoon';
-	src:url('../fonts/icomoon.eot?7sybbf');
-	src:url('../fonts/icomoon.eot?#iefix7sybbf') format('embedded-opentype'),
-		url('../fonts/icomoon.woff?7sybbf') format('woff'),
-		url('../fonts/icomoon.ttf?7sybbf') format('truetype'),
-		url('../fonts/icomoon.svg?7sybbf#icomoon') format('svg');
+	src:url('../fonts/icomoon.eot?-ovt23r');
+	src:url('../fonts/icomoon.eot?#iefix-ovt23r') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?-ovt23r') format('woff'),
+		url('../fonts/icomoon.ttf?-ovt23r') format('truetype'),
+		url('../fonts/icomoon.svg?-ovt23r#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -18,11 +18,23 @@ input[type='checkbox'] + label:before{
  cursor: pointer;
 }
 input[type="checkbox"] + label:before {
-  content: "\e62d";
-  color: rgb(111,111,111) /* Checkbox Unchecked */
+  content: "\e62b";
+  color: rgb(111,111,111); /* Checkbox Unchecked */
 }
-
 input[type="checkbox"]:checked + label:before {
-  content: "\e62d";
+  content: "\e62b";
+  color: rgb(235,101,49); /* Checkbox Checked */
+}
+input[type='checkbox'] + div[class="fg-message-user-info"]:before{
+ font-family: 'icomoon';
+ font-weight: normal;
+ cursor: pointer;
+}
+input[type="checkbox"] + div[class="fg-message-user-info"]:before {
+  content: "\e62b";
+  color: rgb(111,111,111); /* Checkbox Unchecked */
+}
+input[type="checkbox"]:checked + div[class="fg-message-user-info"]:before {
+  content: "\e62b";
   color: rgb(235,101,49); /* Checkbox Checked */
 }

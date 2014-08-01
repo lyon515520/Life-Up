@@ -66,16 +66,12 @@ function ml_show_hide_detail(keyword){
 	}
 
 }
-
-function fg_remove_subwindow(keyword){
-	//$(document.body).removeClass('modal-open');
-	//$(keyword).removeClass('in');
-	//$(keyword).setAttribute("aria-hidden", "true");
-	//$(keyword).style.display="none";
-	//$(document.body).removeChild('<div class="modal-backdrop ' + animate + '" />');
-	callback();
+function all_select(source){
+	checkboxes = document.getElementsByName('fg-message');
+	for(var i=0, n=checkboxes.length;i<n;i++) {
+		checkboxes[i].checked = source.checked;
+	}
 }
-
 //Ajouter &agrave; mes lieux
 //Lieux favoris
 //Retirer de vos favoris

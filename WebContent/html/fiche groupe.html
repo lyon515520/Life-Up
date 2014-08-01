@@ -9,6 +9,7 @@
 <link rel="stylesheet" type="text/css" href="../css/style-leftpanel.css" />
 <link rel="stylesheet" type="text/css" href="../css/style.css" />
 <link rel="stylesheet" type="text/css" href="../css/style-google-font.css" />
+<link rel="stylesheet" type="text/css" href="../css/checkbox-icon.css" />
 <title>c'est la partie de "fiche groupe"</title>
 </head>
 <body class="body-test">
@@ -39,8 +40,78 @@
 	  <div class="modal-dialog modal-lg">
 	    <div class="modal-content">
 	    	<div class="fg-subwindow-head">
-	        	<p class="fg-subwindow-head-title">this is the subwindow after clicking Envoyer un message</p>
+	        	<div class="fg-subwindow-head">
+			    	<p class="fg-subwindow-head-title">Discute en ligne avec life-up</p>
+			    	<div class="gl-subwindow-head-remove">
+						<p class="glyphicon glyphicon-remove glyphicon-gl-remove"  data-dismiss="modal"></p>
+			    	</div>
+		    	</div>
 	    	</div>
+	    	<div class="fg-subwindow-body">
+		    	<div class="fg-subwindow-item1">
+		    		<input type="text" class="form-control" placeholder="Recherce tous les amis">
+		    	</div>
+		    	<div class="fg-subwindow-item1">
+		    		<div class="fg-subwindow-window">
+			    		<div class="fg-message-user-line">
+			    			<div class="fg-message-user-block">
+			    				<input id="message-user1" name="fg-message" type="checkbox">
+			    				<label  for="message-user1" class="fg-message-user-info">
+					    			<img class="fg-subwindow-image" src="../image/participer-img2.JPG"  alt="#" />
+									<span>&nbsp;Fabien D.</span>
+			    				</label>
+			    			</div>
+			    			<div class="fg-message-user-block">
+			    				<input id="message-user2" name="fg-message" type="checkbox">
+			    				<label  for="message-user2" class="fg-message-user-info">
+					    			<img class="fg-subwindow-image" src="../image/participer-img3.JPG"  alt="#" />
+									<span>&nbsp;Alex K.</span>
+			    				</label>
+			    			</div>
+			    			<div class="fg-message-user-block">
+			    				<input id="message-user3" name="fg-message" type="checkbox">
+			    				<label  for="message-user3" class="fg-message-user-info">
+					    			<img class="fg-subwindow-image" src="../image/participer-img1.JPG"  alt="#" />
+									<span>&nbsp;Henry T.</span>
+			    				</label>
+			    			</div>
+			    		</div>
+			    		<div class="fg-message-user-line">
+			    			<div class="fg-message-user-block">
+			    				<input id="message-user4" name="fg-message" type="checkbox">
+			    				<label  for="message-user4" class="fg-message-user-info">
+					    			<img class="fg-subwindow-image" src="../image/participer-img2.JPG"  alt="#" />
+									<span>&nbsp;Fabien D.</span>
+			    				</label>
+			    			</div>
+			    			<div class="fg-message-user-block">
+			    				<input id="message-user5" name="fg-message" type="checkbox">
+			    				<label  for="message-user5" class="fg-message-user-info">
+					    			<img class="fg-subwindow-image" src="../image/participer-img3.JPG"  alt="#" />
+									<span>&nbsp;Alex K.</span>
+			    				</label>
+			    			</div>
+			    			<div class="fg-message-user-block">
+			    				<input id="message-user6" name="fg-message" type="checkbox">
+			    				<label  for="message-user6" class="fg-message-user-info">
+					    			<img class="fg-subwindow-image" src="../image/participer-img1.JPG"  alt="#" />
+									<span>&nbsp;Henry T.</span>
+			    				</label>
+			    			</div>
+			    		</div>
+		    		</div>
+		    	</div>
+		    </div>
+		    <div class="fg-subwindow-foot">
+		    	<div class="fg-subwindow-message-all-select">
+		    		<input id="fg-subwindow-all-select" onClick="all_select(this)" type="checkbox">
+					<label for="fg-subwindow-all-select">&nbsp;Tout s&eacute;lectionner</label>
+		    	</div>
+		    	<div class="fg-subwindow-btn-right">
+					<a href="#" class="btn btn-default text-size4 fg-subwindow-btn-grey" data-dismiss="modal" role="button">&nbsp;Annuler&nbsp;&nbsp;</a>
+					<a href="#" class="btn btn-default text-size4 fg-subwindow-btn-orange" data-dismiss="modal" role="button">Continuer</a>
+				</div>
+		    </div>
 	    </div>
 	  </div>
 	</div>
@@ -75,7 +146,7 @@
 							<div class="fg-subwindow-confidential-head">
 								<input type="radio" name="confidential" value="public" class="fg-confidential-radio"/>
 								<p class="fg-confidential-title">
-									<span aria-hidden="true" data-icon="&#xe63d" class="icon-female fg-icon-female" ></span>
+									<span aria-hidden="true" data-icon="&#xe63f" class="icon-female fg-icon-female" ></span>
 									<span class="left-head-text-mid">Public</span>
 								</p>
 							</div>
@@ -87,7 +158,7 @@
 							<div class="fg-subwindow-confidential-head">
 								<input type="radio" name="confidential" value="privee-visible" class="fg-confidential-radio"/>
 								<p class="fg-confidential-title">
-									<span aria-hidden="true" data-icon="&#xe63d" class="icon-female fg-icon-female" ></span>
+									<span aria-hidden="true" data-icon="&#xe63f" class="icon-female fg-icon-female" ></span>
 									<span class="left-head-text-mid">Priv&eacute;e visible</span>
 								</p>
 							</div>
@@ -99,7 +170,7 @@
 							<div class="fg-subwindow-confidential-head">
 								<input type="radio" name="confidential" value="privee-non-visible" class="fg-confidential-radio"/>
 								<p class="fg-confidential-title">
-									<span aria-hidden="true" data-icon="&#xe63d" class="icon-female fg-icon-female" ></span>
+									<span aria-hidden="true" data-icon="&#xe63f" class="icon-female fg-icon-female" ></span>
 									<span class="left-head-text-mid">Priv&eacute;e non visible</span>
 								</p>
 							</div>
@@ -186,17 +257,17 @@
 					<div>
 						<p>
 							<span class="color-brown text-size4">15 ans moyen, Lille</span>
-							<span aria-hidden="true" data-icon="&#xe63d" class="icon-female fg-icon-female" ></span>
+							<span aria-hidden="true" data-icon="&#xe63f" class="icon-female fg-icon-female" ></span>
 							<span aria-hidden="true" data-icon="&#xe63e" class="icon-male fg-icon-male" ></span>
 						</p>
 					</div>
 					<div class="ml-head-note">
 						<p>
-							<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-head-star-note1" ></span>
-							<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-head-star-note1" ></span>
-							<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-head-star-note1" ></span>
-							<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-head-star-note2" ></span>
-							<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-head-star-note2" ></span>
+							<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-head-star-note1" ></span>
+							<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-head-star-note1" ></span>
+							<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-head-star-note1" ></span>
+							<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-head-star-note2" ></span>
+							<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-head-star-note2" ></span>
 							<span class="text-size1 color_grey1">64 notes</span>
 						</p>
 					</div>
@@ -204,27 +275,27 @@
 						<p>
 							<span>Activités principales :</span>
 							<span>Badminton</span>
-							<span aria-hidden="true" data-icon="&#xe626" class="icon-star-level fg-icon-star-on" ></span>
-							<span aria-hidden="true" data-icon="&#xe626" class="icon-star-level fg-icon-star-on" ></span>
-							<span aria-hidden="true" data-icon="&#xe626" class="icon-star-level fg-icon-star-off" ></span>
-							<span aria-hidden="true" data-icon="&#xe626" class="icon-star-level fg-icon-star-off" ></span>
+							<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level fg-icon-star-on" ></span>
+							<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level fg-icon-star-on" ></span>
+							<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level fg-icon-star-off" ></span>
+							<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level fg-icon-star-off" ></span>
 						</p>
 					</div>
 					<div class="ml-head-link-block">
 						<a class="fg-head-link head-text-mid">
-							<span aria-hidden="true" data-icon="&#xe63c" class="icon-pionnier ml-head-link-icon" ></span>
+							<span aria-hidden="true" data-icon="&#xe640" class="icon-pionnier ml-head-link-icon" ></span>
 							<span class="ml-head-link-text left-head-text-mid2">Pionnier</span>
 						</a>
 						<a class="fg-head-link head-text-mid">
-							<span aria-hidden="true" data-icon="&#xe601" class="icon-agenda-menu ml-head-link-icon" ></span>
+							<span aria-hidden="true" data-icon="&#xe600" class="icon-agenda-menu ml-head-link-icon" ></span>
 							<span class="ml-head-link-text left-head-text-mid2">53 participations</span>
 						</a>
 						<a class="fg-head-link head-text-mid">
-							<span aria-hidden="true" data-icon="&#xe606" class="icon-creer-activite ml-head-link-icon" ></span>
+							<span aria-hidden="true" data-icon="&#xe624" class="icon-creer-activite ml-head-link-icon" ></span>
 							<span class="ml-head-link-text left-head-text-mid2">53 créations</span>
 						</a>
 						<a class="fg-head-link head-text-mid">
-							<span aria-hidden="true" data-icon="&#xe605" class="icon-contacts-menu ml-head-link-icon" ></span>
+							<span aria-hidden="true" data-icon="&#xe601" class="icon-contacts-menu ml-head-link-icon" ></span>
 							<span class="ml-head-link-text left-head-text-mid2">75 membres</span>
 						</a>
 					</div>
@@ -232,7 +303,7 @@
 				<div class="fg-head-button-block">
 					<div class="btn-group2 fg-head-button2">
 						<a href="#" class="btn text-size4 fg-body-button2 ml-body-button-discussion dropdown-toggle" data-toggle="dropdown" role="button">
-					  		<span aria-hidden="true" data-icon="&#xe619" class="icon-parametre ml-body-button-icon" ></span>
+					  		<span aria-hidden="true" data-icon="&#xe60c" class="icon-parametre ml-body-button-icon" ></span>
 							<span>Paramètres</span>
 					 	</a>
 					 	<ul class="dropdown-menu pull-right" role="menu">
@@ -277,13 +348,13 @@
 				 	</div>
 					<div class="fg-head-button" style="position: relative;margin-top: 40px;">
 						<a href="#" class="btn btn-default text-size4 fg-body-button ml-body-button-discussion" role="button">
-					  		<span aria-hidden="true" data-icon="&#xe602" class="icon-ajouter-ami ml-body-button-icon" ></span>
+					  		<span aria-hidden="true" data-icon="&#xe631" class="icon-ajouter-ami ml-body-button-icon" ></span>
 							<span>&nbsp;&nbsp;Rejoindre&nbsp;&nbsp;</span>
 					 	</a>
 				 	</div>
 				 	<div class="fg-head-button">
 						<a href="#" class="btn btn-default text-size4 fg-body-button ml-body-button-discussion" role="button">
-					  		<span aria-hidden="true" data-icon="&#xe632" class="icon-disussion-mono ml-body-button-icon" ></span>
+					  		<span aria-hidden="true" data-icon="&#xe62d" class="icon-disussion-mono ml-body-button-icon" ></span>
 							<span>&nbsp;&nbsp;Contacter&nbsp;&nbsp;</span>
 					 	</a>
 				 	</div>
@@ -308,13 +379,41 @@
 					  		<div class="ml-body-item">
 					  			<div class="fg-body-event-block">
 							  		<p class="activity-name">
-										<span aria-hidden="true" data-icon="&#xe620" class="icon-prive" ></span>
-										<span aria-hidden="true" data-icon="&#xe638" class="icon-p-lettre"  ></span>
+										<span aria-hidden="true" data-icon="&#xe626" class="icon-prive" ></span>
+										<span aria-hidden="true" data-icon="&#xe636" class="icon-p-lettre"  ></span>
 										<span>Musculation</span>
-										<span aria-hidden="true" data-icon="&#xe626" class="icon-star-level fg-icon-star-on" ></span>
-										<span aria-hidden="true" data-icon="&#xe626" class="icon-star-level fg-icon-star-on" ></span>
-										<span aria-hidden="true" data-icon="&#xe626" class="icon-star-level fg-icon-star-off" ></span>
-										<span aria-hidden="true" data-icon="&#xe626" class="icon-star-level fg-icon-star-off" ></span>
+										<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level fg-icon-star-on" ></span>
+										<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level fg-icon-star-on" ></span>
+										<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level fg-icon-star-off" ></span>
+										<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level fg-icon-star-off" ></span>
+									</p>
+								</div>
+					  			<div class="fg-item-date">
+									<p class="color_grey1 text-size2">Sam. 14 déc. 2014</p>
+								</div>
+					  			<div class="ml-body-img-block">
+						  			<img class="ml-body-img2" src="../image/activity-img1.JPG"  alt="#" />
+						  			<img class="ml-body-img2" src="../image/activity-img2.JPG"  alt="#" />
+						  			<img class="ml-body-img2" src="../image/activity-img3.JPG"  alt="#" />
+						  		</div>
+					  			<div class="fg-item-number">
+					  				<p class="color_grey1 text-size2">7 participants...</p>
+					  			</div>
+					  			<div class="fg-item-arrow">
+									<span aria-hidden="true" data-icon="&#xe61e" class="icon-elargir" style="display: block;"></span>
+									<span aria-hidden="true" data-icon="&#xe61f" class="icon-retrecir" style="display: none;"></span>
+								</div>
+					  		</div>
+					  		<div class="ml-body-item">
+					  			<div class="fg-body-event-block">
+							  		<p class="activity-name">
+										<span aria-hidden="true" data-icon="&#xe626" class="icon-prive" ></span>
+										<span aria-hidden="true" data-icon="&#xe636" class="icon-p-lettre"  ></span>
+										<span>Musculation</span>
+										<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level fg-icon-star-on" ></span>
+										<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level fg-icon-star-on" ></span>
+										<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level fg-icon-star-off" ></span>
+										<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level fg-icon-star-off" ></span>
 									</p>
 								</div>
 					  			<div class="fg-item-date">
@@ -336,13 +435,13 @@
 					  		<div class="ml-body-item">
 					  			<div class="fg-body-event-block">
 							  		<p class="activity-name">
-										<span aria-hidden="true" data-icon="&#xe620" class="icon-prive" ></span>
-										<span aria-hidden="true" data-icon="&#xe638" class="icon-p-lettre"  ></span>
+										<span aria-hidden="true" data-icon="&#xe626" class="icon-prive" ></span>
+										<span aria-hidden="true" data-icon="&#xe636" class="icon-p-lettre"  ></span>
 										<span>Musculation</span>
-										<span aria-hidden="true" data-icon="&#xe626" class="icon-star-level fg-icon-star-on" ></span>
-										<span aria-hidden="true" data-icon="&#xe626" class="icon-star-level fg-icon-star-on" ></span>
-										<span aria-hidden="true" data-icon="&#xe626" class="icon-star-level fg-icon-star-off" ></span>
-										<span aria-hidden="true" data-icon="&#xe626" class="icon-star-level fg-icon-star-off" ></span>
+										<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level fg-icon-star-on" ></span>
+										<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level fg-icon-star-on" ></span>
+										<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level fg-icon-star-off" ></span>
+										<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level fg-icon-star-off" ></span>
 									</p>
 								</div>
 					  			<div class="fg-item-date">
@@ -364,41 +463,13 @@
 					  		<div class="ml-body-item">
 					  			<div class="fg-body-event-block">
 							  		<p class="activity-name">
-										<span aria-hidden="true" data-icon="&#xe620" class="icon-prive" ></span>
-										<span aria-hidden="true" data-icon="&#xe638" class="icon-p-lettre"  ></span>
+										<span aria-hidden="true" data-icon="&#xe626" class="icon-prive" ></span>
+										<span aria-hidden="true" data-icon="&#xe636" class="icon-p-lettre"  ></span>
 										<span>Musculation</span>
-										<span aria-hidden="true" data-icon="&#xe626" class="icon-star-level fg-icon-star-on" ></span>
-										<span aria-hidden="true" data-icon="&#xe626" class="icon-star-level fg-icon-star-on" ></span>
-										<span aria-hidden="true" data-icon="&#xe626" class="icon-star-level fg-icon-star-off" ></span>
-										<span aria-hidden="true" data-icon="&#xe626" class="icon-star-level fg-icon-star-off" ></span>
-									</p>
-								</div>
-					  			<div class="fg-item-date">
-									<p class="color_grey1 text-size2">Sam. 14 déc. 2014</p>
-								</div>
-					  			<div class="ml-body-img-block">
-						  			<img class="ml-body-img2" src="../image/activity-img1.JPG"  alt="#" />
-						  			<img class="ml-body-img2" src="../image/activity-img2.JPG"  alt="#" />
-						  			<img class="ml-body-img2" src="../image/activity-img3.JPG"  alt="#" />
-						  		</div>
-					  			<div class="fg-item-number">
-					  				<p class="color_grey1 text-size2">7 participants...</p>
-					  			</div>
-					  			<div class="fg-item-arrow">
-									<span aria-hidden="true" data-icon="&#xe60c" class="icon-elargir" style="display: block;"></span>
-									<span aria-hidden="true" data-icon="&#xe624" class="icon-retrecir" style="display: none;"></span>
-								</div>
-					  		</div>
-					  		<div class="ml-body-item">
-					  			<div class="fg-body-event-block">
-							  		<p class="activity-name">
-										<span aria-hidden="true" data-icon="&#xe620" class="icon-prive" ></span>
-										<span aria-hidden="true" data-icon="&#xe638" class="icon-p-lettre"  ></span>
-										<span>Musculation</span>
-										<span aria-hidden="true" data-icon="&#xe626" class="icon-star-level fg-icon-star-on" ></span>
-										<span aria-hidden="true" data-icon="&#xe626" class="icon-star-level fg-icon-star-on" ></span>
-										<span aria-hidden="true" data-icon="&#xe626" class="icon-star-level fg-icon-star-off" ></span>
-										<span aria-hidden="true" data-icon="&#xe626" class="icon-star-level fg-icon-star-off" ></span>
+										<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level fg-icon-star-on" ></span>
+										<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level fg-icon-star-on" ></span>
+										<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level fg-icon-star-off" ></span>
+										<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level fg-icon-star-off" ></span>
 									</p>
 								</div>
 					  			<div class="fg-item-date">
@@ -449,13 +520,13 @@
 					  		<div class="ml-body-item">
 					  			<div class="fg-body-event-block">
 							  		<p class="activity-name">
-										<span aria-hidden="true" data-icon="&#xe620" class="icon-prive" ></span>
-										<span aria-hidden="true" data-icon="&#xe638" class="icon-p-lettre"  ></span>
+										<span aria-hidden="true" data-icon="&#xe626" class="icon-prive" ></span>
+										<span aria-hidden="true" data-icon="&#xe636" class="icon-p-lettre"  ></span>
 										<span>Musculation</span>
-										<span aria-hidden="true" data-icon="&#xe626" class="icon-star-level fg-icon-star-on" ></span>
-										<span aria-hidden="true" data-icon="&#xe626" class="icon-star-level fg-icon-star-on" ></span>
-										<span aria-hidden="true" data-icon="&#xe626" class="icon-star-level fg-icon-star-off" ></span>
-										<span aria-hidden="true" data-icon="&#xe626" class="icon-star-level fg-icon-star-off" ></span>
+										<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level fg-icon-star-on" ></span>
+										<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level fg-icon-star-on" ></span>
+										<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level fg-icon-star-off" ></span>
+										<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level fg-icon-star-off" ></span>
 									</p>
 								</div>
 					  			<div class="fg-item-date">
@@ -477,13 +548,13 @@
 					  		<div class="ml-body-item">
 					  			<div class="fg-body-event-block">
 							  		<p class="activity-name">
-										<span aria-hidden="true" data-icon="&#xe620" class="icon-prive" ></span>
-										<span aria-hidden="true" data-icon="&#xe638" class="icon-p-lettre"  ></span>
+										<span aria-hidden="true" data-icon="&#xe626" class="icon-prive" ></span>
+										<span aria-hidden="true" data-icon="&#xe636" class="icon-p-lettre"  ></span>
 										<span>Musculation</span>
-										<span aria-hidden="true" data-icon="&#xe626" class="icon-star-level fg-icon-star-on" ></span>
-										<span aria-hidden="true" data-icon="&#xe626" class="icon-star-level fg-icon-star-on" ></span>
-										<span aria-hidden="true" data-icon="&#xe626" class="icon-star-level fg-icon-star-off" ></span>
-										<span aria-hidden="true" data-icon="&#xe626" class="icon-star-level fg-icon-star-off" ></span>
+										<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level fg-icon-star-on" ></span>
+										<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level fg-icon-star-on" ></span>
+										<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level fg-icon-star-off" ></span>
+										<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level fg-icon-star-off" ></span>
 									</p>
 								</div>
 					  			<div class="fg-item-date">
@@ -505,13 +576,13 @@
 					  		<div class="ml-body-item">
 					  			<div class="fg-body-event-block">
 							  		<p class="activity-name">
-										<span aria-hidden="true" data-icon="&#xe620" class="icon-prive" ></span>
-										<span aria-hidden="true" data-icon="&#xe638" class="icon-p-lettre"  ></span>
+										<span aria-hidden="true" data-icon="&#xe626" class="icon-prive" ></span>
+										<span aria-hidden="true" data-icon="&#xe636" class="icon-p-lettre"  ></span>
 										<span>Musculation</span>
-										<span aria-hidden="true" data-icon="&#xe626" class="icon-star-level fg-icon-star-on" ></span>
-										<span aria-hidden="true" data-icon="&#xe626" class="icon-star-level fg-icon-star-on" ></span>
-										<span aria-hidden="true" data-icon="&#xe626" class="icon-star-level fg-icon-star-off" ></span>
-										<span aria-hidden="true" data-icon="&#xe626" class="icon-star-level fg-icon-star-off" ></span>
+										<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level fg-icon-star-on" ></span>
+										<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level fg-icon-star-on" ></span>
+										<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level fg-icon-star-off" ></span>
+										<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level fg-icon-star-off" ></span>
 									</p>
 								</div>
 					  			<div class="fg-item-date">
@@ -533,13 +604,13 @@
 					  		<div class="ml-body-item">
 					  			<div class="fg-body-event-block">
 							  		<p class="activity-name">
-										<span aria-hidden="true" data-icon="&#xe620" class="icon-prive" ></span>
-										<span aria-hidden="true" data-icon="&#xe638" class="icon-p-lettre"  ></span>
+										<span aria-hidden="true" data-icon="&#xe626" class="icon-prive" ></span>
+										<span aria-hidden="true" data-icon="&#xe636" class="icon-p-lettre"  ></span>
 										<span>Musculation</span>
-										<span aria-hidden="true" data-icon="&#xe626" class="icon-star-level fg-icon-star-on" ></span>
-										<span aria-hidden="true" data-icon="&#xe626" class="icon-star-level fg-icon-star-on" ></span>
-										<span aria-hidden="true" data-icon="&#xe626" class="icon-star-level fg-icon-star-off" ></span>
-										<span aria-hidden="true" data-icon="&#xe626" class="icon-star-level fg-icon-star-off" ></span>
+										<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level fg-icon-star-on" ></span>
+										<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level fg-icon-star-on" ></span>
+										<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level fg-icon-star-off" ></span>
+										<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level fg-icon-star-off" ></span>
 									</p>
 								</div>
 					  			<div class="fg-item-date">
@@ -733,11 +804,11 @@
 				  					<span class="text-size4 color_grey1">36 ans,Paris</span>
 				  				</p>
 				  				<p style="margin-top: -5px;">
-									<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note1" ></span>
-									<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note1" ></span>
-									<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note1" ></span>
-									<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note2" ></span>
-									<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note2" ></span>
+									<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1" ></span>
+									<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1" ></span>
+									<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1" ></span>
+									<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note2" ></span>
+									<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note2" ></span>
 									<span class="text-size1 color_grey1">64 notes</span>
 								</p>
 								<p style="margin-top: -5px;">
@@ -747,27 +818,6 @@
 				  			<div class="ml-body-declaration-block">
 				  				<!-- introduction of person-->
 				  				<p class="text-size4 color_grey1 ml-body-declaration">Lorem ipsum doloris van der marchet fil des darte dela quoisse tous var denne argata julia del dufour emilie galar dessus gardum</p>
-				  			</div>
-				  			<div class="ml-body-button-block">
-				  				<!-- button -->
-				  				<div class="ml-body-button-div1">
-				  					<a href="#" class="btn btn-default text-size4 ml-body-button ml-body-button-discussion" role="button">
-				  						<span aria-hidden="true" data-icon="&#xe632" class="icon-disussion-mono ml-body-button-icon" ></span>
-				  						<span>Discuter</span>
-				  					</a>
-				  				</div>
-				  				<div class="ml-body-button-div2">
-					  				<a href="#" class="btn btn-default text-size4 ml-body-button ml-body-button-ajoute" role="button">
-						  				<span aria-hidden="true" data-icon="&#xe602" class="icon-ajouter-ami ml-body-button-icon" ></span>
-						  				<span>Ajouter</span>
-					  				</a>
-				  				</div>
-				  				<div class="ml-body-button-div3">
-				  					<a href="#" class="btn btn-default text-size4 ml-body-button ml-body-button-activite" role="button">
-				  						<span aria-hidden="true" data-icon="&#xe606" class="icon-creer-activite ml-body-button-icon" ></span>
-					  					<span>Activit&eacute;</span>
-					  				</a>
-				  				</div>
 				  			</div>
 				  		</div>
 				  		<div class="ml-body-item">
@@ -781,11 +831,11 @@
 				  					<span class="text-size4 color_grey1">24 ans,Wuhan</span>
 				  				</p>
 				  				<p style="margin-top: -5px;">
-									<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note1" ></span>
-									<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note2" ></span>
-									<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note2" ></span>
-									<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note2" ></span>
-									<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note2" ></span>
+									<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1" ></span>
+									<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note2" ></span>
+									<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note2" ></span>
+									<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note2" ></span>
+									<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note2" ></span>
 									<span class="text-size1 color_grey1">15 notes</span>
 								</p>
 								<p style="margin-top: -5px;">
@@ -795,27 +845,6 @@
 				  			<div class="ml-body-declaration-block">
 				  				<!-- introduction of person-->
 				  				<p class="text-size4 color_grey1 ml-body-declaration">asd hiao oihj oihiasd h asd das dasdefgr dessus gardum</p>
-				  			</div>
-				  			<div class="ml-body-button-block">
-				  				<!-- button -->
-				  				<div class="ml-body-button-div1">
-				  					<a href="#" class="btn btn-default text-size4 ml-body-button ml-body-button-discussion" role="button">
-				  						<span aria-hidden="true" data-icon="&#xe632" class="icon-disussion-mono ml-body-button-icon" ></span>
-				  						<span>Discuter</span>
-				  					</a>
-				  				</div>
-				  				<div class="ml-body-button-div2">
-					  				<a href="#" class="btn btn-default text-size4 ml-body-button ml-body-button-ajoute" role="button">
-						  				<span aria-hidden="true" data-icon="&#xe602" class="icon-ajouter-ami ml-body-button-icon" ></span>
-						  				<span>Ajouter</span>
-					  				</a>
-				  				</div>
-				  				<div class="ml-body-button-div3">
-				  					<a href="#" class="btn btn-default text-size4 ml-body-button ml-body-button-activite" role="button">
-				  						<span aria-hidden="true" data-icon="&#xe606" class="icon-creer-activite ml-body-button-icon" ></span>
-					  					<span>Activit&eacute;</span>
-					  				</a>
-				  				</div>
 				  			</div>
 				  		</div>
 				  		<div class="ml-body-item">
@@ -829,11 +858,11 @@
 				  					<span class="text-size4 color_grey1">33 ans,Somewhere</span>
 				  				</p>
 				  				<p style="margin-top: -5px;">
-									<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note2" ></span>
-									<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note2" ></span>
-									<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note2" ></span>
-									<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note2" ></span>
-									<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note2" ></span>
+									<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note2" ></span>
+									<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note2" ></span>
+									<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note2" ></span>
+									<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note2" ></span>
+									<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note2" ></span>
 									<span class="text-size1 color_grey1">0 notes</span>
 								</p>
 								<p style="margin-top: -5px; display: none;">
@@ -844,27 +873,6 @@
 				  				<!-- introduction of person-->
 				  				<p class="text-size4 color_grey1 ml-body-declaration" style="display:none;">asd hiao oihj oihiasd h asd das dasdefgr dessus gardum</p>
 				  				<a class="ml-body-encourage-profil">Encourager le à remplir son profil</a>
-				  			</div>
-				  			<div class="ml-body-button-block">
-				  				<!-- button -->
-				  				<div class="ml-body-button-div1">
-				  					<a href="#" class="btn btn-default text-size4 ml-body-button ml-body-button-discussion" role="button">
-				  						<span aria-hidden="true" data-icon="&#xe632" class="icon-disussion-mono ml-body-button-icon" ></span>
-				  						<span>Discuter</span>
-				  					</a>
-				  				</div>
-				  				<div class="ml-body-button-div2">
-					  				<a href="#" class="btn btn-default text-size4 ml-body-button ml-body-button-ajoute" role="button">
-						  				<span aria-hidden="true" data-icon="&#xe602" class="icon-ajouter-ami ml-body-button-icon" ></span>
-						  				<span>Ajouter</span>
-					  				</a>
-				  				</div>
-				  				<div class="ml-body-button-div3">
-				  					<a href="#" class="btn btn-default text-size4 ml-body-button ml-body-button-activite" role="button">
-				  						<span aria-hidden="true" data-icon="&#xe606" class="icon-creer-activite ml-body-button-icon" ></span>
-					  					<span>Activit&eacute;</span>
-					  				</a>
-				  				</div>
 				  			</div>
 				  		</div>
 				  		<div class="ml-body-item">
@@ -878,11 +886,11 @@
 				  					<span class="text-size4 color_grey1">18 ans,Somewhere else</span>
 				  				</p>
 				  				<p style="margin-top: -5px;">
-									<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note2" ></span>
-									<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note2" ></span>
-									<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note2" ></span>
-									<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note2" ></span>
-									<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note2" ></span>
+									<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note2" ></span>
+									<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note2" ></span>
+									<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note2" ></span>
+									<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note2" ></span>
+									<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note2" ></span>
 									<span class="text-size1 color_grey1">0 notes</span>
 								</p>
 								<p style="margin-top: -5px; display: none;">
@@ -893,27 +901,6 @@
 				  				<!-- introduction of person-->
 				  				<p class="text-size4 color_grey1 ml-body-declaration" style="display:none;">asd hiao oihj oihiasd h asd das dasdefgr dessus gardum</p>
 				  				<a class="ml-body-encourage-profil">Encourager le à remplir son profil</a>
-				  			</div>
-				  			<div class="ml-body-button-block">
-				  				<!-- button -->
-				  				<div class="ml-body-button-div1">
-				  					<a href="#" class="btn btn-default text-size4 ml-body-button ml-body-button-discussion" role="button">
-				  						<span aria-hidden="true" data-icon="&#xe632" class="icon-disussion-mono ml-body-button-icon" ></span>
-				  						<span>Discuter</span>
-				  					</a>
-				  				</div>
-				  				<div class="ml-body-button-div2">
-					  				<a href="#" class="btn btn-default text-size4 ml-body-button ml-body-button-ajoute" role="button">
-						  				<span aria-hidden="true" data-icon="&#xe602" class="icon-ajouter-ami ml-body-button-icon" ></span>
-						  				<span>Ajouter</span>
-					  				</a>
-				  				</div>
-				  				<div class="ml-body-button-div3">
-				  					<a href="#" class="btn btn-default text-size4 ml-body-button ml-body-button-activite" role="button">
-				  						<span aria-hidden="true" data-icon="&#xe606" class="icon-creer-activite ml-body-button-icon" ></span>
-					  					<span>Activit&eacute;</span>
-					  				</a>
-				  				</div>
 				  			</div>
 				  		</div>
 				  		<div class="ml-body-arrow">
@@ -946,11 +933,11 @@
 						  			</p>
 						  			<div>
 							  			<p class="fg-prensentation-lieux-icon" style="margin-top: -5px;">
-											<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note1" ></span>
-											<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note1" ></span>
-											<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note1" ></span>
-											<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note2" ></span>
-											<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note2" ></span>
+											<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1" ></span>
+											<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1" ></span>
+											<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1" ></span>
+											<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note2" ></span>
+											<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note2" ></span>
 											<span class="text-size1 color_grey1">64 notes</span>
 											<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 										</p>
@@ -972,11 +959,11 @@
 						  			</p>
 						  			<div>
 							  			<p class="fg-prensentation-lieux-icon" style="margin-top: -5px;">
-											<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note1" ></span>
-											<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note1" ></span>
-											<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note1" ></span>
-											<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note2" ></span>
-											<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note2" ></span>
+											<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1" ></span>
+											<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1" ></span>
+											<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1" ></span>
+											<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note2" ></span>
+											<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note2" ></span>
 											<span class="text-size1 color_grey1">64 notes</span>
 											<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 										</p>
@@ -998,11 +985,11 @@
 						  			</p>
 						  			<div>
 							  			<p class="fg-prensentation-lieux-icon" style="margin-top: -5px;">
-											<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note1" ></span>
-											<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note1" ></span>
-											<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note1" ></span>
-											<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note2" ></span>
-											<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note ml-body-star-note2" ></span>
+											<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1" ></span>
+											<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1" ></span>
+											<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1" ></span>
+											<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note2" ></span>
+											<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note2" ></span>
 											<span class="text-size1 color_grey1">64 notes</span>
 											<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 										</p>
@@ -1020,10 +1007,10 @@
 					  			<div class="fg-presentation-info-block">
 					  				<p class="fg-musique-level-block">
 					  					<span class="fg-musique-title">Musique</span>
-					  					<span aria-hidden="true" data-icon="&#xe626" class="icon-star-level fg-musique-star-on" ></span>
-					  					<span aria-hidden="true" data-icon="&#xe626" class="icon-star-level fg-musique-star-on" ></span>
-					  					<span aria-hidden="true" data-icon="&#xe626" class="icon-star-level fg-musique-star-off" ></span>
-					  					<span aria-hidden="true" data-icon="&#xe626" class="icon-star-level fg-musique-star-off" ></span>
+					  					<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level fg-musique-star-on" ></span>
+					  					<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level fg-musique-star-on" ></span>
+					  					<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level fg-musique-star-off" ></span>
+					  					<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level fg-musique-star-off" ></span>
 					  				</p>
 					  				<p class="fg-info-date">
 					  					<span class="date-on">L</span>
@@ -1043,10 +1030,10 @@
 					  			<div class="fg-presentation-info-block">
 					  				<p class="fg-sport-level-block">
 					  					<span class="fg-sport-title">Randonnée</span>
-					  					<span aria-hidden="true" data-icon="&#xe626" class="icon-star-level fg-sport-star-on" ></span>
-					  					<span aria-hidden="true" data-icon="&#xe626" class="icon-star-level fg-sport-star-on" ></span>
-					  					<span aria-hidden="true" data-icon="&#xe626" class="icon-star-level fg-sport-star-on" ></span>
-					  					<span aria-hidden="true" data-icon="&#xe626" class="icon-star-level fg-sport-star-off" ></span>
+					  					<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level fg-sport-star-on" ></span>
+					  					<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level fg-sport-star-on" ></span>
+					  					<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level fg-sport-star-on" ></span>
+					  					<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level fg-sport-star-off" ></span>
 					  				</p>
 					  				<p class="fg-info-date">
 					  					<span class="date-on">L</span>
@@ -1069,10 +1056,10 @@
 					  			<div class="fg-presentation-info-block">
 					  				<p class="fg-musique-level-block">
 					  					<span class="fg-musique-title">Musique</span>
-					  					<span aria-hidden="true" data-icon="&#xe626" class="icon-star-level fg-musique-star-on" ></span>
-					  					<span aria-hidden="true" data-icon="&#xe626" class="icon-star-level fg-musique-star-on" ></span>
-					  					<span aria-hidden="true" data-icon="&#xe626" class="icon-star-level fg-musique-star-off" ></span>
-					  					<span aria-hidden="true" data-icon="&#xe626" class="icon-star-level fg-musique-star-off" ></span>
+					  					<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level fg-musique-star-on" ></span>
+					  					<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level fg-musique-star-on" ></span>
+					  					<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level fg-musique-star-off" ></span>
+					  					<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level fg-musique-star-off" ></span>
 					  				</p>
 					  				<p class="fg-info-date">
 					  					<span class="date-on">L</span>
@@ -1092,10 +1079,10 @@
 					  			<div class="fg-presentation-info-block">
 					  				<p class="fg-sport-level-block">
 					  					<span class="fg-sport-title">Randonnée</span>
-					  					<span aria-hidden="true" data-icon="&#xe626" class="icon-star-level fg-sport-star-on" ></span>
-					  					<span aria-hidden="true" data-icon="&#xe626" class="icon-star-level fg-sport-star-on" ></span>
-					  					<span aria-hidden="true" data-icon="&#xe626" class="icon-star-level fg-sport-star-on" ></span>
-					  					<span aria-hidden="true" data-icon="&#xe626" class="icon-star-level fg-sport-star-off" ></span>
+					  					<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level fg-sport-star-on" ></span>
+					  					<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level fg-sport-star-on" ></span>
+					  					<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level fg-sport-star-on" ></span>
+					  					<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level fg-sport-star-off" ></span>
 					  				</p>
 					  				<p class="fg-info-date">
 					  					<span class="date-on">L</span>
@@ -1118,10 +1105,10 @@
 					  			<div class="fg-presentation-info-block">
 					  				<p class="fg-sport-level-block">
 					  					<span class="fg-sport-title">Randonnée</span>
-					  					<span aria-hidden="true" data-icon="&#xe626" class="icon-star-level fg-sport-star-on" ></span>
-					  					<span aria-hidden="true" data-icon="&#xe626" class="icon-star-level fg-sport-star-on" ></span>
-					  					<span aria-hidden="true" data-icon="&#xe626" class="icon-star-level fg-sport-star-on" ></span>
-					  					<span aria-hidden="true" data-icon="&#xe626" class="icon-star-level fg-sport-star-off" ></span>
+					  					<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level fg-sport-star-on" ></span>
+					  					<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level fg-sport-star-on" ></span>
+					  					<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level fg-sport-star-on" ></span>
+					  					<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level fg-sport-star-off" ></span>
 					  				</p>
 					  				<p class="fg-info-date">
 					  					<span class="date-on">L</span>
