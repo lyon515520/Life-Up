@@ -78,6 +78,9 @@ border-style:none;
 		background-image: url(../image/landing-page-image-1.jpg);
 		background-position:center;
 */
+.text-bold{
+	font-weight: bold;
+}
 .text-size1{
 	font-size:10px;
 }
@@ -176,7 +179,6 @@ a{
 }
 a:hover{
 	text-decoration: none;
-	color: rgb(255,255,255);
 } 
 
 ul{
