@@ -352,7 +352,7 @@
 	font-size: 24px;
 }
 .ml-head-link{
-	margin-right: 20px;
+	margin-right: 8px;
 }
 .ml-head-link-icon::before{
 	color: rgb(134,134,134);
@@ -512,7 +512,8 @@
 .mon-compte-btn-propose{
 	display: inline-block;
 	font-size: 14.4px;
-	padding: 5px 10px 1px 10px;
+	padding: 7px 10px 1px 10px;
+	height: 37px;
 }
 .ml-body-btn-propose-block{
 	margin: 8px 8px 10px -10px;
@@ -652,8 +653,9 @@
 }
 .mon-compte-comment{
 	width: 85%;
-	height: 35px;
+	height: 26px;
 	float: left;
+	padding: 1px 12px;
 }
 #ml-btn-comment{
 	width: 15%;
@@ -1499,8 +1501,6 @@
 }
 .ml-btn-filter:hover,
 .ml-btn-filter:focus,
-.ml-btn-filter:active,
-.ml-btn-filter.active,
 .open .dropdown-toggle.ml-btn-filter {
   background: -webkit-gradient(linear, 0 0, 0 100%, from(#F1F1F1), to(#F1F1F1)); /** Chrome Safari **/
   background: -moz-linear-gradient(top, #F1F1F1, #F1F1F1); /** FireFox **/
@@ -1530,9 +1530,8 @@
 }
 .ml-head-btn-favoris-block{
 	overflow: hidden;
-	float: right;
-	margin-right: 10px;
-	margin-top: 20px;
+	float: left;
+	margin-left: 50px;
 }
 .ml-head-icon-star::before{
 	color: rgb(73,73,73);
@@ -1547,6 +1546,7 @@
 	font-size: 14.4px;
 	margin: 10px 8px;
 	float: left;
+	height: 35px;
 }
 #ml-head-btn-favoris-text{
 	line-height: 0.9;
@@ -1559,6 +1559,7 @@
 	width: 27px;
 	background-color: rgb(245,245,245);
 	padding: 0;
+	margin: 0;
 }
 .ml-body-btn-block{
 	float: right;
@@ -1642,7 +1643,7 @@
 	width: 150px;
 }
 .ml-btn-block-btn{
-	margin-top: 10px;
+	margin-top: 8px;
 }
 .ml-head-note2{
 	float: left;
@@ -1662,7 +1663,7 @@
 }
 .ml-detail-btn-group-orange{
 	float: left;
-	margin: 10px 10px 10px 20px;
+	margin: 8px 10px 10px 30px;
 }
 .ml-detail-btn-group-grey{
 	float: left;
@@ -1679,4 +1680,123 @@
 .ml-detail-return{
 	text-align: center;
 	margin-top: 10px;
+}
+#ml-activity-detail-btn-block1{
+	overflow: hidden;
+}
+#ml-activity-detail-btn-block2{
+	text-align: center;
+}
+.ml-detail-btn-parametre{
+	color: rgb(73,73,73);
+	background-color: rgb(245,245,245);
+	border-color: rgb(204,204,204);
+	width: 145px;
+	padding: 3px 12px;
+	font-size: 14.4px;
+	margin: 10px 8px;
+	float: none;
+	height: 35px;
+}
+.ml-btn-envoyer{
+	width: 15%;
+	height: 26px;
+	float: left;
+	text-shadow: none;
+	margin: 0;
+}
+.ml-head-link-block{
+	float: left;
+}
+.ml-head-link-text-blue{
+	color: rgb(13,204,232);
+	font-size: 12px;
+}
+.ml-head-link-icon-blue:before{
+	color: rgb(13,204,232);
+	font-size: 14.4px;
+}
+.ml-head-link:hover .ml-head-link-blue,
+.ml-head-link:hover .ml-head-link-icon-blue::before{
+	color: rgb(20,192,221);
+}
+.mf-head{
+	text-align: center;
+	height: 33px;
+	padding-top: 3px;
+}
+.mf-grey-div{
+	background-color: rgb(235,235,233);
+	width: 100%;
+	height: 2px;
+}
+.mf-body-title{
+	padding-top: 4px;
+	padding-bottom: 8px;
+	margin: 10px auto;
+	text-align: center;
+}
+.mf-body-left{
+	margin-left: 20px;
+}
+.mf-input{
+	width: 40%;
+	height: 24px;
+	margin: 0px auto 0px 20px;
+}
+.mf-ville{
+	float: left;
+	width: 50%;
+}
+.mf-code{
+	float: left;
+	width: 50%;
+}
+.mf-input2{
+	width: 80%;
+	height: 24px;
+	margin: 0px auto 0px 20px;
+}
+.mf-input3{
+	width: 90%;
+	height: 24px;
+	margin: 0px auto 0px 20px;
+}
+.mf-ville-code{
+	overflow: hidden;
+}
+.mf-icon-supprimer::before{
+	font-size: 14px;
+	color: rgb(134,134,134);
+}
+.mf-horaire{
+	color: rgb(134,134,134);
+	font-size: 12px;
+	margin-left: 20px;
+}
+.mf-horaire-ajouter{
+	overflow: hidden;
+	margin-left: 10px;
+	margin-bottom: 4px;
+}
+.mf-horaire-ajouter-jour{
+	float: left;
+	margin-top: 20px;
+}
+.mf-horaire-select{
+	width: 84px;
+	margin: 14px 10px;
+}
+.mf-horaire-ajouter-1 {
+	float: left;
+}
+.mf-btn-ajouter{
+	padding: 0px 5px 0px 7px;
+	margin-top: 33px;
+}
+.mf-activity-block{
+	overflow: hidden;
+}
+.mf-activity-icon-block{
+	float: left;
 }

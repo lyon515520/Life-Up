@@ -1695,7 +1695,7 @@ output {
   font-size: 14px;
   line-height: 1.42857143;
   color: #555555;
-  background-color: #ffffff;
+  background-color: rgb(243,243,243);
   background-image: none;
   border: 1px solid #cccccc;
   border-radius: 2px;
@@ -2083,10 +2083,35 @@ fieldset[disabled] .btn-default.active {
 .btn-primary {
   color: #ffffff;
   background-color: rgb(235,101,49);
-  border-color: rgb(235,101,49);
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#E3531B), to(#CF420B)); /** Chrome Safari **/
+  background: -moz-linear-gradient(top, #E3531B, #CF420B); /** FireFox **/
+  background: -o-linear-gradient(top, #E3531B, #CF420B);  /** Opear **/
+  background: -ms-linear-gradient(#E3531B 0%,#CF420B 100%);  /** IE9 IE10 **/
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#E3531B',endColorstr='#CF420B',grandientType=1); /** IE7 **/
+  -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#E3531B',endColorstr='#CF420B',grandientType=1); /** IE8 **/
+  border-color: rgb(207,66,11);
   width:200px;
+  font-weight: bold;
 }
-
+.btn-primary:hover,
+.btn-primary:focus,
+.open .dropdown-toggle.btn-primary {
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#CF420B), to(#CF420B)); /** Chrome Safari **/
+  background: -moz-linear-gradient(top, #CF420B, #CF420B); /** FireFox **/
+  background: -o-linear-gradient(top, #CF420B, #CF420B);  /** Opear **/
+  background: -ms-linear-gradient(#CF420B 0%,#CF420B 100%);  /** IE9 IE10 **/
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#CF420B',endColorstr='#CF420B',grandientType=1); /** IE7 **/
+  -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#CF420B',endColorstr='#CF420B',grandientType=1); /** IE8 **/
+}
+.btn-primary:active,
+.btn-primary.active {
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#CF420B), to(#E3531B)); /** Chrome Safari **/
+  background: -moz-linear-gradient(top, #CF420B, #E3531B); /** FireFox **/
+  background: -o-linear-gradient(top, #CF420B, #E3531B);  /** Opear **/
+  background: -ms-linear-gradient(#CF420B 0%,#E3531B 100%);  /** IE9 IE10 **/
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#CF420B',endColorstr='#E3531B',grandientType=1); /** IE7 **/
+  -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#CF420B',endColorstr='#E3531B',grandientType=1); /** IE8 **/
+}
 
 .btn-primary:hover,
 .btn-primary:focus,
@@ -2097,6 +2122,7 @@ fieldset[disabled] .btn-default.active {
   background-color: rgb(227,83,27);
   border-color: rgb(227,83,27);
 }
+
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
