@@ -2080,6 +2080,7 @@ fieldset[disabled] .btn-default.active {
   color: #ffffff;
   background-color: #333333;
 }
+/*----------------------------------------------*/
 .btn-primary {
   color: #ffffff;
   background-color: rgb(235,101,49);
@@ -2150,6 +2151,77 @@ fieldset[disabled] .btn-primary.active {
   color: #428bca;
   background-color: #ffffff;
 }
+/*--------------------------------------------------------------------*/
+.btn-annuler {
+  color: #ffffff;
+  background-color: rgb(128,128,128);
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#808080), to(#666666)); /** Chrome Safari **/
+  background: -moz-linear-gradient(top, #808080, #666666); /** FireFox **/
+  background: -o-linear-gradient(top, #808080, #666666);  /** Opear **/
+  background: -ms-linear-gradient(#808080 0%,#666666 100%);  /** IE9 IE10 **/
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#808080',endColorstr='#666666',grandientType=1); /** IE7 **/
+  -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#808080',endColorstr='#666666',grandientType=1); /** IE8 **/
+  border-color: rgb(77,77,77);
+  font-weight: bold;
+}
+.btn-annuler:hover,
+.btn-annuler:focus,
+.open .dropdown-toggle.btn-annuler {
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#666666), to(#666666)); /** Chrome Safari **/
+  background: -moz-linear-gradient(top, #666666, #666666); /** FireFox **/
+  background: -o-linear-gradient(top, #666666, #666666);  /** Opear **/
+  background: -ms-linear-gradient(#666666 0%,#666666 100%);  /** IE9 IE10 **/
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#666666',endColorstr='#666666',grandientType=1); /** IE7 **/
+  -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#666666',endColorstr='#666666',grandientType=1); /** IE8 **/
+}
+.btn-annuler:active,
+.btn-annuler.active {
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#666666), to(#808080)); /** Chrome Safari **/
+  background: -moz-linear-gradient(top, #666666, #808080); /** FireFox **/
+  background: -o-linear-gradient(top, #666666, #808080);  /** Opear **/
+  background: -ms-linear-gradient(#666666 0%,#808080 100%);  /** IE9 IE10 **/
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#666666',endColorstr='#808080',grandientType=1); /** IE7 **/
+  -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#666666',endColorstr='#808080',grandientType=1); /** IE8 **/
+}
+
+.btn-annuler:hover,
+.btn-annuler:focus,
+.btn-annuler:active,
+.btn-annuler.active,
+.open .dropdown-toggle.btn-annuler {
+  color: #ffffff;
+  background-color: rgb(128,128,128);
+  border-color: rgb(77,77,77);
+}
+
+.btn-annuler:active,
+.btn-annuler.active,
+.open .dropdown-toggle.btn-annuler {
+  background-image: none;
+}
+.btn-annuler.disabled,
+.btn-annuler[disabled],
+fieldset[disabled] .btn-annuler,
+.btn-annuler.disabled:hover,
+.btn-annuler[disabled]:hover,
+fieldset[disabled] .btn-annuler:hover,
+.btn-annuler.disabled:focus,
+.btn-annuler[disabled]:focus,
+fieldset[disabled] .btn-annuler:focus,
+.btn-annuler.disabled:active,
+.btn-annuler[disabled]:active,
+fieldset[disabled] .btn-annuler:active,
+.btn-annuler.disabled.active,
+.btn-annuler[disabled].active,
+fieldset[disabled] .btn-annuler.active {
+  background-color: #428bca;
+  border-color: #357ebd;
+}
+.btn-annuler .badge {
+  color: #428bca;
+  background-color: #ffffff;
+}
+/*--------------------------------------------------------------------*/
 .btn-success {
   color: #ffffff;
   background-color: #5cb85c;

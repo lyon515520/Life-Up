@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.css" />
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="../css/costumestyle.css" />
+<link rel="stylesheet" type="text/css" href="../css/style-leftpanel.css" />
+<link rel="stylesheet" type="text/css" href="../css/style.css" />
+<link rel="stylesheet" type="text/css" href="../css/style-google-font.css" />
+<link rel="stylesheet" type="text/css" href="../css/checkbox-icon.css" />
+<link rel="stylesheet" type="text/css" href="../css/style-rightpanel.css" />
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+<script type="text/javascript" src="../js/google-maps.js"></script>
+<title>c'est la partie de "page ville"</title>
+</head>
+<body class="body-test">
+	<div class="leftpanel">
+		<div class="lp-inside">
+			<div class="motive-list-head">
+				<div class="ml-head-img-block">
+					<img class="ville-head-img" src="../image/avatar.JPG"  alt="#" />
+				</div>
+				<div class="ville-name">
+					<p class="color-brown text-size5">Région Lilloise</p>
+				</div>
+				<div class="ville-head-btn-favoris-block">
+					<a href="#" class="btn btn-default ml-btn-filter ml-head-btn-favoris" role="button">
+						<span aria-hidden="true" data-icon="" class="icon-star-level ml-head-icon-star"></span>
+						<span class="left-head-text-mid" id="ml-head-btn-favoris-text">Lieux Favoris</span>
+					</a>
+				</div>
+			</div>
+			<div class="motive-list-body">
+				<ul class="nav nav-tabs" role="tablist" id="myTab">
+				  <li class="ml-tab"><a class="ml-tab-a" href="#motive" role="tab" data-toggle="tab">Motiv&eacute;s</a></li>
+				  <li class="ml-tab"><a class="ml-tab-a" href="#activity" role="tab" data-toggle="tab">Activit&eacute;s</a></li>
+				  <li class="ml-tab active"><a class="ml-tab-a" href="#activity-propose" role="tab" data-toggle="tab">Activit&eacute;s propos&eacute;es</a></li>
+				  <li class="ml-tab"><a class="ml-tab-a" href="#lieux" role="tab" data-toggle="tab">Lieux</a></li>
+				</ul>
+				
+				<div class="tab-content">
+				  <div class="tab-pane" id="motive">
+				  	<div class="ml-body-motive">
+				  	</div>
+				  </div>
+				  <div class="tab-pane" id="activity">
+				  </div>
+				  <div class="tab-pane active" id="activity-propose">
+				  	<div class="ml-body-activite">
+					  	<div class="ml-body-btn-propose-block">
+							<a href="#" class="btn btn-primary mon-compte-btn-propose" role="button">
+								<span aria-hidden="true" data-icon="&#xe635" class="icon-creer-activite"></span>
+								<span class="head-text-mid text-bold">Je proposer une activité</span>
+							</a>
+						</div>
+						<div>
+							<div class="ml-body-item2">
+					  			<div class="ml-body-btn-filter">
+				  					<a href="#" class="btn btn-default ml-btn-filter" role="button">
+										<span aria-hidden="true" data-icon="&#xe621" class="icon-parametre-recherche ml-icon-filter"></span>
+										<span class="left-head-text-mid">Filtrer</span>
+									</a>
+					  			</div>
+					  			<div class="ml-body-btn-filter-text">
+					  				<p class="color_grey3 text-size2">Région Lilloise</p>
+					  			</div>
+					  			<div class="ml-body-btn-filter-text2">
+					  				<p class="color_grey3 text-size2">
+					  					<a><span>X</span></a>
+					  					<span>De 18 à 26 ans</span>
+					  				</p>
+					  			</div>
+					  		</div>
+					  		<div class="ville-searchbar">
+					  			<div class="ville-univers">
+					  				<p class="text-size2 color-orange">Univers</p>
+					  				<select class="form-control mon-activity-select-mod">
+										<option>Sport</option>
+										<option>Musique</option>
+										<option>Gastronomie</option>
+										<option>Mode</option>
+										<option>Voyage</option>
+										<option>Culture</option>
+										<option>Autres</option>
+									</select>
+					  			</div>
+					  			<div class="ville-category">
+					  				<p class="text-size2 color-orange">Catégories</p>
+					  				<select class="form-control mon-activity-select-mod">
+										<option class="category1">Sport de raquette</option>
+										<option>Badminton</option>
+										<option>Tennis</option>
+										<option>Tennis de table</option>
+										<option class="category1">Fitness</option>
+										<option>Zumba</option>
+										<option>Urban Dance</option>
+									</select>
+					  			</div>
+					  			<div class="ville-search">
+									<input type="text" class="form-control mon-compte-comment" id="ma-proposition-ajoute" placeholder="Une activité en particulier ?">
+									<button type="button" class="btn btn-default" id="btn-search"><span aria-hidden="true" data-icon="&#xe622" class="icon-recherche"></span></button>
+					  			</div>
+					  		</div>
+				  		</div>
+				  		<div class="ville-activity-item-block">
+				  			<div class="ville-item-head">
+				  				<div class="ville-trier">
+				  					<p class="ville-trier-text">Trier:</p>
+				  					<select class="form-control mon-activity-select-mod ville-trier-select">
+										<option>Date décroissante</option>
+										<option>Date croissante</option>
+										<option>Niveau décroissant</option>
+										<option>Niveau croissant</option>
+										<option>Participant décroissant</option>
+										<option>Participant croissant</option>
+									</select>
+				  				</div>
+				  				<div class="ville-icon1">
+				  					<p><span aria-hidden="true" data-icon="&#xe648" class="icon-niveau ville-head-icon"></span></p>
+				  				</div>
+				  				<div class="ville-icon2">
+				  					<p><span aria-hidden="true" data-icon="&#xe632" class="icon-passionne ville-head-icon"></span></p>
+				  				</div>
+				  				<div class="ville-icon3">
+				  					<p><span aria-hidden="true" data-icon="&#xe600" class="icon-agenda-menu ville-head-icon"></span></p>
+				  				</div>
+				  				<div class="ville-icon4">
+				  					<p><span aria-hidden="true" data-icon="&#xe601" class="icon-contacts-menu ville-head-icon"></span></p>
+				  				</div>
+				  			</div>
+				  			<div class="ville-item-body">
+				  				<div class="ville-item">
+				  					<div class="ville-item-icon">
+				  						<p><span aria-hidden="true" data-icon="&#xe614" class="icon-culture vi-icon"></span></p>
+				  					</div>
+				  					<div class="ville-item-nom">
+				  						<p class="color_grey1 text-size2">Starship laser</p>
+				  					</div>
+				  					<div class="ville-item-niveau">
+				  						<div class="ville-niveau-image niveau1">
+				  						</div>
+				  					</div>
+				  					<div class="ville-item-user">
+				  						<div class="ville-user-img">
+								  			<img class="ml-body-img2" src="../image/activity-img1.JPG" alt="#">
+								  		</div>
+								  		<div class="ville-user-info">
+								  			<p>
+								  				<span class="text-size3 color_grey1">Fabien D.</span>
+								  			</p>
+											<p class="text-size4 color_grey3 ville-item-info-detail">
+												<span>22</span>
+												<span>,&nbsp;</span>
+												<span>Paris</span>
+											</p>
+								  			<p class="ville-item-info-detail">
+												<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1"></span>
+												<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1"></span>
+												<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1"></span>
+												<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-head-star-note2"></span>
+												<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-head-star-note2"></span>
+												<span class="text-size4 color_grey1">64 notes</span>
+											</p>
+								  		</div>
+				  					</div>
+				  					<div class="ville-item-date">
+				  					</div>
+				  					<div class="ville-item-participant">
+				  					</div>
+				  					<div class="ville-item-btn-search">
+				  					</div>
+				  				</div>
+				  			</div>
+				  		</div>
+					</div>
+				  </div>
+				  <div class="tab-pane" id="lieux">
+				  	<div class="ml-body-motive">
+				  	</div>
+				  </div>
+			</div>
+		</div>
+	</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="../js/costumejs.js"></script>
+</body>
+</html>

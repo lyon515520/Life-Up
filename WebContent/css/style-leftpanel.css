@@ -1758,9 +1758,27 @@
 	margin: 0px auto 0px 20px;
 }
 .mf-input3{
-	width: 90%;
+	width: 615px;
 	height: 24px;
 	margin: 0px auto 0px 20px;
+}
+.mf-input4{
+	width: 615px;
+	height: 46px;
+	margin: 4px auto 4px 20px;
+}
+.mf-textarea1{
+	width: 90%;
+	min-height: 24px;
+	margin: 0px auto 0px 20px;
+	resize: none;
+}
+.mf-textarea2{
+	width: 90%;
+	min-height: 46px;
+	margin: 4px auto 14px 20px;
+	resize: none;
+	overflow-y: hidden;
 }
 .mf-ville-code{
 	overflow: hidden;
@@ -1768,6 +1786,7 @@
 .mf-icon-supprimer::before{
 	font-size: 14px;
 	color: rgb(134,134,134);
+	cursor: pointer;
 }
 .mf-horaire{
 	color: rgb(134,134,134);
@@ -1791,12 +1810,215 @@
 	float: left;
 }
 .mf-btn-ajouter{
-	padding: 0px 5px 0px 7px;
-	margin-top: 33px;
+	padding: 1px 5px 0px 7px;
 }
 .mf-activity-block{
 	overflow: hidden;
+	margin-left: 20px;
 }
 .mf-activity-icon-block{
 	float: left;
 }
+.mf-activity-item-block{
+	float: left;
+	width: 645px;
+	margin-top: 6px;
+}
+.mf-horaire-hyphen{
+	margin: -15px auto;
+	text-align: center;
+}
+.mf-activity-ajouter-btn{
+	float: right;
+	margin-right: 40px;
+}
+.mf-horaire-ajouter-btn{
+	overflow: hidden;
+	padding-top: 25px;
+}
+.mf-activity{
+	display: inline-block;
+}
+.mf-checkbox{
+	margin-left: 20px;
+}
+.mf-univers-checkbox-row{
+	width: 100%;
+	overflow: hidden;
+	margin-left: 20px;
+	color: rgb(134,134,134);
+	font-size: 14.4px;
+}
+.mf-univers-checkbox{
+	float: left;
+	width: 20%;
+}
+.btn-annuler1{
+	display: inline-block;
+	font-size: 14.4px;
+	height: 26px;
+	padding: 1px 6px;
+}
+.btn-valier1{
+	padding: 6px 12px;
+	height: 37px;
+	width: auto;
+	font-size: 14.4px;
+	display: inline-block;
+	margin: auto 6px;
+}
+.btn-right{
+	float: right;
+	margin-right: 41px;
+	margin-top: 14px;
+	margin-bottom: 18px;
+}
+/*---------------------------------------------*/
+.ville-head-img{
+	width: 80px;
+	height: 80px;
+	border-radius: 40px;
+	border: transparent;
+}
+.ville-name{
+	float: left;
+	width: 328px;
+	margin-top: 37px;
+}
+.ville-head-btn-favoris-block{
+	overflow: hidden;
+	float: left;
+	margin-left: 70px;
+	margin-top: 28px;
+}
+.ml-body-btn-filter-text2 {
+	float: left;
+ 	padding: 16px 10px;
+ }
+ .category1{
+ 	background-color: rgb(255,255,255);
+ }
+ .ville-search {
+	margin: 21px 20px 14px 20px;
+	float: left;
+	overflow: hidden;
+	width: 40%;
+	display: table-cell;
+ }
+ .ville-searchbar{
+ 	overflow: hidden;
+ }
+ .ville-univers,
+ .ville-category{
+ 	float: left;
+	margin: auto 10px;
+ }
+ .ville-head-icon::before{
+ 	color: rgb(134,134,134);
+ }
+ .ville-item-head{
+	overflow: hidden;
+	margin-top: 18px;
+	border-bottom: solid;
+	padding-bottom: 10px;
+	border-color: rgb(179,179,179);
+	border-width: 1px;
+	margin-left: auto;
+	margin-right: auto;
+ }
+ .ville-trier{
+ 	float: left;
+	margin-left: 10px;
+ }
+ .ville-icon1{
+ 	float: left;
+ 	text-align: center;
+ 	width: 60px;
+ }
+ .ville-icon2 {
+ 	float: left;
+ 	text-align: center;
+ 	width: 180px;
+ }
+ .ville-icon3{
+ 	float: left;
+ 	text-align: center;
+ 	width: 110px;
+ }
+ .ville-icon4{
+ 	float: left;
+ 	text-align: center;
+ 	width: 70px;
+ }
+ .ville-trier-text{
+ 	float: left;
+ }
+ .ville-trier-select{
+	float: left;
+	width: 150px;
+	padding: 1px 3px;
+	margin: auto 5px;
+ }
+ .ville-trier-text{
+ 	float: left;
+ 	font-size: 14.4px;
+ 	color: rgb(134,134,134);
+ 	padding-top: 1px;
+ }
+ .vi-icon::before{
+ 	color: rgb(179,179,179);
+ 	font-size: 17.28px;
+ } 
+ .ville-item{
+ 	overflow: hidden;
+ }
+ .ville-item-icon{
+ 	float: left;
+ 	margin: 18px auto 18px 12px;
+ }
+ .ville-item-nom{
+ 	float: left;
+ 	margin: 18px 20px 18px 20px;
+	width: 125px;
+ }
+ .ville-niveau-image{
+ 	display:block;
+	width:30px;
+    height:30px;
+ }
+ .niveau1{
+ 	background:url("../image/new-level-star.png") 0 0 no-repeat;
+ }
+  .niveau2{
+ 	background:url("../image/new-level-star.png") 0 -30px no-repeat;
+ }
+  .niveau3{
+ 	background:url("../image/new-level-star.png") 0 -60px no-repeat;
+ }
+  .niveau4{
+ 	background:url("../image/new-level-star.png") 0 -90px no-repeat;
+ }
+  .niveau5{
+ 	background:url("../image/new-level-star.png") 0 -120px no-repeat;
+ }
+ .ville-item-niveau{
+ 	float: left;
+ 	margin: 12px auto auto 22px;
+ }
+ .ville-item-user{
+ 	overflow: hidden;
+ 	width: 200px;
+ 	margin-left: 30px;
+ 	display: inline-block;
+ }
+ .ville-user-img{
+ 	margin: 12px auto auto 10px;
+	float: left;
+ }
+ .ville-user-info{
+	float: left;
+	margin: 0px 10px;
+ }
+ .ville-item-info-detail{
+ 	margin-top: -3px;
+ }

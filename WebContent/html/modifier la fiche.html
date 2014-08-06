@@ -9,7 +9,6 @@
 <link rel="stylesheet" type="text/css" href="../css/style-leftpanel.css" />
 <link rel="stylesheet" type="text/css" href="../css/style.css" />
 <link rel="stylesheet" type="text/css" href="../css/style-google-font.css" />
-<link rel="stylesheet" type="text/css" href="../css/checkbox-icon.css" />
 <link rel="stylesheet" type="text/css" href="../css/style-rightpanel.css" />
 <title>c'est la partie de "modifier la fiche"</title>
 </head>
@@ -53,11 +52,66 @@
 					<p class="mon-activity-subtitle2">Adresse Web</p>
 					<input type="text" class="form-control mf-input3" placeholder="">
 				</div>
-				<!-- this is the div of categories -->
+				<div>
+					<p class="mon-activity-subtitle2">Univers</p>
+					<div class="mf-univers-checkbox-row">
+						<div class="mf-univers-checkbox">
+							<input id="mf-univers1" type="checkbox">
+							<label for="mf-univers1">Sport</label>
+						</div>
+						<div class="mf-univers-checkbox">
+							<input id="mf-univers2" type="checkbox">
+							<label for="mf-univers2">Culture</label>
+						</div>
+						<div class="mf-univers-checkbox">
+							<input id="mf-univers3" type="checkbox">
+							<label for="mf-univers3">Jeu de table</label>
+						</div>
+						<div class="mf-univers-checkbox">
+							<input id="mf-univers4" type="checkbox">
+							<label for="mf-univers4">Jeu vidéo</label>
+						</div>
+						<div class="mf-univers-checkbox">
+							<input id="mf-univers5" type="checkbox">
+							<label for="mf-univers5">Musique</label>
+						</div>
+					</div>
+					<div class="mf-univers-checkbox-row">
+						<div class="mf-univers-checkbox">
+							<input id="mf-univers6" type="checkbox">
+							<label for="mf-univers6">Voyage</label>
+						</div>
+						<div class="mf-univers-checkbox">
+							<input id="mf-univers7" type="checkbox">
+							<label for="mf-univers7">Gastronomie</label>
+						</div>
+						<div class="mf-univers-checkbox">
+							<input id="mf-univers8" type="checkbox">
+							<label for="mf-univers8">Mode</label>
+						</div>
+						<div class="mf-univers-checkbox">
+							<input id="mf-univers9" type="checkbox">
+							<label for="mf-univers9">Autre</label>
+						</div>
+					</div>
+				</div>
+				<div>
+					<p class="mon-activity-subtitle2">Type de lieu</p>
+					<div class="mf-univers-checkbox-row">
+						<div class="mf-univers-checkbox">
+							<input id="mf-lieu1" type="checkbox">
+							<label for="mf-lieu1">Lieu public</label>
+						</div>
+						<div class="mf-univers-checkbox">
+							<input id="mf-lieu2" type="checkbox">
+							<label for="mf-lieu2">Lieu privé</label>
+						</div>
+					</div>
+				</div>
 				<div>
 					<p class="mon-activity-subtitle2">Horaires</p>
 					<p class="mf-horaire">
-						<span aria-hidden="true" data-icon="&#xe603" class="icon-supprimer mf-icon-supprimer" ></span>
+						<a><span aria-hidden="true" data-icon="&#xe603" class="icon-supprimer mf-icon-supprimer" ></span></a>
 						<span>&nbsp;&nbsp;</span>
 						<span>lun. </span>
 						<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
@@ -89,6 +143,7 @@
 								<option>12:30</option>
 								<option>15:00</option>
 							</select>
+							<p class="mf-horaire-hyphen">-</p>
 							<select class="form-control mon-activity-select-mod mf-horaire-select">
 								<option>00:00</option>
 								<option>00:30</option>
@@ -109,6 +164,7 @@
 								<option>12:30</option>
 								<option>15:00</option>
 							</select>
+							<p class="mf-horaire-hyphen">-</p>
 							<select class="form-control mon-activity-select-mod mf-horaire-select">
 								<option>00:00</option>
 								<option>00:30</option>
@@ -129,7 +185,7 @@
 								<option>12:30</option>
 								<option>15:00</option>
 							</select>
-							<p>-</p>
+							<p class="mf-horaire-hyphen">-</p>
 							<select class="form-control mon-activity-select-mod mf-horaire-select">
 								<option>00:00</option>
 								<option>00:30</option>
@@ -146,21 +202,66 @@
 							</a>
 						</div>
 					</div>
-					<div>
+					<div class="mf-activity">
 						<p class="mon-activity-subtitle2">Activités</p>
 						<div class="mf-activity-block">
 							<div class="mf-activity-icon-block">
-								<p><span aria-hidden="true" data-icon="&#xe603" class="icon-supprimer mf-icon-supprimer" ></span></p>
+								<p><a><span aria-hidden="true" data-icon="&#xe603" class="icon-supprimer mf-icon-supprimer" ></span></a></p>
 							</div>
 							<div class="mf-activity-item-block">
-								
+								<div>
+									<textarea type="text" class="form-control mf-textarea1"> this is an example!</textarea>
+								</div>
+								<div  class="textarea-description">
+									<textarea type="text" class="form-control mf-textarea2"> this is an example!this is an example!this is an example!this is an example!this is an example!this is an example!this is an example!this is an example!this is an example!</textarea>
+								</div>
 							</div>
 						</div>
+						<div class="mf-activity-ajouter-block">
+							<input type="text" class="form-control mf-input3" placeholder="Nom de l’activité">
+							<input type="text" class="form-control mf-input4" placeholder="Déscription de l’activité...">
+						</div>
+						<div class="mf-activity-ajouter-btn">
+							<a href="#" class="btn btn-default ml-btn-filter mf-btn-ajouter" role="button">
+								<span>Ajouter</span>
+							</a>
+						</div>
+					</div>
+					<div class="color_grey1 text-size2">
+						<p class="mon-activity-subtitle2">Autre</p>
+						<div class="mf-checkbox">
+							<input id="mf-autre1" type="checkbox">
+							<label for="mf-autre1">Ce lieu n’existe plus ou a été déplacé</label>
+						</div>
+						<div class="mf-checkbox">
+							<input id="mf-autre2" type="checkbox">
+							<label for="mf-autre2">Ce lieu apparaît en double sur life-up</label>
+						</div>
+					</div>
+					<div>
+						<p class="mon-activity-subtitle2">Votre email</p>
+						<input type="text" class="form-control mf-input3" placeholder="">
+					</div>
+					<div>
+						<p class="mon-activity-subtitle2">Commentaires <span class="color_grey1">Facultatif</span></p>
+						<input type="text" class="form-control mf-input4" placeholder="">
+					</div>
+					<div class="btn-right">
+						<a href="#" class="btn btn-annuler btn-annuler1" role="button">
+							<span class="text-bold">Annuler</span>
+						</a>
+						<a href="#" class="btn btn-primary btn-valier1" role="button">
+							<span class="text-bold">Envoyer les modifications</span>
+						</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="../js/costumejs.js"></script>
 </body>
 </html>

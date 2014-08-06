@@ -54,8 +54,6 @@
 }
 .icon-contacts-menu:before {
 	content: "\e601";
-	color: rgb(134,134,134);
-	font-size: 12px;
 }
 .icon-creer-activite:before {
 	content: "\e624";

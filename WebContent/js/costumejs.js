@@ -72,6 +72,13 @@ function all_select(source){
 		checkboxes[i].checked = source.checked;
 	}
 }
+
+//auto adjust the height of textarea
+$('.textarea-description').on( 'keyup', 'textarea', function (e){
+    $(this).css('height', 'auto' );
+    $(this).height( this.scrollHeight );
+});
+$('.textarea-description').find( 'textarea' ).keyup();
 //Ajouter &agrave; mes lieux
 //Lieux favoris
 //Retirer de vos favoris
@@ -113,3 +120,4 @@ function ml_onclick_favoris(){
 		$("#ml-head-icon-favoris").attr("class" , 'icon-star-level ml-head-link-icon');
 	}
 }*/
+
