@@ -24,6 +24,26 @@
 				</div>
 				<div class="ville-name">
 					<p class="color-brown text-size5">Région Lilloise</p>
+					<p>
+						<span class="ville-lieux-info-detail">
+							<a class="color-orange text-size2">
+								<span aria-hidden="true" data-icon="&#xe632" class="icon-passionne ville-lieux-icon"></span>
+								<span>31235 motivés</span>
+							</a>
+						</span>
+						<span class="ville-lieux-info-detail">
+							<a class="color-orange text-size2">
+								<span aria-hidden="true" data-icon="&#xe601" class="icon-contacts-menu ville-lieux-icon"></span>
+								<span>1323 groupes</span>
+							</a>
+						</span>
+						<span class="ville-lieux-info-detail">
+							<a class="color-orange text-size2">
+								<span aria-hidden="true" data-icon="&#xe616" class="icon-sport ville-lieux-icon"></span>
+								<span>12512 activités organisées</span>
+							</a>
+						</span>
+					</p>
 				</div>
 				<div class="ville-head-btn-favoris-block">
 					<a href="#" class="btn btn-default ml-btn-filter ml-head-btn-favoris" role="button">
@@ -34,10 +54,11 @@
 			</div>
 			<div class="motive-list-body">
 				<ul class="nav nav-tabs" role="tablist" id="myTab">
-				  <li class="ml-tab"><a class="ml-tab-a" href="#motive" role="tab" data-toggle="tab">Motiv&eacute;s</a></li>
-				  <li class="ml-tab"><a class="ml-tab-a" href="#activity" role="tab" data-toggle="tab">Activit&eacute;s</a></li>
-				  <li class="ml-tab active"><a class="ml-tab-a" href="#activity-propose" role="tab" data-toggle="tab">Activit&eacute;s propos&eacute;es</a></li>
-				  <li class="ml-tab"><a class="ml-tab-a" href="#lieux" role="tab" data-toggle="tab">Lieux</a></li>
+				  <li class="ml-tab"><a class="ml-tab-a2" href="#motive" role="tab" data-toggle="tab">Motiv&eacute;s</a></li>
+				  <li class="ml-tab"><a class="ml-tab-a2" href="#groupe-motive" role="tab" data-toggle="tab">Groupe de motiv&eacute;s</a></li>
+				  <li class="ml-tab active"><a class="ml-tab-a2" href="#activity" role="tab" data-toggle="tab">Activit&eacute;s</a></li>
+				  <li class="ml-tab"><a class="ml-tab-a2" href="#activity-propose" role="tab" data-toggle="tab">Activit&eacute;s propos&eacute;es</a></li>
+				  <li class="ml-tab"><a class="ml-tab-a2" href="#lieux" role="tab" data-toggle="tab">Lieux</a></li>
 				</ul>
 				
 				<div class="tab-content">
@@ -45,13 +66,49 @@
 				  	<div class="ml-body-motive">
 				  	</div>
 				  </div>
-				  <div class="tab-pane" id="activity">
+				  <div class="tab-pane" id="groupe-motive">
+				  	<div class="ml-body-groupe-motive">
+				  	</div>
 				  </div>
-				  <div class="tab-pane active" id="activity-propose">
+				  <div class="tab-pane active" id="activity">
+				  	<div class="ml-body-activite">
+				  		<div class="ville-searchbar" id="ville-activity-searchbar">
+				  			<div class="ville-univers">
+				  				<p class="text-size2 color-orange">Univers</p>
+				  				<select class="form-control mon-activity-select-mod">
+									<option>Sport</option>
+									<option>Musique</option>
+									<option>Gastronomie</option>
+									<option>Mode</option>
+									<option>Voyage</option>
+									<option>Culture</option>
+									<option>Autres</option>
+								</select>
+				  			</div>
+				  			<div class="ville-category">
+				  				<p class="text-size2 color-orange">Catégories</p>
+				  				<select class="form-control mon-activity-select-mod">
+									<option class="category1">SPORT DE RAQUETTE</option>
+									<option>Badminton</option>
+									<option>Tennis</option>
+									<option>Tennis de table</option>
+									<option class="category1">FITNESS</option>
+									<option>Zumba</option>
+									<option>Urban Dance</option>
+								</select>
+				  			</div>
+				  			<div class="ville-search">
+								<input type="text" class="form-control mon-compte-comment" id="ville-activity-search-input" placeholder="Une activité en particulier ?">
+								<button type="button" class="btn btn-default btn-search"><span aria-hidden="true" data-icon="&#xe622" class="icon-recherche"></span></button>
+				  			</div>
+				  		</div>
+				  	</div>
+				  </div>
+				  <div class="tab-pane" id="activity-propose">
 				  	<div class="ml-body-activite">
 					  	<div class="ml-body-btn-propose-block">
 							<a href="#" class="btn btn-primary mon-compte-btn-propose" role="button">
-								<span aria-hidden="true" data-icon="&#xe635" class="icon-creer-activite"></span>
+								<span aria-hidden="true" data-icon="&#xe624" class="icon-creer-activite"></span>
 								<span class="head-text-mid text-bold">Je proposer une activité</span>
 							</a>
 						</div>
@@ -89,18 +146,18 @@
 					  			<div class="ville-category">
 					  				<p class="text-size2 color-orange">Catégories</p>
 					  				<select class="form-control mon-activity-select-mod">
-										<option class="category1">Sport de raquette</option>
+										<option class="category1">SPORT DE RAQUETTE</option>
 										<option>Badminton</option>
 										<option>Tennis</option>
 										<option>Tennis de table</option>
-										<option class="category1">Fitness</option>
+										<option class="category1">FITNESS</option>
 										<option>Zumba</option>
 										<option>Urban Dance</option>
 									</select>
 					  			</div>
 					  			<div class="ville-search">
-									<input type="text" class="form-control mon-compte-comment" id="ma-proposition-ajoute" placeholder="Une activité en particulier ?">
-									<button type="button" class="btn btn-default" id="btn-search"><span aria-hidden="true" data-icon="&#xe622" class="icon-recherche"></span></button>
+									<input type="text" class="form-control mon-compte-comment" id="ville-activity-propose-search-input" placeholder="Une activité en particulier ?">
+									<button type="button" class="btn btn-default btn-search"><span aria-hidden="true" data-icon="&#xe622" class="icon-recherche"></span></button>
 					  			</div>
 					  		</div>
 				  		</div>
@@ -136,7 +193,7 @@
 				  						<p><span aria-hidden="true" data-icon="&#xe614" class="icon-culture vi-icon"></span></p>
 				  					</div>
 				  					<div class="ville-item-nom">
-				  						<p class="color_grey1 text-size2">Starship laser</p>
+				  						<p class="color_grey1 text-size2 ml-body-declaration">Starship laser</p>
 				  					</div>
 				  					<div class="ville-item-niveau">
 				  						<div class="ville-niveau-image niveau1">
@@ -166,10 +223,107 @@
 								  		</div>
 				  					</div>
 				  					<div class="ville-item-date">
+				  						<p class="text-size2 color_grey1 ml-body-declaration">Sam. 14 déc. à 19h30</p>
 				  					</div>
 				  					<div class="ville-item-participant">
+				  						<p class="text-size2 color_grey1 ml-body-declaration">12/15</p>
 				  					</div>
 				  					<div class="ville-item-btn-search">
+				  						<a href="#" class="btn btn-default ml-btn-filter ml-body-btn-check" role="button">
+											<span aria-hidden="true" data-icon="&#xe622" class="icon-recherche ml-head-icon-search"></span>
+										</a>
+				  					</div>
+				  				</div>
+				  				<div class="ville-item">
+				  					<div class="ville-item-icon">
+				  						<p><span aria-hidden="true" data-icon="&#xe614" class="icon-culture vi-icon"></span></p>
+				  					</div>
+				  					<div class="ville-item-nom">
+				  						<p class="color_grey1 text-size2 ml-body-declaration">Starship laser</p>
+				  					</div>
+				  					<div class="ville-item-niveau">
+				  						<div class="ville-niveau-image niveau1">
+				  						</div>
+				  					</div>
+				  					<div class="ville-item-user">
+				  						<div class="ville-user-img">
+								  			<img class="ml-body-img2" src="../image/activity-img1.JPG" alt="#">
+								  		</div>
+								  		<div class="ville-user-info">
+								  			<p>
+								  				<span class="text-size3 color_grey1">Fabien D.</span>
+								  			</p>
+											<p class="text-size4 color_grey3 ville-item-info-detail">
+												<span>22</span>
+												<span>,&nbsp;</span>
+												<span>Paris</span>
+											</p>
+								  			<p class="ville-item-info-detail">
+												<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1"></span>
+												<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1"></span>
+												<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1"></span>
+												<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-head-star-note2"></span>
+												<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-head-star-note2"></span>
+												<span class="text-size4 color_grey1">64 notes</span>
+											</p>
+								  		</div>
+				  					</div>
+				  					<div class="ville-item-date">
+				  						<p class="text-size2 color_grey1 ml-body-declaration">Sam. 14 déc. à 19h30</p>
+				  					</div>
+				  					<div class="ville-item-participant">
+				  						<p class="text-size2 color_grey1 ml-body-declaration">12/15</p>
+				  					</div>
+				  					<div class="ville-item-btn-search">
+				  						<a href="#" class="btn btn-default ml-btn-filter ml-body-btn-check" role="button">
+											<span aria-hidden="true" data-icon="&#xe622" class="icon-recherche ml-head-icon-search"></span>
+										</a>
+				  					</div>
+				  				</div>
+				  				<div class="ville-item">
+				  					<div class="ville-item-icon">
+				  						<p><span aria-hidden="true" data-icon="&#xe614" class="icon-culture vi-icon"></span></p>
+				  					</div>
+				  					<div class="ville-item-nom">
+				  						<p class="color_grey1 text-size2 ml-body-declaration">Starship laser</p>
+				  					</div>
+				  					<div class="ville-item-niveau">
+				  						<div class="ville-niveau-image niveau1">
+				  						</div>
+				  					</div>
+				  					<div class="ville-item-user">
+				  						<div class="ville-user-img">
+								  			<img class="ml-body-img2" src="../image/activity-img1.JPG" alt="#">
+								  		</div>
+								  		<div class="ville-user-info">
+								  			<p>
+								  				<span class="text-size3 color_grey1">Fabien D.</span>
+								  			</p>
+											<p class="text-size4 color_grey3 ville-item-info-detail">
+												<span>22</span>
+												<span>,&nbsp;</span>
+												<span>Paris</span>
+											</p>
+								  			<p class="ville-item-info-detail">
+												<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1"></span>
+												<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1"></span>
+												<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1"></span>
+												<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-head-star-note2"></span>
+												<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-head-star-note2"></span>
+												<span class="text-size4 color_grey1">64 notes</span>
+											</p>
+								  		</div>
+				  					</div>
+				  					<div class="ville-item-date">
+				  						<p class="text-size2 color_grey1 ml-body-declaration">Sam. 14 déc. à 19h30</p>
+				  					</div>
+				  					<div class="ville-item-participant">
+				  						<p class="text-size2 color_grey1 ml-body-declaration">12/15</p>
+				  					</div>
+				  					<div class="ville-item-btn-search">
+				  						<a href="#" class="btn btn-default ml-btn-filter ml-body-btn-check" role="button">
+											<span aria-hidden="true" data-icon="&#xe622" class="icon-recherche ml-head-icon-search"></span>
+										</a>
 				  					</div>
 				  				</div>
 				  			</div>
@@ -177,11 +331,234 @@
 					</div>
 				  </div>
 				  <div class="tab-pane" id="lieux">
-				  	<div class="ml-body-motive">
+				  	<div class="ml-body-activite">
+					  	<div class="ml-body-btn-propose-block">
+					  		<p>
+						  		<span class="color_grey1 text-size2">Ton lieu favoris n’est pas encore sur life-up :&nbsp;&nbsp;&nbsp;</span>
+								<a href="#" class="btn btn-primary mon-compte-btn-propose" role="button">
+									<span aria-hidden="true" data-icon="&#xe635" class="icon-ajouter"></span>
+									<span class="head-text-mid text-bold">J’ajoute un lieu</span>
+								</a>
+							</p>
+						</div>
+						<div class="ville-lieux-middle-block" id="ville-search-float">
+							<div class="ville-middle-left">
+								<div class="ville-lieux-search">
+									<p class="text-size2 color-orange">Mot cl&eacute;</p>
+									<input type="text" class="form-control mon-compte-comment" id="ville-lieux-search-input" placeholder="Renseigne un lieu ou une activité">
+								</div>
+								<div class="ville-univers-cate">
+									<div class="ville-left-univers">
+										<p class="text-size2 color-orange">Univers</p>
+										<select class="form-control mon-activity-select-mod">
+											<option>Sport</option>
+											<option>Musique</option>
+											<option>Gastronomie</option>
+											<option>Mode</option>
+											<option>Voyage</option>
+											<option>Culture</option>
+											<option>Autres</option>
+										</select>
+									</div>
+									<div class="ville-left-category">
+										<p class="text-size2 color-orange">Catégories</p>
+										<select class="form-control mon-activity-select-mod">
+											<option class="category1">Sport de raquette</option>
+											<option>Badminton</option>
+											<option>Tennis</option>
+											<option>Tennis de table</option>
+											<option class="category1">FITNESS</option>
+											<option>Zumba</option>
+											<option>Urban Dance</option>
+										</select>
+									</div>
+								</div>
+								<div class="ville-search-button">
+									<a href="#" class="btn btn-primary" id="ville-lieux-search-button" role="button">
+										<span class="head-text-mid">Valider</span>
+									</a>
+								</div>
+							</div>
+							<div class="ville-lieux-maps">
+								<div class="ville-maps-btn">
+									<a href="#" class="btn btn-info mon-compte-btn-propose" role="button">
+										<span aria-hidden="true" data-icon="&#xe642" class="icon-geolocalisation"></span>
+										<span class="head-text-mid">Afficher sur la carte</span>
+									</a>
+								</div>
+								<div class="ville-maps" id="google-maps"></div>
+							</div>
+						</div>
+						<div class="ville-item-head">
+			  				<div class="ville-trier">
+			  					<p class="ville-trier-text">Trier:</p>
+			  					<select class="form-control mon-activity-select-mod ville-trier-select">
+									<option>Date décroissante</option>
+									<option>Date croissante</option>
+									<option>Niveau décroissant</option>
+									<option>Niveau croissant</option>
+									<option>Participant décroissant</option>
+									<option>Participant croissant</option>
+								</select>
+			  				</div>
+			  			</div>
+						<div class="ville-lieux-body">
+							<div class="ville-item">
+			  					<div class="ville-lieux-item-img">
+			  						<img class="ville-lieux-image" src="../image/activity-img3.JPG" alt="#">
+			  					</div>
+			  					<div class="ville-lieux-item-info">
+			  						<p class="color_grey1 text-size3">
+			  							<span>1. </span>
+			  							<span>Domyos club Marcq en baroeul</span>
+			  						</p>
+			  						<p class="color_grey1 text-size4">1 avenue des Olympiades 59700 Marcq-en-Baroeul</p>
+			  						<p class="ville-lieux-info-amount">
+			  							<span class="ville-lieux-info-detail">
+			  								<a class="color-orange text-size2">
+			  									<span aria-hidden="true" data-icon="&#xe616" class="icon-sport ville-lieux-icon"></span>
+			  									<span>125 activités organisées</span>
+			  								</a>
+			  							</span>
+			  							<span class="ville-lieux-info-detail">
+			  								<a class="color-orange text-size2">
+			  									<span aria-hidden="true" data-icon="&#xe632" class="icon-passionne ville-lieux-icon"></span>
+			  									<span>35 motivés</span>
+			  								</a>
+			  							</span>
+			  							<span class="ville-lieux-info-detail">
+			  								<a class="color-orange text-size2">
+			  									<span aria-hidden="true" data-icon="&#xe601" class="icon-contacts-menu ville-lieux-icon"></span>
+			  									<span>3 groupes</span>
+			  								</a>
+			  							</span>
+			  						</p>
+			  						<p class="text-size2 color-deepblue">
+			  							<span class="text-size4 color_grey1">Etaussi: </span>
+			  							<span>Badminton, Squash</span>
+			  						</p>	
+			  					</div>
+			  					<div class="ville-lieux-item-btn">
+			  						<a href="#" class="btn btn-default ml-btn-filter" role="button">
+										<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level ml-icon-filter" ></span>
+										<span class="left-head-text-mid">Favoris</span>
+									</a>
+			  					</div>
+			  				</div>
+			  				<div class="ville-item">
+			  					<div class="ville-lieux-item-img">
+			  						<img class="ville-lieux-image" src="../image/activity-img3.JPG" alt="#">
+			  					</div>
+			  					<div class="ville-lieux-item-info">
+			  						<p class="color_grey1 text-size3">
+			  							<span>2. </span>
+			  							<span>Domyos club Marcq en baroeul</span>
+			  						</p>
+			  						<p class="color_grey1 text-size4">1 avenue des Olympiades 59700 Marcq-en-Baroeul</p>
+			  						<p class="ville-lieux-info-amount">
+			  							<span class="ville-lieux-info-detail">
+			  								<a class="color-orange text-size2">
+			  									<span aria-hidden="true" data-icon="&#xe616" class="icon-sport ville-lieux-icon"></span>
+			  									<span>Sois le premier motivé</span>
+			  								</a>
+			  							</span>
+			  							<span class="ville-lieux-info-detail">
+			  								<a class="color-orange text-size2">
+			  									<span aria-hidden="true" data-icon="&#xe632" class="icon-passionne ville-lieux-icon"></span>
+			  									<span>Créer un groupe</span>
+			  								</a>
+			  							</span>
+			  							<span class="ville-lieux-info-detail">
+			  								<a class="color-orange text-size2">
+			  									<span aria-hidden="true" data-icon="&#xe601" class="icon-contacts-menu ville-lieux-icon"></span>
+			  									<span>Sois le premier à organiser</span>
+			  								</a>
+			  							</span>
+			  						</p>
+			  						<p class="text-size2 color-deepblue">
+			  							<span class="text-size4 color_grey1">Etaussi: </span>
+			  							<span>Badminton, Squash</span>
+			  						</p>	
+			  					</div>
+			  					<div class="ville-lieux-item-btn">
+			  						<a href="#" class="btn btn-default ml-btn-filter" role="button">
+										<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level ml-icon-filter" ></span>
+										<span class="left-head-text-mid">Favoris</span>
+									</a>
+			  					</div>
+			  				</div>
+			  				<div class="ville-item">
+			  					<div class="ville-lieux-item-img">
+			  						<img class="ville-lieux-image" src="../image/activity-img3.JPG" alt="#">
+			  					</div>
+			  					<div class="ville-lieux-item-info">
+			  						<p class="color_grey1 text-size3">
+			  							<span>3. </span>
+			  							<span>Domyos club Marcq en baroeul</span>
+			  						</p>
+			  						<p class="color_grey1 text-size4">1 avenue des Olympiades 59700 Marcq-en-Baroeul</p>
+			  						<p class="ville-lieux-info-amount">
+			  							<span class="ville-lieux-info-detail">
+			  								<a class="color-orange text-size2">
+			  									<span aria-hidden="true" data-icon="&#xe616" class="icon-sport ville-lieux-icon"></span>
+			  									<span>125 activités organisées</span>
+			  								</a>
+			  							</span>
+			  							<span class="ville-lieux-info-detail">
+			  								<a class="color-orange text-size2">
+			  									<span aria-hidden="true" data-icon="&#xe632" class="icon-passionne ville-lieux-icon"></span>
+			  									<span>35 motivés</span>
+			  								</a>
+			  							</span>
+			  							<span class="ville-lieux-info-detail">
+			  								<a class="color-orange text-size2">
+			  									<span aria-hidden="true" data-icon="&#xe601" class="icon-contacts-menu ville-lieux-icon"></span>
+			  									<span>3 groupes</span>
+			  								</a>
+			  							</span>
+			  						</p>
+			  						<p class="text-size2 color-deepblue ville-lieux-info-amount">
+			  							<span class="text-size4 color_grey1">Etaussi: </span>
+			  							<span>Badminton, Squash, Badminton, Squash, Badminton, Squash, Badminton, Squash, Badminton, Squash</span>
+			  						</p>	
+			  					</div>
+			  					<div class="ville-lieux-item-btn">
+			  						<a href="#" class="btn btn-default ml-btn-filter" role="button">
+										<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level ml-icon-filter" ></span>
+										<span class="left-head-text-mid">Favoris</span>
+									</a>
+			  					</div>
+			  				</div>
+						</div>
+						<div class="fg-activity-page-block">
+				  			<div class="fg-page-count">
+				  				<p class="color_grey1 text-size4">1 à 6 sur 53</p>
+				  			</div>
+				  			<div class="fg-page-chose">
+				  				<p class="color_grey1 text-size4">
+				  					Vers la page
+				  					<a class="fg-page">1</a>
+				  					<a class="fg-page">2</a>
+				  					<a class="fg-page">3</a>
+				  					<a class="fg-page">4</a>
+				  					<a class="fg-page">5</a>
+				  					<a class="fg-page">6</a>
+				  					...
+				  				</p>
+				  			</div>
+				  			<div class="fg-page-change">
+				  				<p class="color_grey1 text-size4">
+				  					<a class="fg-page">Préc. </a>
+				  					|
+				  					<a class="fg-page">Suivant </a>
+				  				</p>
+				  			</div>
+				  		</div>
 				  	</div>
 				  </div>
 			</div>
 		</div>
+	</div>
 	</div>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>

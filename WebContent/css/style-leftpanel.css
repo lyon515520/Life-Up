@@ -373,13 +373,19 @@
 	color: rgb(235,101,49);
 }
 .ml-tab{
-	width:25%;
 	text-align: center;
 }
-.ml-tab-a{
+.ml-tab-a1{
 	background-color: rgb(230,230,230);
 	color: rgb(134,134,134);
 	font-size: 14.4px;
+	padding: 5px 41.8px;
+}
+.ml-tab-a2{
+	background-color: rgb(230,230,230);
+	color: rgb(134,134,134);
+	font-size: 14.4px;
+	padding: 5px 30px;
 }
 .ml-body-item{
 	overflow: hidden;
@@ -514,6 +520,7 @@
 	font-size: 14.4px;
 	padding: 7px 10px 1px 10px;
 	height: 37px;
+	width: auto;
 }
 .ml-body-btn-propose-block{
 	margin: 8px 8px 10px -10px;
@@ -983,7 +990,6 @@
 	margin-bottom: 11px;
 }
 .fg-tab{
-	width: 20%;
 	text-align: center;
 }
 .fg-item-date{
@@ -1882,13 +1888,12 @@
 }
 .ville-name{
 	float: left;
-	width: 328px;
-	margin-top: 37px;
+	width: 430px;
+	margin-top: 25px;
 }
 .ville-head-btn-favoris-block{
 	overflow: hidden;
 	float: left;
-	margin-left: 70px;
 	margin-top: 28px;
 }
 .ml-body-btn-filter-text2 {
@@ -1897,6 +1902,7 @@
  }
  .category1{
  	background-color: rgb(255,255,255);
+ 	color: rgb(235,101,49);
  }
  .ville-search {
 	margin: 21px 20px 14px 20px;
@@ -1944,6 +1950,7 @@
  	float: left;
  	text-align: center;
  	width: 110px;
+ 	padding-left: 12px;
  }
  .ville-icon4{
  	float: left;
@@ -1966,11 +1973,15 @@
  	padding-top: 1px;
  }
  .vi-icon::before{
- 	color: rgb(179,179,179);
+ 	color: rgb(134,134,134);
  	font-size: 17.28px;
  } 
  .ville-item{
  	overflow: hidden;
+ 	border-bottom: solid;
+ 	border-width: 1px;
+ 	border-color: rgb(235,235,235);
+ 	padding: 18px 0;
  }
  .ville-item-icon{
  	float: left;
@@ -1978,8 +1989,10 @@
  }
  .ville-item-nom{
  	float: left;
- 	margin: 18px 20px 18px 20px;
+ 	margin: 0 20px 0 20px;
 	width: 125px;
+	height: 60px;
+	display: table;
  }
  .ville-niveau-image{
  	display:block;
@@ -2008,8 +2021,8 @@
  .ville-item-user{
  	overflow: hidden;
  	width: 200px;
- 	margin-left: 30px;
- 	display: inline-block;
+ 	margin-left: 20px;
+ 	float: left;
  }
  .ville-user-img{
  	margin: 12px auto auto 10px;
@@ -2021,4 +2034,143 @@
  }
  .ville-item-info-detail{
  	margin-top: -3px;
+ }
+ .ville-item-date {
+ 	text-align: center;
+ 	float: left;
+ 	width: 75px;
+ 	height: 60px;
+ 	display: table;
+ }
+ .ville-item-participant{
+ 	text-align: center;
+ 	float: left;
+ 	height: 35px;
+ 	height: 60px;
+ 	display: table;
+ 	margin-left: 28px;
+ }
+ .ville-item-btn-search{
+ 	float: left;
+	margin: 17px auto auto 23px;
+ }
+ .ville-lieux-middle-block{
+ 	overflow: hidden;
+ 	background-color: rgb(255,255,255);
+ 	margin-left: -10px;
+ }
+ .ville-middle-left{
+ 	width: 50%;
+ 	float: left;
+ 	margin: 10px auto auto 10px;
+ }
+ .ville-lieux-maps{
+ 	border: transparent;
+ 	border-radius: 2px;
+ 	width: 300px;
+ 	height: 300px;
+ 	float: left;
+ 	margin: 10px auto auto 10px;
+ 	background:url("../image/maps-example.jpg");
+ 	overflow: hidden;
+ 	/*filter:alpha(opacity=50);
+ 	-moz-opacity:0.5;
+ 	opacity:0.5; 
+ 	-khtml-opacity: 0.5;*/
+ }
+ .ville-maps-btn{
+ 	margin: 132px 67px;
+	text-align: center;
+ }
+ .ville-maps-btn:active{
+ 	display: none;
+ }
+ .ville-maps{
+ 	width: 300px;
+	height: 300px;
+	margin-left: auto;
+	margin-right: auto;
+ }
+ .ville-left-bottom{
+ 	overflow: hidden;
+ }
+ .ville-left-trier{
+ 	float: left;
+ 	width: 50%;
+ 	padding-right: 10px;
+ 	padding-top: 14px;
+ }
+ .ville-univers-cate{
+ 	float: left;
+ 	padding-right: 10px;
+ }
+ .ville-left-univers{
+ 	width: 300px;
+	padding-top: 14px;
+	margin: 25px 0;
+ }
+ .ville-left-category{
+ 	width: 300px;
+	padding-top: 14px;
+	margin: 30px 0;
+ }
+ #ville-activity-propose-search-input,
+ #ville-activity-search-input {
+ 	height: 24px;
+	float: left;
+	border-radius: 2px 0 0 2px;
+ }
+ #ville-lieux-search-input{
+ 	height: 24px;
+	float: left;
+	width: 300px;
+	border-radius: 2px;
+ }
+ .ville-lieux-image{
+ 	width: 94px;
+ 	height: 94px;
+ 	border: transparent;
+ 	border-radius: 47px;
+ }
+ .ville-lieux-item-img{
+ 	float: left;
+	margin: 0 auto 0 12px;
+ }
+ .ville-lieux-item-info{
+ 	float: left;
+	margin-left: 14px;
+	width: 400px;
+ }
+ .ville-lieux-icon::before{
+ 	color: rgb(134,134,134);
+ 	font-size: 14.4px;
+ }
+ .ville-lieux-info-detail{
+ 	margin-right: 15px;
+ }
+ .ville-lieux-item-btn{
+ 	overflow: hidden;
+	margin: 0px auto auto 20px;
+	float: left;
+ }
+ #ville-activity-searchbar{
+ 	margin-top: 8px;
+ }
+ #ville-lieux-search-button{
+ 	font-size: 14.4px;
+	padding: 1px 0 1px 8px;
+	height: 24px;
+	width: auto;
+ }
+ .ville-search-button{
+ 	float: right;
+	margin-right: 30px;
+ }
+ .ville-lieux-info-amount{
+ 	width: 510px;
+ }
+ .ville-lieux-body{
+ 	height: 786px;
+ 	border-bottom: solid rgb(179,179,179);
+ 	border-width: 1px;
  }

@@ -124,6 +124,9 @@ border-style:none;
 .color-red{
 	color: rgb(207,29,5);
 }
+.color-deepblue{
+	color: rgb(29,113,184);
+}
 .page{
 	min-height: 100%;
     height: auto !important;
@@ -1912,7 +1915,7 @@ fieldset[disabled] .btn-plus-min.active {
 	border: none;
 }
 
-#btn-search{
+.btn-search{
 	width:30px;
 	height:24px;
 	padding:1px;
