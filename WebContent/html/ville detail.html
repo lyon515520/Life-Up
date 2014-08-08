@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.css" />
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="../css/costumestyle.css" />
+<link rel="stylesheet" type="text/css" href="../css/style-leftpanel.css" />
+<link rel="stylesheet" type="text/css" href="../css/style.css" />
+<link rel="stylesheet" type="text/css" href="../css/style-google-font.css" />
+<link rel="stylesheet" type="text/css" href="../css/checkbox-icon.css" />
+<link rel="stylesheet" type="text/css" href="../css/style-rightpanel.css" />
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+<script type="text/javascript" src="../js/google-maps.js"></script>
+<title>c'est la partie de "page ville"</title>
+</head>
+<body class="body-test">
+	<div class="leftpanel">
+		<div class="lp-inside">
+			<div class="motive-list-head">
+				<div class="ml-head-img-block">
+					<img class="ville-head-img" src="../image/avatar.JPG"  alt="#" />
+				</div>
+				<div class="ville-name">
+					<p class="color-brown text-size5">Région Lilloise</p>
+					<p>
+						<span class="ville-lieux-info-detail">
+							<a class="color-orange text-size2">
+								<span aria-hidden="true" data-icon="&#xe632" class="icon-passionne ville-lieux-icon"></span>
+								<span>31235 motivés</span>
+							</a>
+						</span>
+						<span class="ville-lieux-info-detail">
+							<a class="color-orange text-size2">
+								<span aria-hidden="true" data-icon="&#xe601" class="icon-contacts-menu ville-lieux-icon"></span>
+								<span>1323 groupes</span>
+							</a>
+						</span>
+						<span class="ville-lieux-info-detail">
+							<a class="color-orange text-size2">
+								<span aria-hidden="true" data-icon="&#xe616" class="icon-sport ville-lieux-icon"></span>
+								<span>12512 activités organisées</span>
+							</a>
+						</span>
+					</p>
+				</div>
+				<div class="ville-head-btn-favoris-block">
+					<a href="#" class="btn btn-default ml-btn-filter ml-head-btn-favoris" role="button">
+						<span aria-hidden="true" data-icon="" class="icon-star-level ml-head-icon-star"></span>
+						<span class="left-head-text-mid" id="ml-head-btn-favoris-text">Lieux Favoris</span>
+					</a>
+				</div>
+			</div>
+			<div class="motive-list-body">
+				<ul class="nav nav-tabs" role="tablist" id="myTab">
+				  <li class="ml-tab"><a class="ml-tab-a2" href="#motive" role="tab" data-toggle="tab">Motiv&eacute;s</a></li>
+				  <li class="ml-tab"><a class="ml-tab-a2" href="#groupe-motive" role="tab" data-toggle="tab">Groupe de motiv&eacute;s</a></li>
+				  <li class="ml-tab active"><a class="ml-tab-a2" href="#activity" role="tab" data-toggle="tab">Activit&eacute;s</a></li>
+				  <li class="ml-tab"><a class="ml-tab-a2" href="#activity-propose" role="tab" data-toggle="tab">Activit&eacute;s propos&eacute;es</a></li>
+				  <li class="ml-tab"><a class="ml-tab-a2" href="#lieux" role="tab" data-toggle="tab">Lieux</a></li>
+				</ul>
+				
+				<div class="tab-content">
+				
+				  <div class="tab-pane" id="motive">
+				  	<div class="ml-body-motive">
+				  	</div>
+				  </div>
+				  
+				  <div class="tab-pane" id="groupe-motive">
+				  	<div class="ml-body-groupe-motive">
+				  	</div>
+				  </div>
+				  
+				  <div class="tab-pane active" id="activity">
+				  	<div class="ml-body-activite">
+				  		<div>
+					  		<div class="ville-searchbar">
+					  			<div class="ville-univers">
+					  				<p class="text-size2 color-orange">Univers</p>
+					  				<select class="form-control mon-activity-select-mod">
+										<option>Sport</option>
+										<option>Musique</option>
+										<option>Gastronomie</option>
+										<option>Mode</option>
+										<option>Voyage</option>
+										<option>Culture</option>
+										<option>Autres</option>
+									</select>
+					  			</div>
+					  			<div class="ville-category">
+					  				<p class="text-size2 color-orange">Catégories</p>
+					  				<select class="form-control mon-activity-select-mod">
+										<option class="category1">SPORT DE RAQUETTE</option>
+										<option>Badminton</option>
+										<option>Tennis</option>
+										<option>Tennis de table</option>
+										<option class="category1">FITNESS</option>
+										<option>Zumba</option>
+										<option>Urban Dance</option>
+									</select>
+					  			</div>
+					  			<div class="ville-search">
+					  				<p class="text-size2 color-orange">Mots clefs</p>
+									<input type="text" class="form-control mon-compte-comment ville-activity-search-input" placeholder="Une activité en particulier ?">
+					  			</div>
+					  			<div class="ville-subhead-button">
+					  				<a href="#" class="btn btn-primary ml-body-btn-check" role="button">
+										<span aria-hidden="true" data-icon="&#xe622" class="icon-recherche icon-recherche-orange"></span>
+									</a>
+					  			</div>
+					  		</div>
+				  		</div>
+				  		<div class="ml-detail-activity-head">
+				  			<div class="ml-activity-head-title-button">
+			  					<div class="ml-activity-head-title">
+			  						<p class="text-size3 color-orange">MORNING CYCLING</p>
+			  					</div>
+			  					<div class="ml-detail-btn-group-grey">
+									<a href="#" class="btn btn-default ml-btn-filter ml-btn-group-grey" role="button">
+										<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level ml-icon-filter" ></span>
+										<span class="left-head-text-mid">Je suis motivé !</span>
+									</a>
+									<a href="#" class="btn btn-default ml-btn-filter ml-btn-group-grey" data-toggle="dropdown" role="button">
+										<span aria-hidden="true" data-icon="&#xe646" class="icon-notification ml-icon-filter" ></span>
+										<span class="left-head-text-mid">Notifications</span>
+									</a>
+									<a href="#" class="btn btn-default ml-btn-filter ml-btn-group-grey" role="button">
+										<span aria-hidden="true" data-icon="&#xe635" class="icon-ajouter ml-icon-filter" ></span>
+										<span class="left-head-text-mid">Créer un groupe</span>
+									</a>
+								</div>
+							</div>
+		  				</div>
+						<div class="ml-body-btn-propose-block">
+							<a href="#" class="btn btn-primary mon-compte-btn-propose" role="button">
+								<span aria-hidden="true" data-icon="&#xe624" class="icon-creer-activite"></span>
+								<span class="head-text-mid text-bold">Je proposer une activité</span>
+							</a>
+						</div>
+						<p class="mon-compte-subtitle4">Motiv&eacute;s (15)</p>
+						<div class="ml-activity-window">
+							<div class="ml-activity-participants">
+								<div class="ml-body-img-block">
+					  				<img class="ml-body-img2" src="../image/activity-img1.JPG"  alt="#" />
+					  			</div>
+					  			<div class="ml-activity-participants-info-left">
+						  			<div class="ml-activity-participants-info1">
+						  				<p class="color-orange text-size3 ml-activity-participants-text">François F.</p> 
+						  			</div>
+						  			<div class="ml-activity-participants-info2">
+						  				<p class="color_grey1 text-size4 ml-activity-participants-text">24 ans, Tourcoing</p> 
+						  			</div>
+					  			</div>
+					  			<div class="ml-activity-participants-info3">
+						  			<a class="ml-body-info-link">Activités de <span>Francois</span></a>
+						  		</div>
+						  		<div class="ml-activity-participants-note">
+							  		<p>
+									<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1" ></span>
+									<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1" ></span>
+									<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1" ></span>
+									<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note2" ></span>
+									<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note2" ></span>
+							  		<span class="text-size1 color_grey1">64 notes</span>
+									</p>
+						  		</div>
+							</div>
+							<div class="ml-activity-participants">
+								<div class="ml-body-img-block">
+					  				<img class="ml-body-img2" src="../image/activity-img1.JPG"  alt="#" />
+					  			</div>
+					  			<div class="ml-activity-participants-info-left">
+						  			<div class="ml-activity-participants-info1">
+						  				<p class="color-orange text-size3 ml-activity-participants-text">François F.</p> 
+						  			</div>
+						  			<div class="ml-activity-participants-info2">
+						  				<p class="color_grey1 text-size4 ml-activity-participants-text">24 ans, Tourcoing</p> 
+						  			</div>
+					  			</div>
+					  			<div class="ml-activity-participants-info3">
+						  			<a class="ml-body-info-link">Activités de <span>Francois</span></a>
+						  		</div>
+						  		<div class="ml-activity-participants-note">
+							  		<p>
+									<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1" ></span>
+									<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1" ></span>
+									<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1" ></span>
+									<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note2" ></span>
+									<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note2" ></span>
+							  		<span class="text-size1 color_grey1">64 notes</span>
+									</p>
+						  		</div>
+							</div>
+							<div class="ml-activity-participants">
+								<div class="ml-body-img-block">
+					  				<img class="ml-body-img2" src="../image/activity-img1.JPG"  alt="#" />
+					  			</div>
+					  			<div class="ml-activity-participants-info-left">
+						  			<div class="ml-activity-participants-info1">
+						  				<p class="color-orange text-size3 ml-activity-participants-text">François F.</p> 
+						  			</div>
+						  			<div class="ml-activity-participants-info2">
+						  				<p class="color_grey1 text-size4 ml-activity-participants-text">24 ans, Tourcoing</p> 
+						  			</div>
+					  			</div>
+					  			<div class="ml-activity-participants-info3">
+						  			<a class="ml-body-info-link">Activités de <span>Francois</span></a>
+						  		</div>
+						  		<div class="ml-activity-participants-note">
+							  		<p>
+									<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1" ></span>
+									<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1" ></span>
+									<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1" ></span>
+									<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note2" ></span>
+									<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note2" ></span>
+							  		<span class="text-size1 color_grey1">64 notes</span>
+									</p>
+						  		</div>
+							</div>
+						</div>
+						<div class="fg-activity-page-block">
+				  			<div class="fg-page-count">
+				  				<p class="color_grey1 text-size4">1 à 6 sur 53</p>
+				  			</div>
+				  			<div class="fg-page-chose">
+				  				<p class="color_grey1 text-size4">
+				  					Vers la page
+				  					<a class="fg-page">1</a>
+				  					<a class="fg-page">2</a>
+				  					<a class="fg-page">3</a>
+				  					<a class="fg-page">4</a>
+				  					<a class="fg-page">5</a>
+				  					<a class="fg-page">6</a>
+				  					...
+				  				</p>
+				  			</div>
+				  			<div class="fg-page-change">
+				  				<p class="color_grey1 text-size4">
+				  					<a class="fg-page">Préc. </a>
+				  					|
+				  					<a class="fg-page">Suivant </a>
+				  				</p>
+				  			</div>
+				  		</div>
+						<p class="mon-compte-subtitle4">Groupes (3)</p>
+						<div class="ml-activity-window">
+							<div class="ville-item">
+								<div class="ml-body-img-block">
+					  				<img class="ml-body-img" src="../image/activity-img1.JPG"  alt="#" />
+					  			</div>
+					  			<div class="ml-body-info-block">
+					  				<!-- info of person -->
+					  				<p class="text-size3 color-orange">
+					  					Step by step !
+					  				</p>
+					  				<p class="text-size4 color_grey1">
+					  					<span>12 membres</span>
+					  					<span>Lille</span>
+					  				</p>
+									<p>
+										<span class="ville-activity-info-detail">
+											<a class="color-orange text-size2">
+												<span aria-hidden="true" data-icon="&#xe632" class="icon-passionne ville-lieux-icon"></span>
+												<span>35</span>
+											</a>
+										</span>
+										<span class="ville-activity-info-detail">
+											<a class="color-orange text-size2">
+												<span aria-hidden="true" data-icon="&#xe616" class="icon-sport ville-lieux-icon"></span>
+												<span>125</span>
+											</a>
+										</span>
+									</p>
+					  			</div>
+					  			<div class="ml-body-declaration-block">
+					  				<!-- introduction of person-->
+					  				<p class="text-size4 color_grey1 ml-body-declaration">Du step tous les matins ! Tous les jours nos membres vont faire du step, organisez-vous avec eux !</p>
+					  			</div>
+					  			<div class="ml-body-icon-block">
+					  				<p><span aria-hidden="true" data-icon="&#xe626" class="icon-prive groupe-motive-pp"></span></p>
+					  			</div>
+							</div>
+							<div class="ville-item">
+								<div class="ml-body-img-block">
+					  				<img class="ml-body-img" src="../image/activity-img1.JPG"  alt="#" />
+					  			</div>
+					  			<div class="ml-body-info-block">
+					  				<!-- info of person -->
+					  				<p class="text-size3 color-orange">
+					  					Step by step !
+					  				</p>
+					  				<p class="text-size4 color_grey1">
+					  					<span>12 membres</span>
+					  					<span>Lille</span>
+					  				</p>
+									<p>
+										<span class="ville-activity-info-detail">
+											<a class="color-orange text-size2">
+												<span aria-hidden="true" data-icon="&#xe632" class="icon-passionne ville-lieux-icon"></span>
+												<span>35</span>
+											</a>
+										</span>
+										<span class="ville-activity-info-detail">
+											<a class="color-orange text-size2">
+												<span aria-hidden="true" data-icon="&#xe616" class="icon-sport ville-lieux-icon"></span>
+												<span>125</span>
+											</a>
+										</span>
+									</p>
+					  			</div>
+					  			<div class="ml-body-declaration-block">
+					  				<!-- introduction of person-->
+					  				<p class="text-size4 color_grey1 ml-body-declaration">Du step tous les matins ! Tous les jours nos membres vont faire du step, organisez-vous avec eux !</p>
+					  			</div>
+					  			<div class="ml-body-icon-block">
+					  				<p><span aria-hidden="true" data-icon="&#xe626" class="icon-prive groupe-motive-pp"></span></p>
+					  			</div>
+							</div>
+							<div class="ville-item">
+								<div class="ml-body-img-block">
+					  				<img class="ml-body-img" src="../image/activity-img1.JPG"  alt="#" />
+					  			</div>
+					  			<div class="ml-body-info-block">
+					  				<!-- info of person -->
+					  				<p class="text-size3 color-orange">
+					  					Step by step !
+					  				</p>
+					  				<p class="text-size4 color_grey1">
+					  					<span>12 membres</span>
+					  					<span>Lille</span>
+					  				</p>
+									<p>
+										<span class="ville-activity-info-detail">
+											<a class="color-orange text-size2">
+												<span aria-hidden="true" data-icon="&#xe632" class="icon-passionne ville-lieux-icon"></span>
+												<span>35</span>
+											</a>
+										</span>
+										<span class="ville-activity-info-detail">
+											<a class="color-orange text-size2">
+												<span aria-hidden="true" data-icon="&#xe616" class="icon-sport ville-lieux-icon"></span>
+												<span>125</span>
+											</a>
+										</span>
+									</p>
+					  			</div>
+					  			<div class="ml-body-declaration-block">
+					  				<!-- introduction of person-->
+					  				<p class="text-size4 color_grey1 ml-body-declaration">Du step tous les matins ! Tous les jours nos membres vont faire du step, organisez-vous avec eux !</p>
+					  			</div>
+					  			<div class="ml-body-icon-block">
+					  				<p><span aria-hidden="true" data-icon="&#xe626" class="icon-prive groupe-motive-pp"></span></p>
+					  			</div>
+							</div>
+						</div>
+						<div class="fg-activity-page-block">
+				  			<div class="fg-page-count">
+				  				<p class="color_grey1 text-size4">1 à 6 sur 53</p>
+				  			</div>
+				  			<div class="fg-page-chose">
+				  				<p class="color_grey1 text-size4">
+				  					Vers la page
+				  					<a class="fg-page">1</a>
+				  					<a class="fg-page">2</a>
+				  					<a class="fg-page">3</a>
+				  					<a class="fg-page">4</a>
+				  					<a class="fg-page">5</a>
+				  					<a class="fg-page">6</a>
+				  					...
+				  				</p>
+				  			</div>
+				  			<div class="fg-page-change">
+				  				<p class="color_grey1 text-size4">
+				  					<a class="fg-page">Préc. </a>
+				  					|
+				  					<a class="fg-page">Suivant </a>
+				  				</p>
+				  			</div>
+				  		</div>
+						<p class="mon-compte-subtitle4">Lieux (3)</p>
+						<div class="ville-lieux-body">
+							<div class="ville-item">
+			  					<div class="ville-lieux-item-img">
+			  						<img class="ville-lieux-image" src="../image/activity-img3.JPG" alt="#">
+			  					</div>
+			  					<div class="ville-lieux-item-info">
+			  						<p class="color_grey1 text-size3">
+			  							<span>3. </span>
+			  							<span>Domyos club Marcq en baroeul</span>
+			  						</p>
+			  						<p class="color_grey1 text-size4">1 avenue des Olympiades 59700 Marcq-en-Baroeul</p>
+			  						<p class="ville-lieux-info-amount">
+			  							<span class="ville-lieux-info-detail">
+			  								<a class="color-orange text-size2">
+			  									<span aria-hidden="true" data-icon="&#xe616" class="icon-sport ville-lieux-icon"></span>
+			  									<span>125 activités organisées</span>
+			  								</a>
+			  							</span>
+			  							<span class="ville-lieux-info-detail">
+			  								<a class="color-orange text-size2">
+			  									<span aria-hidden="true" data-icon="&#xe632" class="icon-passionne ville-lieux-icon"></span>
+			  									<span>35 motivés</span>
+			  								</a>
+			  							</span>
+			  							<span class="ville-lieux-info-detail">
+			  								<a class="color-orange text-size2">
+			  									<span aria-hidden="true" data-icon="&#xe601" class="icon-contacts-menu ville-lieux-icon"></span>
+			  									<span>3 groupes</span>
+			  								</a>
+			  							</span>
+			  						</p>
+			  						<p class="text-size2 color-deepblue ville-lieux-info-amount">
+			  							<span class="text-size4 color_grey1">Etaussi: </span>
+			  							<span>Badminton, Squash, Badminton, Squash, Badminton, Squash, Badminton, Squash, Badminton, Squash</span>
+			  						</p>	
+			  					</div>
+			  					<div class="ville-lieux-item-btn">
+			  						<a href="#" class="btn btn-default ml-btn-filter" role="button">
+										<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level ml-icon-filter" ></span>
+										<span class="left-head-text-mid">Favoris</span>
+									</a>
+			  					</div>
+			  				</div>
+			  				<div class="ville-item">
+			  					<div class="ville-lieux-item-img">
+			  						<img class="ville-lieux-image" src="../image/activity-img3.JPG" alt="#">
+			  					</div>
+			  					<div class="ville-lieux-item-info">
+			  						<p class="color_grey1 text-size3">
+			  							<span>3. </span>
+			  							<span>Domyos club Marcq en baroeul</span>
+			  						</p>
+			  						<p class="color_grey1 text-size4">1 avenue des Olympiades 59700 Marcq-en-Baroeul</p>
+			  						<p class="ville-lieux-info-amount">
+			  							<span class="ville-lieux-info-detail">
+			  								<a class="color-orange text-size2">
+			  									<span aria-hidden="true" data-icon="&#xe616" class="icon-sport ville-lieux-icon"></span>
+			  									<span>125 activités organisées</span>
+			  								</a>
+			  							</span>
+			  							<span class="ville-lieux-info-detail">
+			  								<a class="color-orange text-size2">
+			  									<span aria-hidden="true" data-icon="&#xe632" class="icon-passionne ville-lieux-icon"></span>
+			  									<span>35 motivés</span>
+			  								</a>
+			  							</span>
+			  							<span class="ville-lieux-info-detail">
+			  								<a class="color-orange text-size2">
+			  									<span aria-hidden="true" data-icon="&#xe601" class="icon-contacts-menu ville-lieux-icon"></span>
+			  									<span>3 groupes</span>
+			  								</a>
+			  							</span>
+			  						</p>
+			  						<p class="text-size2 color-deepblue ville-lieux-info-amount">
+			  							<span class="text-size4 color_grey1">Etaussi: </span>
+			  							<span>Badminton, Squash, Badminton, Squash, Badminton, Squash, Badminton, Squash, Badminton, Squash</span>
+			  						</p>	
+			  					</div>
+			  					<div class="ville-lieux-item-btn">
+			  						<a href="#" class="btn btn-default ml-btn-filter" role="button">
+										<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level ml-icon-filter" ></span>
+										<span class="left-head-text-mid">Favoris</span>
+									</a>
+			  					</div>
+			  				</div>
+			  				<div class="ville-item">
+			  					<div class="ville-lieux-item-img">
+			  						<img class="ville-lieux-image" src="../image/activity-img3.JPG" alt="#">
+			  					</div>
+			  					<div class="ville-lieux-item-info">
+			  						<p class="color_grey1 text-size3">
+			  							<span>3. </span>
+			  							<span>Domyos club Marcq en baroeul</span>
+			  						</p>
+			  						<p class="color_grey1 text-size4">1 avenue des Olympiades 59700 Marcq-en-Baroeul</p>
+			  						<p class="ville-lieux-info-amount">
+			  							<span class="ville-lieux-info-detail">
+			  								<a class="color-orange text-size2">
+			  									<span aria-hidden="true" data-icon="&#xe616" class="icon-sport ville-lieux-icon"></span>
+			  									<span>125 activités organisées</span>
+			  								</a>
+			  							</span>
+			  							<span class="ville-lieux-info-detail">
+			  								<a class="color-orange text-size2">
+			  									<span aria-hidden="true" data-icon="&#xe632" class="icon-passionne ville-lieux-icon"></span>
+			  									<span>35 motivés</span>
+			  								</a>
+			  							</span>
+			  							<span class="ville-lieux-info-detail">
+			  								<a class="color-orange text-size2">
+			  									<span aria-hidden="true" data-icon="&#xe601" class="icon-contacts-menu ville-lieux-icon"></span>
+			  									<span>3 groupes</span>
+			  								</a>
+			  							</span>
+			  						</p>
+			  						<p class="text-size2 color-deepblue ville-lieux-info-amount">
+			  							<span class="text-size4 color_grey1">Etaussi: </span>
+			  							<span>Badminton, Squash, Badminton, Squash, Badminton, Squash, Badminton, Squash, Badminton, Squash</span>
+			  						</p>	
+			  					</div>
+			  					<div class="ville-lieux-item-btn">
+			  						<a href="#" class="btn btn-default ml-btn-filter" role="button">
+										<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level ml-icon-filter" ></span>
+										<span class="left-head-text-mid">Favoris</span>
+									</a>
+			  					</div>
+			  				</div>
+			  			</div>
+						<div class="fg-activity-page-block">
+				  			<div class="fg-page-count">
+				  				<p class="color_grey1 text-size4">1 à 6 sur 53</p>
+				  			</div>
+				  			<div class="fg-page-chose">
+				  				<p class="color_grey1 text-size4">
+				  					Vers la page
+				  					<a class="fg-page">1</a>
+				  					<a class="fg-page">2</a>
+				  					<a class="fg-page">3</a>
+				  					<a class="fg-page">4</a>
+				  					<a class="fg-page">5</a>
+				  					<a class="fg-page">6</a>
+				  					...
+				  				</p>
+				  			</div>
+				  			<div class="fg-page-change">
+				  				<p class="color_grey1 text-size4">
+				  					<a class="fg-page">Préc. </a>
+				  					|
+				  					<a class="fg-page">Suivant </a>
+				  				</p>
+				  			</div>
+				  		</div>
+						<div class="ml-detail-return">
+							<a class="text-size4 color_blue">Retour aux activités</a>
+						</div>
+				  	</div>
+				  </div>
+				  
+				  <div class="tab-pane" id="activity-propose">
+				  	<div class="ml-body-activite">
+				  	</div>
+				  </div>
+				  
+				  <div class="tab-pane" id="lieux">
+				  	<div class="ml-body-activite">
+				  	</div>
+				  </div>
+				  
+				</div>
+			</div>
+		</div>
+	</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="../js/costumejs.js"></script>
+</body>
+</html>

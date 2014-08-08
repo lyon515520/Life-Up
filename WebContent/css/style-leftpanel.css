@@ -47,7 +47,7 @@
 .mon-compte-subtitle4{
 	color: rgb(235,101,49);
 	font-size: 14.4px;
-	margin: 14px 8px;
+	margin: 18px auto 14px 8px;
 }
 .mon-compte-input1{
 	margin-left: 136px;
@@ -379,7 +379,7 @@
 	background-color: rgb(230,230,230);
 	color: rgb(134,134,134);
 	font-size: 14.4px;
-	padding: 5px 41.8px;
+	padding: 5px 42.5px;
 }
 .ml-tab-a2{
 	background-color: rgb(230,230,230);
@@ -398,7 +398,8 @@
 }
 .ml-body-motive,
 .ml-body-groupe,
-.ml-body-activite{
+.ml-body-activite,
+.ml-body-groupe-motive {
 	padding: 10px;
 	background-color: rgb(255,255,255);
 }
@@ -415,7 +416,7 @@
 .ml-body-info-block{
 	margin: 8px;
 	float: left;
-	width: 210px;
+	width: 150px;
 }
 .ml-body-info-link{
 	color: rgb(134,134,134);
@@ -426,7 +427,7 @@
 }
 .ml-body-declaration-block{
 	float: left;
-	width: 350px;
+	width: 320px;
 	height: 76px;
 	display: table;
 }
@@ -607,9 +608,6 @@
 .ml-activity-window{
 	border-bottom:1px solid rgb(179,179,179);
 	border-top:1px solid rgb(179,179,179);
-	height:250px;
-	overflow:auto;
-	padding-top:2px;
 }
 .ml-activity-participants,
 .ml-activity-comments{
@@ -1498,7 +1496,6 @@
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF',endColorstr='#F1F1F1',grandientType=1); /** IE7 **/
 	-ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF',endColorstr='#F1F1F1',grandientType=1); /** IE8 **/
 	border-color: rgb(204,204,204);
-	width: 85px;
 	padding: 0px 5px 0px 12px;
 	font-size: 14.4px;
 	margin: 10px 8px;
@@ -1622,6 +1619,7 @@
 .ml-activity-detail-head-info{
 	margin-left: 10px;
 	margin-bottom: 14px;
+	overflow: hidden;
 }
 .icon-ml-detail-info::before{
 	color: rgb(134,134,134);
@@ -1658,7 +1656,13 @@
 	margin: 10px 20px;
 }
 .ml-detail-activity-head{
-	margin-left: 20px;
+	padding-left: 10px;
+	border-top: solid rgb(179,179,179);
+	border-width: 1px;
+	padding-top: 14px;
+}
+.ml-activity-head-title-button{
+	overflow: hidden;
 }
 .ml-detail-btn-group{
 	overflow: hidden;
@@ -1667,13 +1671,16 @@
 	width: 682px;
 	margin-left: -10px;
 }
+.ml-activity-head-title{
+	float: left;
+}
 .ml-detail-btn-group-orange{
 	float: left;
 	margin: 8px 10px 10px 30px;
 }
 .ml-detail-btn-group-grey{
 	float: left;
-	margin-top: 12px;
+	margin-left: 90px;
 }
 .ml-btn-group-grey{
 	margin: 0px;
@@ -1904,16 +1911,10 @@
  	background-color: rgb(255,255,255);
  	color: rgb(235,101,49);
  }
- .ville-search {
-	margin: 21px 20px 14px 20px;
-	float: left;
-	overflow: hidden;
-	width: 40%;
-	display: table-cell;
- }
  .ville-searchbar{
  	overflow: hidden;
  }
+ .ville-search,
  .ville-univers,
  .ville-category{
  	float: left;
@@ -2114,11 +2115,12 @@
 	padding-top: 14px;
 	margin: 30px 0;
  }
- #ville-activity-propose-search-input,
- #ville-activity-search-input {
- 	height: 24px;
-	float: left;
-	border-radius: 2px 0 0 2px;
+ .ville-activity-search-input {
+ 	width: 230px;
+	padding: 1px 12px;
+	height: 24px;
+	color: rgb(134,134,134);
+	margin: 2px auto 14px;
  }
  #ville-lieux-search-input{
  	height: 24px;
@@ -2127,10 +2129,10 @@
 	border-radius: 2px;
  }
  .ville-lieux-image{
- 	width: 94px;
- 	height: 94px;
+ 	width: 90px;
+ 	height: 90px;
  	border: transparent;
- 	border-radius: 47px;
+ 	border-radius: 45px;
  }
  .ville-lieux-item-img{
  	float: left;
@@ -2170,7 +2172,52 @@
  	width: 510px;
  }
  .ville-lieux-body{
- 	height: 786px;
  	border-bottom: solid rgb(179,179,179);
+ 	border-top: solid rgb(179,179,179);
  	border-width: 1px;
+ }
+ .ville-subhead-button{
+ 	float: left;
+	overflow: hidden;
+	margin-top: 20px;
+	margin-left: 15px;
+ }
+ .icon-recherche-orange::before{
+ 	font-size: 14.4px;
+ }
+ .ville-activity-info-detail{
+ 	margin-right: 5px;
+ }
+ .ville-activity-item-description{
+ 	width: 600px;
+ 	margin-top: 3px;
+ }
+ .ville-activity-item-btn{
+ 	overflow: hidden;
+	margin: 0px auto auto 50px;
+	float: left;
+ }
+ .ville-item-body{
+ 	border-bottom: solid rgb(179,179,179);
+	border-width: 1px;
+ }
+ .groupe-motive-pp::before{
+ 	color: rgb(134,134,134);
+ }
+ .ml-body-icon-block{
+ 	margin: 25px auto auto 50px;
+	float: left;
+ }
+ .ml-activity-organiser-image{
+ 	width: 45px;
+ 	height: 45px;
+ 	border: trnasparent;
+ 	border-radius: 27.5px;
+ }
+ .ml-activity-organiser{
+ 	overflow: hidden;
+ }
+ .ml-activity-person-info-block{
+ 	margin: 8px;
+	float: left;
  }

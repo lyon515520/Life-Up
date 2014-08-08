@@ -62,74 +62,10 @@
 				</ul>
 				
 				<div class="tab-content">
+				
 				  <div class="tab-pane" id="motive">
 				  	<div class="ml-body-motive">
-				  	</div>
-				  </div>
-				  <div class="tab-pane" id="groupe-motive">
-				  	<div class="ml-body-groupe-motive">
-				  	</div>
-				  </div>
-				  <div class="tab-pane active" id="activity">
-				  	<div class="ml-body-activite">
-				  		<div class="ville-searchbar" id="ville-activity-searchbar">
-				  			<div class="ville-univers">
-				  				<p class="text-size2 color-orange">Univers</p>
-				  				<select class="form-control mon-activity-select-mod">
-									<option>Sport</option>
-									<option>Musique</option>
-									<option>Gastronomie</option>
-									<option>Mode</option>
-									<option>Voyage</option>
-									<option>Culture</option>
-									<option>Autres</option>
-								</select>
-				  			</div>
-				  			<div class="ville-category">
-				  				<p class="text-size2 color-orange">Catégories</p>
-				  				<select class="form-control mon-activity-select-mod">
-									<option class="category1">SPORT DE RAQUETTE</option>
-									<option>Badminton</option>
-									<option>Tennis</option>
-									<option>Tennis de table</option>
-									<option class="category1">FITNESS</option>
-									<option>Zumba</option>
-									<option>Urban Dance</option>
-								</select>
-				  			</div>
-				  			<div class="ville-search">
-								<input type="text" class="form-control mon-compte-comment" id="ville-activity-search-input" placeholder="Une activité en particulier ?">
-								<button type="button" class="btn btn-default btn-search"><span aria-hidden="true" data-icon="&#xe622" class="icon-recherche"></span></button>
-				  			</div>
-				  		</div>
-				  	</div>
-				  </div>
-				  <div class="tab-pane" id="activity-propose">
-				  	<div class="ml-body-activite">
-					  	<div class="ml-body-btn-propose-block">
-							<a href="#" class="btn btn-primary mon-compte-btn-propose" role="button">
-								<span aria-hidden="true" data-icon="&#xe624" class="icon-creer-activite"></span>
-								<span class="head-text-mid text-bold">Je proposer une activité</span>
-							</a>
-						</div>
-						<div>
-							<div class="ml-body-item2">
-					  			<div class="ml-body-btn-filter">
-				  					<a href="#" class="btn btn-default ml-btn-filter" role="button">
-										<span aria-hidden="true" data-icon="&#xe621" class="icon-parametre-recherche ml-icon-filter"></span>
-										<span class="left-head-text-mid">Filtrer</span>
-									</a>
-					  			</div>
-					  			<div class="ml-body-btn-filter-text">
-					  				<p class="color_grey3 text-size2">Région Lilloise</p>
-					  			</div>
-					  			<div class="ml-body-btn-filter-text2">
-					  				<p class="color_grey3 text-size2">
-					  					<a><span>X</span></a>
-					  					<span>De 18 à 26 ans</span>
-					  				</p>
-					  			</div>
-					  		</div>
+				  		<div>
 					  		<div class="ville-searchbar">
 					  			<div class="ville-univers">
 					  				<p class="text-size2 color-orange">Univers</p>
@@ -156,11 +92,416 @@
 									</select>
 					  			</div>
 					  			<div class="ville-search">
-									<input type="text" class="form-control mon-compte-comment" id="ville-activity-propose-search-input" placeholder="Une activité en particulier ?">
-									<button type="button" class="btn btn-default btn-search"><span aria-hidden="true" data-icon="&#xe622" class="icon-recherche"></span></button>
+					  				<p class="text-size2 color-orange">Mots clefs</p>
+									<input type="text" class="form-control mon-compte-comment ville-activity-search-input" placeholder="Une activité en particulier ?">
+					  			</div>
+					  			<div class="ville-subhead-button">
+					  				<a href="#" class="btn btn-primary ml-body-btn-check" role="button">
+										<span aria-hidden="true" data-icon="&#xe622" class="icon-recherche icon-recherche-orange"></span>
+									</a>
+					  			</div>
+					  		</div>
+					  		<div class="ml-body-item2">
+					  			<div class="ml-body-btn-filter">
+				  					<a href="#" class="btn btn-default ml-btn-filter" role="button">
+										<span aria-hidden="true" data-icon="&#xe621" class="icon-parametre-recherche ml-icon-filter"></span>
+										<span class="left-head-text-mid">Filtrer</span>
+									</a>
+					  			</div>
+					  			<div class="ml-body-btn-filter-text">
+					  				<p class="color_grey3 text-size2">Région Lilloise</p>
+					  			</div>
+					  			<div class="ml-body-btn-filter-text2">
+					  				<p class="color_grey3 text-size2">
+					  					<a><span>X</span></a>
+					  					<span>De 18 à 26 ans</span>
+					  				</p>
 					  			</div>
 					  		</div>
 				  		</div>
+					  	<div class="ville-item-head">
+			  				<div class="ville-trier">
+			  					<p class="ville-trier-text">Trier:</p>
+			  					<select class="form-control mon-activity-select-mod ville-trier-select">
+									<option>Date décroissante</option>
+									<option>Date croissante</option>
+									<option>Niveau décroissant</option>
+									<option>Niveau croissant</option>
+									<option>Participant décroissant</option>
+									<option>Participant croissant</option>
+								</select>
+			  				</div>
+			  			</div>
+						<div class="ville-lieux-body">
+							<div class="ville-item">
+								<div class="ml-body-img-block">
+					  				<img class="ml-body-img" src="../image/avatar.JPG"  alt="#" />
+					  			</div>
+					  			<div class="ml-body-info-block">
+					  				<!-- info of person -->
+					  				<p>
+					  					<span class="text-size3 color-orange">Fabien D.</span>
+					  					<span class="text-size4 color_grey1">36 ans,Paris</span>
+					  				</p>
+					  				<p style="margin-top: -5px;">
+										<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1" ></span>
+										<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1" ></span>
+										<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1" ></span>
+										<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note2" ></span>
+										<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note2" ></span>
+										<span class="text-size1 color_grey1">64 notes</span>
+									</p>
+									<p style="margin-top: -5px;">
+										<a class="ml-body-info-link">Activités de <span>Fabien</span></a>
+									</p>
+					  			</div>
+					  			<div class="ml-body-declaration-block">
+					  				<!-- introduction of person-->
+					  				<p class="text-size4 color_grey1 ml-body-declaration">Lorem ipsum doloris van der marchet fil des darte dela quoisse tous var denne argata julia del dufour emilie galar dessus gardum</p>
+					  			</div>
+							</div>
+						</div>
+						<div class="fg-activity-page-block">
+				  			<div class="fg-page-count">
+				  				<p class="color_grey1 text-size4">1 à 6 sur 53</p>
+				  			</div>
+				  			<div class="fg-page-chose">
+				  				<p class="color_grey1 text-size4">
+				  					Vers la page
+				  					<a class="fg-page">1</a>
+				  					<a class="fg-page">2</a>
+				  					<a class="fg-page">3</a>
+				  					<a class="fg-page">4</a>
+				  					<a class="fg-page">5</a>
+				  					<a class="fg-page">6</a>
+				  					...
+				  				</p>
+				  			</div>
+				  			<div class="fg-page-change">
+				  				<p class="color_grey1 text-size4">
+				  					<a class="fg-page">Préc. </a>
+				  					|
+				  					<a class="fg-page">Suivant </a>
+				  				</p>
+				  			</div>
+				  		</div>
+					  </div>
+				  </div>
+				  
+				  <div class="tab-pane" id="groupe-motive">
+				  	<div class="ml-body-groupe-motive">
+				  		<div>
+					  		<div class="ville-searchbar">
+					  			<div class="ville-univers">
+					  				<p class="text-size2 color-orange">Univers</p>
+					  				<select class="form-control mon-activity-select-mod">
+										<option>Sport</option>
+										<option>Musique</option>
+										<option>Gastronomie</option>
+										<option>Mode</option>
+										<option>Voyage</option>
+										<option>Culture</option>
+										<option>Autres</option>
+									</select>
+					  			</div>
+					  			<div class="ville-category">
+					  				<p class="text-size2 color-orange">Catégories</p>
+					  				<select class="form-control mon-activity-select-mod">
+										<option class="category1">SPORT DE RAQUETTE</option>
+										<option>Badminton</option>
+										<option>Tennis</option>
+										<option>Tennis de table</option>
+										<option class="category1">FITNESS</option>
+										<option>Zumba</option>
+										<option>Urban Dance</option>
+									</select>
+					  			</div>
+					  			<div class="ville-search">
+					  				<p class="text-size2 color-orange">Mots clefs</p>
+									<input type="text" class="form-control mon-compte-comment ville-activity-search-input" placeholder="Une activité en particulier ?">
+					  			</div>
+					  			<div class="ville-subhead-button">
+					  				<a href="#" class="btn btn-primary ml-body-btn-check" role="button">
+										<span aria-hidden="true" data-icon="&#xe622" class="icon-recherche icon-recherche-orange"></span>
+									</a>
+					  			</div>
+					  		</div>
+					  		<div class="ml-body-item2">
+					  			<div class="ml-body-btn-filter">
+				  					<a href="#" class="btn btn-default ml-btn-filter" role="button">
+										<span aria-hidden="true" data-icon="&#xe621" class="icon-parametre-recherche ml-icon-filter"></span>
+										<span class="left-head-text-mid">Filtrer</span>
+									</a>
+					  			</div>
+					  			<div class="ml-body-btn-filter-text">
+					  				<p class="color_grey3 text-size2">Région Lilloise</p>
+					  			</div>
+					  			<div class="ml-body-btn-filter-text2">
+					  				<p class="color_grey3 text-size2">
+					  					<a><span>X</span></a>
+					  					<span>De 18 à 26 ans</span>
+					  				</p>
+					  			</div>
+					  		</div>
+				  		</div>
+				  		<div class="ml-body-btn-propose-block">
+							<a href="#" class="btn btn-primary mon-compte-btn-propose" role="button">
+								<span aria-hidden="true" data-icon="&#xe635" class="icon-ajouter"></span>
+								<span class="head-text-mid text-bold">Je crée un groupe</span>
+							</a>
+						</div>
+					  	<div class="ville-item-head">
+			  				<div class="ville-trier">
+			  					<p class="ville-trier-text">Trier:</p>
+			  					<select class="form-control mon-activity-select-mod ville-trier-select">
+									<option>Date décroissante</option>
+									<option>Date croissante</option>
+									<option>Niveau décroissant</option>
+									<option>Niveau croissant</option>
+									<option>Participant décroissant</option>
+									<option>Participant croissant</option>
+								</select>
+			  				</div>
+			  			</div>
+						<div class="ville-lieux-body">
+							<div class="ville-item">
+								<div class="ml-body-img-block">
+					  				<img class="ml-body-img" src="../image/activity-img1.JPG"  alt="#" />
+					  			</div>
+					  			<div class="ml-body-info-block">
+					  				<!-- info of person -->
+					  				<p class="text-size3 color-orange">
+					  					Step by step !
+					  				</p>
+					  				<p class="text-size4 color_grey1">
+					  					<span>12 membres</span>
+					  					<span>Lille</span>
+					  				</p>
+									<p>
+										<span class="ville-activity-info-detail">
+											<a class="color-orange text-size2">
+												<span aria-hidden="true" data-icon="&#xe632" class="icon-passionne ville-lieux-icon"></span>
+												<span>35</span>
+											</a>
+										</span>
+										<span class="ville-activity-info-detail">
+											<a class="color-orange text-size2">
+												<span aria-hidden="true" data-icon="&#xe616" class="icon-sport ville-lieux-icon"></span>
+												<span>125</span>
+											</a>
+										</span>
+									</p>
+					  			</div>
+					  			<div class="ml-body-declaration-block">
+					  				<!-- introduction of person-->
+					  				<p class="text-size4 color_grey1 ml-body-declaration">Du step tous les matins ! Tous les jours nos membres vont faire du step, organisez-vous avec eux !</p>
+					  			</div>
+					  			<div class="ml-body-icon-block">
+					  				<p><span aria-hidden="true" data-icon="&#xe626" class="icon-prive groupe-motive-pp"></span></p>
+					  			</div>
+							</div>
+						</div>
+						<div class="fg-activity-page-block">
+				  			<div class="fg-page-count">
+				  				<p class="color_grey1 text-size4">1 à 6 sur 53</p>
+				  			</div>
+				  			<div class="fg-page-chose">
+				  				<p class="color_grey1 text-size4">
+				  					Vers la page
+				  					<a class="fg-page">1</a>
+				  					<a class="fg-page">2</a>
+				  					<a class="fg-page">3</a>
+				  					<a class="fg-page">4</a>
+				  					<a class="fg-page">5</a>
+				  					<a class="fg-page">6</a>
+				  					...
+				  				</p>
+				  			</div>
+				  			<div class="fg-page-change">
+				  				<p class="color_grey1 text-size4">
+				  					<a class="fg-page">Préc. </a>
+				  					|
+				  					<a class="fg-page">Suivant </a>
+				  				</p>
+				  			</div>
+				  		</div>
+					  </div>
+				  </div>
+				  
+				  <div class="tab-pane active" id="activity">
+				  	<div class="ml-body-activite">
+				  		<div>
+					  		<div class="ville-searchbar">
+					  			<div class="ville-univers">
+					  				<p class="text-size2 color-orange">Univers</p>
+					  				<select class="form-control mon-activity-select-mod">
+										<option>Sport</option>
+										<option>Musique</option>
+										<option>Gastronomie</option>
+										<option>Mode</option>
+										<option>Voyage</option>
+										<option>Culture</option>
+										<option>Autres</option>
+									</select>
+					  			</div>
+					  			<div class="ville-category">
+					  				<p class="text-size2 color-orange">Catégories</p>
+					  				<select class="form-control mon-activity-select-mod">
+										<option class="category1">SPORT DE RAQUETTE</option>
+										<option>Badminton</option>
+										<option>Tennis</option>
+										<option>Tennis de table</option>
+										<option class="category1">FITNESS</option>
+										<option>Zumba</option>
+										<option>Urban Dance</option>
+									</select>
+					  			</div>
+					  			<div class="ville-search">
+					  				<p class="text-size2 color-orange">Mots clefs</p>
+									<input type="text" class="form-control mon-compte-comment ville-activity-search-input" placeholder="Une activité en particulier ?">
+					  			</div>
+					  			<div class="ville-subhead-button">
+					  				<a href="#" class="btn btn-primary ml-body-btn-check" role="button">
+										<span aria-hidden="true" data-icon="&#xe622" class="icon-recherche icon-recherche-orange"></span>
+									</a>
+					  			</div>
+					  		</div>
+				  		</div>
+				  		<div class="ville-item-head">
+			  				<div class="ville-trier">
+			  					<p class="ville-trier-text">Trier:</p>
+			  					<select class="form-control mon-activity-select-mod ville-trier-select">
+									<option>Date décroissante</option>
+									<option>Date croissante</option>
+									<option>Niveau décroissant</option>
+									<option>Niveau croissant</option>
+									<option>Participant décroissant</option>
+									<option>Participant croissant</option>
+								</select>
+			  				</div>
+			  			</div>
+			  			<div class="ville-activity-item-block">
+				  			<div class="ville-item-body">
+				  				<div class="ville-item">
+				  					<div class="ville-lieux-item-info">
+				  						<p class="text-size3 color_grey1">ZUMBA</p>
+				  						<p>
+											<span class="ville-activity-info-detail">
+												<a class="color-orange text-size2">
+													<span aria-hidden="true" data-icon="&#xe632" class="icon-passionne ville-lieux-icon"></span>
+													<span>35 motivés</span>
+												</a>
+											</span>
+											<span class="ville-activity-info-detail">
+												<a class="color-orange text-size2">
+													<span aria-hidden="true" data-icon="&#xe601" class="icon-contacts-menu ville-lieux-icon"></span>
+													<span>3 groupes</span>
+												</a>
+											</span>
+											<span>|</span>
+											<span>
+												<a class="color_blue text-size4">Description site officielle</a>
+											</span>
+										</p>
+										<p class="text-size2 color_grey1 ville-activity-item-description">Activité combinant l’aérobic et la danse sur des musiques latines telles que la Salsa, merengue, cumbia, reggaeton.</p>
+				  					</div>
+				  					<div class="ville-activity-item-btn">
+				  						<a href="#" class="btn btn-default ml-btn-filter" role="button">
+											<span aria-hidden="true" data-icon="&#xe60a" class="icon-creer-activite ml-icon-filter" ></span>
+											<span class="left-head-text-mid">Je proposer l'activité</span>
+										</a>
+				  					</div>
+				  				</div>
+				  			</div>
+				  		</div>
+				  		<div class="fg-activity-page-block">
+				  			<div class="fg-page-count">
+				  				<p class="color_grey1 text-size4">1 à 6 sur 53</p>
+				  			</div>
+				  			<div class="fg-page-chose">
+				  				<p class="color_grey1 text-size4">
+				  					Vers la page
+				  					<a class="fg-page">1</a>
+				  					<a class="fg-page">2</a>
+				  					<a class="fg-page">3</a>
+				  					<a class="fg-page">4</a>
+				  					<a class="fg-page">5</a>
+				  					<a class="fg-page">6</a>
+				  					...
+				  				</p>
+				  			</div>
+				  			<div class="fg-page-change">
+				  				<p class="color_grey1 text-size4">
+				  					<a class="fg-page">Préc. </a>
+				  					|
+				  					<a class="fg-page">Suivant </a>
+				  				</p>
+				  			</div>
+				  		</div>
+				  	</div>
+				  </div>
+				  <div class="tab-pane" id="activity-propose">
+				  	<div class="ml-body-activite">
+						<div>
+					  		<div class="ville-searchbar">
+					  			<div class="ville-univers">
+					  				<p class="text-size2 color-orange">Univers</p>
+					  				<select class="form-control mon-activity-select-mod">
+										<option>Sport</option>
+										<option>Musique</option>
+										<option>Gastronomie</option>
+										<option>Mode</option>
+										<option>Voyage</option>
+										<option>Culture</option>
+										<option>Autres</option>
+									</select>
+					  			</div>
+					  			<div class="ville-category">
+					  				<p class="text-size2 color-orange">Catégories</p>
+					  				<select class="form-control mon-activity-select-mod">
+										<option class="category1">SPORT DE RAQUETTE</option>
+										<option>Badminton</option>
+										<option>Tennis</option>
+										<option>Tennis de table</option>
+										<option class="category1">FITNESS</option>
+										<option>Zumba</option>
+										<option>Urban Dance</option>
+									</select>
+					  			</div>
+					  			<div class="ville-search">
+					  				<p class="text-size2 color-orange">Mots clefs</p>
+									<input type="text" class="form-control mon-compte-comment ville-activity-search-input" placeholder="Une activité en particulier ?">
+					  			</div>
+					  			<div class="ville-subhead-button">
+					  				<a href="#" class="btn btn-primary ml-body-btn-check" role="button">
+										<span aria-hidden="true" data-icon="&#xe622" class="icon-recherche icon-recherche-orange"></span>
+									</a>
+					  			</div>
+					  		</div>
+					  		<div class="ml-body-item2">
+					  			<div class="ml-body-btn-filter">
+				  					<a href="#" class="btn btn-default ml-btn-filter" role="button">
+										<span aria-hidden="true" data-icon="&#xe621" class="icon-parametre-recherche ml-icon-filter"></span>
+										<span class="left-head-text-mid">Filtrer</span>
+									</a>
+					  			</div>
+					  			<div class="ml-body-btn-filter-text">
+					  				<p class="color_grey3 text-size2">Région Lilloise</p>
+					  			</div>
+					  			<div class="ml-body-btn-filter-text2">
+					  				<p class="color_grey3 text-size2">
+					  					<a><span>X</span></a>
+					  					<span>De 18 à 26 ans</span>
+					  				</p>
+					  			</div>
+					  		</div>
+				  		</div>
+				  		<div class="ml-body-btn-propose-block">
+							<a href="#" class="btn btn-primary mon-compte-btn-propose" role="button">
+								<span aria-hidden="true" data-icon="&#xe624" class="icon-creer-activite"></span>
+								<span class="head-text-mid text-bold">Je proposer une activité</span>
+							</a>
+						</div>
 				  		<div class="ville-activity-item-block">
 				  			<div class="ville-item-head">
 				  				<div class="ville-trier">
@@ -328,10 +669,88 @@
 				  				</div>
 				  			</div>
 				  		</div>
+				  		<div class="fg-activity-page-block">
+				  			<div class="fg-page-count">
+				  				<p class="color_grey1 text-size4">1 à 6 sur 53</p>
+				  			</div>
+				  			<div class="fg-page-chose">
+				  				<p class="color_grey1 text-size4">
+				  					Vers la page
+				  					<a class="fg-page">1</a>
+				  					<a class="fg-page">2</a>
+				  					<a class="fg-page">3</a>
+				  					<a class="fg-page">4</a>
+				  					<a class="fg-page">5</a>
+				  					<a class="fg-page">6</a>
+				  					...
+				  				</p>
+				  			</div>
+				  			<div class="fg-page-change">
+				  				<p class="color_grey1 text-size4">
+				  					<a class="fg-page">Préc. </a>
+				  					|
+				  					<a class="fg-page">Suivant </a>
+				  				</p>
+				  			</div>
+				  		</div>
 					</div>
 				  </div>
 				  <div class="tab-pane" id="lieux">
 				  	<div class="ml-body-activite">
+				  		<div>
+					  		<div class="ville-searchbar">
+					  			<div class="ville-univers">
+					  				<p class="text-size2 color-orange">Univers</p>
+					  				<select class="form-control mon-activity-select-mod">
+										<option>Sport</option>
+										<option>Musique</option>
+										<option>Gastronomie</option>
+										<option>Mode</option>
+										<option>Voyage</option>
+										<option>Culture</option>
+										<option>Autres</option>
+									</select>
+					  			</div>
+					  			<div class="ville-category">
+					  				<p class="text-size2 color-orange">Catégories</p>
+					  				<select class="form-control mon-activity-select-mod">
+										<option class="category1">SPORT DE RAQUETTE</option>
+										<option>Badminton</option>
+										<option>Tennis</option>
+										<option>Tennis de table</option>
+										<option class="category1">FITNESS</option>
+										<option>Zumba</option>
+										<option>Urban Dance</option>
+									</select>
+					  			</div>
+					  			<div class="ville-search">
+					  				<p class="text-size2 color-orange">Mots clefs</p>
+									<input type="text" class="form-control mon-compte-comment ville-activity-search-input" placeholder="Une activité en particulier ?">
+					  			</div>
+					  			<div class="ville-subhead-button">
+					  				<a href="#" class="btn btn-primary ml-body-btn-check" role="button">
+										<span aria-hidden="true" data-icon="&#xe622" class="icon-recherche icon-recherche-orange"></span>
+									</a>
+					  			</div>
+					  		</div>
+					  		<div class="ml-body-item2">
+					  			<div class="ml-body-btn-filter">
+				  					<a href="#" class="btn btn-default ml-btn-filter" role="button">
+										<span aria-hidden="true" data-icon="&#xe621" class="icon-parametre-recherche ml-icon-filter"></span>
+										<span class="left-head-text-mid">Filtrer</span>
+									</a>
+					  			</div>
+					  			<div class="ml-body-btn-filter-text">
+					  				<p class="color_grey3 text-size2">Région Lilloise</p>
+					  			</div>
+					  			<div class="ml-body-btn-filter-text2">
+					  				<p class="color_grey3 text-size2">
+					  					<a><span>X</span></a>
+					  					<span>De 18 à 26 ans</span>
+					  				</p>
+					  			</div>
+					  		</div>
+				  		</div>
 					  	<div class="ml-body-btn-propose-block">
 					  		<p>
 						  		<span class="color_grey1 text-size2">Ton lieu favoris n’est pas encore sur life-up :&nbsp;&nbsp;&nbsp;</span>
@@ -340,54 +759,6 @@
 									<span class="head-text-mid text-bold">J’ajoute un lieu</span>
 								</a>
 							</p>
-						</div>
-						<div class="ville-lieux-middle-block" id="ville-search-float">
-							<div class="ville-middle-left">
-								<div class="ville-lieux-search">
-									<p class="text-size2 color-orange">Mot cl&eacute;</p>
-									<input type="text" class="form-control mon-compte-comment" id="ville-lieux-search-input" placeholder="Renseigne un lieu ou une activité">
-								</div>
-								<div class="ville-univers-cate">
-									<div class="ville-left-univers">
-										<p class="text-size2 color-orange">Univers</p>
-										<select class="form-control mon-activity-select-mod">
-											<option>Sport</option>
-											<option>Musique</option>
-											<option>Gastronomie</option>
-											<option>Mode</option>
-											<option>Voyage</option>
-											<option>Culture</option>
-											<option>Autres</option>
-										</select>
-									</div>
-									<div class="ville-left-category">
-										<p class="text-size2 color-orange">Catégories</p>
-										<select class="form-control mon-activity-select-mod">
-											<option class="category1">Sport de raquette</option>
-											<option>Badminton</option>
-											<option>Tennis</option>
-											<option>Tennis de table</option>
-											<option class="category1">FITNESS</option>
-											<option>Zumba</option>
-											<option>Urban Dance</option>
-										</select>
-									</div>
-								</div>
-								<div class="ville-search-button">
-									<a href="#" class="btn btn-primary" id="ville-lieux-search-button" role="button">
-										<span class="head-text-mid">Valider</span>
-									</a>
-								</div>
-							</div>
-							<div class="ville-lieux-maps">
-								<div class="ville-maps-btn">
-									<a href="#" class="btn btn-info mon-compte-btn-propose" role="button">
-										<span aria-hidden="true" data-icon="&#xe642" class="icon-geolocalisation"></span>
-										<span class="head-text-mid">Afficher sur la carte</span>
-									</a>
-								</div>
-								<div class="ville-maps" id="google-maps"></div>
-							</div>
 						</div>
 						<div class="ville-item-head">
 			  				<div class="ville-trier">

@@ -14,65 +14,30 @@
 <body class="test">
 	
 
-<div class="fg-head-button-block">
-					<div class="btn-group2 fg-head-button2">
-						<a href="#" class="btn text-size4 fg-body-button2 ml-body-button-discussion ml-btn-filter dropdown-toggle" data-toggle="dropdown" role="button">
-					  		<span aria-hidden="true" data-icon="&#xe60c" class="icon-parametre ml-body-button-icon" ></span>
-							<span>Paramètres</span>
-					 	</a>
-					 	<ul class="dropdown-menu pull-right" role="menu">
-						  	<li>
-							    <a class="head-text" href="#" data-toggle="modal" data-target=".modal-invite">
-						  			<span class="head-text-mid color_grey1">&nbsp;Inviter une personne</span>
-					  			</a>
-				  			</li>
-						    <li>
-							    <a class="head-text" href="#" data-toggle="modal" data-target=".modal-send-message">
-						  			<span class="head-text-mid color_grey1">&nbsp;Envoyer un message</span>
-					  			</a>
-				  			</li>
-						    <li>
-							    <a class="head-text" href="#">
-						  			<span class="head-text-mid color_grey1">&nbsp;Créer une activité</span>
-					  			</a>
-				  			</li>
-				  			<li>
-							    <a class="head-text" href="#" data-toggle="modal" data-target=".modal-create-group">
-						  			<span class="head-text-mid color_grey1">&nbsp;Créer une groupe</span>
-					  			</a>
-				  			</li>
-				  			<li class="head-divider"></li>
-				  			<li>
-							    <a class="head-text" href="#">
-						  			<span class="head-text-mid color_grey1">&nbsp;Paramètres du groupe</span>
-					  			</a>
-				  			</li>
-				  			<li class="head-divider"></li>
-				  			<li>
-							    <a class="head-text" href="#">
-						  			<span class="head-text-mid color_grey1">&nbsp;Quitter le groupe</span>
-					  			</a>
-				  			</li>
-				  			<li>
-							    <a class="head-text" href="#" data-toggle="modal" data-target=".modal-report-group">
-						  			<span class="head-text-mid color_grey1">&nbsp;Signaler le groupe</span>
-					  			</a>
-				  			</li>
-						  </ul>
-				 	</div>
-					<div class="fg-head-button" style="position: relative;margin-top: 40px;">
-						<a href="#" class="btn btn-default text-size4 fg-body-button ml-body-button-discussion" role="button">
-					  		<span aria-hidden="true" data-icon="&#xe631" class="icon-ajouter-ami ml-body-button-icon" ></span>
-							<span>&nbsp;&nbsp;Rejoindre&nbsp;&nbsp;</span>
-					 	</a>
-				 	</div>
-				 	<div class="fg-head-button">
-						<a href="#" class="btn btn-default text-size4 fg-body-button ml-body-button-discussion" role="button">
-					  		<span aria-hidden="true" data-icon="&#xe62d" class="icon-disussion-mono ml-body-button-icon" ></span>
-							<span>&nbsp;&nbsp;Contacter&nbsp;&nbsp;</span>
-					 	</a>
-				 	</div>
-				</div>
+<div class="dropdown">
+  <a href="#" class="btn btn-default ml-btn-filter ml-btn-group-grey" data-toggle="dropdown" role="button">
+										<span aria-hidden="true" data-icon="&#xe646" class="icon-notification ml-icon-filter" ></span>
+										<span class="left-head-text-mid">Notifications</span>
+									</a>
+									<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+									    <li>
+									    	<input id="activite-notification1" type="checkbox">
+											<label for="activite-notification1">&nbsp;Nouveaux motivés</label>
+										</li>
+									    <li>
+									    	<input id="activite-notification2" type="checkbox">
+											<label for="activite-notification2">&nbsp;Nouvelles activités planifiées</label>
+										</li>
+										<li>
+									    	<input id="activite-notification3" type="checkbox">
+											<label for="activite-notification3">&nbsp;Nouveaux groupes</label>
+										</li>
+										<li>
+									    	<input id="activite-notification4" type="checkbox">
+											<label for="activite-notification4">&nbsp;Nouveaux lieux</label>
+										</li>
+									</ul>
+</div>
 
 
 
