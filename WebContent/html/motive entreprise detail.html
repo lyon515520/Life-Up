@@ -9,13 +9,52 @@
 <link rel="stylesheet" type="text/css" href="../css/style-leftpanel.css" />
 <link rel="stylesheet" type="text/css" href="../css/style.css" />
 <link rel="stylesheet" type="text/css" href="../css/style-google-font.css" />
-<link rel="stylesheet" type="text/css" href="../css/checkbox-icon.css" />
 <link rel="stylesheet" type="text/css" href="../css/style-rightpanel.css" />
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
 <script type="text/javascript" src="../js/google-maps.js"></script>
 <title>c'est la partie de "motive entreprise detail"</title>
 </head>
 <body class="body-test">
+	<div class="modal fade modal-notification" id="modal-entreprise-notification" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-lg">
+	    <div class="modal-content">
+		    <div class="fg-subwindow-head">
+		    	<p class="fg-subwindow-head-title">Notification pour cette activit&eacute;</p>
+		    	<div class="gl-subwindow-head-remove">
+					<p class="glyphicon glyphicon-remove glyphicon-gl-remove"  data-dismiss="modal"></p>
+		    	</div>
+		    </div>
+		    <div class="subwindow-notification-body">
+		    	<p class="subwindow-notification text-size2 color_grey2">
+						<input id="subwindow-notification1" type="checkbox">
+						<label for="subwindow-notification1">&nbsp;Nouveaux motiv&eacute;s</label>
+				</p>
+				<p class="subwindow-notification text-size2 color_grey2">
+						<input id="subwindow-notification2" type="checkbox">
+						<label for="subwindow-notification2">&nbsp;Nouvelles activit&eacute;s planifi&eacute;es</label>
+				</p>
+				<p class="subwindow-notification text-size2 color_grey2">
+						<input id="subwindow-notification3" type="checkbox">
+						<label for="subwindow-notification3">&nbsp;Nouveaux groupes</label>
+				</p>
+				<p class="subwindow-notification text-size2 color_grey2">
+						<input id="subwindow-notification4" type="checkbox">
+						<label for="subwindow-notification4">&nbsp;Nouveaux lieux</label>
+				</p>
+		    </div>
+		    <div class="fg-subwindow-foot">
+		    	<div class="fg-subwindow-btn-right">
+					<a href="#" class="btn btn-annuler btn-annuler1" data-dismiss="modal" role="button">
+						<span class="text-bold">Annuler</span>
+					</a>
+					<a href="#" class="btn btn-primary btn-valier1" data-dismiss="modal" role="button">
+						<span class="text-bold">Continuer</span>
+					</a>
+				</div>
+		    </div>
+	    </div>
+	  </div>
+	</div>
 	<div class="leftpanel">
 		<div class="lp-inside">
 			<div class="motive-list-head">
@@ -82,18 +121,18 @@
 			<div class="motive-list-body">
 				<!-- this is the body of the body of motive list -->
 				<ul class="nav nav-tabs" role="tablist" id="myTab">
-				  <li class="ml-tab active"><a class="ml-tab-a1" href="#motive" role="tab" data-toggle="tab">Motiv&eacute;s</a></li>
-				  <li class="ml-tab"><a class="ml-tab-a1" href="#groupe" role="tab" data-toggle="tab">Groupe de motiv&eacute;s</a></li>
-				  <li class="ml-tab"><a class="ml-tab-a1" href="#activity" role="tab" data-toggle="tab">Activit&eacute;s</a></li>
-				  <li class="ml-tab"><a class="ml-tab-a1" href="#activity-propose" role="tab" data-toggle="tab">Activit&eacute;s propos&eacute;es</a></li>
+				  <li class="ml-tab active"><a class="ml-tab-a1" href="#entreprise-motive" role="tab" data-toggle="tab">Motiv&eacute;s</a></li>
+				  <li class="ml-tab"><a class="ml-tab-a1" href="#entreprise-groupe" role="tab" data-toggle="tab">Groupe de motiv&eacute;s</a></li>
+				  <li class="ml-tab"><a class="ml-tab-a1" href="#entreprise-activity" role="tab" data-toggle="tab">Activit&eacute;s</a></li>
+				  <li class="ml-tab"><a class="ml-tab-a1" href="#entreprise-activity-propose" role="tab" data-toggle="tab">Activit&eacute;s propos&eacute;es</a></li>
 				</ul>
 				
 				<div class="tab-content">
-				  <div class="tab-pane active" id="motive">
+				  <div class="tab-pane active" id="entreprise-motive">
 				  </div>
-				  <div class="tab-pane" id="groupe">
+				  <div class="tab-pane" id="entreprise-groupe">
 				  </div>
-				  <div class="tab-pane" id="activity">
+				  <div class="tab-pane" id="entreprise-activity">
 				  	<div class="ml-body-activite">
 				  		<div>
 					  		<div class="ville-searchbar">
@@ -142,7 +181,7 @@
 										<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level ml-icon-filter" ></span>
 										<span class="left-head-text-mid">Je suis motivé !</span>
 									</a>
-									<a href="#" class="btn btn-default ml-btn-filter ml-btn-group-grey" role="button">
+									<a href="#" class="btn btn-default ml-btn-filter ml-btn-group-grey" data-toggle="modal" data-target="#modal-entreprise-notification" role="button">
 										<span aria-hidden="true" data-icon="&#xe646" class="icon-notification ml-icon-filter" ></span>
 										<span class="left-head-text-mid">Notifications</span>
 									</a>
@@ -404,11 +443,11 @@
 						</div>
 				  	</div>
 				  </div>
-				  <div class="tab-pane" id="activity-propose">
+				  <div class="tab-pane" id="entreprise-activity-propose">
 					  <div class="ml-body-activite">
 					  	<div>
 							<div class="ml-activity-detail-btn-block">
-								<div id="ml-activity-detail-btn-block1">
+								<div class="ml-activity-detail-btn-block1">
 									<div class="ml-btn-block-image">
 										<img class="ml-body-img2" alt="#" src="../image/avatar.JPG">
 									</div>

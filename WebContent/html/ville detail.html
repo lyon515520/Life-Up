@@ -9,13 +9,52 @@
 <link rel="stylesheet" type="text/css" href="../css/style-leftpanel.css" />
 <link rel="stylesheet" type="text/css" href="../css/style.css" />
 <link rel="stylesheet" type="text/css" href="../css/style-google-font.css" />
-<link rel="stylesheet" type="text/css" href="../css/checkbox-icon.css" />
 <link rel="stylesheet" type="text/css" href="../css/style-rightpanel.css" />
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
 <script type="text/javascript" src="../js/google-maps.js"></script>
 <title>c'est la partie de "page ville"</title>
 </head>
 <body class="body-test">
+	<div class="modal fade modal-notification" id="modal-ville-notification" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-lg">
+	    <div class="modal-content">
+		    <div class="fg-subwindow-head">
+		    	<p class="fg-subwindow-head-title">Notification pour cette activit&eacute;</p>
+		    	<div class="gl-subwindow-head-remove">
+					<p class="glyphicon glyphicon-remove glyphicon-gl-remove"  data-dismiss="modal"></p>
+		    	</div>
+		    </div>
+		    <div class="subwindow-notification-body">
+		    	<p class="subwindow-notification text-size2 color_grey2">
+						<input id="subwindow-notification1" type="checkbox">
+						<label for="subwindow-notification1">&nbsp;Nouveaux motiv&eacute;s</label>
+				</p>
+				<p class="subwindow-notification text-size2 color_grey2">
+						<input id="subwindow-notification2" type="checkbox">
+						<label for="subwindow-notification2">&nbsp;Nouvelles activit&eacute;s planifi&eacute;es</label>
+				</p>
+				<p class="subwindow-notification text-size2 color_grey2">
+						<input id="subwindow-notification3" type="checkbox">
+						<label for="subwindow-notification3">&nbsp;Nouveaux groupes</label>
+				</p>
+				<p class="subwindow-notification text-size2 color_grey2">
+						<input id="subwindow-notification4" type="checkbox">
+						<label for="subwindow-notification4">&nbsp;Nouveaux lieux</label>
+				</p>
+		    </div>
+		    <div class="fg-subwindow-foot">
+		    	<div class="fg-subwindow-btn-right">
+					<a href="#" class="btn btn-annuler btn-annuler1" data-dismiss="modal" role="button">
+						<span class="text-bold">Annuler</span>
+					</a>
+					<a href="#" class="btn btn-primary btn-valier1" data-dismiss="modal" role="button">
+						<span class="text-bold">Continuer</span>
+					</a>
+				</div>
+		    </div>
+	    </div>
+	  </div>
+	</div>
 	<div class="leftpanel">
 		<div class="lp-inside">
 			<div class="motive-list-head">
@@ -54,26 +93,26 @@
 			</div>
 			<div class="motive-list-body">
 				<ul class="nav nav-tabs" role="tablist" id="myTab">
-				  <li class="ml-tab"><a class="ml-tab-a2" href="#motive" role="tab" data-toggle="tab">Motiv&eacute;s</a></li>
-				  <li class="ml-tab"><a class="ml-tab-a2" href="#groupe-motive" role="tab" data-toggle="tab">Groupe de motiv&eacute;s</a></li>
-				  <li class="ml-tab active"><a class="ml-tab-a2" href="#activity" role="tab" data-toggle="tab">Activit&eacute;s</a></li>
-				  <li class="ml-tab"><a class="ml-tab-a2" href="#activity-propose" role="tab" data-toggle="tab">Activit&eacute;s propos&eacute;es</a></li>
-				  <li class="ml-tab"><a class="ml-tab-a2" href="#lieux" role="tab" data-toggle="tab">Lieux</a></li>
+				  <li class="ml-tab"><a class="ml-tab-a2" href="#ville-motive" role="tab" data-toggle="tab">Motiv&eacute;s</a></li>
+				  <li class="ml-tab"><a class="ml-tab-a2" href="#ville-groupe-motive" role="tab" data-toggle="tab">Groupe de motiv&eacute;s</a></li>
+				  <li class="ml-tab active"><a class="ml-tab-a2" href="#ville-activity" role="tab" data-toggle="tab">Activit&eacute;s</a></li>
+				  <li class="ml-tab"><a class="ml-tab-a2" href="#ville-activity-propose" role="tab" data-toggle="tab">Activit&eacute;s propos&eacute;es</a></li>
+				  <li class="ml-tab"><a class="ml-tab-a2" href="#ville-lieux" role="tab" data-toggle="tab">Lieux</a></li>
 				</ul>
 				
 				<div class="tab-content">
 				
-				  <div class="tab-pane" id="motive">
+				  <div class="tab-pane" id="ville-motive">
 				  	<div class="ml-body-motive">
 				  	</div>
 				  </div>
 				  
-				  <div class="tab-pane" id="groupe-motive">
+				  <div class="tab-pane" id="ville-groupe-motive">
 				  	<div class="ml-body-groupe-motive">
 				  	</div>
 				  </div>
 				  
-				  <div class="tab-pane active" id="activity">
+				  <div class="tab-pane active" id="ville-activity">
 				  	<div class="ml-body-activite">
 				  		<div>
 					  		<div class="ville-searchbar">
@@ -122,7 +161,7 @@
 										<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level ml-icon-filter" ></span>
 										<span class="left-head-text-mid">Je suis motivé !</span>
 									</a>
-									<a href="#" class="btn btn-default ml-btn-filter ml-btn-group-grey" data-toggle="dropdown" role="button">
+									<a href="#" class="btn btn-default ml-btn-filter ml-btn-group-grey" data-toggle="modal" data-target="#modal-ville-notification" role="button">
 										<span aria-hidden="true" data-icon="&#xe646" class="icon-notification ml-icon-filter" ></span>
 										<span class="left-head-text-mid">Notifications</span>
 									</a>
@@ -538,12 +577,398 @@
 				  	</div>
 				  </div>
 				  
-				  <div class="tab-pane" id="activity-propose">
-				  	<div class="ml-body-activite">
-				  	</div>
+				  <div class="tab-pane" id="ville-activity-propose">
+					  <div class="ml-body-activite">
+					  	<div>
+							<div class="ml-activity-detail-btn-block">
+								<div class="ml-activity-detail-btn-block1">
+									<div class="ml-btn-block-image">
+										<img class="ml-body-img2" alt="#" src="../image/avatar.JPG">
+									</div>
+									<div class="ml-btn-blcok-text">
+										<p class="text-size2 color-orange">
+											Fabien D.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											<span class="glyphicon glyphicon-arrow-right ml-btn-blcok-text-arrow"></span>
+										</p>
+									</div>
+									<div class="ml-btn-block-btn">
+										<a href="#" class="btn btn-primary mon-compte-btn-propose ml-activity-detail-btn-participe" role="button">
+											<span aria-hidden="true" data-icon="&#xe64a" class="icon-sourire" ></span>
+											<span class="head-text-mid">&nbsp;&nbsp;Je participe !</span>
+										</a>
+									</div>
+								</div>
+							</div>
+					  		<div class="mp-title">
+								<div class="mp-activity-detail-left">
+									<p class="color-orange text-size3">STEP MORNING</p>
+								</div>
+							</div>
+							<div class="ml-activity-detail-head-info">
+								<p class="color_grey1 text-size4" style="float: left;">
+									<span aria-hidden="true" data-icon="&#xe648" class="icon-niveau icon-ml-detail-info" ></span>
+									<span>tout niveau </span>
+									<span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span>
+									<span aria-hidden="true" data-icon="&#xe626" class="icon-prive icon-ml-detail-info" ></span>
+									<span>privée</span>
+									<span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span>
+									<span aria-hidden="true" data-icon="&#xe647" class="icon-horaire icon-ml-detail-info" ></span>
+									<span>Il y a 2 jours</span>
+									<a href="#ml-activity-detail-participant">
+									<span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span>
+									<span aria-hidden="true" data-icon="&#xe623" class="icon-groupe icon-ml-detail-info" ></span>
+									<span>15</span>
+									</a>
+									<a href="#ml-activity-detail-comment">
+									<span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span>
+									<span aria-hidden="true" data-icon="&#xe62d" class="icon-disussion-mono icon-ml-detail-info" ></span>
+									<span>60</span>
+									</a>
+									<a>
+										<span>&nbsp;&nbsp;&nbsp;&nbsp;|</span>
+										<span aria-hidden="true" data-icon="&#xe618" class="icon-editer ml-head-link-icon-blue" ></span>
+										<span class="ml-head-link-text-blue">Editer</span>
+									</a>
+								</p>
+								<div class="mp-title-right">
+									<a class="color_blue text-size4">Retour aux activités</a>
+								</div>
+							</div>
+							<div class="ml-activity-organiser">
+								<div class="ml-body-img-block">
+					  				<img class="ml-activity-organiser-image" src="../image/activity-img1.JPG" alt="#">
+					  			</div>
+					  			<div class="ml-activity-person-info-block">
+					  				<p>
+					  					<span class="text-size3 color-orange">Stephanie G.</span>
+					  					<span class="text-size4 color_grey1">24 ans, Marcq en Baroeul</span> 
+					  				</p>
+					  			</div>
+							</div>
+							<div class="ml-activity-context">
+								<p class="color_grey1 text-size4">
+									Salut à tous,
+									Samedi 14 nous pourrons enfin assister à Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec urna elit. Vestibulum placerat id velit eget accumsan. Nullam sagittis mauris non ullamcorper malesuada. Nunc at dolor adipiscing, euismod elit a, laoreet neque. Aliquam interdum eget ante vel dapibus.
+								</p>
+							</div>
+							<p class="mon-compte-subtitle4">Date </p>
+							<div class="ml-activity-context">
+								<p class="color_grey1 text-size4">
+									Samedi 14 décembre 2014     16h30
+								</p>
+							</div>
+							<p class="mon-compte-subtitle4">Lieu </p>
+							<div class="ville-activity-propose-lieu">
+								<div class="propose-lieu-left">
+									<div class="ville-activity-propose-lieu">
+										<div class="ville-lieux-item-img">
+					  						<img class="ville-lieux-image" src="../image/activity-img3.JPG" alt="#">
+					  					</div>
+					  					<div class="ville-activity-propose-lieu-info">
+					  						<p class="color_grey1 text-size3">
+					  							<span>Domyos club Marcq en baroeul</span>
+					  						</p>
+					  						<p class="color_grey1 text-size4">1 avenue des Olympiades 59700 Marcq-en-Baroeul</p>
+					  						<p>
+					  							<span class="ville-lieux-info-detail">
+					  								<a class="color-orange text-size2">
+					  									<span aria-hidden="true" data-icon="&#xe632" class="icon-passionne ville-lieux-icon"></span>
+					  									<span>35 motivés</span>
+					  								</a>
+					  							</span>
+					  							<span class="ville-lieux-info-detail">
+					  								<a class="color-orange text-size2">
+					  									<span aria-hidden="true" data-icon="&#xe601" class="icon-contacts-menu ville-lieux-icon"></span>
+					  									<span>3 groupes</span>
+					  								</a>
+					  							</span>
+					  						</p>
+					  						<p>
+						  						<a class="color-orange text-size2">
+				  									<span aria-hidden="true" data-icon="&#xe616" class="icon-sport ville-lieux-icon"></span>
+				  									<span>125 activités organisées</span>
+				  								</a>
+					  						</p>
+					  					</div>
+				  					</div>
+				  					<div class="ville-activity-propose-lieu-activities">
+				  						<p class="text-size2 color-deepblue">
+				  							<span class="text-size4 color_grey1">Etaussi: </span>
+				  							<span>Badminton, Squash, Badminton, Squash, Badminton, Squash, Badminton, Squash, Badminton, Squash</span>
+				  						</p>
+				  					</div>
+								</div>
+								<div class="propose-lieu-right">
+									<div class="ville-activity-propose-maps" id="google-maps"></div>
+								</div>
+							</div>
+							<p class="mon-compte-subtitle4" id="ml-activity-detail-participant">Participants (15)</p>
+							<div class="ml-activity-window">
+								<div class="ml-activity-participants">
+									<div class="ml-body-img-block">
+						  				<img class="ml-body-img2" src="../image/activity-img1.JPG"  alt="#" />
+						  			</div>
+						  			<div class="ml-activity-participants-info-left">
+							  			<div class="ml-activity-participants-info1">
+							  				<p class="color-orange text-size3 ml-activity-participants-text">François F.</p> 
+							  			</div>
+							  			<div class="ml-activity-participants-info2">
+							  				<p class="color_grey1 text-size4 ml-activity-participants-text">24 ans, Tourcoing</p> 
+							  			</div>
+						  			</div>
+						  			<div class="ml-activity-participants-info3">
+							  			<a class="ml-body-info-link">Activités de <span>Francois</span></a>
+							  		</div>
+							  		<div class="ml-activity-participants-note">
+								  		<p>
+										<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1" ></span>
+										<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1" ></span>
+										<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1" ></span>
+										<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note2" ></span>
+										<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note2" ></span>
+								  		<span class="text-size1 color_grey1">64 notes</span>
+										</p>
+							  		</div>
+								</div>
+								<div class="ml-activity-participants">
+									<div class="ml-body-img-block">
+						  				<img class="ml-body-img2" src="../image/activity-img2.JPG"  alt="#" />
+						  			</div>
+						  			<div class="ml-activity-participants-info-left">
+							  			<div class="ml-activity-participants-info1">
+							  				<p class="color-orange text-size3 ml-activity-participants-text">Fabien D.</p> 
+							  			</div>
+							  			<div class="ml-activity-participants-info2">
+							  				<p class="color_grey1 text-size4 ml-activity-participants-text">28 ans, Lille</p> 
+							  			</div>
+						  			</div>
+						  			<div class="ml-activity-participants-info3">
+							  			<a class="ml-body-info-link">Activités de <span>Fabien</span></a>
+							  		</div>
+							  		<div class="ml-activity-participants-note">
+								  		<p>
+										<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1" ></span>
+										<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1" ></span>
+										<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1" ></span>
+										<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note2" ></span>
+										<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note2" ></span>
+										<span class="text-size1 color_grey1">78 notes</span>
+										</p>
+							  		</div>
+								</div>
+								<div class="ml-activity-participants">
+									<div class="ml-body-img-block">
+						  				<img class="ml-body-img2" src="../image/activity-img3.JPG"  alt="#" />
+						  			</div>
+						  			<div class="ml-activity-participants-info-left">
+							  			<div class="ml-activity-participants-info1">
+							  				<p class="color-orange text-size3 ml-activity-participants-text">Ang L.</p> 
+							  			</div>
+							  			<div class="ml-activity-participants-info2">
+							  				<p class="color_grey1 text-size4 ml-activity-participants-text">24 ans, Paris</p> 
+							  			</div>
+						  			</div>
+						  			<div class="ml-activity-participants-info3">
+							  			<a class="ml-body-info-link">Activités de <span>Ang</span></a>
+							  		</div>
+							  		<div class="ml-activity-participants-note">
+								  		<p>
+										<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1" ></span>
+										<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1" ></span>
+										<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1" ></span>
+										<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note2" ></span>
+										<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note2" ></span>
+								  		<span class="text-size1 color_grey1">15 notes</span>
+										</p>
+							  		</div>
+								</div>
+								<div class="ml-activity-participants">
+									<div class="ml-body-img-block">
+						  				<img class="ml-body-img2" src="../image/activity-img1.JPG"  alt="#" />
+						  			</div>
+						  			<div class="ml-activity-participants-info-left">
+							  			<div class="ml-activity-participants-info1">
+							  				<p class="color-orange text-size3 ml-activity-participants-text">François F.</p> 
+							  			</div>
+							  			<div class="ml-activity-participants-info2">
+							  				<p class="color_grey1 text-size4 ml-activity-participants-text">24 ans, Tourcoing</p> 
+							  			</div>
+						  			</div>
+						  			<div class="ml-activity-participants-info3">
+							  			<a class="ml-body-info-link">Activités de <span>Fabien</span></a>
+							  		</div>
+							  		<div class="ml-activity-participants-note">
+								  		<p>
+										<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1" ></span>
+										<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1" ></span>
+										<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1" ></span>
+										<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note2" ></span>
+										<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note2" ></span>
+								  		<span class="text-size1 color_grey1">64 notes</span>
+										</p>
+							  		</div>
+								</div>
+								<div class="ml-activity-participants">
+									<div class="ml-body-img-block">
+						  				<img class="ml-body-img2" src="../image/activity-img1.JPG"  alt="#" />
+						  			</div>
+						  			<div class="ml-activity-participants-info-left">
+							  			<div class="ml-activity-participants-info1">
+							  				<p class="color-orange text-size3 ml-activity-participants-text">François F.</p> 
+							  			</div>
+							  			<div class="ml-activity-participants-info2">
+							  				<p class="color_grey1 text-size4 ml-activity-participants-text">24 ans, Tourcoing</p> 
+							  			</div>
+						  			</div>
+						  			<div class="ml-activity-participants-info3">
+							  			<a class="ml-body-info-link">Activités de <span>Fabien</span></a>
+							  		</div>
+							  		<div class="ml-activity-participants-note">
+								  		<p>
+										<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1" ></span>
+										<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1" ></span>
+										<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1" ></span>
+										<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note2" ></span>
+										<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note2" ></span>
+								  		<span class="text-size1 color_grey1">64 notes</span>
+										</p>
+							  		</div>
+								</div>
+								<div class="ml-activity-participants">
+									<div class="ml-body-img-block">
+						  				<img class="ml-body-img2" src="../image/activity-img1.JPG"  alt="#" />
+						  			</div>
+						  			<div class="ml-activity-participants-info-left">
+							  			<div class="ml-activity-participants-info1">
+							  				<p class="color-orange text-size3 ml-activity-participants-text">François F.</p> 
+							  			</div>
+							  			<div class="ml-activity-participants-info2">
+							  				<p class="color_grey1 text-size4 ml-activity-participants-text">24 ans, Tourcoing</p> 
+							  			</div>
+						  			</div>
+						  			<div class="ml-activity-participants-info3">
+							  			<a class="ml-body-info-link">Activités de <span>Fabien</span></a>
+							  		</div>
+							  		<div class="ml-activity-participants-note">
+								  		<p>
+										<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1" ></span>
+										<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1" ></span>
+										<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1" ></span>
+										<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note2" ></span>
+										<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note2" ></span>
+								  		<span class="text-size1 color_grey1">64 notes</span>
+										</p>
+							  		</div>
+								</div>
+							</div>
+							<p class="mon-compte-subtitle4" id="ml-activity-detail-comment">Commentaires (60)</p>
+							<div class="ml-activity-window">
+								<div class="ml-activity-comments">
+									<div class="ml-activity-comments-user">
+										<div class="ml-body-img-block">
+								  			<img class="ml-body-img2" src="../image/activity-img1.JPG"  alt="#" />
+								  		</div>
+								  		<div class="ml-body-info-block">
+								  			<!-- info of person -->
+								  			<p class="ml-body-info-block-line1">
+								  				<span class="text-size2 color-orange">Fabien D.</span>
+								  				<span class="text-size4 color_grey1">36 ans,Paris</span>
+								  			</p>
+								  			<p style="margin-top: -5px;">
+												<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1" ></span>
+												<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1" ></span>
+												<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1" ></span>
+												<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note2" ></span>
+												<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note2" ></span>
+												<span class="text-size1 color_grey1">64 notes</span>
+											</p>
+								  		</div>
+								  		<div class="ml-body-comments-date text-size4 color_grey1">
+								  			<p>15 mai 2014</p>
+								  			<p>20h15</p>
+								  		</div>
+							  		</div>
+							  		<div class="ml-activity-comments-context">
+							  			<p class="color_grey1 text-size4">
+							  				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu arcu ultricies risus molestie tincidunt eget ac orci. Morbi velit urna, bibendum a pulvinar ac, ultricies nec dolor. Duis at sapien et risus condimentum vestibulum sit amet nec ipsum. Phasellus ligula felis, suscipit auctor sem nec, tincidunt consectetur lacus.
+							  			</p>
+							  		</div>
+								</div>
+								<div class="ml-activity-comments">
+									<div class="ml-activity-comments-user">
+										<div class="ml-body-img-block">
+								  			<img class="ml-body-img2" src="../image/activity-img2.JPG"  alt="#" />
+								  		</div>
+								  		<div class="ml-body-info-block">
+								  			<!-- info of person -->
+								  			<p class="ml-body-info-block-line1">
+								  				<span class="text-size2 color-orange">Fabien D.</span>
+								  				<span class="text-size4 color_grey1">36 ans,Paris</span>
+								  			</p>
+								  			<p style="margin-top: -5px;">
+												<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1" ></span>
+												<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1" ></span>
+												<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1" ></span>
+												<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note2" ></span>
+												<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note2" ></span>
+												<span class="text-size1 color_grey1">64 notes</span>
+											</p>
+								  		</div>
+								  		<div class="ml-body-comments-date text-size4 color_grey1">
+								  			<p>15 mai 2014</p>
+								  			<p>20h15</p>
+								  		</div>
+							  		</div>
+							  		<div class="ml-activity-comments-context">
+							  			<p class="color_grey1 text-size4">
+							  				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu arcu ultricies risus molestie tincidunt eget ac orci. Morbi velit urna, bibendum a pulvinar ac, ultricies nec dolor. Duis at sapien et risus condimentum vestibulum sit amet nec ipsum. Phasellus ligula felis, suscipit auctor sem nec, tincidunt consectetur lacus.
+							  			</p>
+							  		</div>
+								</div>
+								<div class="ml-activity-comments">
+									<div class="ml-activity-comments-user">
+										<div class="ml-body-img-block">
+								  			<img class="ml-body-img2" src="../image/activity-img3.JPG"  alt="#" />
+								  		</div>
+								  		<div class="ml-body-info-block">
+								  			<!-- info of person -->
+								  			<p class="ml-body-info-block-line1">
+								  				<span class="text-size2 color-orange">Fabien D.</span>
+								  				<span class="text-size4 color_grey1">36 ans,Paris</span>
+								  			</p>
+								  			<p style="margin-top: -5px;">
+												<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1" ></span>
+												<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1" ></span>
+												<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1" ></span>
+												<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note2" ></span>
+												<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note2" ></span>
+												<span class="text-size1 color_grey1">64 notes</span>
+											</p>
+								  		</div>
+								  		<div class="ml-body-comments-date text-size4 color_grey1">
+								  			<p>15 mai 2014</p>
+								  			<p>20h15</p>
+								  		</div>
+							  		</div>
+							  		<div class="ml-activity-comments-context">
+							  			<p class="color_grey1 text-size4">
+							  				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu arcu ultricies risus molestie tincidunt eget ac orci. Morbi velit urna, bibendum a pulvinar ac, ultricies nec dolor. Duis at sapien et risus condimentum vestibulum sit amet nec ipsum. Phasellus ligula felis, suscipit auctor sem nec, tincidunt consectetur lacus.
+							  			</p>
+							  		</div>
+								</div>
+							</div>
+						  	<div class="ml-comment-block">
+						  		<textarea class="form-control mon-compte-comment" placeholder="Ecrire un commentaire..."></textarea>
+						  		<input type="submit" class="btn btn-default ml-btn-filter ml-btn-envoyer" value="Envoyer" >
+						  	</div>
+						  	<div class="ml-detail-return">
+								<a class="text-size4 color_blue">Retour aux activités</a>
+							</div>
+						</div>
+					  </div>		
 				  </div>
 				  
-				  <div class="tab-pane" id="lieux">
+				  <div class="tab-pane" id="ville-lieux">
 				  	<div class="ml-body-activite">
 				  	</div>
 				  </div>

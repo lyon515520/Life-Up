@@ -126,7 +126,7 @@
 	user-select: none;
 	color: rgb(134,134,134);
 	border-color: #cccccc;
-	height: 25px;
+	height: 27px;
 	width: 120px;
 	margin: 0px 3px;
 	background-color: rgb(255,255,255);
@@ -379,7 +379,7 @@
 	background-color: rgb(230,230,230);
 	color: rgb(134,134,134);
 	font-size: 14.4px;
-	padding: 5px 42.5px;
+	padding: 5px 41.9px;
 }
 .ml-tab-a2{
 	background-color: rgb(230,230,230);
@@ -734,7 +734,7 @@
 	margin: auto;
 	width: 100%;
 	padding: 1px 12px;
-	height: 24px;
+	height: 27px;
 	color: rgb(134,134,134);
 	margin: 2px auto 14px;
 }
@@ -1384,7 +1384,7 @@
 	font-size: 14.4px;
 	color: rgb(134,134,134);
 	float: left;
-	padding: 6px;
+	padding: 3px;
 }
 #fg-group-name{
 	width: 250px;
@@ -1694,7 +1694,7 @@
 	text-align: center;
 	margin-top: 10px;
 }
-#ml-activity-detail-btn-block1{
+.ml-activity-detail-btn-block1{
 	overflow: hidden;
 }
 #ml-activity-detail-btn-block2{
@@ -2118,7 +2118,7 @@
  .ville-activity-search-input {
  	width: 230px;
 	padding: 1px 12px;
-	height: 24px;
+	height: 27px;
 	color: rgb(134,134,134);
 	margin: 2px auto 14px;
  }
@@ -2220,4 +2220,78 @@
  .ml-activity-person-info-block{
  	margin: 8px;
 	float: left;
+ }
+ .subwindow-notification-body{
+ 	margin: 4px 0 4px 215px;
+ 	display: inline-block;
+ }
+ .subwindow-notification{
+ 	margin: 14px 0;
+ }
+ .ville-activity-propose-lieu{
+ 	overflow: hidden;
+ }
+ .propose-lieu-left{
+ 	overflow: hidden;
+ 	float: left;
+ }
+ .propose-lieu-right{
+ 	float: left;
+ }
+ .ville-activity-propose-lieu-info{
+ 	float: left;
+	margin-left: 14px;
+	width: 260px;
+ }
+ .ville-activity-propose-lieu-activities{
+ 	margin: 14px 0 0 20px;
+	width: 360px;
+ }
+ .ville-activity-propose-maps{
+ 	width: 250px;
+	height: 150px;
+	margin-left: 14px;
+ }
+ .radio-inline{
+ 	float: left;
+ }
+ .radio-inline2{
+ 	float: left;
+ }
+ .input-radio-inline{
+ 	float: left;
+	width: 300px;
+	margin-left: 5px;
+	height: 27px;
+ }
+ .radio-input{
+ 	overflow: hidden;
+ }
+ .input-radio-inline2{
+ 	float: left;
+	margin-left: 5px;
+ }
+ .filter-lieu-select{
+ 	padding: 1px 12px;
+	color: rgb(134,134,134);
+	width: 300px;
+	margin: 10px 0;
+ }
+ .level-star-on::before{
+ 	color:rgba(235,101,49,1);
+	font-size: 17px;
+ }
+ .subwindow-item-sliderbar{
+ 	border-bottom: solid;
+	border-color: rgb(255,255,255);
+	border-width: 1px;
+	margin: 18px;
+ }
+ .sliderbar-amount{
+ 	font-size: 14.4px;
+ 	color: rgb(235,101,49);
+ 	border: transparent;
+ }
+ .sliderbar-amount-block{
+ 	text-align: right;
  }
