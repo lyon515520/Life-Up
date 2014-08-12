@@ -20,7 +20,6 @@
     width:100%;  
     padding:0px; 
     margin:0px;
-    text-align:center;
 }  
 #rateMe li{
     float:left;
@@ -37,12 +36,11 @@
 #rateMe a::before{
 	content:'\e60a';
 	font-family: 'icomoon';
-	color:rgba(235,101,49,0.5);
+	color:rgb(204,204,204);
 	width:24px; 
 	height:24px;
 } 
 #rateStatus{
-	text-align: center;
 	font-size: 14.4px;
 	color:rgb(235,101,49);
 	margin: 8px auto;

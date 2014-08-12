@@ -1,338 +1,163 @@
-<!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css" />
-<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-<link rel="stylesheet" type="text/css" href="css/costumestyleV1.5.css" />
-<link rel="stylesheet" type="text/css" href="css/style.css" />
-<link rel="stylesheet" type="text/css" href="css/style-google-font.css" />
-<script type="text/javascript" src="js/costumejs.js"></script>
-<script type="text/javascript" src="js/bootstrap.js"></script>
-<title>this is for test</title>
-</head>
-<body>
-			<!--<div class="container0">
-				<div class="leftbar1">	  
-					  <a href="#" class="btn4 btn-sport" role="button" onclick="callback('#leftbar-sport')">
-				  		<span aria-hidden="true" data-icon="&#xe625" class="icon-sport icon-leftlist" id="icon-leftlist-sport" ></span>
-				  		<span class="head-text-mid2 text-size2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-				  		<span class="head-text-mid2 text-size2">SPORT</span>
-					  </a>
-					  <div class="leftbar2" id="leftbar-sport">
-					  	<a href="#" class="btn5 btn-sport" role="button">
-					  		<span class="head-text-mid3 text-size4">Créer une activité</span>
-					  	</a>
-					  	<a href="#" class="btn5 btn-sport" role="button">
-					  		<span class="head-text-mid3 text-size4">Participe à une activité</span>
-					  	</a>
-					  	<a href="#" class="btn5 btn-sport" role="button">
-					  		<span class="head-text-mid3 text-size4">Rencontre des passionnés</span>
-					  	</a>
-					  	<a href="#" class="btn5 btn-sport" role="button">
-					  		<span class="head-text-mid3 text-size4">Rejoins un groupe</span>
-					  	</a>
-					  	<a href="#" class="btn5 btn-sport" role="button">
-					  		<span class="head-text-mid3 text-size4">Rejoins une Asso / club</span>
-					  	</a>
-					  	<a href="#" class="btn5 btn-sport" role="button">
-					  		<span class="head-text-mid3 text-size4">Trouve un coach</span>
-					  	</a>
-					  	<a href="#" class="btn5 btn-sport" role="button">
-					  		<span class="head-text-mid3 text-size4">Crée un groupe</span>
-					  	</a>
-					  </div>
-					  <a href="#" class="btn3 btn-gastronomie" role="button" onclick="callback('#leftbar-gastronomie')">
-					  	<span aria-hidden="true" data-icon="&#xe610" class="icon-gastronomie icon-leftlist" id="icon-leftlist-gastronomie" ></span>
-				  		<span class="head-text-mid2 text-size2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-				  		<span class="head-text-mid2 text-size2">GASTRONOMIE</span>		  
-					  </a>
-					  <div class="leftbar2" id="leftbar-gastronomie">
-					  	<a href="#" class="btn5 btn-gastronomie" role="button">
-					  		<span class="head-text-mid3 text-size4">Créer une activité</span>
-					  	</a>
-					  	<a href="#" class="btn5 btn-gastronomie" role="button">
-					  		<span class="head-text-mid3 text-size4">Participe à une activité</span>
-					  	</a>
-					  	<a href="#" class="btn5 btn-gastronomie" role="button">
-					  		<span class="head-text-mid3 text-size4">Rencontre des passionnés</span>
-					  	</a>
-					  	<a href="#" class="btn5 btn-gastronomie" role="button">
-					  		<span class="head-text-mid3 text-size4">Rejoins un groupe</span>
-					  	</a>
-					  	<a href="#" class="btn5 btn-gastronomie" role="button">
-					  		<span class="head-text-mid3 text-size4">Rejoins une Asso / club</span>
-					  	</a>
-					  	<a href="#" class="btn5 btn-gastronomie" role="button">
-					  		<span class="head-text-mid3 text-size4">Trouve un coach</span>
-					  	</a>
-					  	<a href="#" class="btn5 btn-gastronomie" role="button">
-					  		<span class="head-text-mid3 text-size4">Crée un groupe</span>
-					  	</a>
-					  </div>
-					  <a href="#" class="btn3 btn-musique" role="button" onclick="callback('#leftbar-musique')">
-					  	<span aria-hidden="true" data-icon="&#xe618" class="icon-musique icon-leftlist" id="icon-leftlist-musique" ></span>
-					  	<span class="head-text-mid2 text-size2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-				  		<span class="head-text-mid2 text-size2">MUSIQUE</span>		  
-					  </a>
-					  <div class="leftbar2" id="leftbar-musique">
-					  	<a href="#" class="btn5 btn-musique" role="button">
-					  		<span class="head-text-mid3 text-size4">Créer une activité</span>
-					  	</a>
-					  	<a href="#" class="btn5 btn-musique" role="button">
-					  		<span class="head-text-mid3 text-size4">Participe à une activité</span>
-					  	</a>
-					  	<a href="#" class="btn5 btn-musique" role="button">
-					  		<span class="head-text-mid3 text-size4">Rencontre des passionnés</span>
-					  	</a>
-					  	<a href="#" class="btn5 btn-musique" role="button">
-					  		<span class="head-text-mid3 text-size4">Rejoins un groupe</span>
-					  	</a>
-					  	<a href="#" class="btn5 btn-musique" role="button">
-					  		<span class="head-text-mid3 text-size4">Rejoins une Asso / club</span>
-					  	</a>
-					  	<a href="#" class="btn5 btn-musique" role="button">
-					  		<span class="head-text-mid3 text-size4">Trouve un coach</span>
-					  	</a>
-					  	<a href="#" class="btn5 btn-musique" role="button">
-					  		<span class="head-text-mid3 text-size4">Crée un groupe</span>
-					  	</a>
-					  </div>
-					  <a href="#" class="btn3 btn-mode" role="button" onclick="callback('#leftbar-mode')">
-					  	<span aria-hidden="true" data-icon="&#xe616" class="icon-mode icon-leftlist" id="icon-leftlist-mode" ></span>
-					  	<span class="head-text-mid2 text-size2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-				  		<span class="head-text-mid2 text-size2">MODE</span>		  
-					  </a>
-					  <div class="leftbar2" id="leftbar-mode">
-					  	<a href="#" class="btn5 btn-mode" role="button">
-					  		<span class="head-text-mid3 text-size4">Créer une activité</span>
-					  	</a>
-					  	<a href="#" class="btn5 btn-mode" role="button">
-					  		<span class="head-text-mid3 text-size4">Participe à une activité</span>
-					  	</a>
-					  	<a href="#" class="btn5 btn-mode" role="button">
-					  		<span class="head-text-mid3 text-size4">Rencontre des passionnés</span>
-					  	</a>
-					  	<a href="#" class="btn5 btn-mode" role="button">
-					  		<span class="head-text-mid3 text-size4">Rejoins un groupe</span>
-					  	</a>
-					  	<a href="#" class="btn5 btn-mode" role="button">
-					  		<span class="head-text-mid3 text-size4">Rejoins une Asso / club</span>
-					  	</a>
-					  	<a href="#" class="btn5 btn-mode" role="button">
-					  		<span class="head-text-mid3 text-size4">Trouve un coach</span>
-					  	</a>
-					  	<a href="#" class="btn5 btn-mode" role="button">
-					  		<span class="head-text-mid3 text-size4">Crée un groupe</span>
-					  	</a>
-					  </div>
-					  <a href="#" class="btn3 btn-voyage" role="button" onclick="callback('#leftbar-voyage')">
-					  	<span aria-hidden="true" data-icon="&#xe62c" class="icon-voyage icon-leftlist" id="icon-leftlist-voyage" ></span>
-					  	<span class="head-text-mid2 text-size2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-				  		<span class="head-text-mid2 text-size2">VOYAGE</span>		  
-					  </a>
-					  <div class="leftbar2" id="leftbar-voyage">
-					  	<a href="#" class="btn5 btn-voyage" role="button">
-					  		<span class="head-text-mid3 text-size4">Créer une activité</span>
-					  	</a>
-					  	<a href="#" class="btn5 btn-voyage" role="button">
-					  		<span class="head-text-mid3 text-size4">Participe à une activité</span>
-					  	</a>
-					  	<a href="#" class="btn5 btn-voyage" role="button">
-					  		<span class="head-text-mid3 text-size4">Rencontre des passionnés</span>
-					  	</a>
-					  	<a href="#" class="btn5 btn-voyage" role="button">
-					  		<span class="head-text-mid3 text-size4">Rejoins un groupe</span>
-					  	</a>
-					  	<a href="#" class="btn5 btn-voyage" role="button">
-					  		<span class="head-text-mid3 text-size4">Rejoins une Asso / club</span>
-					  	</a>
-					  	<a href="#" class="btn5 btn-voyage" role="button">
-					  		<span class="head-text-mid3 text-size4">Trouve un coach</span>
-					  	</a>
-					  	<a href="#" class="btn5 btn-voyage" role="button">
-					  		<span class="head-text-mid3 text-size4">Crée un groupe</span>
-					  	</a>
-					  </div>
-					  <a href="#" class="btn3 btn-gaming" role="button" onclick="callback('#leftbar-gaming')">
-					  	<span aria-hidden="true" data-icon="&#xe60f" class="icon-gaming icon-leftlist" id="icon-leftlist-gaming" ></span>
-					  	<span class="head-text-mid2 text-size2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-				  		<span class="head-text-mid2 text-size2">JEU VIDEO</span>		  
-					  </a>
-					  <div class="leftbar2" id="leftbar-gaming">
-					  	<a href="#" class="btn5 btn-gaming" role="button">
-					  		<span class="head-text-mid3 text-size4">Créer une activité</span>
-					  	</a>
-					  	<a href="#" class="btn5 btn-gaming" role="button">
-					  		<span class="head-text-mid3 text-size4">Participe à une activité</span>
-					  	</a>
-					  	<a href="#" class="btn5 btn-gaming" role="button">
-					  		<span class="head-text-mid3 text-size4">Rencontre des passionnés</span>
-					  	</a>
-					  	<a href="#" class="btn5 btn-gaming" role="button">
-					  		<span class="head-text-mid3 text-size4">Rejoins un groupe</span>
-					  	</a>
-					  	<a href="#" class="btn5 btn-gaming" role="button">
-					  		<span class="head-text-mid3 text-size4">Rejoins une Asso / club</span>
-					  	</a>
-					  	<a href="#" class="btn5 btn-gaming" role="button">
-					  		<span class="head-text-mid3 text-size4">Trouve un coach</span>
-					  	</a>
-					  	<a href="#" class="btn5 btn-gaming" role="button">
-					  		<span class="head-text-mid3 text-size4">Crée un groupe</span>
-					  	</a>
-					  </div>
-					  <a href="#" class="btn3 btn-culture" role="button" onclick="callback('#leftbar-culture')">
-					  	<span aria-hidden="true" data-icon="&#xe613" class="icon-culture icon-leftlist" id="icon-leftlist-culture" ></span>
-					  	<span class="head-text-mid2 text-size2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-				  		<span class="head-text-mid2 text-size2">CULTURE</span>		  
-					  </a>
-					  <div class="leftbar2" id="leftbar-culture">
-					  	<a href="#" class="btn5 btn-culture" role="button">
-					  		<span class="head-text-mid3 text-size4">Créer une activité</span>
-					  	</a>
-					  	<a href="#" class="btn5 btn-culture" role="button">
-					  		<span class="head-text-mid3 text-size4">Participe à une activité</span>
-					  	</a>
-					  	<a href="#" class="btn5 btn-culture" role="button">
-					  		<span class="head-text-mid3 text-size4">Rencontre des passionnés</span>
-					  	</a>
-					  	<a href="#" class="btn5 btn-culture" role="button">
-					  		<span class="head-text-mid3 text-size4">Rejoins un groupe</span>
-					  	</a>
-					  	<a href="#" class="btn5 btn-culture" role="button">
-					  		<span class="head-text-mid3 text-size4">Rejoins une Asso / club</span>
-					  	</a>
-					  	<a href="#" class="btn5 btn-culture" role="button">
-					  		<span class="head-text-mid3 text-size4">Trouve un coach</span>
-					  	</a>
-					  	<a href="#" class="btn5 btn-culture" role="button">
-					  		<span class="head-text-mid3 text-size4">Crée un groupe</span>
-					  	</a>
-					  </div>
-					  <a href="#" class="btn3 btn-jeu-table" role="button" onclick="callback('#leftbar-jeu-table')">
-					  	<span aria-hidden="true" data-icon="&#xe62c" class="icon-jeu-table icon-leftlist" id="icon-leftlist-jeu-table" ></span>
-					  	<span class="head-text-mid2 text-size2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-				  		<span class="head-text-mid2 text-size2">JEU DE TABLE</span>		  
-					  </a>
-					  <div class="leftbar2" id="leftbar-jeu-table">
-					  	<a href="#" class="btn5 btn-jeu-table" role="button">
-					  		<span class="head-text-mid3 text-size4">Créer une activité</span>
-					  	</a>
-					  	<a href="#" class="btn5 btn-jeu-table" role="button">
-					  		<span class="head-text-mid3 text-size4">Participe à une activité</span>
-					  	</a>
-					  	<a href="#" class="btn5 btn-jeu-table" role="button">
-					  		<span class="head-text-mid3 text-size4">Rencontre des passionnés</span>
-					  	</a>
-					  	<a href="#" class="btn5 btn-jeu-table" role="button">
-					  		<span class="head-text-mid3 text-size4">Rejoins un groupe</span>
-					  	</a>
-					  	<a href="#" class="btn5 btn-jeu-table" role="button">
-					  		<span class="head-text-mid3 text-size4">Rejoins une Asso / club</span>
-					  	</a>
-					  	<a href="#" class="btn5 btn-jeu-table" role="button">
-					  		<span class="head-text-mid3 text-size4">Trouve un coach</span>
-					  	</a>
-					  	<a href="#" class="btn5 btn-jeu-table" role="button">
-					  		<span class="head-text-mid3 text-size4">Crée un groupe</span>
-					  	</a>
-					  </div>
-					  <a href="#" class="btn3 btn-plus" role="button" onclick="callback('#leftbar-plus')">
-					  	<span aria-hidden="true" data-icon="&#xe61c" class="icon-plus icon-leftlist" id="icon-leftlist-plus" ></span>
-					  	<span class="head-text-mid2 text-size2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-				  		<span class="head-text-mid2 text-size2">PROPOSEZ-NOUS</span>		  
-					  </a>
-					  <div class="leftbar2" id="leftbar-plus">
-					  	<a href="#" class="btn5 btn-plus" role="button">
-					  		<span class="head-text-mid3 text-size4">Créer une activité</span>
-					  	</a>
-					  	<a href="#" class="btn5 btn-plus" role="button">
-					  		<span class="head-text-mid3 text-size4">Participe à une activité</span>
-					  	</a>
-					  	<a href="#" class="btn5 btn-plus" role="button">
-					  		<span class="head-text-mid3 text-size4">Rencontre des passionnés</span>
-					  	</a>
-					  	<a href="#" class="btn5 btn-plus" role="button">
-					  		<span class="head-text-mid3 text-size4">Rejoins un groupe</span>
-					  	</a>
-					  	<a href="#" class="btn5 btn-plus" role="button">
-					  		<span class="head-text-mid3 text-size4">Rejoins une Asso / club</span>
-					  	</a>
-					  	<a href="#" class="btn5 btn-plus" role="button">
-					  		<span class="head-text-mid3 text-size4">Trouve un coach</span>
-					  	</a>
-					  	<a href="#" class="btn5 btn-plus" role="button">
-					  		<span class="head-text-mid3 text-size4">Crée un groupe</span>
-					  	</a>
-					  </div>
-			    </div>
-			</div>
-			-->
-	
-	<div>
-		<div>
-			<div>
-				<img src="image/icon-ajouter.png" id="landing-image5" alt="this is the demo">
-			</div>
-			<div>
-				<p>Matching</p>
-				<p>life-up te propose de passionnés selon tes critères</p>
-			</div>
-		</div>
-		<div>
-			<!-- this is the second one -->
-		  
-		</div>
-		<div>
-			<!-- this is the third one -->
-		</div>
-		<div>
-			<!-- this is the forth one -->
-		</div>
-	</div>	
-	<div>
-		<button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
-	</div>
-	<div class="col-lg-6">
-	    <div class="input-group">
-	      <div class="input-group-btn">
-	        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
-	        <ul class="dropdown-menu" role="menu">
-	          <li><a href="#">Action</a></li>
-	          <li><a href="#">Another action</a></li>
-	          <li><a href="#">Something else here</a></li>
-	          <li class="divider"></li>
-	          <li><a href="#">Separated link</a></li>
-	        </ul>
-	      </div><!-- /btn-group -->
-	      <input type="text" class="form-control">
-	    </div><!-- /input-group -->
-	  </div><!-- /.col-lg-6 -->
-	  <button type="button" class="btn btn-lg btn-danger popover-dismiss" data-toggle="popover" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</button>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<div>
-	<a id="example" href="#" data-content="This is the content for the popover." >Your Popover Text Here.</a>
-	 <script>
-	    $(document).ready(function() {
-	            $('#example').popover({
-	                trigger: "hover",
-	                placement: "right",
-	                title: "This is a default title",
-	                });
-	        });
-	  </script>
-</div>
+    <head>
+        <title>Testing Fartscroll.js</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="fartscroll.js"></script>
+        <script>
+        $(document).ready(function() {
+            // Ensure the page always has more scrolling
+            $(document).scroll(function() {
+                while ((window.pageYOffset + window.innerHeight) >= $(this).height() - (window.innerHeight / 2)) {
+                    $('ul').append('<li>Testing.</li>');
+                }
+            }).scroll();
 
-<input type="submit" class="btn btn-default" id="prelanding-button" data-toggle="modal" data-target=".bs-example-modal-lg" value="&Ccedil;a m'int&eacute;resse !" > 
-									<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-									  <div class="modal-dialog modal-lg">
-									    <div class="modal-content">
-									      <p>this is a test</p>
-									    </div>
-									  </div>
-									</div>
-
-</body>
+            fartscroll(800);
+        });
+        </script>
+    </head>
+    <body>
+        <ul>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+            <li>Testing.</li>
+        </ul>
+    </body>
 </html>

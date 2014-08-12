@@ -2162,7 +2162,6 @@ fieldset[disabled] .btn-primary.active {
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#808080',endColorstr='#666666',grandientType=1); /** IE7 **/
   -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#808080',endColorstr='#666666',grandientType=1); /** IE8 **/
   border-color: rgb(77,77,77);
-  font-weight: bold;
 }
 .btn-annuler:hover,
 .btn-annuler:focus,

@@ -8,7 +8,6 @@
 <link rel="stylesheet" type="text/css" href="../../css/style.css" />
 <link rel="stylesheet" type="text/css" href="../../css/style-google-font.css" />
 <link rel="stylesheet" type="text/css" href="../../css/style-level-star.css" />
-<link rel="stylesheet" type="text/css" href="../../css/checkbox-icon.css" />
 <link rel="stylesheet" type="text/css" href="../../css/style-rightpanel.css" />
 <meta charset="UTF-8">
 <title>c'est la 1 partie de "propose une activite"</title>
@@ -21,7 +20,7 @@
 			</div>
 			<div class="mon-activity-subhead-block">
 				<ul class="mon-activity-subhead-ul text-size4 color_grey1">
-					<li class="mon-activity-subhead-li color-brown">1. Infos principales</li>
+					<li class="mon-activity-subhead-li color-orange">1. Infos principales</li>
 					<li class="mon-activity-subhead-li">2. Plages horaires</li>
 					<li class="mon-activity-subhead-li">3. Invitations</li>
 				</ul>
@@ -69,15 +68,16 @@
 				<div class="mon-activity-container">
 					<div id="rateMe">  
 						<input type="radio" name="niveau" value="star-level" />
+						<span aria-hidden="true" data-icon="&#xe60a" class="icon-star-level level-star-on"></span>
 						<a onclick="rateIt(1,this)" id="1_1" name="Débutant" onmouseover="rating(1,this)" onmouseout="off(1,this)"></a>  
 					    <a onclick="rateIt(1,this)" id="1_2" name="Amateur" onmouseover="rating(1,this)" onmouseout="off(1,this)"></a>  
 					    <a onclick="rateIt(1,this)" id="1_3" name="Confirme" onmouseover="rating(1,this)" onmouseout="off(1,this)"></a>  
 					    <a onclick="rateIt(1,this)" id="1_4" name="Expert" onmouseover="rating(1,this)" onmouseout="off(1,this)"></a>  
-						<p id="rateStatus">Découverir</p>  
-						<p id="ratingSaved">resultat</p> 
+						<span id="rateStatus">Découverir</span>  
+						<span id="ratingSaved">resultat</span> 
 					</div>
 					<br>
-					<div class="text-size2 color-brown mon-activity-body-center">
+					<div class="text-size2 color_grey1">
 						<input type="radio" name="niveau" value="no-level" />Pas de niveau
 					</div>
 				</div>
@@ -96,10 +96,16 @@
 				<div>
 					<textarea class="form-control mon-compte-explique" placeholder="Expliquez-nous..."></textarea>
 				</div>
-				<div class="ml-btn-right">
-					<input type="submit" class="btn btn-default text-size4" id="ma-button-grey1" value="&nbsp;Annuler&nbsp;" >
-					<input type="submit" class="btn btn-default text-size4" id="ma-button-orange1" value="Continuer" >
-				</div>
+				<div class="fg-subwindow-foot">
+			    	<div class="fg-subwindow-btn-right">
+						<a href="#" class="btn btn-annuler btn-annuler1" data-dismiss="modal" role="button">
+							<span>Annuler</span>
+						</a>
+						<a href="#" class="btn btn-primary btn-valier1" data-dismiss="modal" role="button">
+							<span class="text-bold">Continuer</span>
+						</a>
+					</div>
+			    </div>
 			</div>
 		</div>
 	</div>

@@ -8,10 +8,7 @@
 <link rel="stylesheet" type="text/css" href="../../css/style.css" />
 <link rel="stylesheet" type="text/css" href="../../css/style-google-font.css" />
 <link rel="stylesheet" type="text/css" href="../../css/style-level-star.css" />
-<link rel="stylesheet" type="text/css" href="../../css/checkbox-icon.css" />
 <link rel="stylesheet" type="text/css" href="../../css/style-rightpanel.css" />
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
-<script type="text/javascript" src="../../js/google-maps.js"></script>
 <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
 <meta charset="UTF-8">
 <title>c'est la 2 partie de "propose une activite"</title>
@@ -25,14 +22,14 @@
 			<div class="mon-activity-subhead-block">
 				<ul class="mon-activity-subhead-ul text-size4 color_grey1">
 					<li class="mon-activity-subhead-li">1. Infos principales</li>
-					<li class="mon-activity-subhead-li color-brown">2. Plages horaires</li>
+					<li class="mon-activity-subhead-li color-orange">2. Plages horaires</li>
 					<li class="mon-activity-subhead-li">3. Invitations</li>
 				</ul>
 			</div>
 			<div class="mon-activity-body">
 				<p class="mon-activity-subtitle1">Répéter : </p>
-				<div class="mon-activity-body-center color-brown text-size2">
-						<input type="radio" name="repeter" value="evenement-unique" />&nbsp;&nbsp;événement unique
+				<div class="mon-activity-body-center color_grey1 text-size2">
+						<input type="radio" name="repeter" value="evenement-unique" />&nbsp;&nbsp;&Eacute;vénement unique
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						<input type="radio" name="repeter" value="Tous-les-jours" />&nbsp;&nbsp;Tous les jours
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -40,35 +37,26 @@
 					<!-- need to change the name here -->
 				</div>
 				<div class="ma-proposition-title-block">
-					<p class="mon-activity-subtitle2" id="proposition">Propositions : </p>
-					<p class="mon-activity-subtitle2" id="proposition-optionnelle">Optionnelle : </p>
+					<p class="mon-activity-subtitle2" id="proposition">Date : </p>
 				</div>
 				<div class="ma-proposition-block">
-					<p class="ma-proposition-text">
-					<span aria-hidden="true" data-icon="&#xe603" class="icon-supprimer ma-icon-supprimer"></span>
-					<span>Propositions 1</span>
-					</p>
 					<input type="date" class="form-control select_mod" id="ma-proposition1_1">
 					<input type="time" class="form-control select_mod" id="ma-proposition1_2">
 				</div>
-				<div class="ma-proposition-block">
-					<p class="ma-proposition-text">
-					<span aria-hidden="true" data-icon="&#xe603" class="icon-supprimer ma-icon-supprimer"></span>
-					<span>Propositions 2</span>
-					</p>
-					<input type="date" class="form-control select_mod" id="ma-proposition2_1">
-					<input type="time" class="form-control select_mod" id="ma-proposition2_2">
-				</div>
 				<p class="mon-activity-subtitle1">Lieu : </p>
 				<div class="ma-maps-search-block">
-					<input type="text" class="form-control mon-compte-comment" id="ma-comment" placeholder="Ecrire une adresse..."></textarea>
-			  		<input type="submit" class="btn btn-default text-size4" id="ma-btn-comment" value="Search" >
+					<input type="text" class="form-control mon-compte-comment" placeholder="Ecrire une adresse...">
 			  	</div>
-			  	<div class="ma-maps" id="google-maps"></div>
-			  	<div class="ml-btn-right" id="ml-btn-right-activity2">
-					<input type="submit" class="btn btn-default text-size4" id="ma-button-grey2" value="&nbsp;Revenir&nbsp;" >
-					<input type="submit" class="btn btn-default text-size4" id="ma-button-orange2" value="Continuer" >
-				</div>
+			  	<div class="fg-subwindow-foot">
+			    	<div class="fg-subwindow-btn-right">
+						<a href="#" class="btn btn-annuler btn-annuler1" data-dismiss="modal" role="button">
+							<span>Pr&eacute;c&eacute;dent</span>
+						</a>
+						<a href="#" class="btn btn-primary btn-valier1" data-dismiss="modal" role="button">
+							<span class="text-bold">Continuer</span>
+						</a>
+					</div>
+			    </div>
 			</div>
 		</div>
 	</div>

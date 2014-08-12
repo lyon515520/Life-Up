@@ -8,7 +8,6 @@
 <link rel="stylesheet" type="text/css" href="../../css/style.css" />
 <link rel="stylesheet" type="text/css" href="../../css/style-google-font.css" />
 <link rel="stylesheet" type="text/css" href="../../css/style-level-star.css" />
-<link rel="stylesheet" type="text/css" href="../../css/checkbox-icon.css" />
 <link rel="stylesheet" type="text/css" href="../../css/style-rightpanel.css" />
 <meta charset="UTF-8">
 <title>c'est la 3 partie de "propose une activite"</title>
@@ -23,13 +22,13 @@
 				<ul class="mon-activity-subhead-ul text-size4 color_grey1">
 					<li class="mon-activity-subhead-li">1. Infos principales</li>
 					<li class="mon-activity-subhead-li">2. Plages horaires</li>
-					<li class="mon-activity-subhead-li color-brown">3. Invitations</li>
+					<li class="mon-activity-subhead-li color-orange">3. Invitations</li>
 				</ul>
 			</div>
 			<div class="mon-activity-body">
 				<p class="mon-activity-subtitle1">Définir un seuil de participation par proposition :</p>
-				<div class="ma-num-participants text-size2 color-brown">
-					<div>
+				<div class="ma-num-participants text-size2 color_grey1">
+					<div class="radio-line-different">
 						<input type="radio" name="participant-number" value="illimite" />&nbsp;&nbsp;Pas de limite de participation
 					</div>
 					<div>
@@ -65,14 +64,21 @@
 					<option>5</option>
 				</select>
 				<p class="mon-activity-subtitle2">Qui peut inviter :</p>
-				<div class="mon-activity-body-center color-brown text-size2">
+				<div class="mon-activity-body-center color_grey1 text-size2">
+					<div class="radio-line-different">
 						<input type="radio" name="invite" value="tout-le-monde" />&nbsp;&nbsp;Tout le monde
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					</div>
+					<div>
 						<input type="radio" name="invite" value="vous-uniquement" />&nbsp;&nbsp;Vous uniquement
-					<!-- need to change the name here -->
+					</div>
 				</div>
-				<p class="mon-activity-subtitle2">Tu envoies la proposition à :</p>
-				<div class="ml-activity-window ma-margin">
+				<p class="mon-activity-subtitle2">
+					<span>Tu envoies la proposition à :</span>
+					<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+					<span>15 motiv&eacute;s</span>
+					<span class="text-size4 color_grey1">(pas de limite)</span> 
+				</p>
+				<div class="mon-activity-scroll-window ma-margin">
 					<div class="ma-proposition">
 						<div class="ml-body-img-block">
 						  	<img class="ml-body-img2" src="../../image/activity-img1.JPG"  alt="#" />
@@ -86,9 +92,10 @@
 							</div>
 						</div>
 						<div class="ma-liste-proposition">
-							<a>
-								<span aria-hidden="true" data-icon="&#xe633" class="icon-refuser-contact ma-icon-contact"></span>
-							</a>
+							<p>
+								<span class="text-size4 color_grey1">15</span>
+								<span aria-hidden="true" data-icon="&#xe64b" class="icon-up icon-up-orange1"></span>
+							</p>
 						</div>
 					</div>
 					<div class="ma-proposition">
@@ -104,9 +111,10 @@
 							</div>
 						</div>
 						<div class="ma-liste-proposition">
-							<a>
-								<span aria-hidden="true" data-icon="&#xe633" class="icon-refuser-contact ma-icon-contact"></span>
-							</a>
+							<p>
+								<span class="text-size4 color_grey1">15</span>
+								<span aria-hidden="true" data-icon="&#xe64b" class="icon-up icon-up-orange1"></span>
+							</p>
 						</div>
 					</div>
 					<div class="ma-proposition">
@@ -122,9 +130,10 @@
 							</div>
 						</div>
 						<div class="ma-liste-proposition">
-							<a>
-								<span aria-hidden="true" data-icon="&#xe633" class="icon-refuser-contact ma-icon-contact"></span>
-							</a>
+							<p>
+								<span class="text-size4 color_grey1">15</span>
+								<span aria-hidden="true" data-icon="&#xe64b" class="icon-up icon-up-orange1"></span>
+							</p>
 						</div>
 					</div>
 					<div class="ma-proposition">
@@ -140,9 +149,10 @@
 							</div>
 						</div>
 						<div class="ma-liste-proposition">
-							<a>
-								<span aria-hidden="true" data-icon="&#xe633" class="icon-refuser-contact ma-icon-contact"></span>
-							</a>
+							<p>
+								<span class="text-size4 color_grey1">15</span>
+								<span aria-hidden="true" data-icon="&#xe64b" class="icon-up icon-up-orange1"></span>
+							</p>
 						</div>
 					</div>
 				</div>
@@ -150,10 +160,12 @@
 					<p class="mon-activity-subtitle2" id="proposition-ajoute">Ajouter des amis :</p>
 					<div class="ma-proposition-ajoute-block">
 						<input type="text" class="form-control mon-compte-comment" id="ma-proposition-ajoute" placeholder="Chercher dans vos amis"></textarea>
-						<button type="button" class="btn btn-default btn-search"><span aria-hidden="true" data-icon="&#xe622" class="icon-recherche" ></span></button>
+						<a href="#" class="btn btn-default ml-btn-filter mon-activity-search-button" role="button">
+							<span aria-hidden="true" data-icon="&#xe622" class="icon-recherche ml-head-icon-search"></span>
+						</a>
 					</div>
 				</div>
-				<div class="ml-activity-window ma-margin">
+				<div class="mon-activity-scroll-window ma-margin">
 					<div class="ma-proposition">
 						<div class="ml-body-img-block">
 						  	<img class="ml-body-img2" src="../../image/activity-img1.JPG"  alt="#" />
@@ -166,9 +178,9 @@
 								<p class="color_grey1 text-size4 ml-activity-participants-text">24 ans, Tourcoing</p> 
 							</div>
 						</div>
-						<div class="ma-liste-proposition">
-							<a>
-								<span aria-hidden="true" data-icon="&#xe634" class="icon-valider-contact ma-icon-contact"></span>
+						<div class="ma-liste-proposition2">
+							<a href="#" class="btn btn-primary btn-proposition-ajouter" data-dismiss="modal" role="button">
+								<span aria-hidden="true" data-icon="&#xe635" class="icon-ajouter mon-activity-proposition-ajouter"></span>
 							</a>
 						</div>
 					</div>
@@ -184,9 +196,9 @@
 								<p class="color_grey1 text-size4 ml-activity-participants-text">24 ans, Tourcoing</p> 
 							</div>
 						</div>
-						<div class="ma-liste-proposition">
-							<a>
-								<span aria-hidden="true" data-icon="&#xe634" class="icon-valider-contact ma-icon-contact"></span>
+						<div class="ma-liste-proposition2">
+							<a href="#" class="btn btn-primary btn-proposition-ajouter" data-dismiss="modal" role="button">
+								<span aria-hidden="true" data-icon="&#xe635" class="icon-ajouter mon-activity-proposition-ajouter"></span>
 							</a>
 						</div>
 					</div>
@@ -202,9 +214,9 @@
 								<p class="color_grey1 text-size4 ml-activity-participants-text">24 ans, Tourcoing</p> 
 							</div>
 						</div>
-						<div class="ma-liste-proposition">
-							<a>
-								<span aria-hidden="true" data-icon="&#xe634" class="icon-valider-contact ma-icon-contact"></span>
+						<div class="ma-liste-proposition2">
+							<a href="#" class="btn btn-primary btn-proposition-ajouter" data-dismiss="modal" role="button">
+								<span aria-hidden="true" data-icon="&#xe635" class="icon-ajouter mon-activity-proposition-ajouter"></span>
 							</a>
 						</div>
 					</div>
@@ -220,9 +232,9 @@
 								<p class="color_grey1 text-size4 ml-activity-participants-text">24 ans, Tourcoing</p> 
 							</div>
 						</div>
-						<div class="ma-liste-proposition">
-							<a>
-								<span aria-hidden="true" data-icon="&#xe634" class="icon-valider-contact ma-icon-contact"></span>
+						<div class="ma-liste-proposition2">
+							<a href="#" class="btn btn-primary btn-proposition-ajouter" data-dismiss="modal" role="button">
+								<span aria-hidden="true" data-icon="&#xe635" class="icon-ajouter mon-activity-proposition-ajouter"></span>
 							</a>
 						</div>
 					</div>
@@ -238,9 +250,9 @@
 								<p class="color_grey1 text-size4 ml-activity-participants-text">24 ans, Tourcoing</p> 
 							</div>
 						</div>
-						<div class="ma-liste-proposition">
-							<a>
-								<span aria-hidden="true" data-icon="&#xe634" class="icon-valider-contact ma-icon-contact"></span>
+						<div class="ma-liste-proposition2">
+							<a href="#" class="btn btn-primary btn-proposition-ajouter" data-dismiss="modal" role="button">
+								<span aria-hidden="true" data-icon="&#xe635" class="icon-ajouter mon-activity-proposition-ajouter"></span>
 							</a>
 						</div>
 					</div>
@@ -269,7 +281,7 @@
 				<p class="mon-activity-subtitle2">Envoyer une invitation grâce à votre logiciel de messagerie :</p>
 				<div class="ma-link-block">
 					<a id="ma-link">http://lien-vers-inscription-et-proposition-activité</a>
-					<a href="#" class="btn btn-default text-size4" id="ma-btn-copy-link" role="button">Copier le lien</a>
+					<a href="#" class="btn btn-default ml-btn-filter" id="btn-copy-link" role="button">Copier le lien</a>
 				</div>
 				<p class="ma-margin text-size1 color_grey1">
 					Utilisez votre propre application de messagerie pour envoyer ce lien.
@@ -291,10 +303,16 @@
 				</p>
 				<p class="mon-activity-subtitle2">Modifier le message envoyé aux invités :</p>
 				<textarea class="form-control mon-compte-explique" placeholder="XXX vous invite à participer à l’activité «XXXXXX»."></textarea>
-				<div class="ml-btn-right">
-					<input type="submit" class="btn btn-default text-size4" id="ma-button-grey3" value="&nbsp;Revenir&nbsp;" >
-					<input type="submit" class="btn btn-default text-size4" id="ma-button-orange3" value="Envoyer et terminer" >
-				</div>
+				<div class="fg-subwindow-foot">
+			    	<div class="fg-subwindow-btn-right">
+						<a href="#" class="btn btn-annuler btn-annuler1" data-dismiss="modal" role="button">
+							<span>Pr&eacute;c&eacute;dent</span>
+						</a>
+						<a href="#" class="btn btn-primary btn-valier1" data-dismiss="modal" role="button">
+							<span class="text-bold">Envoyer et terminer</span>
+						</a>
+					</div>
+			    </div>
 			</div>
 		</div>
 	</div>

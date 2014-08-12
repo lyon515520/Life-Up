@@ -273,3 +273,6 @@
 .icon-ajouter:before{
 	content: "\e635"
 }
+.icon-up:before{
+	content: "\e64b"	
+}

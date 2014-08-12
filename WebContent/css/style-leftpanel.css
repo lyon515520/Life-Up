@@ -385,7 +385,7 @@
 	background-color: rgb(230,230,230);
 	color: rgb(134,134,134);
 	font-size: 14.4px;
-	padding: 5px 30px;
+	padding: 5px 29.3px;
 }
 .ml-body-item{
 	overflow: hidden;
@@ -416,7 +416,14 @@
 .ml-body-info-block{
 	margin: 8px;
 	float: left;
+	width: 200px;
+	margin-top: 3px;
+}
+.ml-body-info-block2{
+	margin: 8px;
+	float: left;
 	width: 150px;
+	margin-top: 3px;
 }
 .ml-body-info-link{
 	color: rgb(134,134,134);
@@ -658,7 +665,6 @@
 }
 .mon-compte-comment{
 	width: 85%;
-	height: 26px;
 	float: left;
 	padding: 1px 12px;
 }
@@ -690,9 +696,10 @@
 }
 .mon-activity-subhead-block{
 	width: 100%;
-	height: 31px;
-	background-color: rgb(245,245,245);
-	border-bottom: solid rgb(255,255,255);
+	height: 34px;
+	border-bottom: solid rgb(235,235,233);
+	border-top: solid rgb(235,235,233);
+	border-width: 1px;
 }
 .mon-activity-subhead-ul{
 	text-align: center;
@@ -705,12 +712,11 @@
 .mon-activity-body{
 	display: inline-block;
 	width: 100%;
-	background-color: rgb(245,245,245);
 }
 .mon-activity-subtitle1{
 	color: rgb(235,101,49);
 	font-size: 14.4px;
-	margin: 10px 20px 14px 20px;
+	margin: 18px 20px 14px 20px;
 }
 .mon-activity-subtitle2{
 	color: rgb(235,101,49);
@@ -718,7 +724,7 @@
 	margin: 18px 20px 14px 20px;
 }
 .mon-activity-body-center{
-	text-align: center;
+	margin-left: 40px;
 }
 .mon-activity-radio{
 	margin: 0px;
@@ -727,7 +733,7 @@
 }
 .mon-activity-container{
 	width: 250px;
-	margin-left: auto;
+	margin-left: 40px;
 	margin-right: auto;
 }
 .mon-activity-select-mod{
@@ -770,7 +776,7 @@
 .ma-proposition-block{
 	overflow: hidden;
 	font-size: 14.4px;
-	margin: -8px 20px 14px;
+	margin: 0 20px 14px 40px;
 	color: rgb(134,134,134);
 }
 .ma-icon-supprimer::before{
@@ -789,12 +795,11 @@
 #ma-proposition1_2,
 #ma-proposition2_2{
 	float: left;
-	width: 20%;
 	margin: auto 20px auto 10px;
 }
 .ma-maps-search-block{
 	overflow: hidden;
-	margin: 5px 20px 8px;
+	margin: 5px 20px 18px 40px;
 }
 #ma-btn-comment{
 	width: 15%;
@@ -804,9 +809,6 @@
 	color: rgb(255,255,255);
 	padding: 0px;
 	text-shadow: none;
-}
-#ma-comment{
-	height: 24px;
 }
 .ma-maps{
 	width:250px;
@@ -829,12 +831,12 @@
 }
 .ma-num-participant-select2{
 	width: 10%;
-	margin-left: auto;
+	margin-left: 40px;
 	margin-right: auto;
 }
 .ma-num-participant-text{
 	float: left;
-	margin: auto auto auto 20px;
+	margin: 3px auto auto 20px;
 	margin-right: 5px;
 }
 .ma-margin{
@@ -857,16 +859,19 @@
 }
 .ma-proposition{
 	overflow: hidden;
-	border-bottom: solid 1px;
 	border-color: rgb(204,204,204);
 	margin: 0 10px;
+	padding: 10px 0;
+}
+.ma-proposition:hover{
+	background-color: rgb(243,243,243);
 }
 #proposition-ajoute{
 	float: left;
 	width: 45%;
 }
 #ma-proposition-ajoute{
-	height: 24px;
+	height: 26px;
 	float: left;
 	border-radius: 2px 0 0 2px;
 }
@@ -887,12 +892,12 @@
 }
 #ma-groupe-select{
 	width: 40%;
-	margin-left: 20px;
+	margin-left: 40px;
 }
 .ma-email-input{
 	width: 40%;
 	height: 24px;
-	margin: 8px auto 0px 20px;
+	margin: 8px auto 0px 40px;
 	float: left;
 }
 .ma-email-icon-block{
@@ -922,7 +927,7 @@
 	text-shadow: none;
 }
 .ma-link-block{
-	margin: auto auto 10px 20px;
+	margin: auto auto 10px 40px;
 }
 .ma-notification{
 	margin: 0 0 0 40px;
@@ -1926,10 +1931,7 @@
  .ville-item-head{
 	overflow: hidden;
 	margin-top: 18px;
-	border-bottom: solid;
 	padding-bottom: 10px;
-	border-color: rgb(179,179,179);
-	border-width: 1px;
 	margin-left: auto;
 	margin-right: auto;
  }
@@ -1941,6 +1943,7 @@
  	float: left;
  	text-align: center;
  	width: 60px;
+ 	margin-left: 142px;
  }
  .ville-icon2 {
  	float: left;
@@ -1951,12 +1954,13 @@
  	float: left;
  	text-align: center;
  	width: 110px;
- 	padding-left: 12px;
+ 	margin-left: 45px;
  }
  .ville-icon4{
  	float: left;
  	text-align: center;
  	width: 70px;
+ 	margin-left: 15px;
  }
  .ville-trier-text{
  	float: left;
@@ -1979,10 +1983,10 @@
  } 
  .ville-item{
  	overflow: hidden;
- 	border-bottom: solid;
- 	border-width: 1px;
- 	border-color: rgb(235,235,235);
  	padding: 18px 0;
+ }
+ .ville-item:hover{
+ 	background-color: rgb(235,235,235);
  }
  .ville-item-icon{
  	float: left;
@@ -1990,7 +1994,7 @@
  }
  .ville-item-nom{
  	float: left;
- 	margin: 0 20px 0 20px;
+ 	margin: 0 20px 0 0;
 	width: 125px;
 	height: 60px;
 	display: table;
@@ -2017,12 +2021,12 @@
  }
  .ville-item-niveau{
  	float: left;
- 	margin: 12px auto auto 22px;
+	margin-top: 20px;
+	width: 100px;
  }
  .ville-item-user{
  	overflow: hidden;
  	width: 200px;
- 	margin-left: 20px;
  	float: left;
  }
  .ville-user-img{
@@ -2039,9 +2043,9 @@
  .ville-item-date {
  	text-align: center;
  	float: left;
- 	width: 75px;
  	height: 60px;
  	display: table;
+ 	width: 120px;
  }
  .ville-item-participant{
  	text-align: center;
@@ -2199,6 +2203,7 @@
  }
  .ville-item-body{
  	border-bottom: solid rgb(179,179,179);
+ 	border-top: solid rgb(179,179,179);
 	border-width: 1px;
  }
  .groupe-motive-pp::before{
@@ -2293,5 +2298,71 @@
  	border: transparent;
  }
  .sliderbar-amount-block{
- 	text-align: right;
+ 	float: right;
+ }
+ .ville-subwindow-sliderbar-title{
+ 	float: left;
+ 	font-size: 14.4px;
+ 	color: rgb(235,101,49);
+ }
+ .subwindow-sliderbar-block{
+ 	margin-bottom: 14px;
+ 	overflow: hidden;
+ }
+ .ville-subwindow-select{
+ 	margin-top: 14px;
+ 	text-align: center;
+ }
+ .mf-univers-checkbox-autre{
+ 	float: left;
+ 	width: auto;
+ 	overflow: hidden;
+ }
+ #mf-univers-autre-input{
+ 	width: 185px;
+ }
+ .radio-line-different{
+ 	margin-bottom: 14px;
+ }
+ .mon-activity-scroll-window{
+ 	height: 240px;
+	overflow: auto;
+	padding: 5px 10px;
+	border: transparent;
+	border-radius: 2px;
+	background-color: rgb(255,255,255);
+	border-bottom: solid rgb(230,230,230) 1px;
+	border-top: solid rgb(230,230,230) 1px;
+ }
+ .icon-up-orange1::before{
+ 	font-size: 18px;
+ 	color: rgb(235,101,49);
+ }
+ .btn-proposition-ajouter{
+ 	padding: 0 2px;
+	height: 26px;
+	width: 26px;
+	font-size: 14.4px;
+	display: inline-block;
+	margin: auto 6px;
+ }
+ .mon-activity-proposition-ajouter::before{
+ 	font-size: 14.4px;
+ }
+ .ma-liste-proposition2{
+ 	float: left;
+	margin-top: 10px;
+	margin-left: 230px;
+ }
+ #btn-copy-link{
+ 	float: none;
+ 	margin: 0 8px;
+ 	padding: 1px 5px 0px 6px;
+ }
+ .mon-activity-search-button{
+    width: 27px;
+	background-color: rgb(245,245,245);
+	padding: 0;
+	margin: 0;
+	border-radius: 0 2px 2px 0;
  }

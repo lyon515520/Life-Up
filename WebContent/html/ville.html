@@ -28,7 +28,7 @@
 		    </div>
 		    <div class="fg-subwindow-body">
 		    	<div class="fg-subwindow-item1">
-					<p class="text-size2 color-orange">Lieux :</p>
+					<p class="text-size2 color-orange">Lieux</p>
 					<div class="fg-signaler-radio">
 						<input type="radio" name="filter-lieux" value="filter-lieux1"/>
 						Tous les lieux &agrave; Lille
@@ -39,7 +39,7 @@
 					</div>
 				</div>
 				<div class="fg-subwindow-item1">
-					<p class="text-size2 color-orange">Activit&eacute;s :</p>
+					<p class="text-size2 color-orange">Activit&eacute;s</p>
 					<div class="fg-signaler-radio">
 						<input type="radio" name="filter-activity" value="filter-activity1"/>
 						Toutes activit&eacute;s
@@ -61,7 +61,7 @@
 					</div>
 				</div>
 				<div class="fg-subwindow-item1">
-					<p class="text-size2 color-orange">Niveau :</p>
+					<p class="text-size2 color-orange">Niveau</p>
 					<div class="fg-signaler-radio">
 						<input type="radio" name="filter-niveau" value="filter-niveau1"/>
 						Tous
@@ -85,14 +85,32 @@
 						</div>
 					</div>
 				</div>
-		    </div>
-		    <div class="subwindow-item-sliderbar">
-					<p class="text-size2 color-orange">&Acirc;ges limites</p>
-					<p class="sliderbar-amount-block">
-					  <input type="text" id="amount" readonly class="sliderbar-amount";>
-					</p>
-					 
+				<div class="subwindow-item-sliderbar">
+		    		<div class="subwindow-sliderbar-block">
+						<p class="ville-subwindow-sliderbar-title">&Acirc;ges limites</p>
+						<p class="sliderbar-amount-block">
+					  		<input type="text" id="amount" readonly class="sliderbar-amount";>
+						</p>
+					</div>
 					<div id="slider-range"></div>
+			    </div>
+			    <div class="subwindow-item-sliderbar">
+		    		<div class="subwindow-sliderbar-block">
+						<p class="ville-subwindow-sliderbar-title">Jusqu’&agrave;</p>
+						<p class="sliderbar-amount-block">
+					  		<input type="text" id="amount-min" readonly class="sliderbar-amount";>
+						</p>
+					</div>
+					<div id="slider-range-min"></div>
+			    </div>
+			    <div class="fg-subwindow-item1">
+					<p class="text-size2 color-orange">Trouver des passionn&eacute;s</p>
+					<div class="ville-subwindow-select">
+						<button type="button" class="mon-compte-btn-select" id="btn-femme" >Femme</button>
+						<button type="button" class="mon-compte-btn-select" id="btn-homme" >Homme</button>
+						<button type="button" class="mon-compte-btn-select" id="btn-homme" >N’importe</button>
+					</div>
+				</div>
 		    </div>
 		    <div class="fg-subwindow-foot">
 		    	<div class="fg-subwindow-btn-right">
@@ -359,7 +377,7 @@
 								<div class="ml-body-img-block">
 					  				<img class="ml-body-img" src="../image/activity-img1.JPG"  alt="#" />
 					  			</div>
-					  			<div class="ml-body-info-block">
+					  			<div class="ml-body-info-block2">
 					  				<!-- info of person -->
 					  				<p class="text-size3 color-orange">
 					  					Step by step !
@@ -609,9 +627,6 @@
 				  				<div class="ville-icon1">
 				  					<p><span aria-hidden="true" data-icon="&#xe648" class="icon-niveau ville-head-icon"></span></p>
 				  				</div>
-				  				<div class="ville-icon2">
-				  					<p><span aria-hidden="true" data-icon="&#xe632" class="icon-passionne ville-head-icon"></span></p>
-				  				</div>
 				  				<div class="ville-icon3">
 				  					<p><span aria-hidden="true" data-icon="&#xe600" class="icon-agenda-menu ville-head-icon"></span></p>
 				  				</div>
@@ -621,16 +636,6 @@
 				  			</div>
 				  			<div class="ville-item-body">
 				  				<div class="ville-item">
-				  					<div class="ville-item-icon">
-				  						<p><span aria-hidden="true" data-icon="&#xe614" class="icon-culture vi-icon"></span></p>
-				  					</div>
-				  					<div class="ville-item-nom">
-				  						<p class="color_grey1 text-size2 ml-body-declaration">Starship laser</p>
-				  					</div>
-				  					<div class="ville-item-niveau">
-				  						<div class="ville-niveau-image niveau1">
-				  						</div>
-				  					</div>
 				  					<div class="ville-item-user">
 				  						<div class="ville-user-img">
 								  			<img class="ml-body-img2" src="../image/activity-img1.JPG" alt="#">
@@ -644,39 +649,26 @@
 												<span>,&nbsp;</span>
 												<span>Paris</span>
 											</p>
-								  			<p class="ville-item-info-detail">
-												<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1"></span>
-												<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1"></span>
-												<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1"></span>
-												<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-head-star-note2"></span>
-												<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-head-star-note2"></span>
-												<span class="text-size4 color_grey1">64 notes</span>
+								  			<p>
+												<span class="text-size4 color_grey1">15</span>
+												<span aria-hidden="true" data-icon="&#xe64b" class="icon-up icon-up-orange1"></span>
 											</p>
 								  		</div>
+				  					</div>
+				  					<div class="ville-item-nom">
+				  						<p class="color_grey1 text-size2 ml-body-declaration">Starship laser</p>
+				  					</div>
+				  					<div class="ville-item-niveau">
+				  						<p class="text-size2 color_grey1">Découvrir</p>
 				  					</div>
 				  					<div class="ville-item-date">
 				  						<p class="text-size2 color_grey1 ml-body-declaration">Sam. 14 déc. à 19h30</p>
 				  					</div>
 				  					<div class="ville-item-participant">
 				  						<p class="text-size2 color_grey1 ml-body-declaration">12/15</p>
-				  					</div>
-				  					<div class="ville-item-btn-search">
-				  						<a href="#" class="btn btn-default ml-btn-filter ml-body-btn-check" role="button">
-											<span aria-hidden="true" data-icon="&#xe622" class="icon-recherche ml-head-icon-search"></span>
-										</a>
 				  					</div>
 				  				</div>
 				  				<div class="ville-item">
-				  					<div class="ville-item-icon">
-				  						<p><span aria-hidden="true" data-icon="&#xe614" class="icon-culture vi-icon"></span></p>
-				  					</div>
-				  					<div class="ville-item-nom">
-				  						<p class="color_grey1 text-size2 ml-body-declaration">Starship laser</p>
-				  					</div>
-				  					<div class="ville-item-niveau">
-				  						<div class="ville-niveau-image niveau1">
-				  						</div>
-				  					</div>
 				  					<div class="ville-item-user">
 				  						<div class="ville-user-img">
 								  			<img class="ml-body-img2" src="../image/activity-img1.JPG" alt="#">
@@ -690,39 +682,26 @@
 												<span>,&nbsp;</span>
 												<span>Paris</span>
 											</p>
-								  			<p class="ville-item-info-detail">
-												<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1"></span>
-												<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1"></span>
-												<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1"></span>
-												<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-head-star-note2"></span>
-												<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-head-star-note2"></span>
-												<span class="text-size4 color_grey1">64 notes</span>
+								  			<p>
+												<span class="text-size4 color_grey1">15</span>
+												<span aria-hidden="true" data-icon="&#xe64b" class="icon-up icon-up-orange1"></span>
 											</p>
 								  		</div>
+				  					</div>
+				  					<div class="ville-item-nom">
+				  						<p class="color_grey1 text-size2 ml-body-declaration">Starship laser</p>
+				  					</div>
+				  					<div class="ville-item-niveau">
+				  						<p class="text-size2 color_grey1">Découvrir</p>
 				  					</div>
 				  					<div class="ville-item-date">
 				  						<p class="text-size2 color_grey1 ml-body-declaration">Sam. 14 déc. à 19h30</p>
 				  					</div>
 				  					<div class="ville-item-participant">
 				  						<p class="text-size2 color_grey1 ml-body-declaration">12/15</p>
-				  					</div>
-				  					<div class="ville-item-btn-search">
-				  						<a href="#" class="btn btn-default ml-btn-filter ml-body-btn-check" role="button">
-											<span aria-hidden="true" data-icon="&#xe622" class="icon-recherche ml-head-icon-search"></span>
-										</a>
 				  					</div>
 				  				</div>
 				  				<div class="ville-item">
-				  					<div class="ville-item-icon">
-				  						<p><span aria-hidden="true" data-icon="&#xe614" class="icon-culture vi-icon"></span></p>
-				  					</div>
-				  					<div class="ville-item-nom">
-				  						<p class="color_grey1 text-size2 ml-body-declaration">Starship laser</p>
-				  					</div>
-				  					<div class="ville-item-niveau">
-				  						<div class="ville-niveau-image niveau1">
-				  						</div>
-				  					</div>
 				  					<div class="ville-item-user">
 				  						<div class="ville-user-img">
 								  			<img class="ml-body-img2" src="../image/activity-img1.JPG" alt="#">
@@ -736,26 +715,23 @@
 												<span>,&nbsp;</span>
 												<span>Paris</span>
 											</p>
-								  			<p class="ville-item-info-detail">
-												<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1"></span>
-												<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1"></span>
-												<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-body-star-note1"></span>
-												<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-head-star-note2"></span>
-												<span aria-hidden="true" data-icon="&#xe609" class="icon-star-note ml-head-star-note2"></span>
-												<span class="text-size4 color_grey1">64 notes</span>
+								  			<p>
+												<span class="text-size4 color_grey1">15</span>
+												<span aria-hidden="true" data-icon="&#xe64b" class="icon-up icon-up-orange1"></span>
 											</p>
 								  		</div>
+				  					</div>
+				  					<div class="ville-item-nom">
+				  						<p class="color_grey1 text-size2 ml-body-declaration">Starship laser</p>
+				  					</div>
+				  					<div class="ville-item-niveau">
+				  						<p class="text-size2 color_grey1">Découvrir</p>
 				  					</div>
 				  					<div class="ville-item-date">
 				  						<p class="text-size2 color_grey1 ml-body-declaration">Sam. 14 déc. à 19h30</p>
 				  					</div>
 				  					<div class="ville-item-participant">
 				  						<p class="text-size2 color_grey1 ml-body-declaration">12/15</p>
-				  					</div>
-				  					<div class="ville-item-btn-search">
-				  						<a href="#" class="btn btn-default ml-btn-filter ml-body-btn-check" role="button">
-											<span aria-hidden="true" data-icon="&#xe622" class="icon-recherche ml-head-icon-search"></span>
-										</a>
 				  					</div>
 				  				</div>
 				  			</div>
