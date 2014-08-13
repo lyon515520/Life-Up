@@ -1,163 +1,28 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Testing Fartscroll.js</title>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script src="fartscroll.js"></script>
-        <script>
-        $(document).ready(function() {
-            // Ensure the page always has more scrolling
-            $(document).scroll(function() {
-                while ((window.pageYOffset + window.innerHeight) >= $(this).height() - (window.innerHeight / 2)) {
-                    $('ul').append('<li>Testing.</li>');
-                }
-            }).scroll();
-
-            fartscroll(800);
-        });
-        </script>
-    </head>
-    <body>
-        <ul>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-            <li>Testing.</li>
-        </ul>
-    </body>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.css" />
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="../css/costumestyle.css" />
+<link rel="stylesheet" type="text/css" href="../css/style-leftpanel.css" />
+<link rel="stylesheet" type="text/css" href="../css/style.css" />
+<link rel="stylesheet" type="text/css" href="../css/style-google-font.css" />
+<link rel="stylesheet" type="text/css" href="../css/checkbox-icon.css" />
+<link rel="stylesheet" type="text/css" href="../css/test.css" />
+<script src="../js/test.js"></script>
+<title>c'est la partie de "Aide & support"</title>
+</head>
+<body class="body-test">
+	
+<textarea id="textarea" placeholder="回复内容"></textarea> 
+    <script> 
+        var text = document.getElementById("textarea");
+        autoTextarea(text);// 调用
+    </script>
+		
+<script src="../js/costumejs.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+</body>
 </html>
