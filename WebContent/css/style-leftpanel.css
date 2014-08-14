@@ -1755,9 +1755,9 @@
 	color: rgb(13,204,232);
 	font-size: 14.4px;
 }
-.ml-head-link:hover .ml-head-link-blue,
+.ml-head-link:hover .ml-head-link-text-blue,
 .ml-head-link:hover .ml-head-link-icon-blue::before{
-	color: rgb(20,192,221);
+	color: rgb(5,156,218);
 }
 .mf-head{
 	text-align: center;
@@ -2464,4 +2464,12 @@
 	font-size: 14.4px;
 	height: 27px;
 	line-height: 24px;
+ }
+ .titre-activite{
+ 	font-size: 17.28px;
+ 	color: rgb(134,134,134);
+ }
+ .ville-item:hover .titre-activite{
+ 	color: rgb(235,101,49);
+ 	text-decoration: underline;
  }

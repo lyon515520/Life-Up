@@ -3,70 +3,26 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css" />
-<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-<link rel="stylesheet" type="text/css" href="css/costumestyleV1.5.css" />
-<link rel="stylesheet" type="text/css" href="css/style.css" />
-<link rel="stylesheet" type="text/css" href="css/style-google-font.css" />
+<link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.css" />
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="../css/costumestyle.css" />
+<link rel="stylesheet" type="text/css" href="../css/style.css" />
+<link rel="stylesheet" type="text/css" href="../css/style-google-font.css" />
+<link rel="stylesheet" type="text/css" href="../css/style-leftpanel.css" />
 <title>c'est la page d'inscription</title>
 </head>
 <body>
 	<div class="page">
 		<div class="head" id="head-brown">
 			<div class="container0">
-			<div>
-				<img class="logo-image" src="image/logo-life-up-index.png" alt="this is the logo">
-			</div>
-			
-			<div class="head-menu">
-			  	<ul class="head-ul2">
-			  		<li class="head-li2">
-			  			<a class="head-text" href="#">
-			  				<span aria-hidden="true" data-icon="&#xe623" class="icon-discussion-menu" ></span>
-			  				<span class="head-text-mid">&nbsp;Discussions</span>
-			  			</a>
-			  		</li>
-			  		<li class="head-li2">
-			  			<a class="head-text" href="#">
-				  			<span aria-hidden="true" data-icon="&#xe623" class="icon-contacts-menu" ></span>
-				  			<span class="head-text-mid">&nbsp;Contacts</span>
-			  			</a>
-			  		</li>
-			  		<li class="head-li2">
-			  			<a class="head-text" href="#">
-				  			<span aria-hidden="true" data-icon="&#xe62b" class="icon-agenda-menu" ></span>
-				  			<span class="head-text-mid">&nbsp;Agenda</span>
-			  			</a>
-			  		</li>
-			  		<li class="head-li2">
-			  			<a class="head-text" href="#">
-				  			<span aria-hidden="true" data-icon="&#xe626" class="icon-creer-activite" ></span>
-				  			<span class="head-text-mid">&nbsp;Creer une activité</span>
-			  			</a>
-			  		</li>
-			  	</ul>
-			  		<div class="head_searchbar">
-					    <div class="input-group">
-					      <div class="input-group-btn" id="input-btn-1">
-					        <select class="form-control" id="select-search">
-					        <option>Passionnés</option>
-					        <option>Groupe Passionnés</option>
-					        <option>Association & Clubs</option>
-					        <option>professionnels</option>
-					        <option>Une activité proposée</option>
-					        </select>
-					      </div>
-					      <input type="text" class="form-control" id="input-searchbar">
-					      <button type="button" class="btn btn-default" id="btn-search"><span aria-hidden="true" data-icon="&#xe623" class="icon-recherche" ></span></button>
-					    </div>
-					</div>
-				<div class="btn-avatar">
-					<img src="image/avatar.JPG" alt="this is a avatar" class="head-avatar"/>
-					<div class="btn-group">
-					  <button type="button" class="btn btn-default dropdown-toggle" id="btn-perso" data-toggle="dropdown">
-					     <span class="caret" id="avatar-arrow"></span>
-					  </button>
-					  					  <ul class="dropdown-menu pull-right" role="menu">
+				<div class="logo-image-block">
+					<img class="logo-image" src="../image/logo-life-up-index.png" alt="this is the logo">
+				</div>
+				<div class="header-search-block">
+					<a href="#" class="btn btn-default ml-btn-filter mon-activity-search-button dropdown-toggle" id="header-search-menu" role="button" data-toggle="dropdown">
+						<span aria-hidden="true" data-icon="&#xe61a" class="icon-menu ml-head-icon-search"></span>
+					</a>
+					<ul class="dropdown-menu pull-left" role="menu">
 					  	<li>
 					  		<p class="head-list">
 						    	<span class="color-orange text-size3">Fabien</span>
@@ -162,214 +118,57 @@
 			  			</li>
 			  			
 					  </ul>
+					<input type="text" class="form-control mon-compte-comment" id="header-search" placeholder="Personnes, lieux, activités...">
+					<a href="#" class="btn btn-default ml-btn-filter mon-activity-search-button" id="header-search-button" role="button">
+						<span aria-hidden="true" data-icon="&#xe622" class="icon-recherche ml-head-icon-search"></span>
+					</a>
+				</div>
+				<div class="header-lieu">
+					<a class="text-size3 color-white dropdown-toggle" role="button" data-toggle="dropdown">
+						<span>Lille, France&nbsp;&nbsp;</span>
+						<span aria-hidden="true" data-icon="&#xe644" class="icon-elargir2 header-lieu-arrow"></span>
+					</a>
+					<ul class="dropdown-menu pull-left" role="menu">
+					    <li>
+						    <a class="text-size2 color_grey1">Paris, France</a>
+			  			</li>
+			  			<li class="head-divider"></li>
+					    <li>
+						    <a class="text-size2 color_grey1">Nice, France</a>
+			  			</li>
+			  			<li class="head-divider"></li>
+			  			<li>
+						    <a class="text-size2 color_grey1">Nantes, France</a>
+			  			</li>
+			  			<li class="head-divider"></li>
+			  			<li>
+						    <a class="text-size2 color_grey1">Lyon, France</a>
+			  			</li>
+			  			<li class="head-divider"></li>
+			  			<li>
+						    <a class="text-size2 color_grey1">Toulouse, France</a>
+			  			</li>
+			  			<li class="head-divider"></li>
+			  			<li>
+						    <a class="text-size2 color_grey1">Grenoble, France</a>
+			  			</li>
+					  </ul>
+				</div>
+				<div class="header-menu">
+					<div>
+					<a><span aria-hidden="true" data-icon="&#xe62d" class="icon-disussion-mono header-menu-icon" ></span></a>
 					</div>
-				</div>	
-			</div>
+					<div>
+					<a><span aria-hidden="true" data-icon="&#xe632" class="icon-passionne header-menu-icon" ></span></a>
+					</div>
+					<div>
+					<a><span aria-hidden="true" data-icon="&#xe624" class="icon-creer-activite header-menu-icon" ></span></a>
+				</div>
 			</div>
 		</div>
-	
 		<div class="head" id="head-orange">
 		</div>
 		<!-- le header est jusqu'a ici -->
-	
-			<div class="container2">
-				<div class="head_content">
-					<p class="content1">Connexion</p>
-				</div>
-				
-				<div class="head_content1">
-					<div class="head_content2">
-						<p class="content2">Vous êtes</p> 
-					</div>
-					<div class="head_content2">
-						<div class="content3b">
-							<p><a href="#" class="btn btn-primary" role="button">Passionné</a>
-						</div>
-						<div class="line_block">           <!-- c'est le block de la ligne -->
-							<div>
-								<hr class="hr1"/>
-							</div>
-							<div>
-								<p class="content_ou">OU</p>
-							</div>
-							<div>
-								<hr class="hr1"/>
-							</div>
-						</div>
-						<div class="content3">
-							<p><a href="#" class="btn btn-primary" role="button">Association/club</a>
-						</div>
-						<div class="content2">
-							<p>
-								<span aria-hidden="true" data-icon="&#xe62e" class="icon-attention" ></span>
-								<span class="text_mid">&nbsp;&nbsp;à but non lucratif</span>
-							</p>
-						</div>
-						<div class="line_block">           <!-- c'est le block de la ligne -->
-							<div>
-								<hr class="hr1"/>
-							</div>
-							<div>
-								<p class="content_ou">OU</p>
-							</div>
-							<div>
-								<hr class="hr1"/>
-							</div>
-						</div>
-						<div class="content3">
-							<p><a href="#" class="btn btn-primary" role="button">Professionnel</a>
-						</div>
-						<div class="content2b">
-							<p>
-								<span aria-hidden="true" data-icon="&#xe621" class="icon-professionnel" ></span>
-								<span class="text_mid">&nbsp;Club, coach, professeur, etc.</span>
-							</p>
-						</div>
-					</div>
-					<div class="head_content2b">
-						
-					</div>
-				</div>
-								<!-- nav est jusqu'a ici -->
-				<div class="text_size1">
-					<div class="container2">
-							<div>
-								<hr class="hr2" />
-							</div>
-							<table>
-								<tr>
-									<td class="footer_text">
-										<a href="#">A propose de nous</a>
-									</td>
-									<td class="footer_text">
-										<a href="#">Aide & Support</a>
-									</td>
-									<td class="footer_text">
-										<a href="#">Jobs</a>
-									</td>
-									<td class="footer_text">
-										<a href="#">Nous contacter</a>
-									</td>
-									<td class="footer_text">
-										<a href="#">CGU</a>
-									</td>
-								</tr>
-							</table>
-							<table class="footer_copyright">
-								<tr>
-									<td class="footer_text">
-										<p>life-up © 2014</p>
-									</td>
-									<td>
-										<a href="#" style="color:rgb(0,113,188)" >Français (France)</a>
-									</td>
-								</tr>
-							</table>
-						</div>
-					</div>
-					<div class="btn-group">
-					  <button type="button" class="btn btn-default dropdown-toggle" id="btn-perso" data-toggle="dropdown">
-					     <span class="caret" id="avatar-arrow"></span>
-					  </button>
-					  <ul class="dropdown-menu pull-right" role="menu">
-					  	<li>
-					  		<p class="head-list">
-						    	<span class="color-orange text-size3">Fabien</span>
-						    	<span class="color_grey1 text-size4">&nbsp;&nbsp;&nbsp;Ville, 24 ans</span>
-						    </p>
-						    <p class="head-list">
-						    	<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note" id="icon-star-note-color1"></span>
-						    	<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note" id="icon-star-note-color2"></span>
-						    	<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note" id="icon-star-note-color3"></span>
-						    	<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note" id="icon-star-note-color4"></span>
-						    	<span aria-hidden="true" data-icon="&#xe627" class="icon-star-note" id="icon-star-note-color5"></span>
-						    	<span class="head-text-mid color_grey1 text-size4">&nbsp;&nbsp;&nbsp;23 notes</span>
-						    </p>
-							<p class="head-list" id="vip">
-								<span class="color_grey1 text-size3">VIP</span>
-								<span class="color_grey1 text-size4">&nbsp;&nbsp;&nbsp;jusqu'au</span>
-								<span class="color_grey1 text-size4">&nbsp;&nbsp;15/08/2014</span>
-							</p>
-							<p class="head-list" id="nonvip">
-								<span class="color_grey1 text-size4">non</span>
-								<span class="color_grey1 text-size3">&nbsp;&nbsp;VIP</span>
-							</p>
-			  			</li>
-			  			<li class="head-divider"></li>
-					  	<li>
-						    <a class="head-text" href="#">
-					  			<span aria-hidden="true" data-icon="&#xe626" class="icon-creer-activite" id="icon-creer-activite-color1"></span>
-					  			<span class="head-text-mid color_grey1">&nbsp;Creer une activité</span>
-				  			</a>
-			  			</li>
-			  			<li class="head-divider"></li>
-					    <li>
-						    <a class="head-text" href="#">
-					  			<span aria-hidden="true" data-icon="&#xe60b" class="icon-editer" id="icon-calendrier-color1"></span>
-					  			<span class="head-text-mid color_grey1">&nbsp;Administration d’activité</span>
-				  			</a>
-			  			</li>
-			  			<li class="head-divider"></li>
-					    <li>
-						    <a class="head-text" href="#">
-					  			<span aria-hidden="true" data-icon="&#xe604" class="icon-calendrier" id="icon-calendrier-color1"></span>
-					  			<span class="head-text-mid color_grey1">&nbsp;Agenda</span>
-				  			</a>
-			  			</li>
-			  			<li class="head-divider"></li>
-			  			<li>
-						    <a class="head-text" href="#">
-					  			<span aria-hidden="true" data-icon="&#xe609" class="icon-discussion-menu" id="icon-discussion-menu-color1"></span>
-					  			<span class="head-text-mid color_grey1">&nbsp;Discussions</span>
-				  			</a>
-			  			</li>
-			  			<li class="head-divider"></li>
-			  			<li>
-						    <a class="head-text" href="#">
-					  			<span aria-hidden="true" data-icon="&#xe605" class="icon-contacts-menu" id="icon-contacts-menu-color1"></span>
-					  			<span class="head-text-mid color_grey1">&nbsp;Contacts</span>
-				  			</a>
-			  			</li>
-			  			<li class="head-divider"></li>
-			  			<li>
-						    <a class="head-text" href="#">
-					  			<span aria-hidden="true" data-icon="&#xe61d" class="icon-point-vip" id="icon-point-vip-color1"></span>
-					  			<span class="head-text-mid color_grey1">&nbsp;Mes avantages VIP</span>
-				  			</a>
-			  			</li>
-			  			<li class="head-divider"></li>
-			  			<li>
-						    <a class="head-text" href="#">
-					  			<span aria-hidden="true" data-icon="&#xe602" class="icon-ajouter-ami" id="icon-ajouter-ami-color1"></span>
-					  			<span class="head-text-mid color_grey1">&nbsp;Inviter des amis</span>
-				  			</a>
-			  			</li>
-			  			<li class="head-divider"></li>
-			  			<li>
-						    <a class="head-text" href="#">
-					  			<span aria-hidden="true" data-icon="&#xe612" class="icon-info" id="icon-info-color1"></span>
-					  			<span class="head-text-mid color_grey1">&nbsp;Aide & Support</span>
-				  			</a>
-			  			</li>
-			  			<li class="head-divider"></li>
-			  			<li>
-						    <a class="head-text" href="#">
-					  			<span aria-hidden="true" data-icon="&#xe619" class="icon-parametre" id="icon-parametre-color1"></span>
-					  			<span class="head-text-mid color_grey1">&nbsp;Gérer mon compte</span>
-				  			</a>
-			  			</li>
-			  			<li class="head-divider"></li>
-			  			<li>
-						    <a class="head-text" href="#">
-					  			<span aria-hidden="true" data-icon="&#xe619" class="icon-deco" id="icon-deco-color1"></span>
-					  			<span class="head-text-mid color_grey1">&nbsp;Se déconnectere</span>
-				  			</a>
-			  			</li>
-			  			
-					  </ul>
-					</div>
-			</div>
-	</div>
 	</div>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>

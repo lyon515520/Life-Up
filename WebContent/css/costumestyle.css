@@ -2,6 +2,9 @@
 .body-test{
 	background-color: rgb(0,0,0);
 }
+.body-test2{
+	background-color: grey;
+}
 body{
 	background-color: rgb(255,255,255);	
 }
@@ -127,6 +130,9 @@ border-style:none;
 .color-deepblue{
 	color: rgb(29,113,184);
 }
+.color-white{
+	color: rgb(255,255,255);
+}
 .page{
 	min-height: 100%;
     height: auto !important;
@@ -140,9 +146,10 @@ border-style:none;
 }
 
 
-
+.logo-image-block{
+	float: left;
+}
 .logo-image{
-	float:left;
 	margin-left:6px;
 	margin-top:6px;
 	width:44.617px;
@@ -221,6 +228,7 @@ ul{
 	margin-left:auto;
 	margin-right:auto;
 	width:960px;
+	overflow: left;
 }
 
 .container1 {
@@ -1893,7 +1901,7 @@ fieldset[disabled] .btn-plus-min.active {
 
 #head-brown{
 	background-color:rgb(50,40,38);
-	height:40px;
+	height:45px;
 }
 
 #head-orange{
@@ -2216,4 +2224,44 @@ fieldset[disabled] .btn-plus-min.active {
 	height:437px;
 	width:406px;
 	float:left;
+}
+#header-search{
+	height: 26px;
+	float: left;
+	width: 215px;
+	border-radius: 0;
+	background-color: rgb(255,255,255);
+}
+.header-search-block{
+	margin: 10px 20px 14px 20px;
+	display: table-cell;
+	position: absolute;
+	display: inline-block;
+	vertical-align: middle;
+}
+#header-search-menu{
+	border-radius: 2px 0 0 2px;
+	border-right: none;
+}
+#header-search-button{
+	border-left: none;
+}
+.header-lieu{
+	float: left;
+	margin-left: 300px;
+	margin-top: 10px;
+	position: absolute;
+	display: inline-block;
+	vertical-align: middle;
+}
+.header-lieu-arrow{
+	font-size: 14.4px;
+	color: rgb(235,101,49);
+}
+.header-menu-icon::before{
+	color: rgb(255,255,255);
+	font-size: 20px;
+}
+.header-menu-icon:hover::before{
+	color: rgb(235,101,49);
 }
